@@ -1,0 +1,1298 @@
+date,kind,crop,region,value
+2020-05-11,seeding,All crops,Saskatchewan,18.0
+2020-06-01,seeding,All crops,Saskatchewan,96.0
+2022-05-02,seeding,All crops,Saskatchewan,1.0
+2023-05-22,seeding,All crops,Saskatchewan,68.0
+2023-05-29,seeding,All crops,Saskatchewan,89.0
+2023-06-05,seeding,All crops,Saskatchewan,96.0
+2024-05-06,seeding,All crops,Saskatchewan,12.0
+2024-05-13,seeding,All crops,Saskatchewan,32.0
+2024-05-20,seeding,All crops,Saskatchewan,56.0
+2024-05-27,rating,Chickpea,Southwest,100.0
+2024-05-27,rating,Field Pea,Southwest,100.0
+2024-05-27,rating,Lentil,Southwest,98.0
+2024-05-27,rating,Mustard,Southwest,94.0
+2024-05-27,rating,Soybean,Southwest,98.0
+2024-05-27,rating,Triticale,Southwest,98.0
+2024-06-10,rating,Barley,East-central,88.0
+2024-06-10,rating,Barley,Northeast,74.0
+2024-06-10,rating,Barley,Northwest,88.0
+2024-06-10,rating,Barley,Saskatchewan,87.0
+2024-06-10,rating,Barley,Southeast,90.0
+2024-06-10,rating,Barley,Southwest,96.0
+2024-06-10,rating,Barley,West-central,92.0
+2024-06-10,rating,Canaryseed,East-central,33.0
+2024-06-10,rating,Canaryseed,Northeast,54.0
+2024-06-10,rating,Canaryseed,Saskatchewan,89.0
+2024-06-10,rating,Canaryseed,Southeast,100.0
+2024-06-10,rating,Canaryseed,Southwest,77.0
+2024-06-10,rating,Canaryseed,West-central,93.0
+2024-06-10,rating,Canola,East-central,71.0
+2024-06-10,rating,Canola,Northeast,71.0
+2024-06-10,rating,Canola,Northwest,73.0
+2024-06-10,rating,Canola,Saskatchewan,78.0
+2024-06-10,rating,Canola,Southeast,84.0
+2024-06-10,rating,Canola,Southwest,83.0
+2024-06-10,rating,Canola,West-central,90.0
+2024-06-10,rating,Chickpea,East-central,70.0
+2024-06-10,rating,Chickpea,Northeast,50.0
+2024-06-10,rating,Chickpea,Saskatchewan,95.0
+2024-06-10,rating,Chickpea,Southeast,89.0
+2024-06-10,rating,Chickpea,Southwest,96.0
+2024-06-10,rating,Chickpea,West-central,94.0
+2024-06-10,rating,Durum,East-central,94.0
+2024-06-10,rating,Durum,Northeast,42.0
+2024-06-10,rating,Durum,Northwest,100.0
+2024-06-10,rating,Durum,Saskatchewan,93.0
+2024-06-10,rating,Durum,Southeast,91.0
+2024-06-10,rating,Durum,Southwest,96.0
+2024-06-10,rating,Durum,West-central,90.0
+2024-06-10,rating,Fall Rye,East-central,85.0
+2024-06-10,rating,Fall Rye,Northeast,2.0
+2024-06-10,rating,Fall Rye,Northwest,100.0
+2024-06-10,rating,Fall Rye,Saskatchewan,87.0
+2024-06-10,rating,Fall Rye,Southeast,100.0
+2024-06-10,rating,Fall Rye,Southwest,100.0
+2024-06-10,rating,Fall Rye,West-central,83.0
+2024-06-10,rating,Field Pea,East-central,91.0
+2024-06-10,rating,Field Pea,Northeast,81.0
+2024-06-10,rating,Field Pea,Northwest,92.0
+2024-06-10,rating,Field Pea,Saskatchewan,91.0
+2024-06-10,rating,Field Pea,Southeast,91.0
+2024-06-10,rating,Field Pea,Southwest,97.0
+2024-06-10,rating,Field Pea,West-central,93.0
+2024-06-10,rating,Flax,East-central,76.0
+2024-06-10,rating,Flax,Northeast,56.0
+2024-06-10,rating,Flax,Northwest,100.0
+2024-06-10,rating,Flax,Saskatchewan,91.0
+2024-06-10,rating,Flax,Southeast,97.0
+2024-06-10,rating,Flax,Southwest,99.0
+2024-06-10,rating,Flax,West-central,87.0
+2024-06-10,rating,Lentil,East-central,94.0
+2024-06-10,rating,Lentil,Northeast,85.0
+2024-06-10,rating,Lentil,Northwest,84.0
+2024-06-10,rating,Lentil,Saskatchewan,90.0
+2024-06-10,rating,Lentil,Southeast,94.0
+2024-06-10,rating,Lentil,Southwest,91.0
+2024-06-10,rating,Lentil,West-central,91.0
+2024-06-10,rating,Mustard,East-central,54.0
+2024-06-10,rating,Mustard,Northeast,0.0
+2024-06-10,rating,Mustard,Saskatchewan,88.0
+2024-06-10,rating,Mustard,Southeast,97.0
+2024-06-10,rating,Mustard,Southwest,93.0
+2024-06-10,rating,Mustard,West-central,89.0
+2024-06-10,rating,Oats,East-central,84.0
+2024-06-10,rating,Oats,Northeast,75.0
+2024-06-10,rating,Oats,Northwest,85.0
+2024-06-10,rating,Oats,Saskatchewan,87.0
+2024-06-10,rating,Oats,Southeast,93.0
+2024-06-10,rating,Oats,Southwest,98.0
+2024-06-10,rating,Oats,West-central,91.0
+2024-06-10,rating,Soybean,East-central,95.0
+2024-06-10,rating,Soybean,Northeast,100.0
+2024-06-10,rating,Soybean,Saskatchewan,83.0
+2024-06-10,rating,Soybean,Southeast,81.0
+2024-06-10,rating,Soybean,Southwest,100.0
+2024-06-10,rating,Soybean,West-central,75.0
+2024-06-10,rating,Spring Wheat,East-central,90.0
+2024-06-10,rating,Spring Wheat,Northeast,79.0
+2024-06-10,rating,Spring Wheat,Northwest,85.0
+2024-06-10,rating,Spring Wheat,Saskatchewan,87.0
+2024-06-10,rating,Spring Wheat,Southeast,89.0
+2024-06-10,rating,Spring Wheat,Southwest,95.0
+2024-06-10,rating,Spring Wheat,West-central,91.0
+2024-06-10,rating,Triticale,East-central,50.0
+2024-06-10,rating,Triticale,Northeast,50.0
+2024-06-10,rating,Triticale,Northwest,100.0
+2024-06-10,rating,Triticale,Saskatchewan,96.0
+2024-06-10,rating,Triticale,Southeast,100.0
+2024-06-10,rating,Triticale,Southwest,97.0
+2024-06-10,rating,Triticale,West-central,93.0
+2024-06-10,rating,Winter Wheat,East-central,78.0
+2024-06-10,rating,Winter Wheat,Northeast,29.0
+2024-06-10,rating,Winter Wheat,Northwest,100.0
+2024-06-10,rating,Winter Wheat,Saskatchewan,87.0
+2024-06-10,rating,Winter Wheat,Southeast,96.0
+2024-06-10,rating,Winter Wheat,Southwest,95.0
+2024-06-10,rating,Winter Wheat,West-central,86.0
+2024-06-24,rating,Barley,East-central,76.0
+2024-06-24,rating,Barley,Northeast,72.0
+2024-06-24,rating,Barley,Northwest,94.0
+2024-06-24,rating,Barley,Saskatchewan,85.0
+2024-06-24,rating,Barley,Southeast,93.0
+2024-06-24,rating,Barley,Southwest,96.0
+2024-06-24,rating,Barley,West-central,89.0
+2024-06-24,rating,Canaryseed,East-central,72.0
+2024-06-24,rating,Canaryseed,Northeast,42.0
+2024-06-24,rating,Canaryseed,Northwest,100.0
+2024-06-24,rating,Canaryseed,Saskatchewan,91.0
+2024-06-24,rating,Canaryseed,Southeast,100.0
+2024-06-24,rating,Canaryseed,Southwest,87.0
+2024-06-24,rating,Canaryseed,West-central,98.0
+2024-06-24,rating,Canola,East-central,73.0
+2024-06-24,rating,Canola,Northeast,66.0
+2024-06-24,rating,Canola,Northwest,93.0
+2024-06-24,rating,Canola,Saskatchewan,77.0
+2024-06-24,rating,Canola,Southeast,81.0
+2024-06-24,rating,Canola,Southwest,87.0
+2024-06-24,rating,Canola,West-central,78.0
+2024-06-24,rating,Chickpea,East-central,70.0
+2024-06-24,rating,Chickpea,Northeast,50.0
+2024-06-24,rating,Chickpea,Northwest,100.0
+2024-06-24,rating,Chickpea,Saskatchewan,93.0
+2024-06-24,rating,Chickpea,Southeast,91.0
+2024-06-24,rating,Chickpea,Southwest,96.0
+2024-06-24,rating,Chickpea,West-central,100.0
+2024-06-24,rating,Durum,East-central,92.0
+2024-06-24,rating,Durum,Northeast,42.0
+2024-06-24,rating,Durum,Northwest,100.0
+2024-06-24,rating,Durum,Saskatchewan,92.0
+2024-06-24,rating,Durum,Southeast,83.0
+2024-06-24,rating,Durum,Southwest,94.0
+2024-06-24,rating,Durum,West-central,90.0
+2024-06-24,rating,Fall Rye,East-central,87.0
+2024-06-24,rating,Fall Rye,Northeast,2.0
+2024-06-24,rating,Fall Rye,Northwest,100.0
+2024-06-24,rating,Fall Rye,Saskatchewan,81.0
+2024-06-24,rating,Fall Rye,Southeast,99.0
+2024-06-24,rating,Fall Rye,Southwest,96.0
+2024-06-24,rating,Fall Rye,West-central,86.0
+2024-06-24,rating,Field Pea,East-central,87.0
+2024-06-24,rating,Field Pea,Northeast,70.0
+2024-06-24,rating,Field Pea,Northwest,89.0
+2024-06-24,rating,Field Pea,Saskatchewan,85.0
+2024-06-24,rating,Field Pea,Southeast,81.0
+2024-06-24,rating,Field Pea,Southwest,92.0
+2024-06-24,rating,Field Pea,West-central,87.0
+2024-06-24,rating,Flax,East-central,85.0
+2024-06-24,rating,Flax,Northeast,64.0
+2024-06-24,rating,Flax,Northwest,100.0
+2024-06-24,rating,Flax,Saskatchewan,86.0
+2024-06-24,rating,Flax,Southeast,84.0
+2024-06-24,rating,Flax,Southwest,88.0
+2024-06-24,rating,Flax,West-central,86.0
+2024-06-24,rating,Lentil,East-central,89.0
+2024-06-24,rating,Lentil,Northeast,85.0
+2024-06-24,rating,Lentil,Northwest,83.0
+2024-06-24,rating,Lentil,Saskatchewan,87.0
+2024-06-24,rating,Lentil,Southeast,88.0
+2024-06-24,rating,Lentil,Southwest,91.0
+2024-06-24,rating,Lentil,West-central,81.0
+2024-06-24,rating,Mustard,East-central,96.0
+2024-06-24,rating,Mustard,Northeast,0.0
+2024-06-24,rating,Mustard,Northwest,100.0
+2024-06-24,rating,Mustard,Saskatchewan,95.0
+2024-06-24,rating,Mustard,Southeast,77.0
+2024-06-24,rating,Mustard,Southwest,98.0
+2024-06-24,rating,Mustard,West-central,93.0
+2024-06-24,rating,Oats,East-central,73.0
+2024-06-24,rating,Oats,Northeast,73.0
+2024-06-24,rating,Oats,Northwest,93.0
+2024-06-24,rating,Oats,Saskatchewan,85.0
+2024-06-24,rating,Oats,Southeast,88.0
+2024-06-24,rating,Oats,Southwest,89.0
+2024-06-24,rating,Oats,West-central,94.0
+2024-06-24,rating,Soybean,East-central,95.0
+2024-06-24,rating,Soybean,Northeast,0.0
+2024-06-24,rating,Soybean,Northwest,100.0
+2024-06-24,rating,Soybean,Saskatchewan,79.0
+2024-06-24,rating,Soybean,Southeast,72.0
+2024-06-24,rating,Soybean,Southwest,96.0
+2024-06-24,rating,Soybean,West-central,100.0
+2024-06-24,rating,Spring Wheat,East-central,84.0
+2024-06-24,rating,Spring Wheat,Northeast,80.0
+2024-06-24,rating,Spring Wheat,Northwest,93.0
+2024-06-24,rating,Spring Wheat,Saskatchewan,86.0
+2024-06-24,rating,Spring Wheat,Southeast,90.0
+2024-06-24,rating,Spring Wheat,Southwest,95.0
+2024-06-24,rating,Spring Wheat,West-central,89.0
+2024-06-24,rating,Triticale,East-central,50.0
+2024-06-24,rating,Triticale,Northeast,50.0
+2024-06-24,rating,Triticale,Northwest,100.0
+2024-06-24,rating,Triticale,Saskatchewan,96.0
+2024-06-24,rating,Triticale,Southeast,100.0
+2024-06-24,rating,Triticale,Southwest,96.0
+2024-06-24,rating,Triticale,West-central,100.0
+2024-06-24,rating,Winter Wheat,East-central,55.0
+2024-06-24,rating,Winter Wheat,Northeast,62.0
+2024-06-24,rating,Winter Wheat,Northwest,100.0
+2024-06-24,rating,Winter Wheat,Saskatchewan,80.0
+2024-06-24,rating,Winter Wheat,Southeast,93.0
+2024-06-24,rating,Winter Wheat,Southwest,83.0
+2024-06-24,rating,Winter Wheat,West-central,84.0
+2024-07-08,rating,Barley,East-central,82.0
+2024-07-08,rating,Barley,Northeast,82.0
+2024-07-08,rating,Barley,Northwest,97.0
+2024-07-08,rating,Barley,Saskatchewan,90.0
+2024-07-08,rating,Barley,Southeast,93.0
+2024-07-08,rating,Barley,Southwest,96.0
+2024-07-08,rating,Barley,West-central,91.0
+2024-07-08,rating,Canaryseed,East-central,88.0
+2024-07-08,rating,Canaryseed,Northeast,68.0
+2024-07-08,rating,Canaryseed,Saskatchewan,96.0
+2024-07-08,rating,Canaryseed,Southeast,100.0
+2024-07-08,rating,Canaryseed,Southwest,95.0
+2024-07-08,rating,Canaryseed,West-central,100.0
+2024-07-08,rating,Canola,East-central,83.0
+2024-07-08,rating,Canola,Northeast,78.0
+2024-07-08,rating,Canola,Northwest,89.0
+2024-07-08,rating,Canola,Saskatchewan,84.0
+2024-07-08,rating,Canola,Southeast,82.0
+2024-07-08,rating,Canola,Southwest,89.0
+2024-07-08,rating,Canola,West-central,87.0
+2024-07-08,rating,Chickpea,East-central,100.0
+2024-07-08,rating,Chickpea,Northeast,50.0
+2024-07-08,rating,Chickpea,Saskatchewan,85.0
+2024-07-08,rating,Chickpea,Southeast,81.0
+2024-07-08,rating,Chickpea,Southwest,88.0
+2024-07-08,rating,Chickpea,West-central,100.0
+2024-07-08,rating,Durum,East-central,95.0
+2024-07-08,rating,Durum,Northeast,36.0
+2024-07-08,rating,Durum,Saskatchewan,93.0
+2024-07-08,rating,Durum,Southeast,83.0
+2024-07-08,rating,Durum,Southwest,96.0
+2024-07-08,rating,Durum,West-central,91.0
+2024-07-08,rating,Fall Rye,East-central,88.0
+2024-07-08,rating,Fall Rye,Northeast,2.0
+2024-07-08,rating,Fall Rye,Northwest,100.0
+2024-07-08,rating,Fall Rye,Saskatchewan,82.0
+2024-07-08,rating,Fall Rye,Southeast,90.0
+2024-07-08,rating,Fall Rye,Southwest,93.0
+2024-07-08,rating,Fall Rye,West-central,80.0
+2024-07-08,rating,Field Pea,East-central,92.0
+2024-07-08,rating,Field Pea,Northeast,83.0
+2024-07-08,rating,Field Pea,Northwest,91.0
+2024-07-08,rating,Field Pea,Saskatchewan,87.0
+2024-07-08,rating,Field Pea,Southeast,83.0
+2024-07-08,rating,Field Pea,Southwest,92.0
+2024-07-08,rating,Field Pea,West-central,82.0
+2024-07-08,rating,Flax,East-central,72.0
+2024-07-08,rating,Flax,Northeast,71.0
+2024-07-08,rating,Flax,Northwest,75.0
+2024-07-08,rating,Flax,Saskatchewan,83.0
+2024-07-08,rating,Flax,Southeast,79.0
+2024-07-08,rating,Flax,Southwest,97.0
+2024-07-08,rating,Flax,West-central,82.0
+2024-07-08,rating,Lentil,East-central,96.0
+2024-07-08,rating,Lentil,Northeast,61.0
+2024-07-08,rating,Lentil,Northwest,100.0
+2024-07-08,rating,Lentil,Saskatchewan,88.0
+2024-07-08,rating,Lentil,Southeast,77.0
+2024-07-08,rating,Lentil,Southwest,94.0
+2024-07-08,rating,Lentil,West-central,75.0
+2024-07-08,rating,Mustard,East-central,90.0
+2024-07-08,rating,Mustard,Northeast,0.0
+2024-07-08,rating,Mustard,Saskatchewan,95.0
+2024-07-08,rating,Mustard,Southeast,71.0
+2024-07-08,rating,Mustard,Southwest,99.0
+2024-07-08,rating,Mustard,West-central,89.0
+2024-07-08,rating,Oats,East-central,89.0
+2024-07-08,rating,Oats,Northeast,89.0
+2024-07-08,rating,Oats,Northwest,94.0
+2024-07-08,rating,Oats,Saskatchewan,92.0
+2024-07-08,rating,Oats,Southeast,95.0
+2024-07-08,rating,Oats,Southwest,90.0
+2024-07-08,rating,Oats,West-central,93.0
+2024-07-08,rating,Soybean,East-central,90.0
+2024-07-08,rating,Soybean,Northeast,100.0
+2024-07-08,rating,Soybean,Saskatchewan,64.0
+2024-07-08,rating,Soybean,Southeast,39.0
+2024-07-08,rating,Soybean,Southwest,100.0
+2024-07-08,rating,Soybean,West-central,50.0
+2024-07-08,rating,Spring Wheat,East-central,89.0
+2024-07-08,rating,Spring Wheat,Northeast,89.0
+2024-07-08,rating,Spring Wheat,Northwest,95.0
+2024-07-08,rating,Spring Wheat,Saskatchewan,90.0
+2024-07-08,rating,Spring Wheat,Southeast,89.0
+2024-07-08,rating,Spring Wheat,Southwest,95.0
+2024-07-08,rating,Spring Wheat,West-central,91.0
+2024-07-08,rating,Triticale,East-central,100.0
+2024-07-08,rating,Triticale,Northeast,50.0
+2024-07-08,rating,Triticale,Saskatchewan,98.0
+2024-07-08,rating,Triticale,Southeast,100.0
+2024-07-08,rating,Triticale,Southwest,98.0
+2024-07-08,rating,Triticale,West-central,100.0
+2024-07-08,rating,Winter Wheat,East-central,99.0
+2024-07-08,rating,Winter Wheat,Northeast,29.0
+2024-07-08,rating,Winter Wheat,Northwest,100.0
+2024-07-08,rating,Winter Wheat,Saskatchewan,90.0
+2024-07-08,rating,Winter Wheat,Southeast,80.0
+2024-07-08,rating,Winter Wheat,Southwest,50.0
+2024-07-08,rating,Winter Wheat,West-central,50.0
+2025-05-12,seeding,All crops,Saskatchewan,49.0
+2025-05-19,seeding,All crops,Saskatchewan,72.0
+2025-05-26,seeding,All crops,Saskatchewan,88.0
+2025-06-02,rating,Barley,East-central,69.0
+2025-06-02,rating,Barley,Northeast,34.0
+2025-06-02,rating,Barley,Northwest,49.0
+2025-06-02,rating,Barley,Saskatchewan,67.0
+2025-06-02,rating,Barley,Southeast,85.0
+2025-06-02,rating,Barley,Southwest,85.0
+2025-06-02,rating,Barley,West-central,62.0
+2025-06-02,rating,Canaryseed,East-central,70.0
+2025-06-02,rating,Canaryseed,Northeast,41.0
+2025-06-02,rating,Canaryseed,Northwest,0.0
+2025-06-02,rating,Canaryseed,Saskatchewan,71.0
+2025-06-02,rating,Canaryseed,Southeast,79.0
+2025-06-02,rating,Canaryseed,Southwest,84.0
+2025-06-02,rating,Canaryseed,West-central,59.0
+2025-06-02,rating,Canola,East-central,62.0
+2025-06-02,rating,Canola,Northeast,25.0
+2025-06-02,rating,Canola,Northwest,52.0
+2025-06-02,rating,Canola,Saskatchewan,57.0
+2025-06-02,rating,Canola,Southeast,75.0
+2025-06-02,rating,Canola,Southwest,67.0
+2025-06-02,rating,Canola,West-central,58.0
+2025-06-02,rating,Chickpea,East-central,65.0
+2025-06-02,rating,Chickpea,Northeast,25.0
+2025-06-02,rating,Chickpea,Saskatchewan,86.0
+2025-06-02,rating,Chickpea,Southeast,79.0
+2025-06-02,rating,Chickpea,Southwest,84.0
+2025-06-02,rating,Durum,East-central,66.0
+2025-06-02,rating,Durum,Northeast,55.0
+2025-06-02,rating,Durum,Saskatchewan,76.0
+2025-06-02,rating,Durum,Southeast,87.0
+2025-06-02,rating,Durum,Southwest,74.0
+2025-06-02,rating,Durum,West-central,47.0
+2025-06-02,rating,Fall Rye,East-central,67.0
+2025-06-02,rating,Fall Rye,Northeast,4.0
+2025-06-02,rating,Fall Rye,Northwest,0.0
+2025-06-02,rating,Fall Rye,Saskatchewan,64.0
+2025-06-02,rating,Fall Rye,Southeast,79.0
+2025-06-02,rating,Fall Rye,Southwest,72.0
+2025-06-02,rating,Fall Rye,West-central,60.0
+2025-06-02,rating,Field Pea,East-central,74.0
+2025-06-02,rating,Field Pea,Northeast,42.0
+2025-06-02,rating,Field Pea,Northwest,61.0
+2025-06-02,rating,Field Pea,Saskatchewan,75.0
+2025-06-02,rating,Field Pea,Southeast,87.0
+2025-06-02,rating,Field Pea,Southwest,70.0
+2025-06-02,rating,Field Pea,West-central,72.0
+2025-06-02,rating,Flax,East-central,58.0
+2025-06-02,rating,Flax,Northeast,31.0
+2025-06-02,rating,Flax,Northwest,50.0
+2025-06-02,rating,Flax,Saskatchewan,74.0
+2025-06-02,rating,Flax,Southeast,81.0
+2025-06-02,rating,Flax,Southwest,70.0
+2025-06-02,rating,Flax,West-central,69.0
+2025-06-02,rating,Lentil,East-central,66.0
+2025-06-02,rating,Lentil,Northeast,25.0
+2025-06-02,rating,Lentil,Northwest,67.0
+2025-06-02,rating,Lentil,Saskatchewan,79.0
+2025-06-02,rating,Lentil,Southeast,87.0
+2025-06-02,rating,Lentil,Southwest,83.0
+2025-06-02,rating,Lentil,West-central,71.0
+2025-06-02,rating,Mustard,East-central,43.0
+2025-06-02,rating,Mustard,Northeast,0.0
+2025-06-02,rating,Mustard,Saskatchewan,67.0
+2025-06-02,rating,Mustard,Southeast,73.0
+2025-06-02,rating,Mustard,Southwest,64.0
+2025-06-02,rating,Mustard,West-central,69.0
+2025-06-02,rating,Oats,East-central,67.0
+2025-06-02,rating,Oats,Northeast,38.0
+2025-06-02,rating,Oats,Northwest,43.0
+2025-06-02,rating,Oats,Saskatchewan,61.0
+2025-06-02,rating,Oats,Southeast,89.0
+2025-06-02,rating,Oats,Southwest,88.0
+2025-06-02,rating,Oats,West-central,74.0
+2025-06-02,rating,Soybean,East-central,40.0
+2025-06-02,rating,Soybean,Northeast,0.0
+2025-06-02,rating,Soybean,Saskatchewan,85.0
+2025-06-02,rating,Soybean,Southeast,97.0
+2025-06-02,rating,Soybean,Southwest,100.0
+2025-06-02,rating,Spring Wheat,East-central,71.0
+2025-06-02,rating,Spring Wheat,Northeast,40.0
+2025-06-02,rating,Spring Wheat,Northwest,55.0
+2025-06-02,rating,Spring Wheat,Saskatchewan,64.0
+2025-06-02,rating,Spring Wheat,Southeast,84.0
+2025-06-02,rating,Spring Wheat,Southwest,82.0
+2025-06-02,rating,Spring Wheat,West-central,61.0
+2025-06-02,rating,Triticale,East-central,34.0
+2025-06-02,rating,Triticale,Northeast,0.0
+2025-06-02,rating,Triticale,Saskatchewan,62.0
+2025-06-02,rating,Triticale,Southeast,79.0
+2025-06-02,rating,Triticale,Southwest,49.0
+2025-06-02,rating,Winter Wheat,East-central,75.0
+2025-06-02,rating,Winter Wheat,Northeast,0.0
+2025-06-02,rating,Winter Wheat,Saskatchewan,58.0
+2025-06-02,rating,Winter Wheat,Southeast,86.0
+2025-06-02,rating,Winter Wheat,Southwest,63.0
+2025-06-02,rating,Winter Wheat,West-central,70.0
+2025-06-02,seeding,All crops,Saskatchewan,97.0
+2025-06-09,seeding,All crops,Saskatchewan,100.0
+2025-06-30,rating,Barley,East-central,78.0
+2025-06-30,rating,Barley,Northeast,66.0
+2025-06-30,rating,Barley,Northwest,35.0
+2025-06-30,rating,Barley,Saskatchewan,64.0
+2025-06-30,rating,Barley,Southeast,95.0
+2025-06-30,rating,Barley,Southwest,37.0
+2025-06-30,rating,Barley,West-central,64.0
+2025-06-30,rating,Canaryseed,East-central,84.0
+2025-06-30,rating,Canaryseed,Northeast,69.0
+2025-06-30,rating,Canaryseed,Northwest,100.0
+2025-06-30,rating,Canaryseed,Saskatchewan,74.0
+2025-06-30,rating,Canaryseed,Southeast,95.0
+2025-06-30,rating,Canaryseed,Southwest,42.0
+2025-06-30,rating,Canaryseed,West-central,48.0
+2025-06-30,rating,Canola,East-central,64.0
+2025-06-30,rating,Canola,Northeast,59.0
+2025-06-30,rating,Canola,Northwest,37.0
+2025-06-30,rating,Canola,Saskatchewan,60.0
+2025-06-30,rating,Canola,Southeast,80.0
+2025-06-30,rating,Canola,Southwest,30.0
+2025-06-30,rating,Canola,West-central,56.0
+2025-06-30,rating,Chickpea,East-central,90.0
+2025-06-30,rating,Chickpea,Northeast,45.0
+2025-06-30,rating,Chickpea,Northwest,100.0
+2025-06-30,rating,Chickpea,Saskatchewan,72.0
+2025-06-30,rating,Chickpea,Southeast,93.0
+2025-06-30,rating,Chickpea,Southwest,57.0
+2025-06-30,rating,Chickpea,West-central,100.0
+2025-06-30,rating,Durum,East-central,69.0
+2025-06-30,rating,Durum,Northeast,49.0
+2025-06-30,rating,Durum,Northwest,100.0
+2025-06-30,rating,Durum,Saskatchewan,47.0
+2025-06-30,rating,Durum,Southeast,83.0
+2025-06-30,rating,Durum,Southwest,28.0
+2025-06-30,rating,Durum,West-central,69.0
+2025-06-30,rating,Fall Rye,East-central,93.0
+2025-06-30,rating,Fall Rye,Northeast,92.0
+2025-06-30,rating,Fall Rye,Northwest,24.0
+2025-06-30,rating,Fall Rye,Saskatchewan,55.0
+2025-06-30,rating,Fall Rye,Southeast,92.0
+2025-06-30,rating,Fall Rye,Southwest,15.0
+2025-06-30,rating,Fall Rye,West-central,69.0
+2025-06-30,rating,Field Pea,East-central,83.0
+2025-06-30,rating,Field Pea,Northeast,68.0
+2025-06-30,rating,Field Pea,Northwest,48.0
+2025-06-30,rating,Field Pea,Saskatchewan,69.0
+2025-06-30,rating,Field Pea,Southeast,92.0
+2025-06-30,rating,Field Pea,Southwest,49.0
+2025-06-30,rating,Field Pea,West-central,61.0
+2025-06-30,rating,Flax,East-central,83.0
+2025-06-30,rating,Flax,Northeast,59.0
+2025-06-30,rating,Flax,Northwest,69.0
+2025-06-30,rating,Flax,Saskatchewan,65.0
+2025-06-30,rating,Flax,Southeast,81.0
+2025-06-30,rating,Flax,Southwest,26.0
+2025-06-30,rating,Flax,West-central,82.0
+2025-06-30,rating,Lentil,East-central,84.0
+2025-06-30,rating,Lentil,Northeast,62.0
+2025-06-30,rating,Lentil,Northwest,84.0
+2025-06-30,rating,Lentil,Saskatchewan,59.0
+2025-06-30,rating,Lentil,Southeast,90.0
+2025-06-30,rating,Lentil,Southwest,41.0
+2025-06-30,rating,Lentil,West-central,65.0
+2025-06-30,rating,Mustard,East-central,57.0
+2025-06-30,rating,Mustard,Northeast,69.0
+2025-06-30,rating,Mustard,Northwest,100.0
+2025-06-30,rating,Mustard,Saskatchewan,38.0
+2025-06-30,rating,Mustard,Southeast,82.0
+2025-06-30,rating,Mustard,Southwest,34.0
+2025-06-30,rating,Mustard,West-central,61.0
+2025-06-30,rating,Oats,East-central,79.0
+2025-06-30,rating,Oats,Northeast,72.0
+2025-06-30,rating,Oats,Northwest,41.0
+2025-06-30,rating,Oats,Saskatchewan,72.0
+2025-06-30,rating,Oats,Southeast,91.0
+2025-06-30,rating,Oats,Southwest,30.0
+2025-06-30,rating,Oats,West-central,80.0
+2025-06-30,rating,Soybean,East-central,85.0
+2025-06-30,rating,Soybean,Northeast,50.0
+2025-06-30,rating,Soybean,Northwest,100.0
+2025-06-30,rating,Soybean,Saskatchewan,91.0
+2025-06-30,rating,Soybean,Southeast,99.0
+2025-06-30,rating,Soybean,Southwest,50.0
+2025-06-30,rating,Soybean,West-central,100.0
+2025-06-30,rating,Spring Wheat,East-central,77.0
+2025-06-30,rating,Spring Wheat,Northeast,66.0
+2025-06-30,rating,Spring Wheat,Northwest,39.0
+2025-06-30,rating,Spring Wheat,Saskatchewan,66.0
+2025-06-30,rating,Spring Wheat,Southeast,86.0
+2025-06-30,rating,Spring Wheat,Southwest,27.0
+2025-06-30,rating,Spring Wheat,West-central,60.0
+2025-06-30,rating,Triticale,East-central,83.0
+2025-06-30,rating,Triticale,Northwest,100.0
+2025-06-30,rating,Triticale,Saskatchewan,17.0
+2025-06-30,rating,Triticale,Southeast,0.0
+2025-06-30,rating,Triticale,Southwest,3.0
+2025-06-30,rating,Triticale,West-central,100.0
+2025-06-30,rating,Winter Wheat,East-central,77.0
+2025-06-30,rating,Winter Wheat,Northeast,50.0
+2025-06-30,rating,Winter Wheat,Northwest,53.0
+2025-06-30,rating,Winter Wheat,Saskatchewan,50.0
+2025-06-30,rating,Winter Wheat,Southeast,89.0
+2025-06-30,rating,Winter Wheat,Southwest,5.0
+2025-06-30,rating,Winter Wheat,West-central,90.0
+2025-07-14,rating,Barley,East-central,73.0
+2025-07-14,rating,Barley,Northeast,55.0
+2025-07-14,rating,Barley,Northwest,21.0
+2025-07-14,rating,Barley,Saskatchewan,58.0
+2025-07-14,rating,Barley,Southeast,87.0
+2025-07-14,rating,Barley,Southwest,30.0
+2025-07-14,rating,Barley,West-central,73.0
+2025-07-14,rating,Canaryseed,East-central,88.0
+2025-07-14,rating,Canaryseed,Northeast,58.0
+2025-07-14,rating,Canaryseed,Saskatchewan,73.0
+2025-07-14,rating,Canaryseed,Southeast,92.0
+2025-07-14,rating,Canaryseed,Southwest,54.0
+2025-07-14,rating,Canaryseed,West-central,78.0
+2025-07-14,rating,Canola,East-central,68.0
+2025-07-14,rating,Canola,Northeast,56.0
+2025-07-14,rating,Canola,Northwest,24.0
+2025-07-14,rating,Canola,Saskatchewan,60.0
+2025-07-14,rating,Canola,Southeast,82.0
+2025-07-14,rating,Canola,Southwest,28.0
+2025-07-14,rating,Canola,West-central,69.0
+2025-07-14,rating,Chickpea,East-central,85.0
+2025-07-14,rating,Chickpea,Northeast,40.0
+2025-07-14,rating,Chickpea,Saskatchewan,59.0
+2025-07-14,rating,Chickpea,Southeast,87.0
+2025-07-14,rating,Chickpea,Southwest,54.0
+2025-07-14,rating,Chickpea,West-central,92.0
+2025-07-14,rating,Durum,East-central,72.0
+2025-07-14,rating,Durum,Northeast,46.0
+2025-07-14,rating,Durum,Saskatchewan,45.0
+2025-07-14,rating,Durum,Southeast,82.0
+2025-07-14,rating,Durum,Southwest,21.0
+2025-07-14,rating,Durum,West-central,67.0
+2025-07-14,rating,Fall Rye,East-central,92.0
+2025-07-14,rating,Fall Rye,Northeast,8.0
+2025-07-14,rating,Fall Rye,Northwest,36.0
+2025-07-14,rating,Fall Rye,Saskatchewan,58.0
+2025-07-14,rating,Fall Rye,Southeast,92.0
+2025-07-14,rating,Fall Rye,Southwest,21.0
+2025-07-14,rating,Fall Rye,West-central,57.0
+2025-07-14,rating,Field Pea,East-central,85.0
+2025-07-14,rating,Field Pea,Northeast,90.0
+2025-07-14,rating,Field Pea,Northwest,41.0
+2025-07-14,rating,Field Pea,Saskatchewan,73.0
+2025-07-14,rating,Field Pea,Southeast,91.0
+2025-07-14,rating,Field Pea,Southwest,51.0
+2025-07-14,rating,Field Pea,West-central,80.0
+2025-07-14,rating,Flax,East-central,75.0
+2025-07-14,rating,Flax,Northeast,51.0
+2025-07-14,rating,Flax,Northwest,67.0
+2025-07-14,rating,Flax,Saskatchewan,68.0
+2025-07-14,rating,Flax,Southeast,86.0
+2025-07-14,rating,Flax,Southwest,14.0
+2025-07-14,rating,Flax,West-central,79.0
+2025-07-14,rating,Lentil,East-central,67.0
+2025-07-14,rating,Lentil,Northeast,88.0
+2025-07-14,rating,Lentil,Northwest,58.0
+2025-07-14,rating,Lentil,Saskatchewan,68.0
+2025-07-14,rating,Lentil,Southeast,87.0
+2025-07-14,rating,Lentil,Southwest,53.0
+2025-07-14,rating,Lentil,West-central,86.0
+2025-07-14,rating,Mustard,East-central,62.0
+2025-07-14,rating,Mustard,Northeast,34.0
+2025-07-14,rating,Mustard,Saskatchewan,35.0
+2025-07-14,rating,Mustard,Southeast,88.0
+2025-07-14,rating,Mustard,Southwest,24.0
+2025-07-14,rating,Mustard,West-central,82.0
+2025-07-14,rating,Oats,East-central,73.0
+2025-07-14,rating,Oats,Northeast,73.0
+2025-07-14,rating,Oats,Northwest,25.0
+2025-07-14,rating,Oats,Saskatchewan,65.0
+2025-07-14,rating,Oats,Southeast,91.0
+2025-07-14,rating,Oats,Southwest,8.0
+2025-07-14,rating,Oats,West-central,69.0
+2025-07-14,rating,Soybean,East-central,77.0
+2025-07-14,rating,Soybean,Northeast,30.0
+2025-07-14,rating,Soybean,Northwest,100.0
+2025-07-14,rating,Soybean,Saskatchewan,85.0
+2025-07-14,rating,Soybean,Southeast,95.0
+2025-07-14,rating,Soybean,Southwest,0.0
+2025-07-14,rating,Soybean,West-central,100.0
+2025-07-14,rating,Spring Wheat,East-central,71.0
+2025-07-14,rating,Spring Wheat,Northeast,64.0
+2025-07-14,rating,Spring Wheat,Northwest,21.0
+2025-07-14,rating,Spring Wheat,Saskatchewan,63.0
+2025-07-14,rating,Spring Wheat,Southeast,86.0
+2025-07-14,rating,Spring Wheat,Southwest,28.0
+2025-07-14,rating,Spring Wheat,West-central,68.0
+2025-07-14,rating,Triticale,East-central,100.0
+2025-07-14,rating,Triticale,Northeast,0.0
+2025-07-14,rating,Triticale,Northwest,0.0
+2025-07-14,rating,Triticale,Saskatchewan,22.0
+2025-07-14,rating,Triticale,Southeast,69.0
+2025-07-14,rating,Triticale,Southwest,12.0
+2025-07-14,rating,Triticale,West-central,75.0
+2025-07-14,rating,Winter Wheat,East-central,65.0
+2025-07-14,rating,Winter Wheat,Northeast,0.0
+2025-07-14,rating,Winter Wheat,Northwest,50.0
+2025-07-14,rating,Winter Wheat,Saskatchewan,41.0
+2025-07-14,rating,Winter Wheat,Southeast,90.0
+2025-07-14,rating,Winter Wheat,Southwest,0.0
+2025-07-14,rating,Winter Wheat,West-central,80.0
+2025-07-28,rating,Barley,East-central,82.0
+2025-07-28,rating,Barley,Northeast,57.0
+2025-07-28,rating,Barley,Northwest,31.0
+2025-07-28,rating,Barley,Saskatchewan,65.0
+2025-07-28,rating,Barley,Southeast,88.0
+2025-07-28,rating,Barley,Southwest,45.0
+2025-07-28,rating,Barley,West-central,89.0
+2025-07-28,rating,Canaryseed,East-central,83.0
+2025-07-28,rating,Canaryseed,Northeast,43.0
+2025-07-28,rating,Canaryseed,Northwest,0.0
+2025-07-28,rating,Canaryseed,Saskatchewan,67.0
+2025-07-28,rating,Canaryseed,Southeast,79.0
+2025-07-28,rating,Canaryseed,Southwest,45.0
+2025-07-28,rating,Canaryseed,West-central,88.0
+2025-07-28,rating,Canola,East-central,74.0
+2025-07-28,rating,Canola,Northeast,61.0
+2025-07-28,rating,Canola,Northwest,26.0
+2025-07-28,rating,Canola,Saskatchewan,68.0
+2025-07-28,rating,Canola,Southeast,86.0
+2025-07-28,rating,Canola,Southwest,52.0
+2025-07-28,rating,Canola,West-central,85.0
+2025-07-28,rating,Chickpea,East-central,82.0
+2025-07-28,rating,Chickpea,Northeast,35.0
+2025-07-28,rating,Chickpea,Saskatchewan,67.0
+2025-07-28,rating,Chickpea,Southeast,97.0
+2025-07-28,rating,Chickpea,Southwest,53.0
+2025-07-28,rating,Chickpea,West-central,100.0
+2025-07-28,rating,Durum,East-central,94.0
+2025-07-28,rating,Durum,Northeast,80.0
+2025-07-28,rating,Durum,Saskatchewan,55.0
+2025-07-28,rating,Durum,Southeast,84.0
+2025-07-28,rating,Durum,Southwest,41.0
+2025-07-28,rating,Durum,West-central,88.0
+2025-07-28,rating,Fall Rye,East-central,89.0
+2025-07-28,rating,Fall Rye,Northeast,9.0
+2025-07-28,rating,Fall Rye,Northwest,0.0
+2025-07-28,rating,Fall Rye,Saskatchewan,66.0
+2025-07-28,rating,Fall Rye,Southeast,91.0
+2025-07-28,rating,Fall Rye,Southwest,40.0
+2025-07-28,rating,Fall Rye,West-central,92.0
+2025-07-28,rating,Field Pea,East-central,83.0
+2025-07-28,rating,Field Pea,Northeast,75.0
+2025-07-28,rating,Field Pea,Northwest,45.0
+2025-07-28,rating,Field Pea,Saskatchewan,75.0
+2025-07-28,rating,Field Pea,Southeast,89.0
+2025-07-28,rating,Field Pea,Southwest,65.0
+2025-07-28,rating,Field Pea,West-central,89.0
+2025-07-28,rating,Flax,East-central,88.0
+2025-07-28,rating,Flax,Northeast,49.0
+2025-07-28,rating,Flax,Northwest,54.0
+2025-07-28,rating,Flax,Saskatchewan,75.0
+2025-07-28,rating,Flax,Southeast,85.0
+2025-07-28,rating,Flax,Southwest,51.0
+2025-07-28,rating,Flax,West-central,91.0
+2025-07-28,rating,Lentil,East-central,74.0
+2025-07-28,rating,Lentil,Northeast,74.0
+2025-07-28,rating,Lentil,Northwest,79.0
+2025-07-28,rating,Lentil,Saskatchewan,75.0
+2025-07-28,rating,Lentil,Southeast,89.0
+2025-07-28,rating,Lentil,Southwest,67.0
+2025-07-28,rating,Lentil,West-central,94.0
+2025-07-28,rating,Mustard,East-central,67.0
+2025-07-28,rating,Mustard,Northeast,52.0
+2025-07-28,rating,Mustard,Saskatchewan,54.0
+2025-07-28,rating,Mustard,Southeast,96.0
+2025-07-28,rating,Mustard,Southwest,45.0
+2025-07-28,rating,Mustard,West-central,95.0
+2025-07-28,rating,Oats,East-central,78.0
+2025-07-28,rating,Oats,Northeast,61.0
+2025-07-28,rating,Oats,Northwest,25.0
+2025-07-28,rating,Oats,Saskatchewan,68.0
+2025-07-28,rating,Oats,Southeast,95.0
+2025-07-28,rating,Oats,Southwest,65.0
+2025-07-28,rating,Oats,West-central,89.0
+2025-07-28,rating,Soybean,East-central,51.0
+2025-07-28,rating,Soybean,Northeast,25.0
+2025-07-28,rating,Soybean,Northwest,0.0
+2025-07-28,rating,Soybean,Saskatchewan,92.0
+2025-07-28,rating,Soybean,Southeast,98.0
+2025-07-28,rating,Soybean,Southwest,50.0
+2025-07-28,rating,Soybean,West-central,100.0
+2025-07-28,rating,Spring Wheat,East-central,79.0
+2025-07-28,rating,Spring Wheat,Northeast,58.0
+2025-07-28,rating,Spring Wheat,Northwest,24.0
+2025-07-28,rating,Spring Wheat,Saskatchewan,68.0
+2025-07-28,rating,Spring Wheat,Southeast,88.0
+2025-07-28,rating,Spring Wheat,Southwest,51.0
+2025-07-28,rating,Spring Wheat,West-central,81.0
+2025-07-28,rating,Triticale,East-central,87.0
+2025-07-28,rating,Triticale,Northeast,20.0
+2025-07-28,rating,Triticale,Northwest,0.0
+2025-07-28,rating,Triticale,Saskatchewan,32.0
+2025-07-28,rating,Triticale,Southeast,69.0
+2025-07-28,rating,Triticale,Southwest,22.0
+2025-07-28,rating,Triticale,West-central,100.0
+2025-07-28,rating,Winter Wheat,East-central,74.0
+2025-07-28,rating,Winter Wheat,Northeast,0.0
+2025-07-28,rating,Winter Wheat,Northwest,0.0
+2025-07-28,rating,Winter Wheat,Saskatchewan,55.0
+2025-07-28,rating,Winter Wheat,Southeast,91.0
+2025-07-28,rating,Winter Wheat,Southwest,59.0
+2025-07-28,rating,Winter Wheat,West-central,80.0
+2026-05-04,seeding,All crops,Saskatchewan,3.0
+2026-05-11,seeding,All crops,Saskatchewan,16.0
+2026-05-18,seeding,All crops,Saskatchewan,29.0
+2026-05-25,seeding,All crops,Saskatchewan,52.0
+2026-06-01,rating,Barley,East-central,85.0
+2026-06-01,rating,Barley,Northeast,95.0
+2026-06-01,rating,Barley,Northwest,96.0
+2026-06-01,rating,Barley,Saskatchewan,89.0
+2026-06-01,rating,Barley,Southeast,80.0
+2026-06-01,rating,Barley,Southwest,90.0
+2026-06-01,rating,Barley,West-central,94.0
+2026-06-01,rating,Canaryseed,East-central,65.0
+2026-06-01,rating,Canaryseed,Northeast,96.0
+2026-06-01,rating,Canaryseed,Northwest,100.0
+2026-06-01,rating,Canaryseed,Saskatchewan,87.0
+2026-06-01,rating,Canaryseed,Southeast,78.0
+2026-06-01,rating,Canaryseed,Southwest,89.0
+2026-06-01,rating,Canaryseed,West-central,97.0
+2026-06-01,rating,Canola,East-central,80.0
+2026-06-01,rating,Canola,Northeast,98.0
+2026-06-01,rating,Canola,Northwest,95.0
+2026-06-01,rating,Canola,Saskatchewan,89.0
+2026-06-01,rating,Canola,Southeast,80.0
+2026-06-01,rating,Canola,Southwest,95.0
+2026-06-01,rating,Canola,West-central,93.0
+2026-06-01,rating,Chickpea,East-central,100.0
+2026-06-01,rating,Chickpea,Northeast,97.0
+2026-06-01,rating,Chickpea,Northwest,100.0
+2026-06-01,rating,Chickpea,Saskatchewan,96.0
+2026-06-01,rating,Chickpea,Southeast,76.0
+2026-06-01,rating,Chickpea,Southwest,97.0
+2026-06-01,rating,Chickpea,West-central,99.0
+2026-06-01,rating,Durum,East-central,100.0
+2026-06-01,rating,Durum,Northeast,100.0
+2026-06-01,rating,Durum,Northwest,100.0
+2026-06-01,rating,Durum,Saskatchewan,90.0
+2026-06-01,rating,Durum,Southeast,73.0
+2026-06-01,rating,Durum,Southwest,94.0
+2026-06-01,rating,Durum,West-central,93.0
+2026-06-01,rating,Fall Rye,East-central,82.0
+2026-06-01,rating,Fall Rye,Northeast,97.0
+2026-06-01,rating,Fall Rye,Northwest,100.0
+2026-06-01,rating,Fall Rye,Saskatchewan,87.0
+2026-06-01,rating,Fall Rye,Southeast,65.0
+2026-06-01,rating,Fall Rye,Southwest,96.0
+2026-06-01,rating,Fall Rye,West-central,92.0
+2026-06-01,rating,Field Pea,East-central,87.0
+2026-06-01,rating,Field Pea,Northeast,100.0
+2026-06-01,rating,Field Pea,Northwest,97.0
+2026-06-01,rating,Field Pea,Saskatchewan,91.0
+2026-06-01,rating,Field Pea,Southeast,77.0
+2026-06-01,rating,Field Pea,Southwest,96.0
+2026-06-01,rating,Field Pea,West-central,95.0
+2026-06-01,rating,Flax,East-central,97.0
+2026-06-01,rating,Flax,Northeast,96.0
+2026-06-01,rating,Flax,Northwest,99.0
+2026-06-01,rating,Flax,Saskatchewan,87.0
+2026-06-01,rating,Flax,Southeast,76.0
+2026-06-01,rating,Flax,Southwest,95.0
+2026-06-01,rating,Flax,West-central,89.0
+2026-06-01,rating,Lentil,East-central,100.0
+2026-06-01,rating,Lentil,Northeast,100.0
+2026-06-01,rating,Lentil,Northwest,99.0
+2026-06-01,rating,Lentil,Saskatchewan,95.0
+2026-06-01,rating,Lentil,Southeast,82.0
+2026-06-01,rating,Lentil,Southwest,98.0
+2026-06-01,rating,Lentil,West-central,94.0
+2026-06-01,rating,Mustard,East-central,95.0
+2026-06-01,rating,Mustard,Northeast,88.0
+2026-06-01,rating,Mustard,Northwest,100.0
+2026-06-01,rating,Mustard,Saskatchewan,92.0
+2026-06-01,rating,Mustard,Southeast,60.0
+2026-06-01,rating,Mustard,Southwest,97.0
+2026-06-01,rating,Mustard,West-central,85.0
+2026-06-01,rating,Oats,East-central,75.0
+2026-06-01,rating,Oats,Northeast,95.0
+2026-06-01,rating,Oats,Northwest,94.0
+2026-06-01,rating,Oats,Saskatchewan,88.0
+2026-06-01,rating,Oats,Southeast,80.0
+2026-06-01,rating,Oats,Southwest,92.0
+2026-06-01,rating,Oats,West-central,91.0
+2026-06-01,rating,Soybean,East-central,94.0
+2026-06-01,rating,Soybean,Northeast,100.0
+2026-06-01,rating,Soybean,Northwest,100.0
+2026-06-01,rating,Soybean,Saskatchewan,76.0
+2026-06-01,rating,Soybean,Southeast,70.0
+2026-06-01,rating,Soybean,Southwest,100.0
+2026-06-01,rating,Soybean,West-central,100.0
+2026-06-01,rating,Spring Wheat,East-central,87.0
+2026-06-01,rating,Spring Wheat,Northeast,96.0
+2026-06-01,rating,Spring Wheat,Northwest,95.0
+2026-06-01,rating,Spring Wheat,Saskatchewan,90.0
+2026-06-01,rating,Spring Wheat,Southeast,78.0
+2026-06-01,rating,Spring Wheat,Southwest,94.0
+2026-06-01,rating,Spring Wheat,West-central,94.0
+2026-06-01,rating,Triticale,East-central,99.0
+2026-06-01,rating,Triticale,Northeast,100.0
+2026-06-01,rating,Triticale,Northwest,100.0
+2026-06-01,rating,Triticale,Saskatchewan,76.0
+2026-06-01,rating,Triticale,Southeast,76.0
+2026-06-01,rating,Triticale,Southwest,22.0
+2026-06-01,rating,Triticale,West-central,95.0
+2026-06-01,rating,Winter Wheat,East-central,85.0
+2026-06-01,rating,Winter Wheat,Northeast,97.0
+2026-06-01,rating,Winter Wheat,Northwest,90.0
+2026-06-01,rating,Winter Wheat,Saskatchewan,85.0
+2026-06-01,rating,Winter Wheat,Southeast,52.0
+2026-06-01,rating,Winter Wheat,Southwest,85.0
+2026-06-01,rating,Winter Wheat,West-central,74.0
+2026-06-14,seeding,All crops,Saskatchewan,93.0
+2026-06-15,rating,Barley,East-central,71.0
+2026-06-15,rating,Barley,Northeast,89.0
+2026-06-15,rating,Barley,Northwest,96.0
+2026-06-15,rating,Barley,Saskatchewan,83.0
+2026-06-15,rating,Barley,Southeast,79.0
+2026-06-15,rating,Barley,Southwest,90.0
+2026-06-15,rating,Barley,West-central,91.0
+2026-06-15,rating,Canaryseed,East-central,68.0
+2026-06-15,rating,Canaryseed,Northeast,74.0
+2026-06-15,rating,Canaryseed,Northwest,100.0
+2026-06-15,rating,Canaryseed,Saskatchewan,88.0
+2026-06-15,rating,Canaryseed,Southeast,85.0
+2026-06-15,rating,Canaryseed,Southwest,81.0
+2026-06-15,rating,Canaryseed,West-central,98.0
+2026-06-15,rating,Canola,East-central,61.0
+2026-06-15,rating,Canola,Northeast,79.0
+2026-06-15,rating,Canola,Northwest,85.0
+2026-06-15,rating,Canola,Saskatchewan,76.0
+2026-06-15,rating,Canola,Southeast,76.0
+2026-06-15,rating,Canola,Southwest,88.0
+2026-06-15,rating,Canola,West-central,88.0
+2026-06-15,rating,Chickpea,East-central,100.0
+2026-06-15,rating,Chickpea,Northeast,100.0
+2026-06-15,rating,Chickpea,Northwest,100.0
+2026-06-15,rating,Chickpea,Saskatchewan,93.0
+2026-06-15,rating,Chickpea,Southeast,79.0
+2026-06-15,rating,Chickpea,Southwest,96.0
+2026-06-15,rating,Chickpea,West-central,99.0
+2026-06-15,rating,Durum,East-central,96.0
+2026-06-15,rating,Durum,Northeast,100.0
+2026-06-15,rating,Durum,Northwest,100.0
+2026-06-15,rating,Durum,Saskatchewan,89.0
+2026-06-15,rating,Durum,Southeast,81.0
+2026-06-15,rating,Durum,Southwest,90.0
+2026-06-15,rating,Durum,West-central,86.0
+2026-06-15,rating,Fall Rye,East-central,97.0
+2026-06-15,rating,Fall Rye,Northeast,66.0
+2026-06-15,rating,Fall Rye,Northwest,100.0
+2026-06-15,rating,Fall Rye,Saskatchewan,77.0
+2026-06-15,rating,Fall Rye,Southeast,64.0
+2026-06-15,rating,Fall Rye,Southwest,74.0
+2026-06-15,rating,Fall Rye,West-central,89.0
+2026-06-15,rating,Field Pea,East-central,80.0
+2026-06-15,rating,Field Pea,Northeast,89.0
+2026-06-15,rating,Field Pea,Northwest,99.0
+2026-06-15,rating,Field Pea,Saskatchewan,85.0
+2026-06-15,rating,Field Pea,Southeast,78.0
+2026-06-15,rating,Field Pea,Southwest,90.0
+2026-06-15,rating,Field Pea,West-central,94.0
+2026-06-15,rating,Flax,East-central,88.0
+2026-06-15,rating,Flax,Northeast,80.0
+2026-06-15,rating,Flax,Northwest,100.0
+2026-06-15,rating,Flax,Saskatchewan,87.0
+2026-06-15,rating,Flax,Southeast,87.0
+2026-06-15,rating,Flax,Southwest,93.0
+2026-06-15,rating,Flax,West-central,90.0
+2026-06-15,rating,Lentil,East-central,97.0
+2026-06-15,rating,Lentil,Northeast,82.0
+2026-06-15,rating,Lentil,Northwest,100.0
+2026-06-15,rating,Lentil,Saskatchewan,86.0
+2026-06-15,rating,Lentil,Southeast,82.0
+2026-06-15,rating,Lentil,Southwest,89.0
+2026-06-15,rating,Lentil,West-central,89.0
+2026-06-15,rating,Mustard,East-central,92.0
+2026-06-15,rating,Mustard,Northeast,100.0
+2026-06-15,rating,Mustard,Northwest,100.0
+2026-06-15,rating,Mustard,Saskatchewan,88.0
+2026-06-15,rating,Mustard,Southeast,68.0
+2026-06-15,rating,Mustard,Southwest,90.0
+2026-06-15,rating,Mustard,West-central,91.0
+2026-06-15,rating,Oats,East-central,56.0
+2026-06-15,rating,Oats,Northeast,86.0
+2026-06-15,rating,Oats,Northwest,90.0
+2026-06-15,rating,Oats,Saskatchewan,80.0
+2026-06-15,rating,Oats,Southeast,80.0
+2026-06-15,rating,Oats,Southwest,94.0
+2026-06-15,rating,Oats,West-central,94.0
+2026-06-15,rating,Soybean,East-central,65.0
+2026-06-15,rating,Soybean,Northeast,97.0
+2026-06-15,rating,Soybean,Northwest,100.0
+2026-06-15,rating,Soybean,Saskatchewan,70.0
+2026-06-15,rating,Soybean,Southeast,92.0
+2026-06-15,rating,Soybean,Southwest,100.0
+2026-06-15,rating,Soybean,West-central,100.0
+2026-06-15,rating,Spring Wheat,East-central,75.0
+2026-06-15,rating,Spring Wheat,Northeast,88.0
+2026-06-15,rating,Spring Wheat,Northwest,91.0
+2026-06-15,rating,Spring Wheat,Saskatchewan,82.0
+2026-06-15,rating,Spring Wheat,Southeast,78.0
+2026-06-15,rating,Spring Wheat,Southwest,91.0
+2026-06-15,rating,Spring Wheat,West-central,91.0
+2026-06-15,rating,Triticale,East-central,89.0
+2026-06-15,rating,Triticale,Northeast,100.0
+2026-06-15,rating,Triticale,Northwest,100.0
+2026-06-15,rating,Triticale,Saskatchewan,99.0
+2026-06-15,rating,Triticale,Southeast,60.0
+2026-06-15,rating,Triticale,Southwest,100.0
+2026-06-15,rating,Triticale,West-central,95.0
+2026-06-15,rating,Winter Wheat,East-central,73.0
+2026-06-15,rating,Winter Wheat,Northeast,64.0
+2026-06-15,rating,Winter Wheat,Northwest,100.0
+2026-06-15,rating,Winter Wheat,Saskatchewan,79.0
+2026-06-15,rating,Winter Wheat,Southeast,53.0
+2026-06-15,rating,Winter Wheat,Southwest,76.0
+2026-06-15,rating,Winter Wheat,West-central,90.0
+2026-06-15,seeding,All crops,Saskatchewan,97.0
+2026-06-29,rating,Barley,East-central,72.0
+2026-06-29,rating,Barley,Northeast,80.0
+2026-06-29,rating,Barley,Northwest,85.0
+2026-06-29,rating,Barley,Saskatchewan,82.0
+2026-06-29,rating,Barley,Southeast,85.0
+2026-06-29,rating,Barley,Southwest,92.0
+2026-06-29,rating,Barley,West-central,100.0
+2026-06-29,rating,Canaryseed,East-central,53.0
+2026-06-29,rating,Canaryseed,Northeast,59.0
+2026-06-29,rating,Canaryseed,Northwest,100.0
+2026-06-29,rating,Canaryseed,Saskatchewan,83.0
+2026-06-29,rating,Canaryseed,Southeast,89.0
+2026-06-29,rating,Canaryseed,Southwest,81.0
+2026-06-29,rating,Canaryseed,West-central,99.0
+2026-06-29,rating,Canola,East-central,66.0
+2026-06-29,rating,Canola,Northeast,80.0
+2026-06-29,rating,Canola,Northwest,83.0
+2026-06-29,rating,Canola,Saskatchewan,79.0
+2026-06-29,rating,Canola,Southeast,79.0
+2026-06-29,rating,Canola,Southwest,93.0
+2026-06-29,rating,Canola,West-central,100.0
+2026-06-29,rating,Chickpea,East-central,100.0
+2026-06-29,rating,Chickpea,Northeast,50.0
+2026-06-29,rating,Chickpea,Northwest,100.0
+2026-06-29,rating,Chickpea,Saskatchewan,84.0
+2026-06-29,rating,Chickpea,Southeast,67.0
+2026-06-29,rating,Chickpea,Southwest,87.0
+2026-06-29,rating,Chickpea,West-central,98.0
+2026-06-29,rating,Durum,East-central,99.0
+2026-06-29,rating,Durum,Northeast,80.0
+2026-06-29,rating,Durum,Northwest,100.0
+2026-06-29,rating,Durum,Saskatchewan,93.0
+2026-06-29,rating,Durum,Southeast,93.0
+2026-06-29,rating,Durum,Southwest,93.0
+2026-06-29,rating,Durum,West-central,100.0
+2026-06-29,rating,Fall Rye,East-central,96.0
+2026-06-29,rating,Fall Rye,Northeast,32.0
+2026-06-29,rating,Fall Rye,Northwest,100.0
+2026-06-29,rating,Fall Rye,Saskatchewan,89.0
+2026-06-29,rating,Fall Rye,Southeast,86.0
+2026-06-29,rating,Fall Rye,Southwest,93.0
+2026-06-29,rating,Fall Rye,West-central,97.0
+2026-06-29,rating,Field Pea,East-central,76.0
+2026-06-29,rating,Field Pea,Northeast,79.0
+2026-06-29,rating,Field Pea,Northwest,84.0
+2026-06-29,rating,Field Pea,Saskatchewan,85.0
+2026-06-29,rating,Field Pea,Southeast,79.0
+2026-06-29,rating,Field Pea,Southwest,98.0
+2026-06-29,rating,Field Pea,West-central,97.0
+2026-06-29,rating,Flax,East-central,90.0
+2026-06-29,rating,Flax,Northeast,66.0
+2026-06-29,rating,Flax,Northwest,100.0
+2026-06-29,rating,Flax,Saskatchewan,84.0
+2026-06-29,rating,Flax,Southeast,84.0
+2026-06-29,rating,Flax,Southwest,91.0
+2026-06-29,rating,Flax,West-central,99.0
+2026-06-29,rating,Lentil,East-central,92.0
+2026-06-29,rating,Lentil,Northeast,76.0
+2026-06-29,rating,Lentil,Northwest,68.0
+2026-06-29,rating,Lentil,Saskatchewan,86.0
+2026-06-29,rating,Lentil,Southeast,75.0
+2026-06-29,rating,Lentil,Southwest,91.0
+2026-06-29,rating,Lentil,West-central,91.0
+2026-06-29,rating,Mustard,East-central,93.0
+2026-06-29,rating,Mustard,Northeast,50.0
+2026-06-29,rating,Mustard,Northwest,100.0
+2026-06-29,rating,Mustard,Saskatchewan,93.0
+2026-06-29,rating,Mustard,Southeast,81.0
+2026-06-29,rating,Mustard,Southwest,94.0
+2026-06-29,rating,Mustard,West-central,99.0
+2026-06-29,rating,Oats,East-central,60.0
+2026-06-29,rating,Oats,Northeast,81.0
+2026-06-29,rating,Oats,Northwest,89.0
+2026-06-29,rating,Oats,Saskatchewan,80.0
+2026-06-29,rating,Oats,Southeast,86.0
+2026-06-29,rating,Oats,Southwest,97.0
+2026-06-29,rating,Oats,West-central,99.0
+2026-06-29,rating,Soybean,East-central,56.0
+2026-06-29,rating,Soybean,Northeast,7.0
+2026-06-29,rating,Soybean,Northwest,100.0
+2026-06-29,rating,Soybean,Saskatchewan,73.0
+2026-06-29,rating,Soybean,Southeast,75.0
+2026-06-29,rating,Soybean,Southwest,100.0
+2026-06-29,rating,Soybean,West-central,100.0
+2026-06-29,rating,Spring Wheat,East-central,77.0
+2026-06-29,rating,Spring Wheat,Northeast,79.0
+2026-06-29,rating,Spring Wheat,Northwest,92.0
+2026-06-29,rating,Spring Wheat,Saskatchewan,85.0
+2026-06-29,rating,Spring Wheat,Southeast,84.0
+2026-06-29,rating,Spring Wheat,Southwest,96.0
+2026-06-29,rating,Spring Wheat,West-central,100.0
+2026-06-29,rating,Triticale,East-central,99.0
+2026-06-29,rating,Triticale,Northeast,50.0
+2026-06-29,rating,Triticale,Northwest,100.0
+2026-06-29,rating,Triticale,Saskatchewan,97.0
+2026-06-29,rating,Triticale,Southeast,40.0
+2026-06-29,rating,Triticale,Southwest,98.0
+2026-06-29,rating,Triticale,West-central,95.0
+2026-06-29,rating,Winter Wheat,East-central,79.0
+2026-06-29,rating,Winter Wheat,Northeast,48.0
+2026-06-29,rating,Winter Wheat,Northwest,100.0
+2026-06-29,rating,Winter Wheat,Saskatchewan,85.0
+2026-06-29,rating,Winter Wheat,Southeast,83.0
+2026-06-29,rating,Winter Wheat,Southwest,96.0
+2026-06-29,rating,Winter Wheat,West-central,97.0
+2026-07-13,rating,Barley,East-central,76.0
+2026-07-13,rating,Barley,Northeast,72.0
+2026-07-13,rating,Barley,Northwest,88.0
+2026-07-13,rating,Barley,Saskatchewan,82.0
+2026-07-13,rating,Barley,Southeast,85.0
+2026-07-13,rating,Barley,Southwest,94.0
+2026-07-13,rating,Barley,West-central,96.0
+2026-07-13,rating,Canaryseed,East-central,47.0
+2026-07-13,rating,Canaryseed,Northeast,59.0
+2026-07-13,rating,Canaryseed,Northwest,100.0
+2026-07-13,rating,Canaryseed,Saskatchewan,79.0
+2026-07-13,rating,Canaryseed,Southeast,74.0
+2026-07-13,rating,Canaryseed,Southwest,88.0
+2026-07-13,rating,Canaryseed,West-central,86.0
+2026-07-13,rating,Canola,East-central,71.0
+2026-07-13,rating,Canola,Northeast,61.0
+2026-07-13,rating,Canola,Northwest,85.0
+2026-07-13,rating,Canola,Saskatchewan,76.0
+2026-07-13,rating,Canola,Southeast,75.0
+2026-07-13,rating,Canola,Southwest,95.0
+2026-07-13,rating,Canola,West-central,91.0
+2026-07-13,rating,Chickpea,East-central,70.0
+2026-07-13,rating,Chickpea,Northeast,45.0
+2026-07-13,rating,Chickpea,Saskatchewan,83.0
+2026-07-13,rating,Chickpea,Southeast,66.0
+2026-07-13,rating,Chickpea,Southwest,88.0
+2026-07-13,rating,Chickpea,West-central,96.0
+2026-07-13,rating,Durum,East-central,95.0
+2026-07-13,rating,Durum,Northeast,92.0
+2026-07-13,rating,Durum,Saskatchewan,94.0
+2026-07-13,rating,Durum,Southeast,85.0
+2026-07-13,rating,Durum,Southwest,96.0
+2026-07-13,rating,Durum,West-central,90.0
+2026-07-13,rating,Fall Rye,East-central,96.0
+2026-07-13,rating,Fall Rye,Northeast,30.0
+2026-07-13,rating,Fall Rye,Northwest,100.0
+2026-07-13,rating,Fall Rye,Saskatchewan,91.0
+2026-07-13,rating,Fall Rye,Southeast,88.0
+2026-07-13,rating,Fall Rye,Southwest,94.0
+2026-07-13,rating,Fall Rye,West-central,99.0
+2026-07-13,rating,Field Pea,East-central,71.0
+2026-07-13,rating,Field Pea,Northeast,63.0
+2026-07-13,rating,Field Pea,Northwest,72.0
+2026-07-13,rating,Field Pea,Saskatchewan,83.0
+2026-07-13,rating,Field Pea,Southeast,81.0
+2026-07-13,rating,Field Pea,Southwest,95.0
+2026-07-13,rating,Field Pea,West-central,90.0
+2026-07-13,rating,Flax,East-central,92.0
+2026-07-13,rating,Flax,Northeast,53.0
+2026-07-13,rating,Flax,Northwest,79.0
+2026-07-13,rating,Flax,Saskatchewan,83.0
+2026-07-13,rating,Flax,Southeast,80.0
+2026-07-13,rating,Flax,Southwest,93.0
+2026-07-13,rating,Flax,West-central,90.0
+2026-07-13,rating,Lentil,East-central,57.0
+2026-07-13,rating,Lentil,Northeast,80.0
+2026-07-13,rating,Lentil,Northwest,49.0
+2026-07-13,rating,Lentil,Saskatchewan,73.0
+2026-07-13,rating,Lentil,Southeast,55.0
+2026-07-13,rating,Lentil,Southwest,78.0
+2026-07-13,rating,Lentil,West-central,72.0
+2026-07-13,rating,Mustard,East-central,92.0
+2026-07-13,rating,Mustard,Northeast,50.0
+2026-07-13,rating,Mustard,Saskatchewan,93.0
+2026-07-13,rating,Mustard,Southeast,83.0
+2026-07-13,rating,Mustard,Southwest,96.0
+2026-07-13,rating,Mustard,West-central,93.0
+2026-07-13,rating,Oats,East-central,75.0
+2026-07-13,rating,Oats,Northeast,74.0
+2026-07-13,rating,Oats,Northwest,90.0
+2026-07-13,rating,Oats,Saskatchewan,83.0
+2026-07-13,rating,Oats,Southeast,91.0
+2026-07-13,rating,Oats,Southwest,98.0
+2026-07-13,rating,Oats,West-central,99.0
+2026-07-13,rating,Soybean,East-central,76.0
+2026-07-13,rating,Soybean,Northeast,7.0
+2026-07-13,rating,Soybean,Saskatchewan,86.0
+2026-07-13,rating,Soybean,Southeast,97.0
+2026-07-13,rating,Soybean,Southwest,100.0
+2026-07-13,rating,Soybean,West-central,100.0
+2026-07-13,rating,Spring Wheat,East-central,80.0
+2026-07-13,rating,Spring Wheat,Northeast,82.0
+2026-07-13,rating,Spring Wheat,Northwest,90.0
+2026-07-13,rating,Spring Wheat,Saskatchewan,85.0
+2026-07-13,rating,Spring Wheat,Southeast,87.0
+2026-07-13,rating,Spring Wheat,Southwest,94.0
+2026-07-13,rating,Spring Wheat,West-central,92.0
+2026-07-13,rating,Triticale,East-central,100.0
+2026-07-13,rating,Triticale,Northeast,50.0
+2026-07-13,rating,Triticale,Northwest,85.0
+2026-07-13,rating,Triticale,Saskatchewan,97.0
+2026-07-13,rating,Triticale,Southeast,58.0
+2026-07-13,rating,Triticale,Southwest,97.0
+2026-07-13,rating,Winter Wheat,East-central,40.0
+2026-07-13,rating,Winter Wheat,Northeast,46.0
+2026-07-13,rating,Winter Wheat,Saskatchewan,79.0
+2026-07-13,rating,Winter Wheat,Southeast,79.0
+2026-07-13,rating,Winter Wheat,Southwest,88.0
+2026-07-13,rating,Winter Wheat,West-central,100.0
+2026-07-27,rating,Barley,East-central,76.0
+2026-07-27,rating,Barley,Northeast,77.0
+2026-07-27,rating,Barley,Northwest,93.0
+2026-07-27,rating,Barley,Saskatchewan,78.0
+2026-07-27,rating,Barley,Southeast,81.0
+2026-07-27,rating,Barley,Southwest,73.0
+2026-07-27,rating,Barley,West-central,92.0
+2026-07-27,rating,Canaryseed,East-central,78.0
+2026-07-27,rating,Canaryseed,Northeast,74.0
+2026-07-27,rating,Canaryseed,Northwest,100.0
+2026-07-27,rating,Canaryseed,Saskatchewan,81.0
+2026-07-27,rating,Canaryseed,Southeast,72.0
+2026-07-27,rating,Canaryseed,Southwest,62.0
+2026-07-27,rating,Canaryseed,West-central,86.0
+2026-07-27,rating,Canola,East-central,76.0
+2026-07-27,rating,Canola,Northeast,71.0
+2026-07-27,rating,Canola,Northwest,88.0
+2026-07-27,rating,Canola,Saskatchewan,77.0
+2026-07-27,rating,Canola,Southeast,79.0
+2026-07-27,rating,Canola,Southwest,72.0
+2026-07-27,rating,Canola,West-central,88.0
+2026-07-27,rating,Chickpea,East-central,80.0
+2026-07-27,rating,Chickpea,Northeast,28.0
+2026-07-27,rating,Chickpea,Northwest,100.0
+2026-07-27,rating,Chickpea,Saskatchewan,81.0
+2026-07-27,rating,Chickpea,Southeast,59.0
+2026-07-27,rating,Chickpea,Southwest,83.0
+2026-07-27,rating,Chickpea,West-central,99.0
+2026-07-27,rating,Durum,East-central,94.0
+2026-07-27,rating,Durum,Northeast,93.0
+2026-07-27,rating,Durum,Northwest,100.0
+2026-07-27,rating,Durum,Saskatchewan,80.0
+2026-07-27,rating,Durum,Southeast,87.0
+2026-07-27,rating,Durum,Southwest,72.0
+2026-07-27,rating,Durum,West-central,94.0
+2026-07-27,rating,Fall Rye,East-central,98.0
+2026-07-27,rating,Fall Rye,Northeast,66.0
+2026-07-27,rating,Fall Rye,Northwest,100.0
+2026-07-27,rating,Fall Rye,Saskatchewan,88.0
+2026-07-27,rating,Fall Rye,Southeast,93.0
+2026-07-27,rating,Fall Rye,Southwest,90.0
+2026-07-27,rating,Fall Rye,West-central,90.0
+2026-07-27,rating,Field Pea,East-central,76.0
+2026-07-27,rating,Field Pea,Northeast,73.0
+2026-07-27,rating,Field Pea,Northwest,81.0
+2026-07-27,rating,Field Pea,Saskatchewan,80.0
+2026-07-27,rating,Field Pea,Southeast,82.0
+2026-07-27,rating,Field Pea,Southwest,85.0
+2026-07-27,rating,Field Pea,West-central,83.0
+2026-07-27,rating,Flax,East-central,88.0
+2026-07-27,rating,Flax,Northeast,64.0
+2026-07-27,rating,Flax,Northwest,100.0
+2026-07-27,rating,Flax,Saskatchewan,84.0
+2026-07-27,rating,Flax,Southeast,86.0
+2026-07-27,rating,Flax,Southwest,82.0
+2026-07-27,rating,Flax,West-central,89.0
+2026-07-27,rating,Lentil,East-central,76.0
+2026-07-27,rating,Lentil,Northeast,73.0
+2026-07-27,rating,Lentil,Northwest,68.0
+2026-07-27,rating,Lentil,Saskatchewan,61.0
+2026-07-27,rating,Lentil,Southeast,47.0
+2026-07-27,rating,Lentil,Southwest,62.0
+2026-07-27,rating,Lentil,West-central,67.0
+2026-07-27,rating,Mustard,East-central,87.0
+2026-07-27,rating,Mustard,Northeast,50.0
+2026-07-27,rating,Mustard,Northwest,100.0
+2026-07-27,rating,Mustard,Saskatchewan,75.0
+2026-07-27,rating,Mustard,Southeast,77.0
+2026-07-27,rating,Mustard,Southwest,64.0
+2026-07-27,rating,Mustard,West-central,89.0
+2026-07-27,rating,Oats,East-central,72.0
+2026-07-27,rating,Oats,Northeast,84.0
+2026-07-27,rating,Oats,Northwest,94.0
+2026-07-27,rating,Oats,Saskatchewan,84.0
+2026-07-27,rating,Oats,Southeast,90.0
+2026-07-27,rating,Oats,Southwest,75.0
+2026-07-27,rating,Oats,West-central,92.0
+2026-07-27,rating,Soybean,East-central,74.0
+2026-07-27,rating,Soybean,Northeast,7.0
+2026-07-27,rating,Soybean,Northwest,100.0
+2026-07-27,rating,Soybean,Saskatchewan,83.0
+2026-07-27,rating,Soybean,Southeast,78.0
+2026-07-27,rating,Soybean,Southwest,100.0
+2026-07-27,rating,Soybean,West-central,88.0
+2026-07-27,rating,Spring Wheat,East-central,84.0
+2026-07-27,rating,Spring Wheat,Northeast,87.0
+2026-07-27,rating,Spring Wheat,Northwest,93.0
+2026-07-27,rating,Spring Wheat,Saskatchewan,87.0
+2026-07-27,rating,Spring Wheat,Southeast,90.0
+2026-07-27,rating,Spring Wheat,Southwest,86.0
+2026-07-27,rating,Spring Wheat,West-central,93.0
+2026-07-27,rating,Triticale,East-central,99.0
+2026-07-27,rating,Triticale,Northeast,100.0
+2026-07-27,rating,Triticale,Northwest,90.0
+2026-07-27,rating,Triticale,Saskatchewan,79.0
+2026-07-27,rating,Triticale,Southeast,100.0
+2026-07-27,rating,Triticale,Southwest,80.0
+2026-07-27,rating,Triticale,West-central,80.0
+2026-07-27,rating,Winter Wheat,East-central,80.0
+2026-07-27,rating,Winter Wheat,Northeast,66.0
+2026-07-27,rating,Winter Wheat,Northwest,100.0
+2026-07-27,rating,Winter Wheat,Saskatchewan,79.0
+2026-07-27,rating,Winter Wheat,Southeast,79.0
+2026-07-27,rating,Winter Wheat,Southwest,73.0
+2026-07-27,rating,Winter Wheat,West-central,90.0
+2026-08-03,harvest,Triticale,Saskatchewan,37.0
+2026-08-03,harvest,Winter Wheat,Saskatchewan,7.0
+2026-08-10,harvest,Lentil,Saskatchewan,2.0
+2026-08-10,harvest,Triticale,Saskatchewan,37.0
+2026-08-10,harvest,Winter Wheat,Saskatchewan,18.0
+2026-08-17,harvest,Lentil,Saskatchewan,13.0
+2026-08-17,harvest,Triticale,Saskatchewan,37.0
+2026-08-17,harvest,Winter Wheat,Saskatchewan,33.0
+2026-08-24,harvest,Lentil,Saskatchewan,48.0
+2026-08-24,harvest,Mustard,Saskatchewan,2.0
+2026-08-24,harvest,Triticale,Saskatchewan,56.0
+2026-08-24,harvest,Winter Wheat,Saskatchewan,60.0
+2026-08-31,harvest,Lentil,Saskatchewan,73.0
+2026-08-31,harvest,Mustard,Saskatchewan,25.0
+2026-08-31,harvest,Triticale,Saskatchewan,68.0
+2026-08-31,harvest,Winter Wheat,Saskatchewan,74.0
+2026-09-07,harvest,Lentil,Saskatchewan,84.0
+2026-09-07,harvest,Mustard,Saskatchewan,50.0
+2026-09-07,harvest,Triticale,Saskatchewan,79.0
+2026-09-07,harvest,Winter Wheat,Saskatchewan,87.0
+2026-09-14,harvest,Lentil,Saskatchewan,88.0
+2026-09-14,harvest,Mustard,Saskatchewan,51.0
+2026-09-14,harvest,Triticale,Saskatchewan,89.0
+2026-09-14,harvest,Winter Wheat,Saskatchewan,93.0
+2026-09-21,harvest,Fall Rye,Saskatchewan,99.0
+2026-09-21,harvest,Lentil,Saskatchewan,92.0
+2026-09-21,harvest,Mustard,Saskatchewan,63.0
+2026-09-21,harvest,Triticale,Saskatchewan,91.0
+2026-09-28,harvest,Fall Rye,Saskatchewan,100.0
+2026-09-28,harvest,Lentil,Saskatchewan,96.0
+2026-09-28,harvest,Mustard,Saskatchewan,84.0
+2026-09-28,harvest,Triticale,Saskatchewan,97.0
+2026-10-05,harvest,Fall Rye,Saskatchewan,100.0
+2026-10-05,harvest,Field Pea,Saskatchewan,99.0
+2026-10-05,harvest,Mustard,Saskatchewan,95.0
+2026-10-05,harvest,Triticale,Saskatchewan,100.0
+2026-10-12,harvest,Fall Rye,Saskatchewan,100.0
+2026-10-12,harvest,Lentil,Saskatchewan,99.0
+2026-10-12,harvest,Mustard,Saskatchewan,98.0
+2026-10-12,harvest,Triticale,Saskatchewan,100.0
+2026-10-19,harvest,Fall Rye,Saskatchewan,100.0
+2026-10-19,harvest,Lentil,Saskatchewan,99.0
+2026-10-19,harvest,Mustard,Saskatchewan,100.0
+2026-10-19,harvest,Triticale,Saskatchewan,100.0
