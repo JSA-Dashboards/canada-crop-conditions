@@ -1,6 +1,7 @@
 """Mexico view: NOAA satellite by state, SIAP annual production, SIAP monthly progress."""
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
@@ -78,11 +79,14 @@ def render():
         st.caption("Autumn-winter crops are planted Oct-Jan (irrigated Sinaloa and Sonora corn "
                    "and wheat); spring-summer crops Apr-Jul, mostly rainfed.")
 
-    t1, t2, t3, t4 = st.tabs(["Satellite", "Production", "Monthly progress", "Sources"])
+    t1, t2, t5, t3, t4 = st.tabs(["Satellite", "Production", "Yield model",
+                                   "Monthly progress", "Sources"])
     with t1:
         _satellite(state, cycle)
     with t2:
         _production(prod, state, crop, cycle)
+    with t5:
+        _model(prod, state, crop, cycle)
     with t3:
         _progress(prog, states_now, crop, cycle)
     with t4:
@@ -99,8 +103,138 @@ summed to state, cycle and water regime. Final figures for completed years only.
 all water regimes combined, national. The latest month is provisional and is refetched each
 refresh. Sown area is the cycle's total sown to date; harvested and lost area likewise.
 
+**Yield model** - SIAP state yield (production over harvested area, 2003 onward) against the
+year trend, with and without the mean NDVI over the cycle's fixed window. Skill is the cut in
+leave-one-out error. Most states show none: a state-wide NDVI averages all crops and water
+regimes. The current year is a forecast because SIAP publishes yields only after the year closes.
+
 Refresh with `python build_data.py mxvh`, `mxprod`, `mxprog` and `mxstates`.
 """)
+
+
+def _yields(prod, state, crop, cycle):
+    """SIAP state yield (t/ha, harvested area weighted) by year; thin years dropped."""
+    d = prod[(prod["state"] == state) & (prod["crop"] == crop) & (prod["cycle"] == cycle)]
+    g = d.groupby("year")[["harvested_ha", "volume_t"]].sum()
+    g = g[g["harvested_ha"] >= 1000]
+    return g["volume_t"] / g["harvested_ha"]
+
+
+def _target_year(df, win):
+    """Latest year whose crop window is complete in the NOAA series."""
+    ly = int(df["year"].max())
+    return ly if vh.window_mean(df, ly, win) is not None else ly - 1
+
+
+@st.cache_data(ttl=3600)
+def _scan(crop, cycle):
+    """Trend vs trend + NDVI for every state that grows the crop in the cycle."""
+    prod = _csv("mx_production.csv")
+    win = vh.MX_WINDOWS[cycle]
+    d = prod[(prod["crop"] == crop) & (prod["cycle"] == cycle)]
+    last = int(d["year"].max())
+    rows = []
+    for state in d["state"].unique():
+        y = _yields(prod, state, crop, cycle)
+        if len(y) < 12 or state not in vh.MX_STATES.values() or state == "Baja California Sur":
+            continue
+        df = vh.load_mx(state)
+        if df.empty:
+            continue
+        target = _target_year(df, win)
+        m = vh.yield_model(df, None, {int(k): v for k, v in y.items() if k < target}, target,
+                           win=win)
+        vol = d[(d["state"] == state) & (d["year"] == last)]["volume_t"].sum()
+        if m and m["predicted"] is not None:
+            rows.append({"State": state, "Years": m["n"], f"{last} production (kt)": vol / 1000,
+                         "Trend (t/ha)": m["trend_year"], "Trend + NDVI (t/ha)": m["predicted"],
+                         "Skill vs trend": m["skill"], "Target year": target})
+    if not rows:
+        return pd.DataFrame()
+    return pd.DataFrame(rows).sort_values(f"{last} production (kt)", ascending=False)
+
+
+def _model(prod, state, crop, cycle):
+    if prod.empty:
+        st.info("No SIAP production data. Run build_data.py mxprod.")
+        return
+    y = _yields(prod, state, crop, cycle)
+    st.subheader(f"{state} {CROPS[crop]}, {CYCLES[cycle]}: trend vs trend plus greenness")
+    if len(y) < 12:
+        st.info(f"{state} has too few years of {CROPS[crop].lower()} yields in this cycle "
+                f"({len(y)}) for a model.")
+        return
+    df = _vh(state)
+    win = vh.MX_WINDOWS[cycle]
+    target = _target_year(df, win)
+    hist = {int(k): v for k, v in y.items() if k < target}
+    m = vh.yield_model(df, None, hist, target, win=win)
+    if not m or m["predicted"] is None:
+        st.info("The satellite window has not finished, so there is no model estimate yet.")
+        return
+    last = int(y.index.max())
+    c = st.columns(4)
+    c[0].metric(f"Trend, {target}", f"{m['trend_year']:.2f} t/ha")
+    c[1].metric(f"Trend + NDVI, {target}", f"{m['predicted']:.2f} t/ha")
+    c[2].metric(f"Last SIAP yield ({last})", f"{y.loc[last]:.2f} t/ha")
+    c[3].metric("Skill vs trend (leave-one-out)", f"{m['skill'] * 100:+.0f}%")
+    if m["skill"] <= 0.03:
+        st.warning("For this state and crop the satellite reading adds nothing measurable to the "
+                   "yield trend: the leave-one-out error is no lower with NDVI. Use the trend.")
+    note = (f"SIAP has not published {target} yields yet, so {target} is a forecast. "
+            if target > last else "")
+    st.caption(
+        f"Fit on {m['n']} completed years (SIAP {int(y.index.min())}-{int(max(hist))}). The window "
+        f"(weeks {win[0]}-{win[1]}) was fixed by cycle, not searched. Leave-one-out error is "
+        f"{m['rmse_loo']:.2f} t/ha with NDVI against {m['rmse_trend_loo']:.2f} for trend alone. "
+        "A state-wide NDVI averages every crop and both water regimes, so it dilutes the signal "
+        f"for any one crop. {note}")
+    fig = go.Figure()
+    fig.add_trace(go.Scatter(x=y.index, y=y.values, mode="lines+markers", name="SIAP yield",
+                             line=dict(color=GREY)))
+    yrs = list(range(int(y.index.min()), target + 1))
+    k, b0 = np.polyfit(list(hist), list(hist.values()), 1)
+    fig.add_trace(go.Scatter(x=yrs, y=[k * v + b0 for v in yrs], name="Trend",
+                             line=dict(color=AMBER, dash="dash")))
+    fig.add_trace(go.Scatter(x=[target], y=[m["predicted"]], mode="markers", name="Trend + NDVI",
+                             marker=dict(size=13, color=BLUE)))
+    fig.update_layout(height=360, template="plotly_white", yaxis_title="t/ha",
+                      margin=dict(t=30, b=30), legend=dict(orientation="h", y=-0.15))
+    st.plotly_chart(fig, width="stretch")
+    with st.expander("How the satellite reading maps to yield", expanded=False):
+        yrs_ = list(m["years"])
+        sc = go.Figure()
+        sc.add_trace(go.Scatter(
+            x=m["x"], y=m["anomaly"], mode="markers+text", name="Years", customdata=yrs_,
+            text=[str(v) if v >= 2018 or abs(a) > m["rmse_trend_loo"] * 1.5 else ""
+                  for v, a in zip(yrs_, m["anomaly"])],
+            textposition="top center", textfont=dict(size=9), marker=dict(size=8, color="#5e7164"),
+            hovertemplate="%{customdata}: NDVI %{x:.3f}, %{y:+.2f} t/ha vs trend<extra></extra>"))
+        kk, ii = np.polyfit(m["x"], m["anomaly"], 1)
+        xs = [float(min(m["x"])), float(max(m["x"]))]
+        sc.add_trace(go.Scatter(x=xs, y=[kk * v + ii for v in xs], mode="lines", name="Fit",
+                                line=dict(color=AMBER, dash="dash")))
+        if m["x_now"] is not None:
+            sc.add_vline(x=m["x_now"], line_color=BLUE, line_width=2.5,
+                         annotation_text=str(target), annotation_font_color=BLUE)
+        sc.update_layout(title="Yield minus trend against the window NDVI", height=340,
+                         template="plotly_white", showlegend=False, margin=dict(t=50, b=40),
+                         xaxis_title="Mean NDVI over the window",
+                         yaxis_title="Yield minus trend (t/ha)")
+        st.plotly_chart(sc, width="stretch")
+    st.subheader(f"Where the satellite helps: {CROPS[crop]}, {CYCLES[cycle]}, by state")
+    scan = _scan(crop, cycle)
+    if scan.empty:
+        st.info("No state has enough history for this crop and cycle.")
+        return
+    st.dataframe(scan.head(15).style.format(
+        {"Years": "{:.0f}", scan.columns[2]: "{:,.0f}", "Trend (t/ha)": "{:.2f}",
+         "Trend + NDVI (t/ha)": "{:.2f}", "Skill vs trend": "{:+.0%}", "Target year": "{:.0f}"}),
+        width="stretch", hide_index=True)
+    helped = int((scan["Skill vs trend"] > 0.03).sum())
+    st.caption("Skill is the cut in leave-one-out yield error from adding the window NDVI to the "
+               f"trend; the satellite helps in {helped} of {len(scan)} states here. Sorted by "
+               "latest SIAP production.")
 
 
 def _satellite(state, cycle):

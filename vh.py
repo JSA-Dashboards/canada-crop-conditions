@@ -175,11 +175,11 @@ def season_rank(df, crop, year, col="SMN", win=None):
     return vals[year], float(np.mean(others)), int(sum(v > vals[year] for v in others)) + 1, len(vals)
 
 
-def yield_model(df, crop, yields, year, col="SMN"):
+def yield_model(df, crop, yields, year, col="SMN", win=None):
     """yield = a + b x (year - 2000) + c x (crop-window mean of `col`), fitted on completed years before `year`.
     Leave-one-out error is compared with the same trend without the satellite term: that is the honest measure of
     what the index adds."""
-    win = WINDOWS[crop]
+    win = win or WINDOWS[crop]
     yrs = [y for y in sorted(yields) if FIRST_YEAR <= y < year and window_mean(df, y, win, col) is not None]
     if len(yrs) < 8:
         return None
