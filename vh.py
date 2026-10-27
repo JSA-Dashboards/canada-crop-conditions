@@ -61,6 +61,58 @@ def build():
     pd.concat(frames).round(3).to_csv(DATA, index=False)
 
 
+MX_DATA = Path(__file__).parent / "data" / "vh_mx.csv"
+# NOAA STAR's Mexican state ids (getProvinceNames.php?country_code=MEX)
+MX_STATES = {1: "Aguascalientes", 2: "Baja California", 3: "Baja California Sur", 4: "Campeche",
+             5: "Chiapas", 6: "Chihuahua", 7: "Coahuila", 8: "Colima", 9: "Ciudad de México",
+             10: "Durango", 11: "Guanajuato", 12: "Guerrero", 13: "Hidalgo", 14: "Jalisco",
+             15: "México", 16: "Michoacán", 17: "Morelos", 18: "Nayarit", 19: "Nuevo León",
+             20: "Oaxaca", 21: "Puebla", 22: "Querétaro", 23: "Quintana Roo",
+             24: "San Luis Potosí", 25: "Sinaloa", 26: "Sonora", 27: "Tabasco", 28: "Tamaulipas",
+             29: "Tlaxcala", 30: "Veracruz", 31: "Yucatán", 32: "Zacatecas"}
+# Windows fixed in advance on crop stage: autumn-winter crops (Sinaloa and Sonora irrigated corn
+# and wheat, planted Nov-Jan) fill in Feb-Apr; spring-summer crops (rainfed corn, sorghum,
+# soy, planted Jun-Jul) fill in Aug-Sep.
+MX_WINDOWS = {"Otoño-Invierno": (6, 16), "Primavera-Verano": (29, 38)}
+
+
+def fetch_mx(state_id, timeout=30.0):
+    params = {"provinceID": state_id, "country": "MEX", "adminVHversion": "GC_current",
+              "yearlyTag": "weekly", "type": "Mean", "TagCropland": "crop", "year1": FIRST_YEAR,
+              "year2": datetime.date.today().year}
+    r = requests.get(URL, params=params, timeout=timeout,
+                     headers={"User-Agent": "jsa-canada-crop-conditions"})
+    r.raise_for_status()
+    df = parse(r.text)
+    if df.empty or f"{state_id}: " not in r.text[:400]:
+        raise RuntimeError(f"NOAA STAR returned no series for Mexican state {state_id}")
+    return df
+
+
+def build_mx():
+    """Refresh data/vh_mx.csv: weekly cropland NDVI/VCI/TCI/VHI for all 32 Mexican states."""
+    frames = []
+    skipped = []
+    for sid, name in MX_STATES.items():
+        try:
+            df = fetch_mx(sid)
+        except RuntimeError:  # a state with no cropland pixels returns an empty series
+            skipped.append(name)
+            continue
+        df.insert(0, "state", name)
+        frames.append(df)
+    out = pd.concat(frames).round(3)
+    MX_DATA.parent.mkdir(exist_ok=True)
+    out.to_csv(MX_DATA, index=False)
+    print(f"vh_mx.csv: {len(out)} rows, {out['year'].min()}-{out['year'].max()}, "
+          f"{len(frames)} states; no series for: {', '.join(skipped) or 'none'}")
+
+
+def load_mx(state):
+    df = pd.read_csv(MX_DATA)
+    return df[df["state"] == state].drop(columns="state").reset_index(drop=True)
+
+
 def load(province):
     df = pd.read_csv(DATA)
     return df[df["province"] == province].drop(columns="province").reset_index(drop=True)
@@ -86,10 +138,10 @@ def matrix(df, col):
     return df.pivot(index="week", columns="year", values=col)
 
 
-def season_table(df, crop, year):
+def season_table(df, crop, year, win=None):
     """The crop window's mean for each index in `year` against every other year:
     one row per index with this year's value, the average of the others, rank (1 = best)."""
-    win = WINDOWS[crop]
+    win = win or WINDOWS[crop]
     rows = []
     for col in ("SMN", "VCI", "VHI", "TCI"):
         vals = {y: window_mean(df, y, win, col) for y in sorted(df["year"].unique())}
@@ -103,18 +155,18 @@ def season_table(df, crop, year):
     return pd.DataFrame(rows)
 
 
-def peak(df, year):
-    """(peak NDVI, week) between weeks 20 and 42 of `year`, or None."""
-    s = df[(df["year"] == year) & df["week"].between(20, 42)]
+def peak(df, year, lo=20, hi=42):
+    """(peak NDVI, week) between weeks `lo` and `hi` of `year`, or None."""
+    s = df[(df["year"] == year) & df["week"].between(lo, hi)]
     if s.empty:
         return None
     i = s["SMN"].idxmax()
     return float(s.loc[i, "SMN"]), int(s.loc[i, "week"])
 
 
-def season_rank(df, crop, year, col="SMN"):
+def season_rank(df, crop, year, col="SMN", win=None):
     """The crop window's mean against every other year: (value, average, rank with 1 = best, years compared)."""
-    win = WINDOWS[crop]
+    win = win or WINDOWS[crop]
     vals = {y: window_mean(df, y, win, col) for y in sorted(df["year"].unique())}
     vals = {y: v for y, v in vals.items() if v is not None}
     if year not in vals:

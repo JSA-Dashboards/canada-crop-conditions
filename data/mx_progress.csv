@@ -1,0 +1,1658 @@
+year,month,cycle,crop,sown_ha,harvested_ha,lost_ha,volume_t,yield_t_ha
+2018,1,Otoño-Invierno,Cebada grano,37299.46,0.0,0.0,0.0,0.0
+2018,1,Otoño-Invierno,Cártamo,12887.41,0.0,0.0,0.0,0.0
+2018,1,Otoño-Invierno,Frijol,264131.03,11605.1,96.0,13697.69,1.18
+2018,1,Otoño-Invierno,Garbanzo grano,151295.29,165.0,0.0,193.75,1.17
+2018,1,Otoño-Invierno,Maíz grano,913757.98,0.0,1143.5,0.0,0.0
+2018,1,Otoño-Invierno,Sorgo grano,306694.18,0.0,14912.5,0.0,0.0
+2018,1,Otoño-Invierno,Soya,2131.8,0.0,0.0,0.0,0.0
+2018,1,Otoño-Invierno,Trigo grano,410220.77,0.0,0.0,0.0,0.0
+2018,1,Primavera-Verano,Cebada grano,282848.5,276057.53,6695.97,563738.97,2.04
+2018,1,Primavera-Verano,Cártamo,400.0,400.0,0.0,361.75,0.9
+2018,1,Primavera-Verano,Frijol,1428075.86,1376808.9,47282.85,875902.56,0.64
+2018,1,Primavera-Verano,Garbanzo grano,2011.5,2011.5,0.0,2324.43,1.16
+2018,1,Primavera-Verano,Maíz grano,6365002.45,5876770.98,209687.31,18716057.47,3.18
+2018,1,Primavera-Verano,Sorgo grano,582142.97,544254.52,12028.42,2202034.22,4.05
+2018,1,Primavera-Verano,Soya,262020.22,254298.22,3627.0,419317.4,1.65
+2018,1,Primavera-Verano,Trigo grano,70664.56,70183.31,145.0,127359.45,1.81
+2018,2,Otoño-Invierno,Cebada grano,70288.59,0.0,0.0,0.0,0.0
+2018,2,Otoño-Invierno,Cártamo,22975.7,0.0,0.0,0.0,0.0
+2018,2,Otoño-Invierno,Frijol,269673.48,145941.37,327.0,195993.7,1.34
+2018,2,Otoño-Invierno,Garbanzo grano,170138.5,9562.84,1.0,15982.73,1.67
+2018,2,Otoño-Invierno,Maíz grano,1108791.33,14053.94,3403.5,35744.21,2.54
+2018,2,Otoño-Invierno,Sorgo grano,682487.6,0.0,19106.5,0.0,0.0
+2018,2,Otoño-Invierno,Soya,2386.3,0.0,0.0,0.0,0.0
+2018,2,Otoño-Invierno,Trigo grano,454075.75,0.0,0.0,0.0,0.0
+2018,2,Primavera-Verano,Cebada grano,282848.5,276152.53,6695.97,564211.47,2.04
+2018,2,Primavera-Verano,Cártamo,400.0,400.0,0.0,361.75,0.9
+2018,2,Primavera-Verano,Frijol,1428075.86,1380167.2,47902.66,877146.16,0.64
+2018,2,Primavera-Verano,Garbanzo grano,2011.5,2011.5,0.0,2324.43,1.16
+2018,2,Primavera-Verano,Maíz grano,6365002.45,6122040.53,210769.74,19690334.52,3.22
+2018,2,Primavera-Verano,Sorgo grano,582142.97,565658.55,13217.12,2229914.65,3.94
+2018,2,Primavera-Verano,Soya,262020.22,258393.22,3627.0,425042.7,1.64
+2018,2,Primavera-Verano,Trigo grano,70664.56,70519.56,145.0,127938.19,1.81
+2018,3,Otoño-Invierno,Cebada grano,78159.43,0.0,0.0,0.0,0.0
+2018,3,Otoño-Invierno,Cártamo,26544.27,0.0,310.0,0.0,0.0
+2018,3,Otoño-Invierno,Frijol,273510.27,222387.65,378.5,273765.51,1.23
+2018,3,Otoño-Invierno,Garbanzo grano,185242.97,67561.91,1.0,125300.95,1.85
+2018,3,Otoño-Invierno,Maíz grano,1172920.42,57108.84,3524.0,138537.29,2.43
+2018,3,Otoño-Invierno,Sorgo grano,801915.81,18763.88,19399.5,59999.75,3.2
+2018,3,Otoño-Invierno,Soya,4204.7,0.0,0.0,0.0,0.0
+2018,3,Otoño-Invierno,Trigo grano,467318.69,0.0,0.0,0.0,0.0
+2018,3,Primavera-Verano,Cebada grano,282848.5,276152.53,6695.97,564312.72,2.04
+2018,3,Primavera-Verano,Cártamo,400.0,400.0,0.0,361.75,0.9
+2018,3,Primavera-Verano,Frijol,448.0,0.0,0.0,0.0,0.0
+2018,3,Primavera-Verano,Garbanzo grano,638.0,0.0,0.0,0.0,0.0
+2018,3,Primavera-Verano,Maíz grano,24687.09,0.0,0.0,0.0,0.0
+2018,3,Primavera-Verano,Sorgo grano,8643.0,0.0,0.0,0.0,0.0
+2018,3,Primavera-Verano,Soya,262020.22,258393.22,3627.0,425077.3,1.65
+2018,3,Primavera-Verano,Trigo grano,70664.56,70519.56,145.0,127938.19,1.81
+2018,4,Otoño-Invierno,Cebada grano,78159.43,31834.18,0.0,190866.83,6.0
+2018,4,Otoño-Invierno,Cártamo,26544.27,2706.02,320.0,2566.74,0.95
+2018,4,Otoño-Invierno,Frijol,273510.27,250457.85,378.5,310765.0,1.24
+2018,4,Otoño-Invierno,Garbanzo grano,185711.22,107587.77,11.0,198389.25,1.84
+2018,4,Otoño-Invierno,Maíz grano,1172920.62,220751.34,4054.0,629042.66,2.85
+2018,4,Otoño-Invierno,Sorgo grano,801915.81,79769.61,20186.5,281522.46,3.53
+2018,4,Otoño-Invierno,Soya,4204.7,1586.2,0.0,3051.02,1.92
+2018,4,Otoño-Invierno,Trigo grano,467318.69,58790.66,350.0,250854.53,4.27
+2018,4,Primavera-Verano,Cebada grano,2911.0,0.0,0.0,0.0,0.0
+2018,4,Primavera-Verano,Frijol,28349.59,0.0,32.0,0.0,0.0
+2018,4,Primavera-Verano,Garbanzo grano,2189.31,0.0,0.0,0.0,0.0
+2018,4,Primavera-Verano,Maíz grano,668609.33,0.0,190.0,0.0,0.0
+2018,4,Primavera-Verano,Sorgo grano,33396.37,0.0,0.0,0.0,0.0
+2018,4,Primavera-Verano,Soya,120.0,0.0,0.0,0.0,0.0
+2018,4,Primavera-Verano,Trigo grano,972.0,0.0,0.0,0.0,0.0
+2018,5,Otoño-Invierno,Cebada grano,78159.43,64632.98,1617.0,386052.6,5.97
+2018,5,Otoño-Invierno,Cártamo,26544.27,8448.87,320.0,17215.89,2.04
+2018,5,Otoño-Invierno,Frijol,273510.27,265770.53,378.5,331982.39,1.25
+2018,5,Otoño-Invierno,Garbanzo grano,185711.22,159664.07,11.0,285892.39,1.79
+2018,5,Otoño-Invierno,Maíz grano,1172920.62,625733.82,4081.0,3232550.68,5.17
+2018,5,Otoño-Invierno,Sorgo grano,801915.81,206995.55,20698.5,624867.45,3.02
+2018,5,Otoño-Invierno,Soya,4204.7,1885.8,0.0,3769.02,2.0
+2018,5,Otoño-Invierno,Trigo grano,467318.69,376894.95,834.84,2271663.26,6.03
+2018,5,Primavera-Verano,Cebada grano,17429.0,0.0,0.0,0.0,0.0
+2018,5,Primavera-Verano,Cártamo,757.09,0.0,0.0,0.0,0.0
+2018,5,Primavera-Verano,Frijol,94159.33,0.0,101.5,0.0,0.0
+2018,5,Primavera-Verano,Garbanzo grano,2335.31,0.0,0.0,0.0,0.0
+2018,5,Primavera-Verano,Maíz grano,1762168.98,0.0,677.0,0.0,0.0
+2018,5,Primavera-Verano,Sorgo grano,56895.03,0.0,0.0,0.0,0.0
+2018,5,Primavera-Verano,Soya,5570.24,0.0,0.0,0.0,0.0
+2018,5,Primavera-Verano,Trigo grano,8207.4,0.0,0.0,0.0,0.0
+2018,6,Otoño-Invierno,Cebada grano,78159.43,71560.08,5748.45,415322.81,5.8
+2018,6,Otoño-Invierno,Cártamo,26544.27,11589.71,596.59,24955.45,2.15
+2018,6,Otoño-Invierno,Frijol,273510.27,271411.58,448.5,336838.85,1.24
+2018,6,Otoño-Invierno,Garbanzo grano,185711.22,184806.72,30.0,333038.09,1.8
+2018,6,Otoño-Invierno,Maíz grano,1172920.62,998828.85,4361.0,6783403.87,6.79
+2018,6,Otoño-Invierno,Sorgo grano,801915.81,751381.54,20698.5,2195324.34,2.92
+2018,6,Otoño-Invierno,Soya,4204.7,2437.8,0.0,4799.02,1.97
+2018,6,Otoño-Invierno,Trigo grano,467318.69,454356.17,1321.84,2737681.64,6.03
+2018,6,Primavera-Verano,Cebada grano,144860.95,0.0,0.0,0.0,0.0
+2018,6,Primavera-Verano,Cártamo,757.09,118.5,0.0,118.5,1.0
+2018,6,Primavera-Verano,Frijol,216688.65,1086.5,101.5,2176.18,2.0
+2018,6,Primavera-Verano,Garbanzo grano,3003.01,1747.01,0.0,1853.26,1.06
+2018,6,Primavera-Verano,Maíz grano,3587160.46,0.0,736.0,0.0,0.0
+2018,6,Primavera-Verano,Sorgo grano,207613.88,313.0,0.0,1336.49,4.27
+2018,6,Primavera-Verano,Soya,20470.6,0.0,0.0,0.0,0.0
+2018,6,Primavera-Verano,Trigo grano,29301.5,0.0,0.0,0.0,0.0
+2018,7,Otoño-Invierno,Cebada grano,78159.43,72302.08,5748.45,418169.69,5.78
+2018,7,Otoño-Invierno,Cártamo,26544.27,23737.22,596.59,53049.85,2.23
+2018,7,Otoño-Invierno,Frijol,273510.27,272293.17,448.5,337575.75,1.24
+2018,7,Otoño-Invierno,Garbanzo grano,185711.22,185208.22,30.0,335824.28,1.81
+2018,7,Otoño-Invierno,Maíz grano,1172920.62,1144589.69,4766.36,7642252.89,6.68
+2018,7,Otoño-Invierno,Sorgo grano,801915.81,775187.38,20698.5,2296419.45,2.96
+2018,7,Otoño-Invierno,Soya,4204.7,3301.25,0.0,6654.02,2.02
+2018,7,Otoño-Invierno,Trigo grano,467318.69,465250.55,1321.84,2794700.21,6.01
+2018,7,Primavera-Verano,Cebada grano,231906.34,0.0,0.0,0.0,0.0
+2018,7,Primavera-Verano,Cártamo,757.38,692.38,0.0,821.15,1.19
+2018,7,Primavera-Verano,Frijol,1082770.92,4138.87,157.0,6925.36,1.67
+2018,7,Primavera-Verano,Garbanzo grano,3899.51,1747.01,0.0,1853.26,1.06
+2018,7,Primavera-Verano,Maíz grano,5410604.54,47218.48,3243.9,483088.95,10.23
+2018,7,Primavera-Verano,Sorgo grano,357579.12,28942.6,161.0,179268.64,6.19
+2018,7,Primavera-Verano,Soya,109661.98,0.0,0.0,0.0,0.0
+2018,7,Primavera-Verano,Trigo grano,50708.55,0.0,0.0,0.0,0.0
+2018,8,Otoño-Invierno,Cebada grano,78159.43,72410.98,5748.45,418631.58,5.78
+2018,8,Otoño-Invierno,Cártamo,26544.27,25696.68,847.59,57470.72,2.24
+2018,8,Otoño-Invierno,Frijol,273510.27,273059.72,448.5,338034.56,1.24
+2018,8,Otoño-Invierno,Garbanzo grano,185711.22,185208.22,30.0,335824.28,1.81
+2018,8,Otoño-Invierno,Maíz grano,1172920.62,1167157.48,5280.14,7755835.17,6.65
+2018,8,Otoño-Invierno,Sorgo grano,801915.81,780952.3,20763.5,2310928.01,2.96
+2018,8,Otoño-Invierno,Soya,4204.7,3885.8,2.0,8223.32,2.12
+2018,8,Otoño-Invierno,Trigo grano,467318.69,465882.85,1321.84,2801547.27,6.01
+2018,8,Primavera-Verano,Cebada grano,283978.46,0.0,0.0,0.0,0.0
+2018,8,Primavera-Verano,Cártamo,1052.38,727.38,0.0,886.05,1.22
+2018,8,Primavera-Verano,Frijol,1377602.97,22689.57,2583.0,30600.93,1.35
+2018,8,Primavera-Verano,Garbanzo grano,4877.01,2317.01,0.0,2636.11,1.14
+2018,8,Primavera-Verano,Maíz grano,6018607.89,72809.2,62178.6,648097.01,8.9
+2018,8,Primavera-Verano,Sorgo grano,466658.59,33174.8,5053.36,202153.31,6.09
+2018,8,Primavera-Verano,Soya,174747.35,0.0,833.0,0.0,0.0
+2018,8,Primavera-Verano,Trigo grano,71250.45,0.0,97.0,0.0,0.0
+2018,9,Otoño-Invierno,Cebada grano,78159.43,72410.98,5748.45,420676.54,5.81
+2018,9,Otoño-Invierno,Cártamo,26544.27,25696.68,847.59,57532.72,2.24
+2018,9,Otoño-Invierno,Frijol,273510.27,273061.77,448.5,338079.17,1.24
+2018,9,Otoño-Invierno,Garbanzo grano,185711.22,185438.22,273.0,336086.28,1.81
+2018,9,Otoño-Invierno,Maíz grano,1172920.62,1167640.48,5280.14,7758060.67,6.64
+2018,9,Otoño-Invierno,Sorgo grano,801915.81,781152.3,20763.5,2311773.51,2.96
+2018,9,Otoño-Invierno,Soya,4204.7,4202.7,2.0,9028.85,2.15
+2018,9,Otoño-Invierno,Trigo grano,467318.69,465996.85,1321.84,2802007.27,6.01
+2018,9,Primavera-Verano,Cebada grano,289235.96,2971.0,1142.26,6485.6,2.18
+2018,9,Primavera-Verano,Cártamo,1052.38,727.38,0.0,886.05,1.22
+2018,9,Primavera-Verano,Frijol,1395981.62,64659.94,16950.4,70189.17,1.09
+2018,9,Primavera-Verano,Garbanzo grano,6194.01,2347.01,0.0,2713.99,1.16
+2018,9,Primavera-Verano,Maíz grano,6170252.14,109078.62,121465.04,750331.33,6.88
+2018,9,Primavera-Verano,Sorgo grano,535258.64,36513.5,6563.36,212998.06,5.83
+2018,9,Primavera-Verano,Soya,193768.29,0.0,6449.55,0.0,0.0
+2018,9,Primavera-Verano,Trigo grano,74470.31,0.0,789.0,0.0,0.0
+2018,10,Otoño-Invierno,Cebada grano,78159.43,72410.98,5748.45,420676.54,5.81
+2018,10,Otoño-Invierno,Cártamo,26544.27,25696.68,847.59,57532.72,2.24
+2018,10,Otoño-Invierno,Frijol,19499.84,0.0,22.0,0.0,0.0
+2018,10,Otoño-Invierno,Garbanzo grano,2305.68,0.0,0.0,0.0,0.0
+2018,10,Otoño-Invierno,Maíz grano,30350.45,0.0,24.0,0.0,0.0
+2018,10,Otoño-Invierno,Sorgo grano,11250.5,0.0,14.0,0.0,0.0
+2018,10,Otoño-Invierno,Soya,4204.7,4202.7,2.0,9028.85,2.15
+2018,10,Otoño-Invierno,Trigo grano,223.1,0.0,0.0,0.0,0.0
+2018,10,Primavera-Verano,Cebada grano,289235.96,69403.8,4203.76,166493.49,2.4
+2018,10,Primavera-Verano,Cártamo,1052.38,727.38,0.0,886.05,1.22
+2018,10,Primavera-Verano,Frijol,1402029.12,189448.98,19672.4,173565.22,0.92
+2018,10,Primavera-Verano,Garbanzo grano,6194.01,2520.01,0.0,2902.02,1.15
+2018,10,Primavera-Verano,Maíz grano,6172865.14,417485.73,148235.33,1737967.97,4.16
+2018,10,Primavera-Verano,Sorgo grano,535849.22,62702.9,8595.36,354390.18,5.65
+2018,10,Primavera-Verano,Soya,193768.29,13317.39,6909.55,25446.26,1.91
+2018,10,Primavera-Verano,Trigo grano,74470.31,6679.0,832.0,16293.0,2.44
+2018,11,Otoño-Invierno,Cebada grano,212.0,0.0,0.0,0.0,0.0
+2018,11,Otoño-Invierno,Cártamo,4811.71,0.0,0.0,0.0,0.0
+2018,11,Otoño-Invierno,Frijol,132944.5,0.0,54.0,0.0,0.0
+2018,11,Otoño-Invierno,Garbanzo grano,24027.03,0.0,0.0,0.0,0.0
+2018,11,Otoño-Invierno,Maíz grano,347834.05,0.0,246.5,0.0,0.0
+2018,11,Otoño-Invierno,Sorgo grano,46981.52,0.0,14.0,0.0,0.0
+2018,11,Otoño-Invierno,Soya,82.3,0.0,0.0,0.0,0.0
+2018,11,Otoño-Invierno,Trigo grano,94382.23,0.0,0.0,0.0,0.0
+2018,11,Primavera-Verano,Cebada grano,289235.96,207699.9,5604.5,445157.73,2.14
+2018,11,Primavera-Verano,Cártamo,1052.38,879.38,0.0,1042.73,1.19
+2018,11,Primavera-Verano,Frijol,1402029.12,845522.85,52061.65,572230.91,0.68
+2018,11,Primavera-Verano,Garbanzo grano,6194.01,3289.51,0.0,3735.17,1.14
+2018,11,Primavera-Verano,Maíz grano,6172865.14,2233951.14,198565.53,6935007.35,3.1
+2018,11,Primavera-Verano,Sorgo grano,535849.22,218270.71,19510.86,1055887.94,4.84
+2018,11,Primavera-Verano,Soya,193768.29,69041.59,6999.55,120797.95,1.75
+2018,11,Primavera-Verano,Trigo grano,74470.31,28729.26,832.0,66351.14,2.31
+2018,12,Otoño-Invierno,Cebada grano,4236.5,0.0,0.0,0.0,0.0
+2018,12,Otoño-Invierno,Cártamo,8186.71,0.0,0.0,0.0,0.0
+2018,12,Otoño-Invierno,Frijol,177718.56,0.0,70.0,0.0,0.0
+2018,12,Otoño-Invierno,Garbanzo grano,40512.46,0.0,0.0,0.0,0.0
+2018,12,Otoño-Invierno,Maíz grano,616402.5,0.0,246.5,0.0,0.0
+2018,12,Otoño-Invierno,Sorgo grano,130147.16,0.0,14.0,0.0,0.0
+2018,12,Otoño-Invierno,Soya,129.3,0.0,0.0,0.0,0.0
+2018,12,Otoño-Invierno,Trigo grano,270121.56,0.0,0.0,0.0,0.0
+2018,12,Primavera-Verano,Cebada grano,289235.96,269442.46,8439.5,547775.66,2.03
+2018,12,Primavera-Verano,Cártamo,1052.38,1052.38,0.0,1180.05,1.12
+2018,12,Primavera-Verano,Frijol,1402029.12,1223237.81,76856.65,784028.55,0.64
+2018,12,Primavera-Verano,Garbanzo grano,6194.01,4875.01,0.0,5809.44,1.19
+2018,12,Primavera-Verano,Maíz grano,6172865.14,4243497.73,220686.98,13426943.26,3.16
+2018,12,Primavera-Verano,Sorgo grano,535849.22,401497.98,21391.86,1789743.38,4.46
+2018,12,Primavera-Verano,Soya,193768.29,155918.77,7156.55,267145.47,1.71
+2018,12,Primavera-Verano,Trigo grano,74470.31,61527.46,899.0,112772.95,1.83
+2019,1,Otoño-Invierno,Cebada grano,44319.66,0.0,0.0,0.0,0.0
+2019,1,Otoño-Invierno,Cártamo,15703.96,0.0,0.0,0.0,0.0
+2019,1,Otoño-Invierno,Frijol,216320.25,8308.0,565.0,12414.11,1.49
+2019,1,Otoño-Invierno,Garbanzo grano,67484.35,0.0,0.0,0.0,0.0
+2019,1,Otoño-Invierno,Maíz grano,948768.95,0.0,1330.0,0.0,0.0
+2019,1,Otoño-Invierno,Sorgo grano,341838.9,0.0,14.0,0.0,0.0
+2019,1,Otoño-Invierno,Soya,129.3,0.0,0.0,0.0,0.0
+2019,1,Otoño-Invierno,Trigo grano,409680.78,0.0,0.0,0.0,0.0
+2019,1,Primavera-Verano,Cebada grano,289235.96,278338.46,8439.5,571688.39,2.05
+2019,1,Primavera-Verano,Cártamo,1052.38,1052.38,0.0,1180.05,1.12
+2019,1,Primavera-Verano,Frijol,1402029.12,1297404.71,76862.65,842647.41,0.65
+2019,1,Primavera-Verano,Garbanzo grano,6194.01,5155.01,0.0,6193.01,1.2
+2019,1,Primavera-Verano,Maíz grano,6172865.14,5684164.04,224555.48,18137356.36,3.19
+2019,1,Primavera-Verano,Sorgo grano,535849.22,482096.19,21741.86,2060269.58,4.27
+2019,1,Primavera-Verano,Soya,193768.29,182021.74,7158.55,318958.81,1.75
+2019,1,Primavera-Verano,Trigo grano,74470.31,73327.87,899.0,133371.36,1.82
+2019,2,Otoño-Invierno,Cebada grano,72859.11,0.0,0.0,0.0,0.0
+2019,2,Otoño-Invierno,Cártamo,23721.29,0.0,0.0,0.0,0.0
+2019,2,Otoño-Invierno,Frijol,226471.35,93666.53,640.0,113164.74,1.21
+2019,2,Otoño-Invierno,Garbanzo grano,86035.08,7360.47,0.0,13234.54,1.8
+2019,2,Otoño-Invierno,Maíz grano,1202981.95,20278.56,1341.5,48321.64,2.38
+2019,2,Otoño-Invierno,Sorgo grano,708031.96,115.0,114.0,199.75,1.74
+2019,2,Otoño-Invierno,Soya,1337.3,0.0,0.0,0.0,0.0
+2019,2,Otoño-Invierno,Trigo grano,504826.92,20.0,50.0,14.0,0.7
+2019,2,Primavera-Verano,Cebada grano,289235.96,280796.46,8439.5,576015.9,2.05
+2019,2,Primavera-Verano,Cártamo,1052.38,1052.38,0.0,1180.05,1.12
+2019,2,Primavera-Verano,Frijol,1402029.12,1323950.21,77632.65,852353.45,0.64
+2019,2,Primavera-Verano,Garbanzo grano,6194.01,6194.01,0.0,8779.48,1.42
+2019,2,Primavera-Verano,Maíz grano,6172865.14,5933211.07,224880.48,18881349.7,3.18
+2019,2,Primavera-Verano,Sorgo grano,535849.22,511531.56,23601.86,2160203.39,4.22
+2019,2,Primavera-Verano,Soya,193768.29,186413.74,7354.55,330662.97,1.77
+2019,2,Primavera-Verano,Trigo grano,74470.31,73571.31,899.0,133627.64,1.82
+2019,3,Otoño-Invierno,Cebada grano,77701.11,0.0,0.0,0.0,0.0
+2019,3,Otoño-Invierno,Cártamo,28816.08,315.0,90.0,252.0,0.8
+2019,3,Otoño-Invierno,Frijol,229800.6,177147.38,808.0,224365.19,1.27
+2019,3,Otoño-Invierno,Garbanzo grano,89419.08,28980.56,0.0,55938.25,1.93
+2019,3,Otoño-Invierno,Maíz grano,1250587.89,62559.4,3789.0,151890.15,2.43
+2019,3,Otoño-Invierno,Sorgo grano,836672.55,23636.66,499.0,72526.54,3.07
+2019,3,Otoño-Invierno,Soya,3204.96,0.0,0.0,0.0,0.0
+2019,3,Otoño-Invierno,Trigo grano,529506.07,1842.5,460.0,3802.95,2.06
+2019,3,Primavera-Verano,Cebada grano,289235.96,280796.46,8439.5,576015.9,2.05
+2019,3,Primavera-Verano,Cártamo,1052.38,1052.38,0.0,1180.05,1.12
+2019,3,Primavera-Verano,Frijol,86.0,0.0,0.0,0.0,0.0
+2019,3,Primavera-Verano,Garbanzo grano,6194.01,6194.01,0.0,8779.48,1.42
+2019,3,Primavera-Verano,Maíz grano,1343.0,0.0,0.0,0.0,0.0
+2019,3,Primavera-Verano,Sorgo grano,535849.22,512247.36,23601.86,2162272.0,4.22
+2019,3,Primavera-Verano,Soya,193768.29,186413.74,7354.55,330673.19,1.77
+2019,3,Primavera-Verano,Trigo grano,74470.31,73571.31,899.0,133627.64,1.82
+2019,4,Otoño-Invierno,Cebada grano,77711.11,19464.44,0.0,117644.28,6.04
+2019,4,Otoño-Invierno,Cártamo,28816.08,4127.0,1043.0,2679.94,0.65
+2019,4,Otoño-Invierno,Frijol,229873.7,208992.02,821.0,264063.71,1.26
+2019,4,Otoño-Invierno,Garbanzo grano,90766.09,55450.53,0.0,112306.16,2.03
+2019,4,Otoño-Invierno,Maíz grano,1262971.6,230164.84,11755.0,641664.62,2.79
+2019,4,Otoño-Invierno,Sorgo grano,836687.55,132769.15,2085.0,430687.64,3.24
+2019,4,Otoño-Invierno,Soya,3204.96,79.0,0.0,135.08,1.71
+2019,4,Otoño-Invierno,Trigo grano,529774.57,58261.33,583.0,254447.98,4.37
+2019,4,Primavera-Verano,Cebada grano,3689.0,0.0,0.0,0.0,0.0
+2019,4,Primavera-Verano,Cártamo,25.0,0.0,0.0,0.0,0.0
+2019,4,Primavera-Verano,Frijol,26674.83,0.0,0.0,0.0,0.0
+2019,4,Primavera-Verano,Garbanzo grano,2.2,0.0,0.0,0.0,0.0
+2019,4,Primavera-Verano,Maíz grano,593245.54,0.0,0.0,0.0,0.0
+2019,4,Primavera-Verano,Sorgo grano,35651.12,0.0,0.0,0.0,0.0
+2019,4,Primavera-Verano,Soya,143.2,0.0,0.0,0.0,0.0
+2019,4,Primavera-Verano,Trigo grano,782.0,0.0,0.0,0.0,0.0
+2019,5,Otoño-Invierno,Cebada grano,77711.11,65985.61,2.0,374070.5,5.67
+2019,5,Otoño-Invierno,Cártamo,28816.08,13733.66,1159.0,20986.78,1.53
+2019,5,Otoño-Invierno,Frijol,229880.7,220325.64,821.0,274419.79,1.25
+2019,5,Otoño-Invierno,Garbanzo grano,90766.09,75081.08,0.0,154745.87,2.06
+2019,5,Otoño-Invierno,Maíz grano,1263127.6,593921.98,12463.0,3228749.91,5.44
+2019,5,Otoño-Invierno,Sorgo grano,836687.55,292567.2,8970.78,819955.74,2.8
+2019,5,Otoño-Invierno,Soya,3204.96,709.3,0.0,1509.56,2.13
+2019,5,Otoño-Invierno,Trigo grano,529784.57,393211.94,587.0,2304299.02,5.86
+2019,5,Primavera-Verano,Cebada grano,11276.03,0.0,0.0,0.0,0.0
+2019,5,Primavera-Verano,Cártamo,165.0,0.0,0.0,0.0,0.0
+2019,5,Primavera-Verano,Frijol,87968.35,0.0,0.0,0.0,0.0
+2019,5,Primavera-Verano,Garbanzo grano,29.4,0.0,0.0,0.0,0.0
+2019,5,Primavera-Verano,Maíz grano,1496268.47,0.0,40.0,0.0,0.0
+2019,5,Primavera-Verano,Sorgo grano,55151.58,0.0,0.0,0.0,0.0
+2019,5,Primavera-Verano,Soya,365.7,0.0,0.0,0.0,0.0
+2019,5,Primavera-Verano,Trigo grano,2258.45,0.0,0.0,0.0,0.0
+2019,6,Otoño-Invierno,Cebada grano,77711.11,71962.11,2.0,406392.69,5.65
+2019,6,Otoño-Invierno,Cártamo,28816.08,16462.81,1159.0,27292.46,1.66
+2019,6,Otoño-Invierno,Frijol,229880.7,226241.56,821.0,279757.91,1.24
+2019,6,Otoño-Invierno,Garbanzo grano,90766.09,87077.48,0.0,185268.47,2.13
+2019,6,Otoño-Invierno,Maíz grano,1263148.6,1021501.08,13183.0,6964201.37,6.82
+2019,6,Otoño-Invierno,Sorgo grano,836687.55,789577.29,19795.68,2177976.49,2.76
+2019,6,Otoño-Invierno,Soya,3204.96,1329.3,0.0,2820.75,2.12
+2019,6,Otoño-Invierno,Trigo grano,529784.57,501504.47,890.0,3045008.9,6.07
+2019,6,Primavera-Verano,Cebada grano,139623.87,0.0,0.0,0.0,0.0
+2019,6,Primavera-Verano,Cártamo,165.0,0.0,0.0,0.0,0.0
+2019,6,Primavera-Verano,Frijol,214125.94,643.0,0.0,1462.82,2.27
+2019,6,Primavera-Verano,Garbanzo grano,954.4,0.0,0.0,0.0,0.0
+2019,6,Primavera-Verano,Maíz grano,3196186.11,0.0,40.0,0.0,0.0
+2019,6,Primavera-Verano,Sorgo grano,207669.42,80.0,0.0,320.0,4.0
+2019,6,Primavera-Verano,Soya,13383.31,0.0,0.0,0.0,0.0
+2019,6,Primavera-Verano,Trigo grano,27838.28,0.0,0.0,0.0,0.0
+2019,7,Otoño-Invierno,Cebada grano,77711.11,75316.97,2.0,410771.04,5.45
+2019,7,Otoño-Invierno,Cártamo,28816.08,24964.66,1657.0,46572.47,1.87
+2019,7,Otoño-Invierno,Frijol,229880.7,227700.8,838.0,283196.88,1.24
+2019,7,Otoño-Invierno,Garbanzo grano,90766.09,90700.08,30.0,195321.86,2.15
+2019,7,Otoño-Invierno,Maíz grano,1263148.6,1230537.23,13233.0,8648942.88,7.03
+2019,7,Otoño-Invierno,Sorgo grano,836687.55,813738.17,21375.68,2249078.21,2.76
+2019,7,Otoño-Invierno,Soya,3204.96,2961.95,0.0,6273.65,2.12
+2019,7,Otoño-Invierno,Trigo grano,529784.57,520350.77,6649.32,3139139.94,6.03
+2019,7,Primavera-Verano,Cebada grano,242301.64,0.0,0.0,0.0,0.0
+2019,7,Primavera-Verano,Cártamo,165.0,0.0,0.0,0.0,0.0
+2019,7,Primavera-Verano,Frijol,761855.15,3457.34,10.0,6026.46,1.74
+2019,7,Primavera-Verano,Garbanzo grano,2173.4,0.0,0.0,0.0,0.0
+2019,7,Primavera-Verano,Maíz grano,5199070.48,20098.59,105.0,216692.24,10.78
+2019,7,Primavera-Verano,Sorgo grano,359186.43,21628.12,0.0,145385.68,6.72
+2019,7,Primavera-Verano,Soya,73533.31,143.2,0.0,229.0,1.6
+2019,7,Primavera-Verano,Trigo grano,46350.76,0.0,0.0,0.0,0.0
+2019,8,Otoño-Invierno,Cebada grano,77711.11,75339.57,2.0,410806.86,5.45
+2019,8,Otoño-Invierno,Cártamo,28816.08,27159.08,1657.0,50748.26,1.87
+2019,8,Otoño-Invierno,Frijol,229880.7,228085.36,838.0,283507.37,1.24
+2019,8,Otoño-Invierno,Garbanzo grano,90766.09,90700.08,30.0,195321.89,2.15
+2019,8,Otoño-Invierno,Maíz grano,1263148.6,1247040.69,13354.0,8722473.59,6.99
+2019,8,Otoño-Invierno,Sorgo grano,836687.55,815001.87,21375.68,2313000.96,2.84
+2019,8,Otoño-Invierno,Soya,3204.96,3049.96,8.0,6581.65,2.16
+2019,8,Otoño-Invierno,Trigo grano,529784.57,522117.25,6649.32,3147382.33,6.03
+2019,8,Primavera-Verano,Cebada grano,267341.17,24.0,0.0,39.0,1.63
+2019,8,Primavera-Verano,Cártamo,225.0,165.0,0.0,228.75,1.39
+2019,8,Primavera-Verano,Frijol,1066742.41,16886.52,34600.5,20254.1,1.2
+2019,8,Primavera-Verano,Garbanzo grano,2654.57,54.0,0.0,123.15,2.28
+2019,8,Primavera-Verano,Maíz grano,5732537.79,42197.22,63211.23,360834.47,8.55
+2019,8,Primavera-Verano,Sorgo grano,434928.43,36552.78,477.0,184117.7,5.04
+2019,8,Primavera-Verano,Soya,118053.09,143.2,2700.0,229.0,1.6
+2019,8,Primavera-Verano,Trigo grano,64463.68,155.0,0.0,169.0,1.09
+2019,9,Otoño-Invierno,Cebada grano,77711.11,77709.11,2.0,410944.24,5.29
+2019,9,Otoño-Invierno,Cártamo,28816.08,27159.08,1657.0,50748.26,1.87
+2019,9,Otoño-Invierno,Frijol,229880.7,228903.58,994.12,284383.54,1.24
+2019,9,Otoño-Invierno,Garbanzo grano,90766.09,90736.09,30.0,195322.23,2.15
+2019,9,Otoño-Invierno,Maíz grano,1263148.6,1249734.69,13413.91,8758363.51,7.01
+2019,9,Otoño-Invierno,Sorgo grano,836687.55,815311.87,21375.68,2314037.04,2.84
+2019,9,Otoño-Invierno,Soya,3204.96,3196.96,8.0,6762.15,2.12
+2019,9,Otoño-Invierno,Trigo grano,529784.57,523135.25,6649.32,3148258.61,6.02
+2019,9,Primavera-Verano,Cebada grano,288992.22,5152.0,0.0,13005.8,2.52
+2019,9,Primavera-Verano,Cártamo,510.0,165.0,0.0,228.75,1.39
+2019,9,Primavera-Verano,Frijol,1181669.06,58544.55,58625.5,54434.43,0.93
+2019,9,Primavera-Verano,Garbanzo grano,4684.91,133.0,0.0,303.76,2.28
+2019,9,Primavera-Verano,Maíz grano,5879953.18,82131.3,271800.31,500667.18,6.1
+2019,9,Primavera-Verano,Sorgo grano,518185.92,41540.73,5393.53,211789.01,5.1
+2019,9,Primavera-Verano,Soya,151160.66,143.2,8547.0,229.0,1.6
+2019,9,Primavera-Verano,Trigo grano,71785.85,468.0,265.0,487.0,1.04
+2019,10,Otoño-Invierno,Cebada grano,77711.11,77709.11,2.0,410944.24,5.29
+2019,10,Otoño-Invierno,Cártamo,3504.68,0.0,0.0,0.0,0.0
+2019,10,Otoño-Invierno,Frijol,30493.54,0.0,0.0,0.0,0.0
+2019,10,Otoño-Invierno,Garbanzo grano,2849.25,0.0,0.0,0.0,0.0
+2019,10,Otoño-Invierno,Maíz grano,72453.42,0.0,0.0,0.0,0.0
+2019,10,Otoño-Invierno,Sorgo grano,14700.03,0.0,0.0,0.0,0.0
+2019,10,Otoño-Invierno,Soya,3204.96,3196.96,8.0,6762.15,2.12
+2019,10,Otoño-Invierno,Trigo grano,203.21,0.0,0.0,0.0,0.0
+2019,10,Primavera-Verano,Cebada grano,288992.23,78499.19,1566.83,206452.2,2.63
+2019,10,Primavera-Verano,Cártamo,510.0,165.0,0.0,228.75,1.39
+2019,10,Primavera-Verano,Frijol,1181669.07,126045.26,90133.8,121094.44,0.96
+2019,10,Primavera-Verano,Garbanzo grano,4684.91,471.0,0.0,743.54,1.58
+2019,10,Primavera-Verano,Maíz grano,5879953.18,350946.63,345107.25,1418156.53,4.04
+2019,10,Primavera-Verano,Sorgo grano,518185.92,61275.86,9219.03,295794.23,4.83
+2019,10,Primavera-Verano,Soya,151160.66,8851.96,8547.0,20070.15,2.27
+2019,10,Primavera-Verano,Trigo grano,71785.85,7878.2,363.0,20554.84,2.61
+2019,11,Otoño-Invierno,Cebada grano,28.0,0.0,0.0,0.0,0.0
+2019,11,Otoño-Invierno,Cártamo,19759.06,0.0,0.0,0.0,0.0
+2019,11,Otoño-Invierno,Frijol,168394.48,0.0,0.0,0.0,0.0
+2019,11,Otoño-Invierno,Garbanzo grano,21574.02,0.0,0.0,0.0,0.0
+2019,11,Otoño-Invierno,Maíz grano,430000.88,0.0,0.0,0.0,0.0
+2019,11,Otoño-Invierno,Sorgo grano,95693.82,0.0,0.0,0.0,0.0
+2019,11,Otoño-Invierno,Soya,71.5,0.0,0.0,0.0,0.0
+2019,11,Otoño-Invierno,Trigo grano,65080.51,0.0,0.0,0.0,0.0
+2019,11,Primavera-Verano,Cebada grano,288992.23,198988.8,4480.5,426060.68,2.14
+2019,11,Primavera-Verano,Cártamo,510.0,165.0,0.0,228.75,1.39
+2019,11,Primavera-Verano,Frijol,1181669.07,551872.99,179845.44,341750.24,0.62
+2019,11,Primavera-Verano,Garbanzo grano,4684.91,1776.5,0.0,2665.99,1.5
+2019,11,Primavera-Verano,Maíz grano,5879953.18,1829597.23,418422.33,5721358.01,3.13
+2019,11,Primavera-Verano,Sorgo grano,518185.92,237197.16,9933.03,1113681.97,4.7
+2019,11,Primavera-Verano,Soya,151160.66,75490.44,8622.0,114526.88,1.52
+2019,11,Primavera-Verano,Trigo grano,71785.85,24410.52,697.0,60935.07,2.5
+2019,12,Otoño-Invierno,Cebada grano,4327.0,0.0,0.0,0.0,0.0
+2019,12,Otoño-Invierno,Cártamo,29426.76,0.0,0.0,0.0,0.0
+2019,12,Otoño-Invierno,Frijol,217282.89,0.0,1962.67,0.0,0.0
+2019,12,Otoño-Invierno,Garbanzo grano,36009.46,0.0,123.0,0.0,0.0
+2019,12,Otoño-Invierno,Maíz grano,708707.86,0.0,3396.61,0.0,0.0
+2019,12,Otoño-Invierno,Sorgo grano,147426.35,0.0,0.0,0.0,0.0
+2019,12,Otoño-Invierno,Soya,122.2,0.0,0.0,0.0,0.0
+2019,12,Otoño-Invierno,Trigo grano,231866.59,0.0,5.0,0.0,0.0
+2019,12,Primavera-Verano,Cebada grano,288992.23,245422.79,6933.0,495018.17,2.02
+2019,12,Primavera-Verano,Cártamo,510.0,165.0,0.0,228.75,1.39
+2019,12,Primavera-Verano,Frijol,1181669.07,938369.96,193145.24,552690.51,0.59
+2019,12,Primavera-Verano,Garbanzo grano,4684.91,3555.55,0.0,4916.46,1.38
+2019,12,Primavera-Verano,Maíz grano,5879953.18,3749453.48,433452.18,12403673.67,3.31
+2019,12,Primavera-Verano,Sorgo grano,518185.92,415441.98,12099.03,1698471.35,4.09
+2019,12,Primavera-Verano,Soya,151160.66,119070.18,8622.0,196021.83,1.65
+2019,12,Primavera-Verano,Trigo grano,71785.85,48517.57,697.0,100209.97,2.07
+2020,1,Otoño-Invierno,Cebada grano,42827.29,0.0,0.0,0.0,0.0
+2020,1,Otoño-Invierno,Cártamo,45715.46,0.0,0.0,0.0,0.0
+2020,1,Otoño-Invierno,Frijol,233449.36,8121.3,1962.67,11098.57,1.37
+2020,1,Otoño-Invierno,Garbanzo grano,50506.19,482.0,123.0,988.22,2.05
+2020,1,Otoño-Invierno,Maíz grano,976124.18,4727.0,3396.61,4190.0,0.89
+2020,1,Otoño-Invierno,Sorgo grano,555084.54,0.0,0.0,0.0,0.0
+2020,1,Otoño-Invierno,Soya,322.2,0.0,0.0,0.0,0.0
+2020,1,Otoño-Invierno,Trigo grano,403608.23,0.0,25.0,0.0,0.0
+2020,1,Primavera-Verano,Cebada grano,288992.23,277377.03,6933.0,546715.24,1.97
+2020,1,Primavera-Verano,Cártamo,510.0,165.0,0.0,228.75,1.39
+2020,1,Primavera-Verano,Frijol,1181669.07,971466.28,194361.24,577491.58,0.59
+2020,1,Primavera-Verano,Garbanzo grano,4684.91,4525.23,0.0,6493.25,1.43
+2020,1,Primavera-Verano,Maíz grano,5879953.18,5046336.95,449809.03,16837079.64,3.34
+2020,1,Primavera-Verano,Sorgo grano,518185.92,492297.05,13453.03,1922797.06,3.91
+2020,1,Primavera-Verano,Soya,151160.66,142117.16,8646.5,246373.35,1.73
+2020,1,Primavera-Verano,Trigo grano,71785.85,60089.6,697.0,116411.43,1.94
+2020,2,Otoño-Invierno,Cebada grano,51984.29,0.0,0.0,0.0,0.0
+2020,2,Otoño-Invierno,Cártamo,50147.1,0.0,2091.0,0.0,0.0
+2020,2,Otoño-Invierno,Frijol,244193.77,120091.97,5048.67,158669.62,1.32
+2020,2,Otoño-Invierno,Garbanzo grano,56373.23,4149.91,223.0,7330.12,1.77
+2020,2,Otoño-Invierno,Maíz grano,1121734.51,21269.89,4037.61,49844.08,2.34
+2020,2,Otoño-Invierno,Sorgo grano,843179.8,4036.0,1105.0,9874.25,2.45
+2020,2,Otoño-Invierno,Soya,1229.1,0.0,0.0,0.0,0.0
+2020,2,Otoño-Invierno,Trigo grano,448735.27,52.5,4282.5,104.61,1.99
+2020,2,Primavera-Verano,Cebada grano,288992.23,277813.07,6933.0,547232.23,1.97
+2020,2,Primavera-Verano,Cártamo,510.0,510.0,0.0,408.0,0.8
+2020,2,Primavera-Verano,Frijol,1181669.07,976065.54,194397.24,580341.4,0.59
+2020,2,Primavera-Verano,Garbanzo grano,4684.91,4679.91,0.0,6799.25,1.45
+2020,2,Primavera-Verano,Maíz grano,5879953.18,5332741.3,452544.13,17910943.91,3.36
+2020,2,Primavera-Verano,Sorgo grano,518185.92,500669.72,16919.42,1960793.12,3.92
+2020,2,Primavera-Verano,Soya,151160.66,142266.16,8646.5,246510.35,1.73
+2020,2,Primavera-Verano,Trigo grano,71785.85,64612.75,697.0,119393.7,1.85
+2020,3,Otoño-Invierno,Cebada grano,63834.36,0.0,0.0,0.0,0.0
+2020,3,Otoño-Invierno,Cártamo,52390.21,0.0,2111.0,0.0,0.0
+2020,3,Otoño-Invierno,Frijol,261834.01,200340.96,5048.67,265860.9,1.33
+2020,3,Otoño-Invierno,Garbanzo grano,57858.72,20163.24,223.0,30273.29,1.5
+2020,3,Otoño-Invierno,Maíz grano,1209277.2,62560.14,4037.61,142928.21,2.28
+2020,3,Otoño-Invierno,Sorgo grano,884906.49,47851.78,1105.0,109148.45,2.28
+2020,3,Otoño-Invierno,Soya,1719.1,0.0,0.0,0.0,0.0
+2020,3,Otoño-Invierno,Trigo grano,483638.79,901.0,4382.5,1481.96,1.64
+2020,3,Primavera-Verano,Cebada grano,288992.23,280435.23,8557.0,548915.53,1.96
+2020,3,Primavera-Verano,Cártamo,510.0,510.0,0.0,408.0,0.8
+2020,3,Primavera-Verano,Frijol,902.25,0.0,0.0,0.0,0.0
+2020,3,Primavera-Verano,Garbanzo grano,4684.91,4684.91,0.0,6809.25,1.45
+2020,3,Primavera-Verano,Maíz grano,1343.5,0.0,0.0,0.0,0.0
+2020,3,Primavera-Verano,Sorgo grano,60.0,0.0,0.0,0.0,0.0
+2020,3,Primavera-Verano,Soya,151160.66,142514.16,8646.5,247006.35,1.73
+2020,3,Primavera-Verano,Trigo grano,71785.85,66744.85,5041.0,122272.97,1.83
+2020,4,Otoño-Invierno,Cebada grano,63834.36,10557.43,0.0,60142.01,5.7
+2020,4,Otoño-Invierno,Cártamo,52390.21,8973.0,2316.0,6886.96,0.77
+2020,4,Otoño-Invierno,Frijol,261834.01,229209.24,5066.67,293149.05,1.28
+2020,4,Otoño-Invierno,Garbanzo grano,57858.72,40989.35,223.0,69733.16,1.7
+2020,4,Otoño-Invierno,Maíz grano,1209277.2,238137.83,4656.61,720656.38,3.03
+2020,4,Otoño-Invierno,Sorgo grano,884906.49,139380.97,7210.0,414005.02,2.97
+2020,4,Otoño-Invierno,Soya,1719.1,975.2,0.0,2200.29,2.26
+2020,4,Otoño-Invierno,Trigo grano,483638.79,70902.9,5012.5,374209.52,5.28
+2020,4,Primavera-Verano,Cebada grano,16207.5,0.0,0.0,0.0,0.0
+2020,4,Primavera-Verano,Cártamo,66.79,0.0,0.0,0.0,0.0
+2020,4,Primavera-Verano,Frijol,25642.34,0.0,0.0,0.0,0.0
+2020,4,Primavera-Verano,Garbanzo grano,0.4,0.0,0.0,0.0,0.0
+2020,4,Primavera-Verano,Maíz grano,633447.69,0.0,0.0,0.0,0.0
+2020,4,Primavera-Verano,Sorgo grano,40484.01,0.0,0.0,0.0,0.0
+2020,4,Primavera-Verano,Trigo grano,1102.5,0.0,0.0,0.0,0.0
+2020,5,Otoño-Invierno,Cebada grano,63834.36,51983.61,0.0,289697.93,5.57
+2020,5,Otoño-Invierno,Cártamo,52390.21,25738.01,2331.0,29924.29,1.16
+2020,5,Otoño-Invierno,Frijol,261834.01,241215.81,5066.67,306943.01,1.27
+2020,5,Otoño-Invierno,Garbanzo grano,57858.72,51555.17,223.0,99402.5,1.93
+2020,5,Otoño-Invierno,Maíz grano,1209277.2,658050.49,4778.61,3463427.38,5.26
+2020,5,Otoño-Invierno,Sorgo grano,884906.49,282326.34,7210.0,828612.76,2.93
+2020,5,Otoño-Invierno,Soya,1719.1,1022.2,0.0,2323.59,2.27
+2020,5,Otoño-Invierno,Trigo grano,483638.79,360307.71,5032.5,2086422.17,5.79
+2020,5,Primavera-Verano,Cebada grano,26315.0,0.0,0.0,0.0,0.0
+2020,5,Primavera-Verano,Cártamo,66.79,0.0,0.0,0.0,0.0
+2020,5,Primavera-Verano,Frijol,84699.86,0.0,0.0,0.0,0.0
+2020,5,Primavera-Verano,Garbanzo grano,18.2,0.0,0.0,0.0,0.0
+2020,5,Primavera-Verano,Maíz grano,1500568.07,0.0,0.0,0.0,0.0
+2020,5,Primavera-Verano,Sorgo grano,53683.8,0.0,0.0,0.0,0.0
+2020,5,Primavera-Verano,Soya,3100.0,0.0,0.0,0.0,0.0
+2020,5,Primavera-Verano,Trigo grano,5394.0,0.0,0.0,0.0,0.0
+2020,6,Otoño-Invierno,Cebada grano,63834.36,58399.05,0.0,329063.95,5.63
+2020,6,Otoño-Invierno,Cártamo,52390.21,32943.01,2353.0,48415.15,1.47
+2020,6,Otoño-Invierno,Frijol,261834.01,247867.01,5390.67,313680.0,1.27
+2020,6,Otoño-Invierno,Garbanzo grano,57858.72,56903.52,223.0,118606.39,2.08
+2020,6,Otoño-Invierno,Maíz grano,1209277.2,1015441.5,6724.92,7326751.26,7.22
+2020,6,Otoño-Invierno,Sorgo grano,884906.49,813177.62,7439.0,2231931.73,2.74
+2020,6,Otoño-Invierno,Soya,1719.1,1082.2,80.0,2445.67,2.26
+2020,6,Otoño-Invierno,Trigo grano,483638.79,463933.83,5032.5,2728092.66,5.88
+2020,6,Primavera-Verano,Cebada grano,113444.22,0.0,0.0,0.0,0.0
+2020,6,Primavera-Verano,Cártamo,66.79,0.0,0.0,0.0,0.0
+2020,6,Primavera-Verano,Frijol,223111.35,0.0,5.0,0.0,0.0
+2020,6,Primavera-Verano,Garbanzo grano,393.2,0.0,0.0,0.0,0.0
+2020,6,Primavera-Verano,Maíz grano,3120230.75,0.0,21844.14,0.0,0.0
+2020,6,Primavera-Verano,Sorgo grano,185792.45,0.0,282.0,0.0,0.0
+2020,6,Primavera-Verano,Soya,10828.1,0.0,1180.0,0.0,0.0
+2020,6,Primavera-Verano,Trigo grano,38068.52,0.0,0.0,0.0,0.0
+2020,7,Otoño-Invierno,Cebada grano,63834.36,59507.69,0.0,330065.97,5.55
+2020,7,Otoño-Invierno,Cártamo,52390.21,37395.86,2353.0,58027.4,1.55
+2020,7,Otoño-Invierno,Frijol,261834.01,250861.78,5390.67,325033.36,1.3
+2020,7,Otoño-Invierno,Garbanzo grano,57858.72,57635.72,223.0,120633.43,2.09
+2020,7,Otoño-Invierno,Maíz grano,1209277.2,1192993.2,6724.92,8262004.92,6.93
+2020,7,Otoño-Invierno,Sorgo grano,884906.49,871261.2,7439.0,2338663.55,2.68
+2020,7,Otoño-Invierno,Soya,1719.1,1639.1,80.0,3089.05,1.88
+2020,7,Otoño-Invierno,Trigo grano,483638.79,477379.68,5032.5,2801593.65,5.87
+2020,7,Primavera-Verano,Cebada grano,169343.64,0.0,0.0,0.0,0.0
+2020,7,Primavera-Verano,Cártamo,66.79,66.79,0.0,118.0,1.77
+2020,7,Primavera-Verano,Frijol,1045822.84,2522.9,5.0,3909.1,1.55
+2020,7,Primavera-Verano,Garbanzo grano,2819.7,0.0,0.0,0.0,0.0
+2020,7,Primavera-Verano,Maíz grano,5410231.47,21861.84,22269.14,220083.9,10.07
+2020,7,Primavera-Verano,Sorgo grano,379562.71,17158.07,282.0,109137.57,6.36
+2020,7,Primavera-Verano,Soya,72178.0,0.0,1180.0,0.0,0.0
+2020,7,Primavera-Verano,Trigo grano,60020.74,0.0,0.0,0.0,0.0
+2020,8,Otoño-Invierno,Cebada grano,63834.36,59559.69,0.0,330112.97,5.54
+2020,8,Otoño-Invierno,Cártamo,52390.21,50036.5,2353.0,86373.29,1.73
+2020,8,Otoño-Invierno,Frijol,261834.01,251769.93,7655.67,326306.46,1.3
+2020,8,Otoño-Invierno,Garbanzo grano,57858.72,57635.72,223.0,120634.33,2.09
+2020,8,Otoño-Invierno,Maíz grano,1209277.2,1201385.71,6729.92,8290150.85,6.9
+2020,8,Otoño-Invierno,Sorgo grano,884906.49,875981.63,7563.0,2359183.94,2.69
+2020,8,Otoño-Invierno,Soya,1719.1,1639.1,80.0,3145.58,1.92
+2020,8,Otoño-Invierno,Trigo grano,483638.79,477637.98,5032.5,2802669.25,5.87
+2020,8,Primavera-Verano,Cebada grano,212054.37,96.5,0.0,144.75,1.5
+2020,8,Primavera-Verano,Cártamo,376.79,66.79,0.0,118.0,1.77
+2020,8,Primavera-Verano,Frijol,1395051.57,15271.58,6076.0,18746.98,1.23
+2020,8,Primavera-Verano,Garbanzo grano,3515.5,15.0,0.0,18.0,1.2
+2020,8,Primavera-Verano,Maíz grano,6074810.17,59901.05,26463.14,479524.87,8.01
+2020,8,Primavera-Verano,Sorgo grano,526976.78,33586.81,347.0,186846.8,5.56
+2020,8,Primavera-Verano,Soya,123666.8,0.0,1180.0,0.0,0.0
+2020,8,Primavera-Verano,Trigo grano,71509.85,19.0,0.0,27.17,1.43
+2020,9,Otoño-Invierno,Cebada grano,63834.36,62863.05,971.31,332779.64,5.29
+2020,9,Otoño-Invierno,Cártamo,52390.21,50037.21,2353.0,86373.29,1.73
+2020,9,Otoño-Invierno,Frijol,261834.01,253658.34,8175.67,327359.61,1.29
+2020,9,Otoño-Invierno,Garbanzo grano,57858.72,57635.72,223.0,120634.33,2.09
+2020,9,Otoño-Invierno,Maíz grano,1209277.2,1201872.95,7404.25,8307866.91,6.91
+2020,9,Otoño-Invierno,Sorgo grano,884906.49,876963.49,7943.0,2363652.84,2.7
+2020,9,Otoño-Invierno,Soya,1719.1,1639.1,80.0,3145.58,1.92
+2020,9,Otoño-Invierno,Trigo grano,483638.79,478028.37,5610.42,2805629.95,5.87
+2020,9,Primavera-Verano,Cebada grano,248494.72,3273.86,0.0,8476.85,2.59
+2020,9,Primavera-Verano,Cártamo,376.79,66.79,0.0,118.0,1.77
+2020,9,Primavera-Verano,Frijol,1414521.26,61443.73,7180.0,61754.82,1.01
+2020,9,Primavera-Verano,Garbanzo grano,4747.5,121.0,0.0,242.6,2.0
+2020,9,Primavera-Verano,Maíz grano,6271859.67,112955.69,31354.64,624902.64,5.53
+2020,9,Primavera-Verano,Sorgo grano,590256.0,48247.04,436.0,243956.34,5.06
+2020,9,Primavera-Verano,Soya,163820.0,0.0,1180.0,0.0,0.0
+2020,9,Primavera-Verano,Trigo grano,78578.67,518.6,0.0,732.97,1.41
+2020,10,Otoño-Invierno,Cebada grano,0.5,0.0,0.0,0.0,0.0
+2020,10,Otoño-Invierno,Cártamo,685.0,0.0,0.0,0.0,0.0
+2020,10,Otoño-Invierno,Frijol,53655.13,0.0,0.0,0.0,0.0
+2020,10,Otoño-Invierno,Garbanzo grano,9224.24,0.0,0.0,0.0,0.0
+2020,10,Otoño-Invierno,Maíz grano,53547.53,0.0,0.0,0.0,0.0
+2020,10,Otoño-Invierno,Sorgo grano,4043.0,0.0,0.0,0.0,0.0
+2020,10,Otoño-Invierno,Soya,1719.1,1639.1,80.0,3145.58,1.92
+2020,10,Otoño-Invierno,Trigo grano,212.7,0.0,0.0,0.0,0.0
+2020,10,Primavera-Verano,Cebada grano,248494.72,61297.05,900.0,166343.52,2.71
+2020,10,Primavera-Verano,Cártamo,376.79,66.79,0.0,118.0,1.77
+2020,10,Primavera-Verano,Frijol,1414521.26,170198.32,41286.89,163376.58,0.96
+2020,10,Primavera-Verano,Garbanzo grano,4747.5,152.0,0.0,319.9,2.1
+2020,10,Primavera-Verano,Maíz grano,6271859.67,417869.5,150249.07,1460400.93,3.49
+2020,10,Primavera-Verano,Sorgo grano,590256.0,82037.61,2425.51,396608.75,4.83
+2020,10,Primavera-Verano,Soya,163820.0,11794.0,4967.0,25013.9,2.12
+2020,10,Primavera-Verano,Trigo grano,78578.67,9992.33,5.0,27301.06,2.73
+2020,11,Otoño-Invierno,Cebada grano,0.5,0.0,0.0,0.0,0.0
+2020,11,Otoño-Invierno,Cártamo,10969.61,0.0,0.0,0.0,0.0
+2020,11,Otoño-Invierno,Frijol,177303.46,0.0,0.0,0.0,0.0
+2020,11,Otoño-Invierno,Garbanzo grano,42011.46,0.0,0.0,0.0,0.0
+2020,11,Otoño-Invierno,Maíz grano,426275.46,0.0,0.0,0.0,0.0
+2020,11,Otoño-Invierno,Sorgo grano,55338.77,0.0,0.0,0.0,0.0
+2020,11,Otoño-Invierno,Soya,75.1,0.0,0.0,0.0,0.0
+2020,11,Otoño-Invierno,Trigo grano,86218.8,0.0,0.0,0.0,0.0
+2020,11,Primavera-Verano,Cebada grano,248494.72,162799.6,2450.0,392572.27,2.41
+2020,11,Primavera-Verano,Cártamo,376.79,66.79,0.0,118.0,1.77
+2020,11,Primavera-Verano,Frijol,1414521.26,955635.86,89270.99,518812.03,0.54
+2020,11,Primavera-Verano,Garbanzo grano,4747.5,1949.72,0.0,2784.87,1.43
+2020,11,Primavera-Verano,Maíz grano,6271859.67,1956653.37,242940.74,6156431.14,3.15
+2020,11,Primavera-Verano,Sorgo grano,590256.0,263131.17,14737.81,1277454.82,4.85
+2020,11,Primavera-Verano,Soya,163820.0,56176.2,7402.79,86922.63,1.55
+2020,11,Primavera-Verano,Trigo grano,78578.67,34853.47,5.0,92381.66,2.65
+2020,12,Otoño-Invierno,Cebada grano,6500.55,0.0,0.0,0.0,0.0
+2020,12,Otoño-Invierno,Cártamo,19125.96,0.0,0.0,0.0,0.0
+2020,12,Otoño-Invierno,Frijol,212290.12,0.0,289.1,0.0,0.0
+2020,12,Otoño-Invierno,Garbanzo grano,60633.92,0.0,0.0,0.0,0.0
+2020,12,Otoño-Invierno,Maíz grano,689718.46,0.0,0.0,0.0,0.0
+2020,12,Otoño-Invierno,Sorgo grano,80367.34,0.0,0.0,0.0,0.0
+2020,12,Otoño-Invierno,Soya,130.9,0.0,0.0,0.0,0.0
+2020,12,Otoño-Invierno,Trigo grano,273908.31,0.0,0.0,0.0,0.0
+2020,12,Primavera-Verano,Cebada grano,248494.72,207767.24,21972.0,478142.19,2.3
+2020,12,Primavera-Verano,Cártamo,376.79,66.79,0.0,118.0,1.77
+2020,12,Primavera-Verano,Frijol,1414521.26,1279169.86,96636.21,759373.14,0.59
+2020,12,Primavera-Verano,Garbanzo grano,4747.5,3342.99,0.0,4863.63,1.45
+2020,12,Primavera-Verano,Maíz grano,6271859.67,4236333.46,280071.28,13577304.01,3.2
+2020,12,Primavera-Verano,Sorgo grano,590256.0,440435.41,18471.81,1945755.06,4.42
+2020,12,Primavera-Verano,Soya,163820.0,127611.65,8164.79,183328.65,1.44
+2020,12,Primavera-Verano,Trigo grano,78578.67,68440.44,146.0,144143.63,2.11
+2021,1,Otoño-Invierno,Cebada grano,45390.05,0.0,0.0,0.0,0.0
+2021,1,Otoño-Invierno,Cártamo,22619.46,0.0,0.0,0.0,0.0
+2021,1,Otoño-Invierno,Frijol,236334.12,7691.93,618.1,8199.52,1.07
+2021,1,Otoño-Invierno,Garbanzo grano,82529.15,160.0,0.0,345.0,2.16
+2021,1,Otoño-Invierno,Maíz grano,962557.93,100.0,123.0,495.0,4.95
+2021,1,Otoño-Invierno,Sorgo grano,211094.83,0.0,108.0,0.0,0.0
+2021,1,Otoño-Invierno,Soya,380.9,0.0,0.0,0.0,0.0
+2021,1,Otoño-Invierno,Trigo grano,414191.43,0.0,0.0,0.0,0.0
+2021,1,Primavera-Verano,Cebada grano,248494.72,225928.72,21972.0,512134.33,2.27
+2021,1,Primavera-Verano,Cártamo,376.79,66.79,0.0,118.0,1.77
+2021,1,Primavera-Verano,Frijol,1414521.26,1310920.19,96646.21,781323.83,0.6
+2021,1,Primavera-Verano,Garbanzo grano,4747.5,4747.5,0.0,6855.06,1.44
+2021,1,Primavera-Verano,Maíz grano,6271859.67,5621791.04,285121.28,18022194.04,3.21
+2021,1,Primavera-Verano,Sorgo grano,590256.0,536930.92,19471.81,2248348.75,4.19
+2021,1,Primavera-Verano,Soya,163820.0,146108.02,8479.79,221588.03,1.52
+2021,1,Primavera-Verano,Trigo grano,78578.67,77061.58,146.0,157420.56,2.04
+2021,2,Otoño-Invierno,Cebada grano,65601.93,0.0,0.0,0.0,0.0
+2021,2,Otoño-Invierno,Cártamo,26588.46,0.0,0.0,0.0,0.0
+2021,2,Otoño-Invierno,Frijol,252333.16,116861.43,618.1,147056.44,1.26
+2021,2,Otoño-Invierno,Garbanzo grano,85773.43,9625.55,0.0,12800.73,1.33
+2021,2,Otoño-Invierno,Maíz grano,1132058.24,12828.24,21178.0,26909.15,2.1
+2021,2,Otoño-Invierno,Sorgo grano,698094.12,1454.0,304462.0,3424.8,2.36
+2021,2,Otoño-Invierno,Soya,1435.9,0.0,0.0,0.0,0.0
+2021,2,Otoño-Invierno,Trigo grano,470554.09,0.0,5221.5,0.0,0.0
+2021,2,Primavera-Verano,Cebada grano,248494.72,226499.72,21972.0,513519.67,2.27
+2021,2,Primavera-Verano,Cártamo,376.79,376.79,0.0,280.0,0.74
+2021,2,Primavera-Verano,Frijol,1414521.26,1316351.69,96648.21,784758.5,0.6
+2021,2,Primavera-Verano,Garbanzo grano,4747.5,4747.5,0.0,6855.06,1.44
+2021,2,Primavera-Verano,Maíz grano,6271859.67,5946228.38,285396.28,19190385.42,3.23
+2021,2,Primavera-Verano,Sorgo grano,590256.0,570250.54,19471.81,2306905.95,4.05
+2021,2,Primavera-Verano,Soya,163820.0,147683.82,8479.79,224377.07,1.52
+2021,2,Primavera-Verano,Trigo grano,78578.67,78333.67,146.0,159934.75,2.04
+2021,3,Otoño-Invierno,Cebada grano,70785.87,0.0,0.0,0.0,0.0
+2021,3,Otoño-Invierno,Cártamo,31220.46,0.0,345.0,0.0,0.0
+2021,3,Otoño-Invierno,Frijol,255026.15,199711.53,768.75,246806.83,1.24
+2021,3,Otoño-Invierno,Garbanzo grano,87493.43,36689.28,0.0,56898.69,1.55
+2021,3,Otoño-Invierno,Maíz grano,1185879.34,66029.28,23194.0,168505.4,2.55
+2021,3,Otoño-Invierno,Sorgo grano,1038793.78,27793.33,316150.36,76782.66,2.76
+2021,3,Otoño-Invierno,Soya,1656.5,0.0,0.0,0.0,0.0
+2021,3,Otoño-Invierno,Trigo grano,486830.13,33.0,5283.5,33.33,1.01
+2021,3,Primavera-Verano,Cebada grano,248494.72,226522.72,21972.0,513645.27,2.27
+2021,3,Primavera-Verano,Cártamo,376.79,376.79,0.0,280.0,0.74
+2021,3,Primavera-Verano,Frijol,1414521.26,1317873.05,96648.21,785320.77,0.6
+2021,3,Primavera-Verano,Garbanzo grano,4747.5,4747.5,0.0,6855.06,1.44
+2021,3,Primavera-Verano,Maíz grano,6271859.67,5986463.39,285396.28,19387531.8,3.24
+2021,3,Primavera-Verano,Sorgo grano,590256.0,570784.19,19471.81,2307234.48,4.04
+2021,3,Primavera-Verano,Soya,163820.0,155340.21,8479.79,242228.57,1.56
+2021,3,Primavera-Verano,Trigo grano,78578.67,78432.67,146.0,160231.6,2.04
+2021,4,Otoño-Invierno,Cebada grano,70785.87,10217.7,0.0,57492.69,5.63
+2021,4,Otoño-Invierno,Cártamo,31220.46,2705.0,365.0,2066.93,0.76
+2021,4,Otoño-Invierno,Frijol,255026.15,227935.0,829.75,285209.22,1.25
+2021,4,Otoño-Invierno,Garbanzo grano,87493.43,63386.29,0.0,117085.7,1.85
+2021,4,Otoño-Invierno,Maíz grano,1185879.34,236753.81,25755.56,727473.64,3.07
+2021,4,Otoño-Invierno,Sorgo grano,1038793.78,86570.98,319759.16,271857.98,3.14
+2021,4,Otoño-Invierno,Soya,1656.5,997.1,0.0,2245.04,2.25
+2021,4,Otoño-Invierno,Trigo grano,486830.13,57550.71,5498.5,356312.13,6.19
+2021,4,Primavera-Verano,Cebada grano,14590.0,0.0,0.0,0.0,0.0
+2021,4,Primavera-Verano,Frijol,33711.91,0.0,0.0,0.0,0.0
+2021,4,Primavera-Verano,Garbanzo grano,501.0,0.0,0.0,0.0,0.0
+2021,4,Primavera-Verano,Maíz grano,421701.98,0.0,0.0,0.0,0.0
+2021,4,Primavera-Verano,Sorgo grano,22365.3,0.0,0.0,0.0,0.0
+2021,4,Primavera-Verano,Trigo grano,543.1,0.0,0.0,0.0,0.0
+2021,5,Otoño-Invierno,Cebada grano,70785.87,60079.37,1503.0,353507.61,5.88
+2021,5,Otoño-Invierno,Cártamo,31220.46,19985.61,365.0,29443.57,1.47
+2021,5,Otoño-Invierno,Frijol,255026.15,246773.33,859.75,305048.8,1.24
+2021,5,Otoño-Invierno,Garbanzo grano,87493.43,77650.5,0.0,143919.47,1.85
+2021,5,Otoño-Invierno,Maíz grano,1185879.34,619689.71,27957.56,3387437.08,5.47
+2021,5,Otoño-Invierno,Sorgo grano,1038793.78,195643.9,320571.16,575889.4,2.94
+2021,5,Otoño-Invierno,Soya,1656.5,1350.9,0.0,3027.0,2.24
+2021,5,Otoño-Invierno,Trigo grano,486830.13,344706.1,5941.23,2255040.26,6.54
+2021,5,Primavera-Verano,Cebada grano,28972.56,0.0,0.0,0.0,0.0
+2021,5,Primavera-Verano,Frijol,92115.18,0.0,0.0,0.0,0.0
+2021,5,Primavera-Verano,Garbanzo grano,503.0,0.0,0.0,0.0,0.0
+2021,5,Primavera-Verano,Maíz grano,1501997.64,0.0,0.0,0.0,0.0
+2021,5,Primavera-Verano,Sorgo grano,97527.89,0.0,0.0,0.0,0.0
+2021,5,Primavera-Verano,Soya,120.0,0.0,0.0,0.0,0.0
+2021,5,Primavera-Verano,Trigo grano,5794.95,0.0,0.0,0.0,0.0
+2021,6,Otoño-Invierno,Cebada grano,70785.87,67717.87,1503.0,385971.95,5.7
+2021,6,Otoño-Invierno,Cártamo,31220.46,24253.61,390.0,38871.22,1.6
+2021,6,Otoño-Invierno,Frijol,255026.15,252496.74,859.75,313014.5,1.24
+2021,6,Otoño-Invierno,Garbanzo grano,87493.43,85721.19,0.0,161409.12,1.88
+2021,6,Otoño-Invierno,Maíz grano,1185879.34,1008372.88,27957.56,6939550.45,6.88
+2021,6,Otoño-Invierno,Sorgo grano,1038793.78,246218.89,320571.16,721506.86,2.93
+2021,6,Otoño-Invierno,Soya,1656.5,1390.9,0.0,3128.2,2.25
+2021,6,Otoño-Invierno,Trigo grano,486830.13,463115.82,5946.23,3026869.47,6.54
+2021,6,Primavera-Verano,Cebada grano,192873.3,0.0,0.0,0.0,0.0
+2021,6,Primavera-Verano,Frijol,309254.77,350.0,0.0,750.0,2.14
+2021,6,Primavera-Verano,Garbanzo grano,1449.0,0.0,0.0,0.0,0.0
+2021,6,Primavera-Verano,Maíz grano,3290061.84,0.0,0.0,0.0,0.0
+2021,6,Primavera-Verano,Sorgo grano,203071.99,0.0,0.0,0.0,0.0
+2021,6,Primavera-Verano,Soya,21688.0,0.0,0.0,0.0,0.0
+2021,6,Primavera-Verano,Trigo grano,32143.32,0.0,0.0,0.0,0.0
+2021,7,Otoño-Invierno,Cebada grano,70785.87,69277.87,1503.0,391548.85,5.65
+2021,7,Otoño-Invierno,Cártamo,31220.46,27375.46,415.0,45508.02,1.66
+2021,7,Otoño-Invierno,Frijol,255026.15,253978.43,859.75,315227.37,1.24
+2021,7,Otoño-Invierno,Garbanzo grano,87493.43,87452.43,0.0,165310.05,1.89
+2021,7,Otoño-Invierno,Maíz grano,1185879.34,1137685.77,27957.56,7859070.65,6.91
+2021,7,Otoño-Invierno,Sorgo grano,1038793.78,682186.25,320571.16,1895721.54,2.78
+2021,7,Otoño-Invierno,Soya,1656.5,1599.9,0.0,3505.7,2.19
+2021,7,Otoño-Invierno,Trigo grano,486830.13,479952.05,5946.23,3138347.31,6.54
+2021,7,Primavera-Verano,Cebada grano,240678.36,0.0,0.0,0.0,0.0
+2021,7,Primavera-Verano,Frijol,945930.02,2354.3,0.0,4084.07,1.73
+2021,7,Primavera-Verano,Garbanzo grano,2592.66,500.0,0.0,450.0,0.9
+2021,7,Primavera-Verano,Maíz grano,5430623.81,3159.24,84.0,26458.79,8.38
+2021,7,Primavera-Verano,Sorgo grano,372607.19,26223.0,3.0,134639.4,5.13
+2021,7,Primavera-Verano,Soya,85305.09,0.0,0.0,0.0,0.0
+2021,7,Primavera-Verano,Trigo grano,55493.41,0.0,0.0,0.0,0.0
+2021,8,Otoño-Invierno,Cebada grano,70785.87,69277.87,1503.0,391548.85,5.65
+2021,8,Otoño-Invierno,Cártamo,31220.46,30805.46,415.0,52419.09,1.7
+2021,8,Otoño-Invierno,Frijol,255026.15,254107.4,859.75,315392.6,1.24
+2021,8,Otoño-Invierno,Garbanzo grano,87493.43,87488.43,0.0,165367.95,1.89
+2021,8,Otoño-Invierno,Maíz grano,1185879.34,1156420.28,29077.56,7956496.29,6.88
+2021,8,Otoño-Invierno,Sorgo grano,1038793.78,717608.73,320571.16,2039234.04,2.84
+2021,8,Otoño-Invierno,Soya,1656.5,1656.5,0.0,3792.94,2.29
+2021,8,Otoño-Invierno,Trigo grano,486830.13,480401.9,5946.23,3143442.0,6.54
+2021,8,Primavera-Verano,Cebada grano,266331.75,32.0,0.0,58.4,1.83
+2021,8,Primavera-Verano,Cártamo,290.0,0.0,0.0,0.0,0.0
+2021,8,Primavera-Verano,Frijol,1333433.86,20176.46,871.0,27695.24,1.37
+2021,8,Primavera-Verano,Garbanzo grano,2682.66,500.0,0.0,450.0,0.9
+2021,8,Primavera-Verano,Maíz grano,5997937.75,32075.95,43224.47,123356.17,3.85
+2021,8,Primavera-Verano,Sorgo grano,521394.23,28173.0,648.3,173157.5,6.15
+2021,8,Primavera-Verano,Soya,165574.42,0.0,4013.0,0.0,0.0
+2021,8,Primavera-Verano,Trigo grano,65679.3,0.0,100.0,0.0,0.0
+2021,9,Otoño-Invierno,Cebada grano,70785.87,69282.87,1503.0,391569.35,5.65
+2021,9,Otoño-Invierno,Cártamo,31220.46,30805.46,415.0,52419.09,1.7
+2021,9,Otoño-Invierno,Frijol,255026.15,254166.4,859.75,315426.91,1.24
+2021,9,Otoño-Invierno,Garbanzo grano,87493.43,87493.43,0.0,165371.95,1.89
+2021,9,Otoño-Invierno,Maíz grano,1185879.34,1156801.78,29077.56,7958865.24,6.88
+2021,9,Otoño-Invierno,Sorgo grano,1038793.78,718222.62,320571.16,2041557.04,2.84
+2021,9,Otoño-Invierno,Soya,1656.5,1656.5,0.0,3792.94,2.29
+2021,9,Otoño-Invierno,Trigo grano,486830.13,480883.9,5946.23,3146824.2,6.54
+2021,9,Primavera-Verano,Cebada grano,271302.75,4452.0,890.9,11421.4,2.57
+2021,9,Primavera-Verano,Cártamo,290.0,0.0,0.0,0.0,0.0
+2021,9,Primavera-Verano,Frijol,1360849.16,63699.88,1579.0,64830.77,1.02
+2021,9,Primavera-Verano,Garbanzo grano,4449.66,553.0,0.0,555.5,1.0
+2021,9,Primavera-Verano,Maíz grano,6124796.41,84394.3,62146.22,267470.98,3.17
+2021,9,Primavera-Verano,Sorgo grano,567712.44,29748.0,748.3,179990.75,6.05
+2021,9,Primavera-Verano,Soya,188582.42,0.0,4013.0,0.0,0.0
+2021,9,Primavera-Verano,Trigo grano,66645.45,441.0,100.0,687.48,1.56
+2021,10,Otoño-Invierno,Cebada grano,1.2,0.0,0.0,0.0,0.0
+2021,10,Otoño-Invierno,Cártamo,693.3,0.0,0.0,0.0,0.0
+2021,10,Otoño-Invierno,Frijol,31391.31,0.0,0.0,0.0,0.0
+2021,10,Otoño-Invierno,Garbanzo grano,33824.7,0.0,0.0,0.0,0.0
+2021,10,Otoño-Invierno,Maíz grano,31893.96,0.0,3.0,0.0,0.0
+2021,10,Otoño-Invierno,Sorgo grano,4248.5,0.0,0.0,0.0,0.0
+2021,10,Otoño-Invierno,Soya,1656.5,1656.5,0.0,3792.94,2.29
+2021,10,Otoño-Invierno,Trigo grano,40.3,0.0,0.0,0.0,0.0
+2021,10,Primavera-Verano,Cebada grano,271302.75,78136.25,890.9,209583.98,2.68
+2021,10,Primavera-Verano,Cártamo,290.0,0.0,0.0,0.0,0.0
+2021,10,Primavera-Verano,Frijol,1360849.16,200817.49,11839.0,182322.58,0.91
+2021,10,Primavera-Verano,Garbanzo grano,4449.66,553.0,0.0,555.5,1.0
+2021,10,Primavera-Verano,Maíz grano,6124796.41,407360.53,83248.22,1229291.47,3.02
+2021,10,Primavera-Verano,Sorgo grano,567712.44,54590.35,955.3,332540.29,6.09
+2021,10,Primavera-Verano,Soya,188582.42,422.0,4213.0,1025.27,2.43
+2021,10,Primavera-Verano,Trigo grano,66645.45,9600.2,100.0,25220.76,2.63
+2021,11,Otoño-Invierno,Cebada grano,428.2,0.0,0.0,0.0,0.0
+2021,11,Otoño-Invierno,Cártamo,7686.17,0.0,0.0,0.0,0.0
+2021,11,Otoño-Invierno,Frijol,185640.11,0.0,0.0,0.0,0.0
+2021,11,Otoño-Invierno,Garbanzo grano,59117.75,0.0,0.0,0.0,0.0
+2021,11,Otoño-Invierno,Maíz grano,395439.56,0.0,3.0,0.0,0.0
+2021,11,Otoño-Invierno,Sorgo grano,41564.81,0.0,0.0,0.0,0.0
+2021,11,Otoño-Invierno,Soya,84.7,0.0,0.0,0.0,0.0
+2021,11,Otoño-Invierno,Trigo grano,81502.93,0.0,0.0,0.0,0.0
+2021,11,Primavera-Verano,Cebada grano,271302.75,212168.96,1040.9,501671.03,2.36
+2021,11,Primavera-Verano,Cártamo,290.0,205.0,0.0,140.2,0.68
+2021,11,Primavera-Verano,Frijol,1360849.16,973748.58,18234.0,624810.25,0.64
+2021,11,Primavera-Verano,Garbanzo grano,4449.66,2259.0,0.0,3134.6,1.39
+2021,11,Primavera-Verano,Maíz grano,6124796.41,2098713.61,118112.22,6287637.28,3.0
+2021,11,Primavera-Verano,Sorgo grano,567712.44,268221.95,1201.3,1338102.34,4.99
+2021,11,Primavera-Verano,Soya,188582.42,66964.61,5118.0,100729.69,1.5
+2021,11,Primavera-Verano,Trigo grano,66645.45,30175.92,100.0,78106.95,2.59
+2021,12,Otoño-Invierno,Cebada grano,23002.57,0.0,0.0,0.0,0.0
+2021,12,Otoño-Invierno,Cártamo,15570.07,0.0,0.0,0.0,0.0
+2021,12,Otoño-Invierno,Frijol,211472.06,0.0,0.0,0.0,0.0
+2021,12,Otoño-Invierno,Garbanzo grano,74445.8,0.0,0.0,0.0,0.0
+2021,12,Otoño-Invierno,Maíz grano,690070.35,0.0,3.0,0.0,0.0
+2021,12,Otoño-Invierno,Sorgo grano,83155.19,0.0,0.0,0.0,0.0
+2021,12,Otoño-Invierno,Soya,134.7,0.0,0.0,0.0,0.0
+2021,12,Otoño-Invierno,Trigo grano,318686.65,0.0,0.0,0.0,0.0
+2021,12,Primavera-Verano,Cebada grano,271302.75,258855.83,1040.9,613934.88,2.37
+2021,12,Primavera-Verano,Cártamo,290.0,290.0,0.0,215.2,0.74
+2021,12,Primavera-Verano,Frijol,1360849.16,1317983.34,18746.0,842216.3,0.64
+2021,12,Primavera-Verano,Garbanzo grano,4449.66,3286.33,0.0,4634.55,1.41
+2021,12,Primavera-Verano,Maíz grano,6124796.41,4426664.29,121875.22,14045411.87,3.17
+2021,12,Primavera-Verano,Sorgo grano,567712.44,455586.2,1501.3,2001919.7,4.39
+2021,12,Primavera-Verano,Soya,188582.42,156707.28,5118.0,244740.31,1.56
+2021,12,Primavera-Verano,Trigo grano,66645.45,56328.51,100.0,119687.38,2.12
+2022,1,Otoño-Invierno,Cebada grano,62782.57,0.0,0.0,0.0,0.0
+2022,1,Otoño-Invierno,Cártamo,25096.77,0.0,0.0,0.0,0.0
+2022,1,Otoño-Invierno,Frijol,239085.73,7802.0,124.0,9108.3,1.17
+2022,1,Otoño-Invierno,Garbanzo grano,100444.57,120.0,0.0,276.0,2.3
+2022,1,Otoño-Invierno,Maíz grano,971404.07,7466.0,3.0,7153.52,0.96
+2022,1,Otoño-Invierno,Sorgo grano,298660.86,0.0,0.0,0.0,0.0
+2022,1,Otoño-Invierno,Soya,564.7,0.0,0.0,0.0,0.0
+2022,1,Otoño-Invierno,Trigo grano,495912.77,0.0,0.0,0.0,0.0
+2022,1,Primavera-Verano,Cebada grano,271302.75,270145.85,1040.9,628374.96,2.33
+2022,1,Primavera-Verano,Cártamo,290.0,290.0,0.0,215.2,0.74
+2022,1,Primavera-Verano,Frijol,1360849.16,1338060.25,18886.0,857910.65,0.64
+2022,1,Primavera-Verano,Garbanzo grano,4449.66,4299.66,0.0,6582.49,1.53
+2022,1,Primavera-Verano,Maíz grano,6124796.41,5764114.45,124238.72,18750881.93,3.25
+2022,1,Primavera-Verano,Sorgo grano,567712.44,556647.35,4114.3,2232147.03,4.01
+2022,1,Primavera-Verano,Soya,188582.42,180985.42,5557.0,279774.85,1.55
+2022,1,Primavera-Verano,Trigo grano,66645.45,66159.8,100.0,133682.38,2.02
+2022,2,Otoño-Invierno,Cebada grano,66886.07,0.0,0.0,0.0,0.0
+2022,2,Otoño-Invierno,Cártamo,31985.27,0.0,0.0,0.0,0.0
+2022,2,Otoño-Invierno,Frijol,247809.81,100018.98,124.0,128093.1,1.28
+2022,2,Otoño-Invierno,Garbanzo grano,103916.12,12477.48,0.0,19853.43,1.59
+2022,2,Otoño-Invierno,Maíz grano,1066462.73,24332.29,133.0,67367.93,2.77
+2022,2,Otoño-Invierno,Sorgo grano,523480.63,16572.19,1421.0,34981.9,2.11
+2022,2,Otoño-Invierno,Soya,1244.7,0.0,0.0,0.0,0.0
+2022,2,Otoño-Invierno,Trigo grano,522581.19,0.0,0.0,0.0,0.0
+2022,2,Primavera-Verano,Cebada grano,271302.75,270238.85,1040.9,628881.46,2.33
+2022,2,Primavera-Verano,Cártamo,290.0,290.0,0.0,215.2,0.74
+2022,2,Primavera-Verano,Frijol,1360849.16,1341957.03,18886.0,860316.98,0.64
+2022,2,Primavera-Verano,Garbanzo grano,4449.66,4449.66,0.0,6724.99,1.51
+2022,2,Primavera-Verano,Maíz grano,6124796.41,5969160.25,124238.72,19424409.9,3.25
+2022,2,Primavera-Verano,Sorgo grano,567712.44,560954.04,4114.3,2242674.1,4.0
+2022,2,Primavera-Verano,Soya,188582.42,182364.42,5557.0,282909.75,1.55
+2022,2,Primavera-Verano,Trigo grano,66645.45,66545.45,100.0,134647.22,2.02
+2022,3,Otoño-Invierno,Cebada grano,81012.07,0.0,0.0,0.0,0.0
+2022,3,Otoño-Invierno,Cártamo,34532.27,749.0,0.0,587.07,0.78
+2022,3,Otoño-Invierno,Frijol,248505.47,199607.55,132.0,258683.59,1.3
+2022,3,Otoño-Invierno,Garbanzo grano,104978.12,53495.51,0.0,84840.94,1.59
+2022,3,Otoño-Invierno,Maíz grano,1095264.34,73180.92,433.0,206232.63,2.82
+2022,3,Otoño-Invierno,Sorgo grano,844855.42,36825.19,1971.0,79361.29,2.16
+2022,3,Otoño-Invierno,Soya,1567.15,0.0,0.0,0.0,0.0
+2022,3,Otoño-Invierno,Trigo grano,531801.29,11.0,356.5,10.35,0.94
+2022,3,Primavera-Verano,Cebada grano,271302.75,270261.85,1040.9,629007.96,2.33
+2022,3,Primavera-Verano,Cártamo,290.0,290.0,0.0,215.2,0.74
+2022,3,Primavera-Verano,Frijol,1360849.16,1341962.97,18886.0,860483.8,0.64
+2022,3,Primavera-Verano,Garbanzo grano,4449.66,4449.66,0.0,6724.99,1.51
+2022,3,Primavera-Verano,Maíz grano,6124796.41,6000557.67,124238.72,19533136.49,3.26
+2022,3,Primavera-Verano,Sorgo grano,567712.44,563598.14,4114.3,2249420.46,3.99
+2022,3,Primavera-Verano,Soya,188582.42,183025.42,5557.0,284329.85,1.55
+2022,3,Primavera-Verano,Trigo grano,66645.45,66545.45,100.0,134647.22,2.02
+2022,4,Otoño-Invierno,Cebada grano,81012.07,11213.0,0.0,68020.92,6.07
+2022,4,Otoño-Invierno,Cártamo,34532.27,3089.0,0.0,2090.94,0.68
+2022,4,Otoño-Invierno,Frijol,248505.47,226169.31,132.0,293643.91,1.3
+2022,4,Otoño-Invierno,Garbanzo grano,104978.12,83580.95,0.0,126938.73,1.52
+2022,4,Otoño-Invierno,Maíz grano,1095264.34,261060.26,433.0,801335.14,3.07
+2022,4,Otoño-Invierno,Sorgo grano,844855.42,100849.78,1971.0,287261.37,2.85
+2022,4,Otoño-Invierno,Soya,1567.15,1001.8,0.0,2362.56,2.36
+2022,4,Otoño-Invierno,Trigo grano,531801.29,68372.14,381.5,376036.03,5.5
+2022,4,Primavera-Verano,Cebada grano,3267.0,0.0,0.0,0.0,0.0
+2022,4,Primavera-Verano,Cártamo,5111.65,0.0,0.0,0.0,0.0
+2022,4,Primavera-Verano,Frijol,25561.44,0.0,0.0,0.0,0.0
+2022,4,Primavera-Verano,Garbanzo grano,900.0,0.0,0.0,0.0,0.0
+2022,4,Primavera-Verano,Maíz grano,424550.14,0.0,0.0,0.0,0.0
+2022,4,Primavera-Verano,Sorgo grano,22127.37,0.0,0.0,0.0,0.0
+2022,4,Primavera-Verano,Trigo grano,341.4,0.0,0.0,0.0,0.0
+2022,5,Otoño-Invierno,Cebada grano,81012.07,61726.4,0.0,371780.53,6.02
+2022,5,Otoño-Invierno,Cártamo,34532.27,15812.72,358.0,25050.19,1.58
+2022,5,Otoño-Invierno,Frijol,248505.47,243218.29,132.0,309782.04,1.27
+2022,5,Otoño-Invierno,Garbanzo grano,104978.12,97697.87,0.0,164196.0,1.68
+2022,5,Otoño-Invierno,Maíz grano,1095264.34,664555.17,2151.0,3361018.82,5.06
+2022,5,Otoño-Invierno,Sorgo grano,844855.42,157576.57,7592.0,473797.23,3.01
+2022,5,Otoño-Invierno,Soya,1567.15,1224.7,0.0,2867.26,2.34
+2022,5,Otoño-Invierno,Trigo grano,531801.29,393664.84,381.5,2467387.2,6.27
+2022,5,Primavera-Verano,Cebada grano,17516.43,0.0,0.0,0.0,0.0
+2022,5,Primavera-Verano,Cártamo,5136.85,0.0,0.0,0.0,0.0
+2022,5,Primavera-Verano,Frijol,75693.81,0.0,23.0,0.0,0.0
+2022,5,Primavera-Verano,Garbanzo grano,1345.0,0.0,0.0,0.0,0.0
+2022,5,Primavera-Verano,Maíz grano,1539869.15,0.0,3785.0,0.0,0.0
+2022,5,Primavera-Verano,Sorgo grano,111310.97,0.0,0.0,0.0,0.0
+2022,5,Primavera-Verano,Trigo grano,5129.86,0.0,40.0,0.0,0.0
+2022,6,Otoño-Invierno,Cebada grano,81012.07,77726.4,923.0,460060.35,5.92
+2022,6,Otoño-Invierno,Cártamo,34532.27,20709.27,358.0,36165.85,1.75
+2022,6,Otoño-Invierno,Frijol,248505.47,246943.75,132.0,314993.54,1.28
+2022,6,Otoño-Invierno,Garbanzo grano,104978.12,104216.12,0.0,176424.05,1.69
+2022,6,Otoño-Invierno,Maíz grano,1095264.34,961490.7,2151.0,6319950.79,6.57
+2022,6,Otoño-Invierno,Sorgo grano,844855.42,484556.28,12639.0,1422736.18,2.94
+2022,6,Otoño-Invierno,Soya,1567.15,1244.7,0.0,2915.26,2.34
+2022,6,Otoño-Invierno,Trigo grano,531801.29,507207.13,2585.5,3333902.57,6.57
+2022,6,Primavera-Verano,Cebada grano,164939.57,0.0,0.0,0.0,0.0
+2022,6,Primavera-Verano,Cártamo,5136.85,0.0,0.0,0.0,0.0
+2022,6,Primavera-Verano,Frijol,171892.88,662.0,23.0,1433.38,2.17
+2022,6,Primavera-Verano,Garbanzo grano,1353.0,0.0,0.0,0.0,0.0
+2022,6,Primavera-Verano,Maíz grano,3044365.77,0.0,4008.0,0.0,0.0
+2022,6,Primavera-Verano,Sorgo grano,207855.67,382.32,0.0,2289.12,5.99
+2022,6,Primavera-Verano,Soya,17707.0,0.0,0.0,0.0,0.0
+2022,6,Primavera-Verano,Trigo grano,29468.68,0.0,40.0,0.0,0.0
+2022,7,Otoño-Invierno,Cebada grano,81012.07,79389.07,923.0,463035.07,5.83
+2022,7,Otoño-Invierno,Cártamo,34532.27,30328.27,358.0,60228.21,1.99
+2022,7,Otoño-Invierno,Frijol,248505.47,248193.71,132.0,316817.54,1.28
+2022,7,Otoño-Invierno,Garbanzo grano,104978.12,104940.12,0.0,178386.45,1.7
+2022,7,Otoño-Invierno,Maíz grano,1095264.34,1089690.79,2152.0,7215893.39,6.62
+2022,7,Otoño-Invierno,Sorgo grano,844855.42,830997.48,13533.0,2590597.75,3.12
+2022,7,Otoño-Invierno,Soya,1567.15,1304.7,0.0,2939.26,2.25
+2022,7,Otoño-Invierno,Trigo grano,531801.29,528854.79,2585.5,3456192.61,6.54
+2022,7,Primavera-Verano,Cebada grano,212427.53,0.0,0.0,0.0,0.0
+2022,7,Primavera-Verano,Cártamo,5136.85,5136.85,0.0,7710.57,1.5
+2022,7,Primavera-Verano,Frijol,474064.17,2323.25,23.0,4057.98,1.75
+2022,7,Primavera-Verano,Garbanzo grano,3040.5,900.0,0.0,1800.0,2.0
+2022,7,Primavera-Verano,Maíz grano,4977103.01,4731.29,4017.0,39962.68,8.45
+2022,7,Primavera-Verano,Sorgo grano,331224.13,20597.92,0.0,134868.61,6.55
+2022,7,Primavera-Verano,Soya,54532.65,0.0,0.0,0.0,0.0
+2022,7,Primavera-Verano,Trigo grano,48744.06,0.0,40.0,0.0,0.0
+2022,8,Otoño-Invierno,Cebada grano,81012.07,79389.07,923.0,463035.07,5.83
+2022,8,Otoño-Invierno,Cártamo,34532.27,34157.27,375.0,68466.44,2.0
+2022,8,Otoño-Invierno,Frijol,248505.47,248264.37,132.0,316906.24,1.28
+2022,8,Otoño-Invierno,Garbanzo grano,104978.12,104978.12,0.0,178423.05,1.7
+2022,8,Otoño-Invierno,Maíz grano,1095264.34,1092162.97,2152.0,7226779.96,6.62
+2022,8,Otoño-Invierno,Sorgo grano,844855.42,831319.48,13533.0,2591896.9,3.12
+2022,8,Otoño-Invierno,Soya,1567.15,1567.15,0.0,3754.26,2.4
+2022,8,Otoño-Invierno,Trigo grano,531801.29,529215.79,2585.5,3458522.41,6.54
+2022,8,Primavera-Verano,Cebada grano,231892.18,24.0,0.0,40.2,1.67
+2022,8,Primavera-Verano,Cártamo,5418.85,5136.85,0.0,7710.57,1.5
+2022,8,Primavera-Verano,Frijol,1087270.33,21128.5,31.0,21513.71,1.02
+2022,8,Primavera-Verano,Garbanzo grano,3385.5,900.0,0.0,1800.0,2.0
+2022,8,Primavera-Verano,Maíz grano,5612112.74,22683.38,4479.5,109619.64,4.83
+2022,8,Primavera-Verano,Sorgo grano,420251.96,22241.42,0.0,146614.98,6.59
+2022,8,Primavera-Verano,Soya,109894.65,0.0,3274.0,0.0,0.0
+2022,8,Primavera-Verano,Trigo grano,56818.87,64.0,40.0,88.94,1.39
+2022,9,Otoño-Invierno,Cebada grano,81012.07,80089.07,923.0,463858.37,5.79
+2022,9,Otoño-Invierno,Cártamo,34532.27,34157.27,375.0,68466.44,2.0
+2022,9,Otoño-Invierno,Frijol,248505.47,248343.47,162.0,316968.03,1.28
+2022,9,Otoño-Invierno,Garbanzo grano,104978.12,104978.12,0.0,178423.05,1.7
+2022,9,Otoño-Invierno,Maíz grano,1095264.34,1093112.34,2152.0,7228871.21,6.61
+2022,9,Otoño-Invierno,Sorgo grano,844855.42,831322.42,13533.0,2592733.39,3.12
+2022,9,Otoño-Invierno,Soya,1567.15,1567.15,0.0,3754.26,2.4
+2022,9,Otoño-Invierno,Trigo grano,531801.29,529215.79,2585.5,3458620.91,6.54
+2022,9,Primavera-Verano,Cebada grano,248522.18,4774.0,0.0,12780.1,2.68
+2022,9,Primavera-Verano,Cártamo,6031.85,5136.85,0.0,7710.57,1.5
+2022,9,Primavera-Verano,Frijol,1222663.15,54589.13,1032.25,45975.39,0.84
+2022,9,Primavera-Verano,Garbanzo grano,5627.5,900.0,0.0,1800.0,2.0
+2022,9,Primavera-Verano,Maíz grano,5776458.29,61637.88,22407.5,274878.36,4.46
+2022,9,Primavera-Verano,Sorgo grano,504689.29,22938.42,444.0,150659.82,6.57
+2022,9,Primavera-Verano,Soya,130221.14,0.0,13016.0,0.0,0.0
+2022,9,Primavera-Verano,Trigo grano,59673.62,345.0,40.0,533.8,1.55
+2022,10,Otoño-Invierno,Cebada grano,0.7,0.0,0.0,0.0,0.0
+2022,10,Otoño-Invierno,Cártamo,771.4,0.0,0.0,0.0,0.0
+2022,10,Otoño-Invierno,Frijol,24435.34,0.0,0.0,0.0,0.0
+2022,10,Otoño-Invierno,Garbanzo grano,9234.62,0.0,0.0,0.0,0.0
+2022,10,Otoño-Invierno,Maíz grano,44839.77,0.0,11.0,0.0,0.0
+2022,10,Otoño-Invierno,Sorgo grano,42882.74,0.0,0.0,0.0,0.0
+2022,10,Otoño-Invierno,Soya,1567.15,1567.15,0.0,3754.26,2.4
+2022,10,Otoño-Invierno,Trigo grano,652.3,0.0,0.0,0.0,0.0
+2022,10,Primavera-Verano,Cebada grano,248522.18,64592.8,100.0,168906.5,2.61
+2022,10,Primavera-Verano,Cártamo,6031.85,5136.85,0.0,7710.57,1.5
+2022,10,Primavera-Verano,Frijol,1222663.15,122639.89,1205.55,117689.63,0.96
+2022,10,Primavera-Verano,Garbanzo grano,5627.5,900.0,0.0,1800.0,2.0
+2022,10,Primavera-Verano,Maíz grano,5776458.29,339687.98,33626.5,1336806.71,3.94
+2022,10,Primavera-Verano,Sorgo grano,504689.29,39866.0,642.0,274002.37,6.87
+2022,10,Primavera-Verano,Soya,130221.14,300.0,16666.0,722.5,2.41
+2022,10,Primavera-Verano,Trigo grano,59673.62,9145.0,109.0,24792.5,2.71
+2022,11,Otoño-Invierno,Cebada grano,156.7,0.0,0.0,0.0,0.0
+2022,11,Otoño-Invierno,Cártamo,6985.51,0.0,0.0,0.0,0.0
+2022,11,Otoño-Invierno,Frijol,146558.46,0.0,0.0,0.0,0.0
+2022,11,Otoño-Invierno,Garbanzo grano,34302.48,0.0,0.0,0.0,0.0
+2022,11,Otoño-Invierno,Maíz grano,447849.22,0.0,11.0,0.0,0.0
+2022,11,Otoño-Invierno,Sorgo grano,126365.28,0.0,0.0,0.0,0.0
+2022,11,Otoño-Invierno,Soya,109.9,0.0,0.0,0.0,0.0
+2022,11,Otoño-Invierno,Trigo grano,108054.4,0.0,0.0,0.0,0.0
+2022,11,Primavera-Verano,Cebada grano,248522.18,195623.71,5310.0,424499.73,2.17
+2022,11,Primavera-Verano,Cártamo,6031.85,5911.85,0.0,8427.32,1.43
+2022,11,Primavera-Verano,Frijol,1222663.15,571017.28,15484.08,401161.71,0.7
+2022,11,Primavera-Verano,Garbanzo grano,5627.5,1652.0,0.0,2780.4,1.68
+2022,11,Primavera-Verano,Maíz grano,5776458.29,1956006.91,77546.0,6681755.94,3.42
+2022,11,Primavera-Verano,Sorgo grano,504689.29,255049.63,1367.5,1292769.97,5.07
+2022,11,Primavera-Verano,Soya,130221.14,79543.41,16726.0,118436.04,1.49
+2022,11,Primavera-Verano,Trigo grano,59673.62,22768.14,112.0,57833.02,2.54
+2022,12,Otoño-Invierno,Cebada grano,20336.0,0.0,0.0,0.0,0.0
+2022,12,Otoño-Invierno,Cártamo,20740.22,0.0,0.0,0.0,0.0
+2022,12,Otoño-Invierno,Frijol,176018.69,0.0,0.0,0.0,0.0
+2022,12,Otoño-Invierno,Garbanzo grano,49230.89,0.0,0.0,0.0,0.0
+2022,12,Otoño-Invierno,Maíz grano,788157.03,0.0,11.0,0.0,0.0
+2022,12,Otoño-Invierno,Sorgo grano,175359.63,0.0,0.0,0.0,0.0
+2022,12,Otoño-Invierno,Soya,140.7,0.0,0.0,0.0,0.0
+2022,12,Otoño-Invierno,Trigo grano,325144.55,0.0,0.0,0.0,0.0
+2022,12,Primavera-Verano,Cebada grano,248522.18,226941.23,5575.0,464561.05,2.05
+2022,12,Primavera-Verano,Cártamo,6031.85,6031.85,0.0,8539.82,1.42
+2022,12,Primavera-Verano,Frijol,1222663.15,1162590.41,21936.64,627167.26,0.54
+2022,12,Primavera-Verano,Garbanzo grano,5627.5,5267.5,0.0,8632.37,1.64
+2022,12,Primavera-Verano,Maíz grano,5776458.29,4276705.03,92731.34,14376874.47,3.36
+2022,12,Primavera-Verano,Sorgo grano,504689.29,441238.99,2148.5,1972056.67,4.47
+2022,12,Primavera-Verano,Soya,130221.14,104645.94,16726.0,152357.76,1.46
+2022,12,Primavera-Verano,Trigo grano,59673.62,46612.57,133.5,97321.39,2.09
+2023,1,Otoño-Invierno,Cebada grano,29938.0,0.0,0.0,0.0,0.0
+2023,1,Otoño-Invierno,Cártamo,24860.25,0.0,0.0,0.0,0.0
+2023,1,Otoño-Invierno,Frijol,190964.98,3562.0,22.0,3106.95,0.87
+2023,1,Otoño-Invierno,Garbanzo grano,57177.0,90.0,0.0,197.6,2.2
+2023,1,Otoño-Invierno,Maíz grano,1058653.08,190.0,261.0,857.5,4.51
+2023,1,Otoño-Invierno,Sorgo grano,533878.99,14026.74,0.0,42409.8,3.02
+2023,1,Otoño-Invierno,Soya,596.7,0.0,0.0,0.0,0.0
+2023,1,Otoño-Invierno,Trigo grano,437643.45,0.0,5.0,0.0,0.0
+2023,1,Primavera-Verano,Cebada grano,248522.18,238097.18,5575.0,486674.22,2.04
+2023,1,Primavera-Verano,Cártamo,6031.85,6031.85,0.0,8539.82,1.42
+2023,1,Primavera-Verano,Frijol,1222663.15,1185643.14,23334.22,645425.07,0.54
+2023,1,Primavera-Verano,Garbanzo grano,5627.5,5627.5,0.0,8949.37,1.59
+2023,1,Primavera-Verano,Maíz grano,5776458.29,5458038.49,93354.34,18243870.24,3.34
+2023,1,Primavera-Verano,Sorgo grano,504689.29,488068.0,3330.5,2125673.42,4.36
+2023,1,Primavera-Verano,Soya,130221.14,111858.14,16726.0,168383.11,1.51
+2023,1,Primavera-Verano,Trigo grano,59673.62,54890.12,133.5,107503.93,1.96
+2023,2,Otoño-Invierno,Cebada grano,44009.16,0.0,0.0,0.0,0.0
+2023,2,Otoño-Invierno,Cártamo,30693.25,0.0,0.0,0.0,0.0
+2023,2,Otoño-Invierno,Frijol,198631.46,70603.09,33.0,89571.1,1.27
+2023,2,Otoño-Invierno,Garbanzo grano,60339.2,8322.32,0.0,15563.71,1.87
+2023,2,Otoño-Invierno,Maíz grano,1175690.63,15881.89,939.0,37526.59,2.36
+2023,2,Otoño-Invierno,Sorgo grano,835629.12,41251.91,0.0,130176.15,3.16
+2023,2,Otoño-Invierno,Soya,1297.7,0.0,0.0,0.0,0.0
+2023,2,Otoño-Invierno,Trigo grano,469360.15,0.0,9.0,0.0,0.0
+2023,2,Primavera-Verano,Cebada grano,248522.18,242947.18,5575.0,498314.42,2.05
+2023,2,Primavera-Verano,Cártamo,6031.85,6031.85,0.0,8539.82,1.42
+2023,2,Primavera-Verano,Frijol,1222663.15,1199326.93,23334.22,651402.97,0.54
+2023,2,Primavera-Verano,Garbanzo grano,5627.5,5627.5,0.0,8949.37,1.59
+2023,2,Primavera-Verano,Maíz grano,5776458.29,5670214.67,93612.34,18804946.11,3.32
+2023,2,Primavera-Verano,Sorgo grano,504689.29,500739.89,3330.5,2150785.84,4.3
+2023,2,Primavera-Verano,Soya,130221.14,112379.14,16726.0,169405.11,1.51
+2023,2,Primavera-Verano,Trigo grano,59673.62,59541.12,133.5,114384.48,1.92
+2023,3,Otoño-Invierno,Cebada grano,52879.0,0.0,0.0,0.0,0.0
+2023,3,Otoño-Invierno,Cártamo,31562.25,1151.0,0.0,867.79,0.75
+2023,3,Otoño-Invierno,Frijol,203496.53,150758.2,49.0,177626.64,1.18
+2023,3,Otoño-Invierno,Garbanzo grano,66513.95,28624.59,0.0,55514.03,1.94
+2023,3,Otoño-Invierno,Maíz grano,1213402.27,75059.41,992.0,206066.34,2.75
+2023,3,Otoño-Invierno,Sorgo grano,904079.13,101063.64,31.0,293823.0,2.91
+2023,3,Otoño-Invierno,Soya,1360.35,20.0,0.0,40.0,2.0
+2023,3,Otoño-Invierno,Trigo grano,505275.28,5298.0,9.0,6886.7,1.3
+2023,3,Primavera-Verano,Cebada grano,248522.18,242947.18,5575.0,498314.45,2.05
+2023,3,Primavera-Verano,Cártamo,6031.85,6031.85,0.0,8539.82,1.42
+2023,3,Primavera-Verano,Frijol,1222663.15,1199328.93,23334.22,651529.88,0.54
+2023,3,Primavera-Verano,Garbanzo grano,5627.5,5627.5,0.0,8949.37,1.59
+2023,3,Primavera-Verano,Maíz grano,5776458.29,5682845.95,93612.34,19192857.79,3.38
+2023,3,Primavera-Verano,Sorgo grano,504689.29,501358.79,3330.5,2152356.58,4.29
+2023,3,Primavera-Verano,Soya,130221.14,113495.14,16726.0,171637.11,1.51
+2023,3,Primavera-Verano,Trigo grano,59673.62,59541.12,133.5,114385.08,1.92
+2023,4,Otoño-Invierno,Cebada grano,52879.0,6879.0,0.0,43642.72,6.34
+2023,4,Otoño-Invierno,Cártamo,31562.25,2472.46,100.0,1743.82,0.71
+2023,4,Otoño-Invierno,Frijol,203496.53,179686.03,49.0,209762.8,1.17
+2023,4,Otoño-Invierno,Garbanzo grano,66513.95,42870.04,30.0,82812.06,1.93
+2023,4,Otoño-Invierno,Maíz grano,1213402.27,255456.91,2636.6,756450.15,2.96
+2023,4,Otoño-Invierno,Sorgo grano,904079.13,153040.02,3110.88,518782.7,3.39
+2023,4,Otoño-Invierno,Soya,1360.35,1017.6,0.0,2473.3,2.43
+2023,4,Otoño-Invierno,Trigo grano,505275.28,60185.25,2477.5,316442.61,5.26
+2023,4,Primavera-Verano,Cebada grano,3482.0,0.0,0.0,0.0,0.0
+2023,4,Primavera-Verano,Cártamo,467.89,0.0,0.0,0.0,0.0
+2023,4,Primavera-Verano,Frijol,17580.65,0.0,0.0,0.0,0.0
+2023,4,Primavera-Verano,Garbanzo grano,120.0,0.0,0.0,0.0,0.0
+2023,4,Primavera-Verano,Maíz grano,409193.84,0.0,29.5,0.0,0.0
+2023,4,Primavera-Verano,Sorgo grano,27314.62,0.0,0.0,0.0,0.0
+2023,4,Primavera-Verano,Soya,65.0,0.0,0.0,0.0,0.0
+2023,4,Primavera-Verano,Trigo grano,251.5,0.0,0.0,0.0,0.0
+2023,5,Otoño-Invierno,Cebada grano,52879.0,33331.16,0.0,200132.18,6.0
+2023,5,Otoño-Invierno,Cártamo,31562.25,12816.25,1050.0,16354.83,1.28
+2023,5,Otoño-Invierno,Frijol,203496.53,199457.92,49.0,239100.51,1.2
+2023,5,Otoño-Invierno,Garbanzo grano,66513.95,59753.65,30.0,117499.55,1.97
+2023,5,Otoño-Invierno,Maíz grano,1213402.27,624031.36,2636.6,3000162.02,4.81
+2023,5,Otoño-Invierno,Sorgo grano,904079.13,233923.81,3110.88,811119.01,3.47
+2023,5,Otoño-Invierno,Soya,1360.35,1109.7,0.0,2719.54,2.45
+2023,5,Otoño-Invierno,Trigo grano,505275.28,371167.81,2477.5,2384039.13,6.42
+2023,5,Primavera-Verano,Cebada grano,22569.0,0.0,0.0,0.0,0.0
+2023,5,Primavera-Verano,Cártamo,477.89,0.0,0.0,0.0,0.0
+2023,5,Primavera-Verano,Frijol,82314.38,0.0,0.0,0.0,0.0
+2023,5,Primavera-Verano,Garbanzo grano,567.0,0.0,0.0,0.0,0.0
+2023,5,Primavera-Verano,Maíz grano,1524196.41,0.0,319.0,0.0,0.0
+2023,5,Primavera-Verano,Sorgo grano,124060.71,0.0,47.0,0.0,0.0
+2023,5,Primavera-Verano,Soya,412.0,0.0,0.0,0.0,0.0
+2023,5,Primavera-Verano,Trigo grano,4905.9,0.0,0.0,0.0,0.0
+2023,6,Otoño-Invierno,Cebada grano,52879.0,48795.0,0.0,292659.03,6.0
+2023,6,Otoño-Invierno,Cártamo,31562.25,20858.25,1054.0,37142.43,1.78
+2023,6,Otoño-Invierno,Frijol,203496.53,202073.95,49.0,243148.62,1.2
+2023,6,Otoño-Invierno,Garbanzo grano,66513.95,66348.95,30.0,129993.52,1.96
+2023,6,Otoño-Invierno,Maíz grano,1213402.27,999270.45,4681.07,6834107.84,6.84
+2023,6,Otoño-Invierno,Sorgo grano,904079.13,744154.25,6562.11,2262997.0,3.04
+2023,6,Otoño-Invierno,Soya,1360.35,1131.7,0.0,2774.54,2.45
+2023,6,Otoño-Invierno,Trigo grano,505275.28,477831.28,2477.5,3214776.57,6.73
+2023,6,Primavera-Verano,Cebada grano,112693.16,0.0,0.0,0.0,0.0
+2023,6,Primavera-Verano,Cártamo,517.08,0.0,0.0,0.0,0.0
+2023,6,Primavera-Verano,Frijol,164764.75,358.5,1.0,799.38,2.23
+2023,6,Primavera-Verano,Garbanzo grano,605.0,0.0,0.0,0.0,0.0
+2023,6,Primavera-Verano,Maíz grano,2959782.1,0.0,746.5,0.0,0.0
+2023,6,Primavera-Verano,Sorgo grano,204515.74,15.0,47.0,24.75,1.65
+2023,6,Primavera-Verano,Soya,14180.5,0.0,0.0,0.0,0.0
+2023,6,Primavera-Verano,Trigo grano,25686.17,0.0,0.0,0.0,0.0
+2023,7,Otoño-Invierno,Cebada grano,52879.0,52729.0,0.0,297278.46,5.64
+2023,7,Otoño-Invierno,Cártamo,31562.25,26693.25,1054.0,52074.18,1.95
+2023,7,Otoño-Invierno,Frijol,203496.53,203375.05,49.0,244663.94,1.2
+2023,7,Otoño-Invierno,Garbanzo grano,66513.95,66483.95,30.0,130418.02,1.96
+2023,7,Otoño-Invierno,Maíz grano,1213402.27,1179911.8,4841.07,8684890.86,7.36
+2023,7,Otoño-Invierno,Sorgo grano,904079.13,897363.22,6612.11,2739973.31,3.05
+2023,7,Otoño-Invierno,Soya,1360.35,1360.35,0.0,3442.54,2.53
+2023,7,Otoño-Invierno,Trigo grano,505275.28,501316.28,2477.5,3344045.38,6.67
+2023,7,Primavera-Verano,Cebada grano,203470.15,0.0,0.0,0.0,0.0
+2023,7,Primavera-Verano,Cártamo,517.08,269.9,0.0,386.91,1.43
+2023,7,Primavera-Verano,Frijol,579381.24,1750.5,1.0,3055.06,1.75
+2023,7,Primavera-Verano,Garbanzo grano,2320.4,0.0,0.0,0.0,0.0
+2023,7,Primavera-Verano,Maíz grano,4882954.09,2570.18,1141.5,19864.38,7.73
+2023,7,Primavera-Verano,Sorgo grano,343234.19,18057.94,47.0,123729.08,6.85
+2023,7,Primavera-Verano,Soya,37525.0,0.0,0.0,0.0,0.0
+2023,7,Primavera-Verano,Trigo grano,36358.47,0.0,0.0,0.0,0.0
+2023,8,Otoño-Invierno,Cebada grano,52879.0,52729.0,0.0,297278.46,5.64
+2023,8,Otoño-Invierno,Cártamo,31562.25,30508.25,1054.0,60029.33,1.97
+2023,8,Otoño-Invierno,Frijol,203496.53,203425.59,49.0,244747.9,1.2
+2023,8,Otoño-Invierno,Garbanzo grano,66513.95,66483.95,30.0,130418.02,1.96
+2023,8,Otoño-Invierno,Maíz grano,1213402.27,1205593.84,4841.07,8880338.13,7.37
+2023,8,Otoño-Invierno,Sorgo grano,904079.13,897467.02,6612.11,2741177.14,3.05
+2023,8,Otoño-Invierno,Soya,1360.35,1360.35,0.0,3442.54,2.53
+2023,8,Otoño-Invierno,Trigo grano,505275.28,502105.78,2708.5,3351187.98,6.67
+2023,8,Primavera-Verano,Cebada grano,247536.67,35.0,0.0,58.1,1.66
+2023,8,Primavera-Verano,Cártamo,517.08,517.08,0.0,634.29,1.23
+2023,8,Primavera-Verano,Frijol,798223.02,12843.9,6496.0,15005.66,1.17
+2023,8,Primavera-Verano,Garbanzo grano,2559.4,150.0,0.0,331.5,2.21
+2023,8,Primavera-Verano,Maíz grano,5571706.53,18568.36,17528.25,99516.89,5.36
+2023,8,Primavera-Verano,Sorgo grano,386794.57,23682.57,71.0,161295.51,6.81
+2023,8,Primavera-Verano,Soya,87181.52,0.0,0.0,0.0,0.0
+2023,8,Primavera-Verano,Trigo grano,52900.54,70.0,0.0,99.35,1.42
+2023,9,Otoño-Invierno,Cebada grano,52879.0,52879.0,0.0,298207.96,5.64
+2023,9,Otoño-Invierno,Cártamo,31562.25,30508.25,1054.0,60029.33,1.97
+2023,9,Otoño-Invierno,Frijol,203496.53,203447.53,49.0,244782.08,1.2
+2023,9,Otoño-Invierno,Garbanzo grano,66513.95,66483.95,30.0,130418.02,1.96
+2023,9,Otoño-Invierno,Maíz grano,1213402.27,1208561.19,4841.08,8884385.79,7.35
+2023,9,Otoño-Invierno,Sorgo grano,904079.13,897467.02,6612.11,2741177.14,3.05
+2023,9,Otoño-Invierno,Soya,1360.35,1360.35,0.0,3442.54,2.53
+2023,9,Otoño-Invierno,Trigo grano,505275.28,502566.78,2708.5,3353423.68,6.67
+2023,9,Primavera-Verano,Cebada grano,248721.8,4847.0,4371.0,13718.7,2.83
+2023,9,Primavera-Verano,Cártamo,517.08,517.08,0.0,634.29,1.23
+2023,9,Primavera-Verano,Frijol,815272.74,59769.06,165666.8,55591.78,0.93
+2023,9,Primavera-Verano,Garbanzo grano,5014.7,150.0,0.0,331.5,2.21
+2023,9,Primavera-Verano,Maíz grano,5709670.19,61762.82,153292.9,320500.0,5.19
+2023,9,Primavera-Verano,Sorgo grano,432066.79,25102.57,4976.5,170334.04,6.79
+2023,9,Primavera-Verano,Soya,92926.72,0.0,1454.5,0.0,0.0
+2023,9,Primavera-Verano,Trigo grano,53847.95,341.0,528.5,508.4,1.49
+2023,10,Otoño-Invierno,Cebada grano,214.0,0.0,0.0,0.0,0.0
+2023,10,Otoño-Invierno,Cártamo,661.8,0.0,96.0,0.0,0.0
+2023,10,Otoño-Invierno,Frijol,24345.2,0.0,4678.0,0.0,0.0
+2023,10,Otoño-Invierno,Garbanzo grano,4062.32,0.0,112.0,0.0,0.0
+2023,10,Otoño-Invierno,Maíz grano,18361.36,0.0,123.91,0.0,0.0
+2023,10,Otoño-Invierno,Sorgo grano,10361.55,0.0,0.0,0.0,0.0
+2023,10,Otoño-Invierno,Soya,1360.35,1360.35,0.0,3442.54,2.53
+2023,10,Otoño-Invierno,Trigo grano,134.0,0.0,0.0,0.0,0.0
+2023,10,Primavera-Verano,Cebada grano,248721.8,66448.18,5419.1,187529.88,2.82
+2023,10,Primavera-Verano,Cártamo,517.08,517.08,0.0,634.29,1.23
+2023,10,Primavera-Verano,Frijol,815272.74,122997.33,295866.79,123632.64,1.01
+2023,10,Primavera-Verano,Garbanzo grano,5014.7,150.0,0.0,331.5,2.21
+2023,10,Primavera-Verano,Maíz grano,5709670.19,386096.99,383864.17,1599330.69,4.14
+2023,10,Primavera-Verano,Sorgo grano,432066.79,50559.48,17805.1,363982.96,7.2
+2023,10,Primavera-Verano,Soya,92926.72,1249.0,3349.0,2862.0,2.29
+2023,10,Primavera-Verano,Trigo grano,53847.95,9899.0,1823.6,26681.13,2.7
+2023,11,Otoño-Invierno,Cebada grano,500.0,0.0,0.0,0.0,0.0
+2023,11,Otoño-Invierno,Cártamo,8822.52,0.0,96.0,0.0,0.0
+2023,11,Otoño-Invierno,Frijol,132890.71,0.0,4678.0,0.0,0.0
+2023,11,Otoño-Invierno,Garbanzo grano,30458.38,0.0,112.0,0.0,0.0
+2023,11,Otoño-Invierno,Maíz grano,203512.44,3.0,123.91,17.0,5.67
+2023,11,Otoño-Invierno,Sorgo grano,104802.46,0.0,0.0,0.0,0.0
+2023,11,Otoño-Invierno,Soya,84.2,0.0,0.0,0.0,0.0
+2023,11,Otoño-Invierno,Trigo grano,104279.85,0.0,0.0,0.0,0.0
+2023,11,Primavera-Verano,Cebada grano,248721.8,195081.38,5883.1,414245.63,2.12
+2023,11,Primavera-Verano,Cártamo,517.08,517.08,0.0,634.29,1.23
+2023,11,Primavera-Verano,Frijol,815272.74,331756.49,306146.6,258760.09,0.78
+2023,11,Primavera-Verano,Garbanzo grano,5014.7,880.4,0.0,1266.72,1.44
+2023,11,Primavera-Verano,Maíz grano,5709670.19,1858763.69,442021.42,6350822.54,3.42
+2023,11,Primavera-Verano,Sorgo grano,432066.79,218419.21,22528.1,1265590.59,5.79
+2023,11,Primavera-Verano,Soya,92926.72,58727.0,4195.0,124857.52,2.13
+2023,11,Primavera-Verano,Trigo grano,53847.95,21391.48,1902.6,51635.66,2.41
+2023,12,Otoño-Invierno,Cebada grano,5699.0,0.0,0.0,0.0,0.0
+2023,12,Otoño-Invierno,Cártamo,22694.12,0.0,96.0,0.0,0.0
+2023,12,Otoño-Invierno,Frijol,181893.75,0.0,4678.0,0.0,0.0
+2023,12,Otoño-Invierno,Garbanzo grano,59860.99,0.0,112.0,0.0,0.0
+2023,12,Otoño-Invierno,Maíz grano,497359.44,3.0,123.91,17.0,5.67
+2023,12,Otoño-Invierno,Sorgo grano,135270.66,0.0,0.0,0.0,0.0
+2023,12,Otoño-Invierno,Soya,100.7,0.0,0.0,0.0,0.0
+2023,12,Otoño-Invierno,Trigo grano,260011.46,0.0,0.0,0.0,0.0
+2023,12,Primavera-Verano,Cebada grano,248721.8,234696.98,8055.19,474552.07,2.02
+2023,12,Primavera-Verano,Cártamo,517.08,517.08,0.0,634.29,1.23
+2023,12,Primavera-Verano,Frijol,815272.74,444985.52,327997.35,339863.32,0.76
+2023,12,Primavera-Verano,Garbanzo grano,5014.7,4414.7,0.0,7126.76,1.61
+2023,12,Primavera-Verano,Maíz grano,5709670.19,3990049.52,466799.12,13161712.38,3.3
+2023,12,Primavera-Verano,Sorgo grano,432066.79,336128.9,25710.6,1797924.27,5.35
+2023,12,Primavera-Verano,Soya,92926.72,75434.5,4410.0,159971.32,2.12
+2023,12,Primavera-Verano,Trigo grano,53847.95,48671.48,1904.6,91156.87,1.87
+2024,1,Otoño-Invierno,Cebada grano,27135.0,0.0,0.0,0.0,0.0
+2024,1,Otoño-Invierno,Cártamo,40489.15,0.0,96.0,0.0,0.0
+2024,1,Otoño-Invierno,Frijol,230695.57,3353.95,4678.0,2749.04,0.82
+2024,1,Otoño-Invierno,Garbanzo grano,105543.07,100.0,112.0,226.0,2.26
+2024,1,Otoño-Invierno,Maíz grano,706243.92,37.0,123.91,185.8,5.02
+2024,1,Otoño-Invierno,Sorgo grano,368776.53,11112.0,0.0,16011.8,1.44
+2024,1,Otoño-Invierno,Soya,1087.7,0.0,0.0,0.0,0.0
+2024,1,Otoño-Invierno,Trigo grano,392818.89,0.0,330.0,0.0,0.0
+2024,1,Primavera-Verano,Cebada grano,248721.8,238991.97,8062.19,486464.86,2.04
+2024,1,Primavera-Verano,Cártamo,517.08,517.08,0.0,634.29,1.23
+2024,1,Primavera-Verano,Frijol,815272.74,464650.14,328711.35,352350.05,0.76
+2024,1,Primavera-Verano,Garbanzo grano,5014.7,5014.7,0.0,7666.96,1.53
+2024,1,Primavera-Verano,Maíz grano,5709670.19,4971795.2,498013.32,16131426.43,3.24
+2024,1,Primavera-Verano,Sorgo grano,432066.79,375518.34,32937.1,1897933.76,5.05
+2024,1,Primavera-Verano,Soya,92926.72,86869.0,4412.0,178721.06,2.06
+2024,1,Primavera-Verano,Trigo grano,53847.95,51223.35,1944.6,95668.42,1.87
+2024,2,Otoño-Invierno,Cebada grano,40225.1,0.0,0.0,0.0,0.0
+2024,2,Otoño-Invierno,Cártamo,45854.71,0.0,96.0,0.0,0.0
+2024,2,Otoño-Invierno,Frijol,251607.11,70966.12,4678.0,94817.33,1.34
+2024,2,Otoño-Invierno,Garbanzo grano,120406.57,5853.22,112.0,7964.13,1.36
+2024,2,Otoño-Invierno,Maíz grano,858731.24,11536.02,348.91,21726.86,1.88
+2024,2,Otoño-Invierno,Sorgo grano,802229.56,12648.0,156.0,17820.4,1.41
+2024,2,Otoño-Invierno,Soya,1104.7,0.0,0.0,0.0,0.0
+2024,2,Otoño-Invierno,Trigo grano,421702.79,0.0,12272.5,0.0,0.0
+2024,2,Primavera-Verano,Cebada grano,248721.8,240658.61,8063.19,489865.01,2.04
+2024,2,Primavera-Verano,Cártamo,517.08,517.08,0.0,634.29,1.23
+2024,2,Primavera-Verano,Frijol,815272.74,471675.06,328711.35,357716.81,0.76
+2024,2,Primavera-Verano,Garbanzo grano,5014.7,5014.7,0.0,7666.96,1.53
+2024,2,Primavera-Verano,Maíz grano,5709670.19,5159482.82,498173.32,16866214.57,3.27
+2024,2,Primavera-Verano,Sorgo grano,432066.79,396908.44,33187.1,1937032.99,4.88
+2024,2,Primavera-Verano,Soya,92926.72,88374.2,4412.0,182248.1,2.06
+2024,2,Primavera-Verano,Trigo grano,53847.95,51653.35,1944.6,96817.89,1.87
+2024,3,Otoño-Invierno,Cebada grano,42437.1,0.0,0.0,0.0,0.0
+2024,3,Otoño-Invierno,Cártamo,47221.71,275.27,96.0,165.16,0.6
+2024,3,Otoño-Invierno,Frijol,256388.71,161821.77,4896.25,222879.46,1.38
+2024,3,Otoño-Invierno,Garbanzo grano,122185.82,51576.39,112.0,102091.56,1.98
+2024,3,Otoño-Invierno,Maíz grano,883475.58,58072.83,3101.16,146540.4,2.52
+2024,3,Otoño-Invierno,Sorgo grano,880619.26,50831.39,638.0,106110.64,2.09
+2024,3,Otoño-Invierno,Soya,1414.1,0.0,0.0,0.0,0.0
+2024,3,Otoño-Invierno,Trigo grano,438086.79,121.5,22840.5,199.5,1.64
+2024,3,Primavera-Verano,Cebada grano,248721.8,240658.61,8063.19,489999.55,2.04
+2024,3,Primavera-Verano,Cártamo,517.08,517.08,0.0,634.29,1.23
+2024,3,Primavera-Verano,Frijol,815272.74,486266.39,329006.35,358575.34,0.74
+2024,3,Primavera-Verano,Garbanzo grano,5014.7,5014.7,0.0,7666.96,1.53
+2024,3,Primavera-Verano,Maíz grano,5709670.19,5194385.87,515334.32,17383507.17,3.35
+2024,3,Primavera-Verano,Sorgo grano,432066.79,397934.69,34132.1,1941295.69,4.88
+2024,3,Primavera-Verano,Soya,92926.72,88514.72,4412.0,190123.1,2.15
+2024,3,Primavera-Verano,Trigo grano,53847.95,51903.35,1944.6,96872.09,1.87
+2024,4,Otoño-Invierno,Cebada grano,42437.1,7761.0,0.0,48762.08,6.28
+2024,4,Otoño-Invierno,Cártamo,47221.71,12216.2,96.0,7488.83,0.61
+2024,4,Otoño-Invierno,Frijol,256388.71,219179.33,5142.25,304358.75,1.39
+2024,4,Otoño-Invierno,Garbanzo grano,122185.82,99696.57,112.0,200662.98,2.01
+2024,4,Otoño-Invierno,Maíz grano,883475.58,241748.61,6477.68,656365.0,2.72
+2024,4,Otoño-Invierno,Sorgo grano,880619.26,138605.81,4295.0,388407.83,2.8
+2024,4,Otoño-Invierno,Soya,1414.1,1006.1,0.0,2466.71,2.45
+2024,4,Otoño-Invierno,Trigo grano,438086.79,52778.66,23667.5,261298.97,4.95
+2024,4,Primavera-Verano,Cebada grano,2895.0,0.0,0.0,0.0,0.0
+2024,4,Primavera-Verano,Frijol,11272.5,0.0,0.0,0.0,0.0
+2024,4,Primavera-Verano,Maíz grano,328042.93,0.0,0.0,0.0,0.0
+2024,4,Primavera-Verano,Sorgo grano,7310.67,0.0,0.0,0.0,0.0
+2024,4,Primavera-Verano,Trigo grano,96.0,0.0,0.0,0.0,0.0
+2024,5,Otoño-Invierno,Cebada grano,42437.1,28494.4,0.0,170900.84,6.0
+2024,5,Otoño-Invierno,Cártamo,47221.71,25238.71,777.0,30087.34,1.19
+2024,5,Otoño-Invierno,Frijol,256388.71,229384.61,5142.25,317684.58,1.38
+2024,5,Otoño-Invierno,Garbanzo grano,122185.82,107792.32,112.0,223173.46,2.07
+2024,5,Otoño-Invierno,Maíz grano,883475.58,538018.7,7463.68,2006008.34,3.73
+2024,5,Otoño-Invierno,Sorgo grano,880619.26,324863.2,4345.0,800811.45,2.47
+2024,5,Otoño-Invierno,Soya,1414.1,1255.7,0.0,2965.91,2.36
+2024,5,Otoño-Invierno,Trigo grano,438086.79,285886.36,23667.5,1732935.48,6.06
+2024,5,Primavera-Verano,Cebada grano,23157.5,0.0,0.0,0.0,0.0
+2024,5,Primavera-Verano,Frijol,75261.09,0.0,0.0,0.0,0.0
+2024,5,Primavera-Verano,Garbanzo grano,292.0,0.0,0.0,0.0,0.0
+2024,5,Primavera-Verano,Maíz grano,1519682.03,0.0,7.5,0.0,0.0
+2024,5,Primavera-Verano,Sorgo grano,106625.87,0.0,3.0,0.0,0.0
+2024,5,Primavera-Verano,Soya,10500.0,0.0,0.0,0.0,0.0
+2024,5,Primavera-Verano,Trigo grano,5028.0,0.0,0.0,0.0,0.0
+2024,6,Otoño-Invierno,Cebada grano,42437.1,39373.1,0.0,243325.16,6.18
+2024,6,Otoño-Invierno,Cártamo,47221.71,36729.71,777.0,51630.75,1.41
+2024,6,Otoño-Invierno,Frijol,256388.71,244760.63,6437.25,340473.03,1.39
+2024,6,Otoño-Invierno,Garbanzo grano,122185.82,121813.82,112.0,252709.05,2.07
+2024,6,Otoño-Invierno,Maíz grano,883475.58,782761.54,7778.68,4426931.82,5.66
+2024,6,Otoño-Invierno,Sorgo grano,880619.26,838973.11,12467.0,2298217.34,2.74
+2024,6,Otoño-Invierno,Soya,1414.1,1273.7,0.0,3010.91,2.36
+2024,6,Otoño-Invierno,Trigo grano,438086.79,402649.25,23667.5,2446746.19,6.08
+2024,6,Primavera-Verano,Cebada grano,117262.32,0.0,0.0,0.0,0.0
+2024,6,Primavera-Verano,Frijol,174835.13,205.0,5.0,451.0,2.2
+2024,6,Primavera-Verano,Garbanzo grano,382.0,0.0,0.0,0.0,0.0
+2024,6,Primavera-Verano,Maíz grano,2782581.87,41.0,7.5,78.35,1.91
+2024,6,Primavera-Verano,Sorgo grano,168468.53,43.0,3.0,114.0,2.65
+2024,6,Primavera-Verano,Soya,12281.0,0.0,0.0,0.0,0.0
+2024,6,Primavera-Verano,Trigo grano,28421.54,0.0,0.0,0.0,0.0
+2024,7,Otoño-Invierno,Cebada grano,42437.1,40268.1,0.0,246143.68,6.11
+2024,7,Otoño-Invierno,Cártamo,47221.71,44831.71,777.0,69719.75,1.56
+2024,7,Otoño-Invierno,Frijol,256388.71,245896.13,6437.25,341769.54,1.39
+2024,7,Otoño-Invierno,Garbanzo grano,122185.82,122073.82,112.0,253242.85,2.07
+2024,7,Otoño-Invierno,Maíz grano,883475.58,863999.29,7778.68,4860522.73,5.63
+2024,7,Otoño-Invierno,Sorgo grano,880619.26,867235.64,12467.0,2448509.53,2.82
+2024,7,Otoño-Invierno,Soya,1414.1,1414.1,0.0,3380.51,2.39
+2024,7,Otoño-Invierno,Trigo grano,438086.79,414200.19,23667.5,2525729.3,6.1
+2024,7,Primavera-Verano,Cebada grano,246722.38,0.0,0.0,0.0,0.0
+2024,7,Primavera-Verano,Frijol,977751.31,1481.27,5.0,2535.21,1.71
+2024,7,Primavera-Verano,Garbanzo grano,1892.5,0.0,0.0,0.0,0.0
+2024,7,Primavera-Verano,Maíz grano,5108248.9,1563.1,377.5,6039.97,3.86
+2024,7,Primavera-Verano,Sorgo grano,329338.09,49.0,103.0,130.55,2.66
+2024,7,Primavera-Verano,Soya,48876.0,0.0,0.0,0.0,0.0
+2024,7,Primavera-Verano,Trigo grano,45446.69,0.0,0.0,0.0,0.0
+2024,8,Otoño-Invierno,Cebada grano,42437.1,42437.1,0.0,248312.68,5.85
+2024,8,Otoño-Invierno,Cártamo,47221.71,46363.71,777.0,71322.84,1.54
+2024,8,Otoño-Invierno,Frijol,256388.71,247951.46,6437.25,344768.65,1.39
+2024,8,Otoño-Invierno,Garbanzo grano,122185.82,122073.82,112.0,258002.87,2.11
+2024,8,Otoño-Invierno,Maíz grano,883475.58,875614.09,7778.68,4927572.45,5.63
+2024,8,Otoño-Invierno,Sorgo grano,880619.26,867498.64,12527.0,2449108.73,2.82
+2024,8,Otoño-Invierno,Soya,1414.1,1414.1,0.0,3380.51,2.39
+2024,8,Otoño-Invierno,Trigo grano,438086.79,414419.29,23667.5,2526334.56,6.1
+2024,8,Primavera-Verano,Cebada grano,256963.46,43.0,0.0,65.6,1.53
+2024,8,Primavera-Verano,Cártamo,25.0,0.0,0.0,0.0,0.0
+2024,8,Primavera-Verano,Frijol,1227784.79,11756.11,520.09,12780.51,1.09
+2024,8,Primavera-Verano,Garbanzo grano,2233.5,0.0,0.0,0.0,0.0
+2024,8,Primavera-Verano,Maíz grano,5605008.92,11647.8,407.5,45608.96,3.92
+2024,8,Primavera-Verano,Sorgo grano,381137.38,120.0,103.0,487.7,4.06
+2024,8,Primavera-Verano,Soya,100013.5,0.0,0.0,0.0,0.0
+2024,8,Primavera-Verano,Trigo grano,51265.24,79.0,0.0,109.66,1.39
+2024,9,Otoño-Invierno,Cebada grano,42437.1,42437.1,0.0,248312.68,5.85
+2024,9,Otoño-Invierno,Cártamo,47221.71,46444.71,777.0,71581.06,1.54
+2024,9,Otoño-Invierno,Frijol,256388.71,249951.46,6437.25,357236.6,1.43
+2024,9,Otoño-Invierno,Garbanzo grano,122185.82,122073.82,112.0,260514.42,2.13
+2024,9,Otoño-Invierno,Maíz grano,883475.58,875696.9,7778.68,4935547.91,5.64
+2024,9,Otoño-Invierno,Sorgo grano,880619.26,868092.26,12527.0,2457118.64,2.83
+2024,9,Otoño-Invierno,Soya,1414.1,1414.1,0.0,3380.51,2.39
+2024,9,Otoño-Invierno,Trigo grano,438086.79,414419.29,23667.5,2537284.06,6.12
+2024,9,Primavera-Verano,Cebada grano,259291.81,4732.0,0.0,12028.82,2.54
+2024,9,Primavera-Verano,Cártamo,25.0,0.0,0.0,0.0,0.0
+2024,9,Primavera-Verano,Frijol,1246603.47,59277.06,1984.09,58267.72,0.98
+2024,9,Primavera-Verano,Garbanzo grano,4023.0,0.0,0.0,0.0,0.0
+2024,9,Primavera-Verano,Maíz grano,5683792.81,55065.64,4796.5,235266.59,4.27
+2024,9,Primavera-Verano,Sorgo grano,413851.84,940.13,118.0,5598.72,5.96
+2024,9,Primavera-Verano,Soya,123537.23,0.0,0.0,0.0,0.0
+2024,9,Primavera-Verano,Trigo grano,51873.72,346.0,0.0,508.35,1.47
+2024,10,Otoño-Invierno,Cebada grano,2.0,0.0,0.0,0.0,0.0
+2024,10,Otoño-Invierno,Cártamo,155.6,0.0,0.0,0.0,0.0
+2024,10,Otoño-Invierno,Frijol,12611.96,0.0,0.0,0.0,0.0
+2024,10,Otoño-Invierno,Garbanzo grano,1862.0,0.0,0.0,0.0,0.0
+2024,10,Otoño-Invierno,Maíz grano,28099.58,0.0,0.0,0.0,0.0
+2024,10,Otoño-Invierno,Sorgo grano,14679.01,0.0,0.0,0.0,0.0
+2024,10,Otoño-Invierno,Soya,1414.1,1414.1,0.0,3380.51,2.39
+2024,10,Otoño-Invierno,Trigo grano,380.8,0.0,0.0,0.0,0.0
+2024,10,Primavera-Verano,Cebada grano,259291.81,71589.45,315.0,210259.52,2.94
+2024,10,Primavera-Verano,Cártamo,25.0,0.0,0.0,0.0,0.0
+2024,10,Primavera-Verano,Frijol,1246603.47,206682.07,92199.58,158723.05,0.77
+2024,10,Primavera-Verano,Garbanzo grano,4023.0,0.0,0.0,0.0,0.0
+2024,10,Primavera-Verano,Maíz grano,5683792.81,370782.12,54640.28,1496865.45,4.04
+2024,10,Primavera-Verano,Sorgo grano,413851.84,23296.22,2248.7,177560.9,7.62
+2024,10,Primavera-Verano,Soya,123537.23,940.0,0.0,1802.0,1.92
+2024,10,Primavera-Verano,Trigo grano,51873.72,9767.0,0.0,25364.08,2.6
+2024,11,Otoño-Invierno,Cebada grano,281.0,0.0,0.0,0.0,0.0
+2024,11,Otoño-Invierno,Cártamo,4162.09,0.0,0.0,0.0,0.0
+2024,11,Otoño-Invierno,Frijol,155492.34,0.0,0.0,0.0,0.0
+2024,11,Otoño-Invierno,Garbanzo grano,23852.45,0.0,0.0,0.0,0.0
+2024,11,Otoño-Invierno,Maíz grano,194908.92,0.0,6.0,0.0,0.0
+2024,11,Otoño-Invierno,Sorgo grano,102869.5,0.0,0.0,0.0,0.0
+2024,11,Otoño-Invierno,Soya,7676.8,0.0,0.0,0.0,0.0
+2024,11,Otoño-Invierno,Trigo grano,20589.3,0.0,0.0,0.0,0.0
+2024,11,Primavera-Verano,Cebada grano,259291.81,181363.18,961.28,429413.27,2.37
+2024,11,Primavera-Verano,Cártamo,25.0,0.0,0.0,0.0,0.0
+2024,11,Primavera-Verano,Frijol,1246603.47,592999.09,128153.43,373435.43,0.63
+2024,11,Primavera-Verano,Garbanzo grano,4023.0,506.0,0.0,584.67,1.16
+2024,11,Primavera-Verano,Maíz grano,5683792.81,1926809.95,74781.72,6264557.74,3.25
+2024,11,Primavera-Verano,Sorgo grano,413851.84,186590.89,3030.7,999213.98,5.36
+2024,11,Primavera-Verano,Soya,123537.23,74794.54,0.0,159351.69,2.13
+2024,11,Primavera-Verano,Trigo grano,51873.72,21714.04,534.0,55788.38,2.57
+2024,12,Otoño-Invierno,Cebada grano,15754.0,0.0,0.0,0.0,0.0
+2024,12,Otoño-Invierno,Cártamo,12452.93,0.0,0.0,0.0,0.0
+2024,12,Otoño-Invierno,Frijol,189689.15,0.0,0.0,0.0,0.0
+2024,12,Otoño-Invierno,Garbanzo grano,48396.82,0.0,0.0,0.0,0.0
+2024,12,Otoño-Invierno,Maíz grano,412708.41,0.0,6.0,0.0,0.0
+2024,12,Otoño-Invierno,Sorgo grano,132051.54,0.0,12.0,0.0,0.0
+2024,12,Otoño-Invierno,Soya,7907.4,0.0,0.0,0.0,0.0
+2024,12,Otoño-Invierno,Trigo grano,105875.41,0.0,0.0,0.0,0.0
+2024,12,Primavera-Verano,Cebada grano,259291.81,231579.7,1171.28,534123.24,2.31
+2024,12,Primavera-Verano,Cártamo,25.0,5.0,20.0,4.2,0.84
+2024,12,Primavera-Verano,Frijol,1246603.47,943157.41,131623.93,548711.69,0.58
+2024,12,Primavera-Verano,Garbanzo grano,4023.0,3451.5,0.0,5229.91,1.52
+2024,12,Primavera-Verano,Maíz grano,5683792.81,4136737.01,78938.72,13297283.64,3.21
+2024,12,Primavera-Verano,Sorgo grano,413851.84,327816.35,4243.7,1688022.53,5.15
+2024,12,Primavera-Verano,Soya,123537.23,107659.65,2.0,227482.68,2.11
+2024,12,Primavera-Verano,Trigo grano,51873.72,43787.57,654.0,94881.61,2.17
+2025,1,Otoño-Invierno,Cebada grano,34133.0,0.0,0.0,0.0,0.0
+2025,1,Otoño-Invierno,Cártamo,22907.49,0.0,0.0,0.0,0.0
+2025,1,Otoño-Invierno,Frijol,266826.32,2349.25,0.0,1778.5,0.76
+2025,1,Otoño-Invierno,Garbanzo grano,115014.29,230.0,0.0,513.35,2.23
+2025,1,Otoño-Invierno,Maíz grano,709574.46,18.0,6.0,93.06,5.17
+2025,1,Otoño-Invierno,Sorgo grano,273196.49,7855.6,12.0,15933.96,2.03
+2025,1,Otoño-Invierno,Soya,8887.4,0.0,0.0,0.0,0.0
+2025,1,Otoño-Invierno,Trigo grano,220955.15,0.01,0.0,0.06,6.0
+2025,1,Primavera-Verano,Cebada grano,259291.81,256368.89,1171.28,573334.15,2.24
+2025,1,Primavera-Verano,Cártamo,25.0,5.0,20.0,4.2,0.84
+2025,1,Primavera-Verano,Frijol,1246603.47,1102860.95,132188.38,651400.75,0.59
+2025,1,Primavera-Verano,Garbanzo grano,4023.0,4023.0,0.0,6113.81,1.52
+2025,1,Primavera-Verano,Maíz grano,5683792.81,5333490.83,79601.22,17178247.77,3.22
+2025,1,Primavera-Verano,Sorgo grano,413851.84,389109.69,4278.7,1940155.24,4.99
+2025,1,Primavera-Verano,Soya,123537.23,121938.23,2.0,258075.34,2.12
+2025,1,Primavera-Verano,Trigo grano,51873.72,50924.05,654.0,107308.3,2.11
+2025,2,Otoño-Invierno,Cebada grano,54470.1,0.0,0.0,0.0,0.0
+2025,2,Otoño-Invierno,Cártamo,30165.49,0.0,0.0,0.0,0.0
+2025,2,Otoño-Invierno,Frijol,273750.6,88876.22,0.0,117632.02,1.32
+2025,2,Otoño-Invierno,Garbanzo grano,116848.01,3501.35,0.0,6817.86,1.95
+2025,2,Otoño-Invierno,Maíz grano,790865.98,13735.15,6.0,28488.45,2.07
+2025,2,Otoño-Invierno,Sorgo grano,588152.61,32218.25,12.0,66290.97,2.06
+2025,2,Otoño-Invierno,Soya,9025.9,0.0,0.0,0.0,0.0
+2025,2,Otoño-Invierno,Trigo grano,251384.26,0.01,0.0,0.06,6.0
+2025,2,Primavera-Verano,Cebada grano,259291.81,258120.53,1171.28,576903.99,2.24
+2025,2,Primavera-Verano,Cártamo,25.0,5.0,20.0,4.2,0.84
+2025,2,Primavera-Verano,Frijol,1246603.47,1114414.09,132188.38,657394.45,0.59
+2025,2,Primavera-Verano,Garbanzo grano,4023.0,4023.0,0.0,6113.81,1.52
+2025,2,Primavera-Verano,Maíz grano,5683792.81,5584620.27,79601.22,18177629.02,3.25
+2025,2,Primavera-Verano,Sorgo grano,413851.84,408203.94,4278.7,1998881.69,4.9
+2025,2,Primavera-Verano,Soya,123537.23,122708.23,2.0,259769.31,2.12
+2025,2,Primavera-Verano,Trigo grano,51873.72,51219.72,654.0,107855.9,2.11
+2025,3,Otoño-Invierno,Cebada grano,55384.1,0.0,0.0,0.0,0.0
+2025,3,Otoño-Invierno,Cártamo,31477.69,37.5,0.0,35.7,0.95
+2025,3,Otoño-Invierno,Frijol,274629.6,206102.12,0.0,262362.93,1.27
+2025,3,Otoño-Invierno,Garbanzo grano,118207.01,27849.29,0.0,50786.27,1.82
+2025,3,Otoño-Invierno,Maíz grano,862451.35,74512.47,321.0,172553.44,2.32
+2025,3,Otoño-Invierno,Sorgo grano,802024.03,94713.51,6807.0,264367.67,2.79
+2025,3,Otoño-Invierno,Soya,10540.1,0.0,0.0,0.0,0.0
+2025,3,Otoño-Invierno,Trigo grano,271548.26,88.81,4655.0,257.09,2.89
+2025,3,Primavera-Verano,Cebada grano,259291.81,258120.53,1171.28,576903.99,2.24
+2025,3,Primavera-Verano,Cártamo,25.0,5.0,20.0,4.2,0.84
+2025,3,Primavera-Verano,Frijol,1246603.47,1114415.09,132188.38,659138.57,0.59
+2025,3,Primavera-Verano,Garbanzo grano,4023.0,4023.0,0.0,6113.81,1.52
+2025,3,Primavera-Verano,Maíz grano,5683792.81,5603809.59,79601.22,18510583.96,3.3
+2025,3,Primavera-Verano,Sorgo grano,413851.84,409565.14,4286.7,2017463.22,4.93
+2025,3,Primavera-Verano,Soya,123537.23,123535.23,2.0,261588.71,2.12
+2025,3,Primavera-Verano,Trigo grano,51873.72,51219.72,654.0,107855.9,2.11
+2025,4,Otoño-Invierno,Cebada grano,55384.1,10739.09,0.0,104202.39,9.7
+2025,4,Otoño-Invierno,Cártamo,31477.69,2003.73,380.0,1948.8,0.97
+2025,4,Otoño-Invierno,Frijol,274629.6,234837.42,0.0,306494.01,1.31
+2025,4,Otoño-Invierno,Garbanzo grano,118207.01,39182.1,0.0,71767.36,1.83
+2025,4,Otoño-Invierno,Maíz grano,862451.35,246518.9,341.0,638688.25,2.59
+2025,4,Otoño-Invierno,Sorgo grano,802024.03,142609.07,6807.0,425265.78,2.98
+2025,4,Otoño-Invierno,Soya,10540.1,1018.9,0.0,2455.29,2.41
+2025,4,Otoño-Invierno,Trigo grano,271548.26,55666.17,4675.0,304895.69,5.48
+2025,4,Primavera-Verano,Cebada grano,12208.18,0.0,0.0,0.0,0.0
+2025,4,Primavera-Verano,Frijol,87994.4,0.0,0.0,0.0,0.0
+2025,4,Primavera-Verano,Garbanzo grano,15.0,0.0,0.0,0.0,0.0
+2025,4,Primavera-Verano,Maíz grano,491419.46,0.0,0.0,0.0,0.0
+2025,4,Primavera-Verano,Sorgo grano,10638.5,0.0,0.0,0.0,0.0
+2025,4,Primavera-Verano,Trigo grano,4513.61,0.0,0.0,0.0,0.0
+2025,5,Otoño-Invierno,Cebada grano,55384.1,47665.5,1453.0,263382.83,5.53
+2025,5,Otoño-Invierno,Cártamo,31477.69,10168.68,1430.0,10688.59,1.05
+2025,5,Otoño-Invierno,Frijol,274629.6,261598.64,2.5,353335.81,1.35
+2025,5,Otoño-Invierno,Garbanzo grano,118207.01,93224.26,1.0,144142.17,1.55
+2025,5,Otoño-Invierno,Maíz grano,868376.35,612519.88,478.0,2748231.48,4.49
+2025,5,Otoño-Invierno,Sorgo grano,802024.03,211585.98,6937.0,659632.29,3.12
+2025,5,Otoño-Invierno,Soya,10540.1,2951.9,0.0,4418.29,1.5
+2025,5,Otoño-Invierno,Trigo grano,271548.26,223892.75,4675.0,1193364.16,5.33
+2025,5,Primavera-Verano,Cebada grano,50020.63,0.0,0.0,0.0,0.0
+2025,5,Primavera-Verano,Frijol,157099.8,0.0,73.0,0.0,0.0
+2025,5,Primavera-Verano,Garbanzo grano,769.0,0.0,0.0,0.0,0.0
+2025,5,Primavera-Verano,Maíz grano,1562545.38,0.0,100.0,0.0,0.0
+2025,5,Primavera-Verano,Sorgo grano,81646.85,0.0,0.0,0.0,0.0
+2025,5,Primavera-Verano,Trigo grano,9942.1,0.0,0.0,0.0,0.0
+2025,6,Otoño-Invierno,Cebada grano,55384.1,51101.1,1937.0,285048.45,5.58
+2025,6,Otoño-Invierno,Cártamo,31477.69,26427.69,2729.0,47818.95,1.81
+2025,6,Otoño-Invierno,Frijol,274629.6,268306.79,18.0,367191.05,1.37
+2025,6,Otoño-Invierno,Garbanzo grano,118207.01,111016.04,1.0,179296.47,1.62
+2025,6,Otoño-Invierno,Maíz grano,868376.35,787933.26,488.0,3656832.05,4.64
+2025,6,Otoño-Invierno,Sorgo grano,802024.03,711559.88,7342.0,1904134.13,2.68
+2025,6,Otoño-Invierno,Soya,10540.1,2951.9,0.0,4523.29,1.53
+2025,6,Otoño-Invierno,Trigo grano,271548.26,264260.48,4854.0,1625056.06,6.15
+2025,6,Primavera-Verano,Cebada grano,210698.05,0.0,0.0,0.0,0.0
+2025,6,Primavera-Verano,Frijol,328915.33,0.0,148.0,0.0,0.0
+2025,6,Primavera-Verano,Garbanzo grano,782.0,0.0,0.0,0.0,0.0
+2025,6,Primavera-Verano,Maíz grano,3279855.06,0.0,204.0,0.0,0.0
+2025,6,Primavera-Verano,Sorgo grano,186636.21,0.0,0.0,0.0,0.0
+2025,6,Primavera-Verano,Soya,3170.0,0.0,0.0,0.0,0.0
+2025,6,Primavera-Verano,Trigo grano,19003.27,0.0,0.0,0.0,0.0
+2025,7,Otoño-Invierno,Cebada grano,55384.1,51392.1,3737.0,289462.5,5.63
+2025,7,Otoño-Invierno,Cártamo,31477.69,28202.69,2729.0,55378.51,1.96
+2025,7,Otoño-Invierno,Frijol,274629.6,268948.49,18.0,368442.16,1.37
+2025,7,Otoño-Invierno,Garbanzo grano,118207.01,112530.78,1.0,187174.26,1.66
+2025,7,Otoño-Invierno,Maíz grano,868376.35,852576.76,552.18,3967537.16,4.65
+2025,7,Otoño-Invierno,Sorgo grano,802024.03,785347.66,7500.0,2097871.15,2.67
+2025,7,Otoño-Invierno,Soya,10540.1,4814.6,0.0,8875.84,1.84
+2025,7,Otoño-Invierno,Trigo grano,271548.26,265872.18,5114.4,1638044.61,6.16
+2025,7,Primavera-Verano,Cebada grano,232116.55,720.0,80.0,2426.66,3.37
+2025,7,Primavera-Verano,Frijol,1039808.54,9177.89,790.32,11402.8,1.24
+2025,7,Primavera-Verano,Garbanzo grano,811.0,0.0,5.0,0.0,0.0
+2025,7,Primavera-Verano,Maíz grano,4615800.78,62422.57,5245.5,116936.36,1.87
+2025,7,Primavera-Verano,Sorgo grano,302279.92,1608.78,223.0,9591.16,5.96
+2025,7,Primavera-Verano,Soya,57987.0,0.0,0.0,0.0,0.0
+2025,7,Primavera-Verano,Trigo grano,23836.05,125.0,1.0,196.0,1.57
+2025,8,Otoño-Invierno,Cebada grano,55384.1,51557.1,3737.0,289957.97,5.62
+2025,8,Otoño-Invierno,Cártamo,31477.69,28402.69,2729.0,55828.51,1.97
+2025,8,Otoño-Invierno,Frijol,274629.6,272365.14,18.0,370743.92,1.36
+2025,8,Otoño-Invierno,Garbanzo grano,118207.01,112530.78,1.0,187174.26,1.66
+2025,8,Otoño-Invierno,Maíz grano,868376.35,856430.43,555.18,3989441.08,4.66
+2025,8,Otoño-Invierno,Sorgo grano,802024.03,792222.56,8247.0,2123648.18,2.68
+2025,8,Otoño-Invierno,Soya,10540.1,4814.6,0.0,8875.84,1.84
+2025,8,Otoño-Invierno,Trigo grano,271548.26,265914.18,5114.4,1638196.72,6.16
+2025,8,Primavera-Verano,Cebada grano,242335.48,21079.0,1069.0,44898.33,2.13
+2025,8,Primavera-Verano,Cártamo,20.0,0.0,0.0,0.0,0.0
+2025,8,Primavera-Verano,Frijol,1245935.46,34078.51,3142.32,31317.76,0.92
+2025,8,Primavera-Verano,Garbanzo grano,828.0,0.0,10.0,0.0,0.0
+2025,8,Primavera-Verano,Maíz grano,5732233.87,143173.62,10926.5,324721.26,2.27
+2025,8,Primavera-Verano,Sorgo grano,399785.61,3009.98,254.0,16837.18,5.59
+2025,8,Primavera-Verano,Soya,129449.0,0.0,0.0,0.0,0.0
+2025,8,Primavera-Verano,Trigo grano,41265.07,146.4,21.0,1012.73,6.92
+2025,9,Otoño-Invierno,Cebada grano,55384.1,51647.1,3737.0,311806.39,6.04
+2025,9,Otoño-Invierno,Cártamo,31477.69,28748.69,2729.0,56381.43,1.96
+2025,9,Otoño-Invierno,Frijol,274629.6,274611.6,18.0,374369.15,1.36
+2025,9,Otoño-Invierno,Garbanzo grano,118207.01,118204.01,3.0,211879.04,1.79
+2025,9,Otoño-Invierno,Maíz grano,868376.35,867821.17,555.18,4084838.23,4.71
+2025,9,Otoño-Invierno,Sorgo grano,802024.03,793777.03,8247.0,2136163.72,2.69
+2025,9,Otoño-Invierno,Soya,10540.1,10540.1,0.0,15717.51,1.49
+2025,9,Otoño-Invierno,Trigo grano,271548.26,266433.86,5114.4,1658279.21,6.22
+2025,9,Primavera-Verano,Cebada grano,242614.99,23320.46,1079.0,51006.82,2.19
+2025,9,Primavera-Verano,Cártamo,20.0,0.0,0.0,0.0,0.0
+2025,9,Primavera-Verano,Frijol,1270173.98,91760.95,6845.61,78378.27,0.85
+2025,9,Primavera-Verano,Garbanzo grano,887.0,0.0,10.0,0.0,0.0
+2025,9,Primavera-Verano,Maíz grano,5846758.91,293540.62,36685.3,656410.24,2.24
+2025,9,Primavera-Verano,Sorgo grano,432612.02,12281.78,2013.0,66239.3,5.39
+2025,9,Primavera-Verano,Soya,145526.0,0.0,0.0,0.0,0.0
+2025,9,Primavera-Verano,Trigo grano,41400.27,397.41,21.0,1427.37,3.59
+2025,10,Otoño-Invierno,Cebada grano,108.0,0.0,0.0,0.0,0.0
+2025,10,Otoño-Invierno,Cártamo,1052.0,0.0,0.0,0.0,0.0
+2025,10,Otoño-Invierno,Frijol,43481.95,0.0,38.0,0.0,0.0
+2025,10,Otoño-Invierno,Garbanzo grano,16921.6,0.0,0.0,0.0,0.0
+2025,10,Otoño-Invierno,Maíz grano,116612.04,0.0,4000.5,0.0,0.0
+2025,10,Otoño-Invierno,Sorgo grano,5937.23,0.0,0.0,0.0,0.0
+2025,10,Otoño-Invierno,Soya,1035.0,0.0,0.0,0.0,0.0
+2025,10,Otoño-Invierno,Trigo grano,4390.09,0.0,44.75,0.0,0.0
+2025,10,Primavera-Verano,Cebada grano,242614.99,77171.54,1349.0,216658.88,2.81
+2025,10,Primavera-Verano,Cártamo,20.0,0.0,0.0,0.0,0.0
+2025,10,Primavera-Verano,Frijol,1270173.98,330148.17,13318.41,230243.43,0.7
+2025,10,Primavera-Verano,Garbanzo grano,887.0,68.0,10.0,0.5,0.01
+2025,10,Primavera-Verano,Maíz grano,5846758.91,829740.31,67874.54,2418483.82,2.91
+2025,10,Primavera-Verano,Sorgo grano,432612.02,59610.24,3130.0,330128.86,5.54
+2025,10,Primavera-Verano,Soya,145526.0,12500.0,5000.0,27700.0,2.22
+2025,10,Primavera-Verano,Trigo grano,41400.27,6874.31,27.0,14362.49,2.09
+2025,11,Otoño-Invierno,Cebada grano,293.0,0.0,0.0,0.0,0.0
+2025,11,Otoño-Invierno,Cártamo,13626.95,0.0,400.0,0.0,0.0
+2025,11,Otoño-Invierno,Frijol,132211.71,0.0,205.0,0.0,0.0
+2025,11,Otoño-Invierno,Garbanzo grano,51426.25,0.0,0.0,0.0,0.0
+2025,11,Otoño-Invierno,Maíz grano,340576.21,0.0,4277.5,0.0,0.0
+2025,11,Otoño-Invierno,Sorgo grano,56437.2,0.0,510.0,0.0,0.0
+2025,11,Otoño-Invierno,Soya,4182.38,0.0,1800.0,0.0,0.0
+2025,11,Otoño-Invierno,Trigo grano,72571.85,0.0,44.75,0.0,0.0
+2025,11,Primavera-Verano,Cebada grano,242614.99,190922.49,1489.0,463879.94,2.43
+2025,11,Primavera-Verano,Cártamo,20.0,0.0,0.0,0.0,0.0
+2025,11,Primavera-Verano,Frijol,1270173.98,713434.61,14360.91,537320.44,0.75
+2025,11,Primavera-Verano,Garbanzo grano,887.0,365.0,10.0,349.43,0.96
+2025,11,Primavera-Verano,Maíz grano,5846758.91,2279713.23,76828.04,7235074.53,3.17
+2025,11,Primavera-Verano,Sorgo grano,432612.02,224916.44,3130.0,1079042.8,4.8
+2025,11,Primavera-Verano,Soya,145526.0,81947.0,5000.0,182901.99,2.23
+2025,11,Primavera-Verano,Trigo grano,41400.27,14729.71,149.0,31119.17,2.11
+2025,12,Otoño-Invierno,Cebada grano,15530.45,0.0,0.0,0.0,0.0
+2025,12,Otoño-Invierno,Cártamo,31678.07,0.0,400.0,0.0,0.0
+2025,12,Otoño-Invierno,Frijol,202058.91,25.0,210.0,22.0,0.88
+2025,12,Otoño-Invierno,Garbanzo grano,100726.08,0.0,0.0,0.0,0.0
+2025,12,Otoño-Invierno,Maíz grano,653086.88,325.0,4282.5,422.0,1.3
+2025,12,Otoño-Invierno,Sorgo grano,155750.58,3000.0,510.0,7500.0,2.5
+2025,12,Otoño-Invierno,Soya,4182.38,800.0,1800.0,2000.0,2.5
+2025,12,Otoño-Invierno,Trigo grano,219337.87,0.0,44.75,0.0,0.0
+2025,12,Primavera-Verano,Cebada grano,242614.99,220572.33,1549.0,532571.01,2.41
+2025,12,Primavera-Verano,Cártamo,20.0,20.0,0.0,33.0,1.65
+2025,12,Primavera-Verano,Frijol,1270173.98,980902.68,15008.91,747144.54,0.76
+2025,12,Primavera-Verano,Garbanzo grano,887.0,862.0,10.0,992.06,1.15
+2025,12,Primavera-Verano,Maíz grano,5846758.91,4527989.86,83790.14,14913931.47,3.29
+2025,12,Primavera-Verano,Sorgo grano,432612.02,383236.42,3254.0,1680823.95,4.39
+2025,12,Primavera-Verano,Soya,145526.0,128656.0,5000.0,271275.32,2.11
+2025,12,Primavera-Verano,Trigo grano,41400.27,33645.48,155.8,67122.1,1.99
+2026,1,Otoño-Invierno,Cebada grano,25806.08,11.1,0.0,66.5,5.99
+2026,1,Otoño-Invierno,Cártamo,54360.46,20.0,400.0,52.4,2.62
+2026,1,Otoño-Invierno,Frijol,217039.7,1675.26,470.0,1614.8,0.96
+2026,1,Otoño-Invierno,Garbanzo grano,110922.52,543.77,0.0,852.3,1.57
+2026,1,Otoño-Invierno,Maíz grano,853733.15,3416.0,4312.5,11204.24,3.28
+2026,1,Otoño-Invierno,Sorgo grano,417984.37,4977.0,510.0,10558.0,2.12
+2026,1,Otoño-Invierno,Soya,5510.18,1000.0,1800.0,2000.0,2.0
+2026,1,Otoño-Invierno,Trigo grano,330399.04,16062.2,44.75,111698.1,6.95
+2026,1,Primavera-Verano,Cebada grano,242614.99,232397.66,1549.0,556967.32,2.4
+2026,1,Primavera-Verano,Cártamo,20.0,20.0,0.0,40.0,2.0
+2026,1,Primavera-Verano,Frijol,1270173.98,1103963.59,15008.91,858467.09,0.78
+2026,1,Primavera-Verano,Garbanzo grano,887.0,873.0,10.0,1096.71,1.26
+2026,1,Primavera-Verano,Maíz grano,5846626.91,5517890.13,83849.64,18449392.27,3.34
+2026,1,Primavera-Verano,Sorgo grano,432612.02,424560.46,3254.0,1869103.56,4.4
+2026,1,Primavera-Verano,Soya,145526.0,138929.0,5000.0,300273.77,2.16
+2026,1,Primavera-Verano,Trigo grano,41400.27,35215.44,155.8,70657.77,2.01
+2026,2,Otoño-Invierno,Cebada grano,28542.08,655.0,0.0,3795.5,5.79
+2026,2,Otoño-Invierno,Cártamo,57895.77,124.13,400.0,330.91,2.67
+2026,2,Otoño-Invierno,Frijol,220663.16,115037.8,470.0,144384.94,1.26
+2026,2,Otoño-Invierno,Garbanzo grano,112889.11,4309.41,6.5,7710.0,1.79
+2026,2,Otoño-Invierno,Maíz grano,903470.32,17395.18,4312.5,55630.2,3.2
+2026,2,Otoño-Invierno,Sorgo grano,484069.31,33105.24,530.0,110041.48,3.32
+2026,2,Otoño-Invierno,Soya,6989.88,1000.0,1800.0,2000.0,2.0
+2026,2,Otoño-Invierno,Trigo grano,344911.72,19629.11,44.75,118373.04,6.03
+2026,2,Primavera-Verano,Cebada grano,242614.99,232585.16,1549.0,557027.32,2.39
+2026,2,Primavera-Verano,Cártamo,20.0,20.0,0.0,40.0,2.0
+2026,2,Primavera-Verano,Frijol,1270173.98,1115839.26,17008.91,883589.86,0.79
+2026,2,Primavera-Verano,Garbanzo grano,887.0,877.0,10.0,1100.71,1.26
+2026,2,Primavera-Verano,Maíz grano,5846626.91,5712042.3,84450.64,19160022.22,3.35
+2026,2,Primavera-Verano,Sorgo grano,432612.02,426730.59,3254.0,1882118.44,4.41
+2026,2,Primavera-Verano,Soya,145526.0,140526.0,5000.0,303787.17,2.16
+2026,2,Primavera-Verano,Trigo grano,41400.27,36245.18,155.8,71592.7,1.98
+2026,3,Otoño-Invierno,Cebada grano,33914.78,2193.0,0.0,14239.6,6.49
+2026,3,Otoño-Invierno,Cártamo,60240.77,1629.85,680.0,1454.72,0.89
+2026,3,Otoño-Invierno,Frijol,222725.09,183814.88,572.0,233180.27,1.27
+2026,3,Otoño-Invierno,Garbanzo grano,112889.11,37875.35,1606.5,57071.38,1.51
+2026,3,Otoño-Invierno,Maíz grano,933088.25,99486.19,5595.95,279499.2,2.81
+2026,3,Otoño-Invierno,Sorgo grano,585218.14,101482.13,546.5,335842.76,3.31
+2026,3,Otoño-Invierno,Soya,8671.83,1114.38,1800.0,2233.47,2.0
+2026,3,Otoño-Invierno,Trigo grano,357708.23,34338.46,49.75,182516.75,5.32
+2026,3,Primavera-Verano,Cebada grano,242614.99,241065.99,1549.0,575168.87,2.39
+2026,3,Primavera-Verano,Cártamo,20.0,20.0,0.0,40.0,2.0
+2026,3,Primavera-Verano,Frijol,1270173.98,1250065.07,20108.91,994868.58,0.8
+2026,3,Primavera-Verano,Garbanzo grano,887.0,877.0,10.0,1101.71,1.26
+2026,3,Primavera-Verano,Maíz grano,5846626.91,5752400.72,94226.19,19436673.61,3.38
+2026,3,Primavera-Verano,Sorgo grano,432612.02,429358.02,3254.0,1897707.56,4.42
+2026,3,Primavera-Verano,Soya,145526.0,140526.0,5000.0,308599.71,2.2
+2026,3,Primavera-Verano,Trigo grano,41400.27,41244.47,155.8,85416.31,2.07
+2026,4,Otoño-Invierno,Cebada grano,33919.42,12766.82,0.0,73098.53,5.73
+2026,4,Otoño-Invierno,Cártamo,60240.77,11300.53,680.0,22357.63,1.98
+2026,4,Otoño-Invierno,Frijol,222725.24,205601.63,576.0,255849.05,1.24
+2026,4,Otoño-Invierno,Garbanzo grano,112889.12,67112.66,1606.5,91666.99,1.37
+2026,4,Otoño-Invierno,Maíz grano,933096.13,345634.44,5774.95,1429959.28,4.14
+2026,4,Otoño-Invierno,Sorgo grano,585219.17,156775.53,626.5,507506.49,3.24
+2026,4,Otoño-Invierno,Soya,8671.83,2060.38,1800.0,4537.47,2.2
+2026,4,Otoño-Invierno,Trigo grano,357728.68,108196.13,49.75,539220.93,4.98
+2026,4,Primavera-Verano,Cebada grano,6057.53,0.0,0.0,0.0,0.0
+2026,4,Primavera-Verano,Frijol,42946.33,0.0,0.0,0.0,0.0
+2026,4,Primavera-Verano,Maíz grano,805451.87,0.0,0.0,0.0,0.0
+2026,4,Primavera-Verano,Sorgo grano,19192.64,0.0,0.0,0.0,0.0
+2026,4,Primavera-Verano,Soya,10130.0,0.0,0.0,0.0,0.0
+2026,4,Primavera-Verano,Trigo grano,6270.5,0.0,0.0,0.0,0.0
+2026,5,Otoño-Invierno,Cebada grano,33919.42,20431.65,0.0,131487.82,6.44
+2026,5,Otoño-Invierno,Cártamo,60240.77,34499.4,680.0,60865.98,1.76
+2026,5,Otoño-Invierno,Frijol,222725.24,215614.33,586.0,267495.02,1.24
+2026,5,Otoño-Invierno,Garbanzo grano,112889.12,105300.51,1606.5,182527.58,1.73
+2026,5,Otoño-Invierno,Maíz grano,933096.13,716027.68,5979.95,3826902.9,5.34
+2026,5,Otoño-Invierno,Sorgo grano,585219.17,207259.21,5636.5,682046.08,3.29
+2026,5,Otoño-Invierno,Soya,8671.83,2077.38,1800.0,4581.27,2.21
+2026,5,Otoño-Invierno,Trigo grano,357728.68,293731.32,49.75,1359000.09,4.63
+2026,5,Primavera-Verano,Cebada grano,114321.08,0.0,0.0,0.0,0.0
+2026,5,Primavera-Verano,Cártamo,479.0,0.0,0.0,0.0,0.0
+2026,5,Primavera-Verano,Frijol,105699.14,0.0,20.0,0.0,0.0
+2026,5,Primavera-Verano,Garbanzo grano,580.0,0.0,0.0,0.0,0.0
+2026,5,Primavera-Verano,Maíz grano,1798316.8,0.0,10.0,0.0,0.0
+2026,5,Primavera-Verano,Sorgo grano,65142.32,0.0,50.0,0.0,0.0
+2026,5,Primavera-Verano,Soya,10130.0,0.0,0.0,0.0,0.0
+2026,5,Primavera-Verano,Trigo grano,16426.28,0.0,0.0,0.0,0.0
+2026,6,Otoño-Invierno,Cebada grano,33919.42,33211.12,0.0,181721.08,5.47
+2026,6,Otoño-Invierno,Cártamo,60240.77,53636.73,680.0,99200.1,1.85
+2026,6,Otoño-Invierno,Frijol,222725.24,218801.72,586.0,273198.11,1.25
+2026,6,Otoño-Invierno,Garbanzo grano,112889.12,110955.93,1606.5,191632.47,1.73
+2026,6,Otoño-Invierno,Maíz grano,933096.13,818758.21,5979.95,4456509.97,5.44
+2026,6,Otoño-Invierno,Sorgo grano,585219.17,432196.27,5636.5,1160226.95,2.68
+2026,6,Otoño-Invierno,Soya,8671.83,2287.38,1800.0,4807.7,2.1
+2026,6,Otoño-Invierno,Trigo grano,357728.68,337376.8,49.75,1711326.14,5.07
+2026,6,Primavera-Verano,Cebada grano,208640.17,0.01,0.0,0.01,1.0
+2026,6,Primavera-Verano,Cártamo,479.0,479.0,0.0,699.45,1.46
+2026,6,Primavera-Verano,Frijol,400043.89,520.35,20.0,399.39,0.77
+2026,6,Primavera-Verano,Garbanzo grano,1238.0,0.0,0.0,0.0,0.0
+2026,6,Primavera-Verano,Maíz grano,3456593.82,31164.93,20.0,73395.52,2.36
+2026,6,Primavera-Verano,Sorgo grano,158031.44,30.46,50.0,60.11,1.97
+2026,6,Primavera-Verano,Soya,54233.0,9952.0,0.0,16457.48,1.65
+2026,6,Primavera-Verano,Trigo grano,27324.43,0.0,0.0,0.0,0.0
+2026,7,Otoño-Invierno,Cebada grano,33919.42,33459.31,0.0,182739.45,5.46
+2026,7,Otoño-Invierno,Cártamo,60240.77,58836.08,680.0,113707.5,1.93
+2026,7,Otoño-Invierno,Frijol,222725.24,219536.55,586.0,274360.87,1.25
+2026,7,Otoño-Invierno,Garbanzo grano,112889.12,111212.27,1606.5,191969.73,1.73
+2026,7,Otoño-Invierno,Maíz grano,933096.13,892290.98,5979.95,4775920.32,5.35
+2026,7,Otoño-Invierno,Sorgo grano,585219.17,544854.98,9573.89,1443336.79,2.65
+2026,7,Otoño-Invierno,Soya,8671.83,2327.38,1800.0,4957.7,2.13
+2026,7,Otoño-Invierno,Trigo grano,357728.68,341166.64,49.75,1735916.43,5.09
+2026,7,Primavera-Verano,Cebada grano,247338.64,38.01,0.0,122.01,3.21
+2026,7,Primavera-Verano,Cártamo,489.0,479.0,0.0,699.45,1.46
+2026,7,Primavera-Verano,Frijol,1001475.78,9108.06,191.0,10335.47,1.13
+2026,7,Primavera-Verano,Garbanzo grano,1245.0,0.0,0.0,0.0,0.0
+2026,7,Primavera-Verano,Maíz grano,4693565.46,77689.84,1626.25,163246.46,2.1
+2026,7,Primavera-Verano,Sorgo grano,244838.68,1121.51,50.0,2256.06,2.01
+2026,7,Primavera-Verano,Soya,114962.0,9952.0,0.0,16457.48,1.65
+2026,7,Primavera-Verano,Trigo grano,31885.18,143.01,0.0,164.01,1.15
+2026,8,Otoño-Invierno,Cebada grano,33919.42,33603.03,0.0,186373.72,5.55
+2026,8,Otoño-Invierno,Cártamo,60240.77,58836.08,680.0,113708.6,1.93
+2026,8,Otoño-Invierno,Frijol,222725.24,221227.62,596.95,276523.75,1.25
+2026,8,Otoño-Invierno,Garbanzo grano,112889.12,111212.27,1606.5,191974.71,1.73
+2026,8,Otoño-Invierno,Maíz grano,933096.13,909342.28,5979.95,4887874.58,5.38
+2026,8,Otoño-Invierno,Sorgo grano,585219.17,567983.44,9616.53,1495739.4,2.63
+2026,8,Otoño-Invierno,Soya,8671.83,4723.73,1800.0,12085.3,2.56
+2026,8,Otoño-Invierno,Trigo grano,357728.68,341719.09,49.75,1742459.87,5.1
+2026,8,Primavera-Verano,Cebada grano,249428.14,126.01,4440.0,391.01,3.1
+2026,8,Primavera-Verano,Cártamo,489.0,479.0,0.0,699.45,1.46
+2026,8,Primavera-Verano,Frijol,1098793.95,78662.84,13656.45,46609.69,0.59
+2026,8,Primavera-Verano,Garbanzo grano,1293.0,0.0,0.0,0.0,0.0
+2026,8,Primavera-Verano,Maíz grano,5466330.47,166183.71,262995.85,347734.64,2.09
+2026,8,Primavera-Verano,Sorgo grano,310397.47,17686.07,12291.4,42227.67,2.39
+2026,8,Primavera-Verano,Soya,143119.3,9952.0,6832.0,16457.48,1.65
+2026,8,Primavera-Verano,Trigo grano,33816.13,372.01,717.0,468.82,1.26
+2026,9,Otoño-Invierno,Cebada grano,33919.42,33919.42,0.0,191041.53,5.63
+2026,9,Otoño-Invierno,Cártamo,60240.77,59505.02,735.75,115249.19,1.94
+2026,9,Otoño-Invierno,Frijol,222725.24,222128.29,596.95,279197.94,1.26
+2026,9,Otoño-Invierno,Garbanzo grano,112889.12,111282.62,1606.5,204368.74,1.84
+2026,9,Otoño-Invierno,Maíz grano,933096.13,927116.18,5979.95,4978843.32,5.37
+2026,9,Otoño-Invierno,Sorgo grano,585219.17,575602.64,9616.53,1518286.79,2.64
+2026,9,Otoño-Invierno,Soya,8671.83,6871.83,1800.0,17375.15,2.53
+2026,9,Otoño-Invierno,Trigo grano,357728.68,357526.45,202.23,1844055.66,5.16
+2026,9,Primavera-Verano,Cebada grano,249982.39,2389.11,8235.0,7229.81,3.03
+2026,9,Primavera-Verano,Cártamo,504.0,479.0,0.0,699.45,1.46
+2026,9,Primavera-Verano,Frijol,1132207.62,111352.17,106282.57,76355.96,0.69
+2026,9,Primavera-Verano,Garbanzo grano,1303.0,0.0,0.0,0.0,0.0
+2026,9,Primavera-Verano,Maíz grano,5745154.95,263388.03,657497.54,641065.6,2.43
+2026,9,Primavera-Verano,Sorgo grano,359899.1,21550.06,32118.47,56225.69,2.61
+2026,9,Primavera-Verano,Soya,159512.1,9952.0,9732.0,16457.48,1.65
+2026,9,Primavera-Verano,Trigo grano,39285.08,3114.56,1325.0,15743.77,5.05

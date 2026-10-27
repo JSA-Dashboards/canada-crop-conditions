@@ -6,6 +6,7 @@
     python build_data.py sk [year ...]     # Saskatchewan weekly PDFs -> data/sk_reports.csv
     python build_data.py vh                # NOAA satellite crop condition -> data/vh.csv
     python build_data.py stocks            # StatCan farm stocks (32-10-0007-01) -> data/stocks.csv
+    python build_data.py mxprod|mxprog|mxstates|mxvh   # Mexico: SIAP production, SIAP monthly progress, state table, NOAA by state
 
 Reports are parsed incrementally: report dates already in a CSV are skipped.
 """
@@ -17,6 +18,7 @@ import shutil
 import subprocess
 import sys
 import tempfile
+import time
 import zipfile
 from datetime import date, timedelta
 from pathlib import Path
@@ -395,6 +397,167 @@ def build_sk(years):
     _save(df, path)
 
 
+# ── Mexico (SIAP, SADER) ────────────────────────────────────────────────────────
+SIAP_CIERRE = ("https://nube.agricultura.gob.mx/index.php?view=10AE434F-A2158368-A120BC5A-EDF4AFAA"
+               "&ANIO={y}")
+SIAP_AVANCE = "https://nube.agricultura.gob.mx/avance_agricola/"
+# SIAP crop id (avance tool) -> name used in the Cierre CSV and in the app
+MX_CROPS = {225: "Maíz grano", 374: "Sorgo grano", 395: "Trigo grano", 375: "Soya",
+            152: "Frijol", 77: "Cebada grano", 159: "Garbanzo grano", 74: "Cártamo"}
+MX_CYCLES = {1: "Otoño-Invierno", 2: "Primavera-Verano"}
+
+
+def build_mx_production(years=None):
+    """SIAP 'Cierre de la producción agrícola' municipal CSVs 2003+, aggregated to
+    year x state x cycle x water regime x crop for the grains and oilseeds we follow."""
+    path = DATA / "mx_production.csv"
+    old = pd.read_csv(path) if path.exists() else pd.DataFrame()
+    have = set(old["year"]) if len(old) else set()
+    # a completed year is final; refresh the latest two so late revisions are caught
+    redo = {date.today().year - 1, date.today().year - 2}
+    new = []
+    for y in years or range(2003, date.today().year):
+        if y in have and y not in redo:
+            continue
+        for attempt in range(4):  # the server resets connections now and then
+            try:
+                r = requests.get(SIAP_CIERRE.format(y=y), headers={**UA, "Referer":
+                                 "https://nube.agricultura.gob.mx/datosAbiertos/Agricola.php"},
+                                 timeout=180)
+                break
+            except requests.ConnectionError:
+                time.sleep(10 * (attempt + 1))
+        else:
+            raise RuntimeError(f"SIAP Cierre {y}: connection kept failing")
+        if r.status_code != 200 or r.content[:5] == b"<!DOC":
+            print("  no Cierre file for", y, flush=True)
+            continue
+        d = pd.read_csv(io.BytesIO(r.content), encoding="latin-1", low_memory=False)
+        d = d.rename(columns={"Nomcultivo Sin Um": "Nomcultivo"})  # 2015+ files
+        d = d[d["Nomcultivo"].isin(MX_CROPS.values())].copy()
+        num = ["Sembrada", "Cosechada", "Siniestrada", "Volumenproduccion", "Valorproduccion"]
+        d[num] = d[num].apply(pd.to_numeric, errors="coerce")  # some years carry text cells
+        g = d.groupby(["Anio", "Nomestado", "Nomcicloproductivo", "Nommodalidad", "Nomcultivo"],
+                      as_index=False)[["Sembrada", "Cosechada", "Siniestrada", "Volumenproduccion",
+                                       "Valorproduccion"]].sum()
+        g.columns = ["year", "state", "cycle", "water", "crop", "sown_ha", "harvested_ha",
+                     "lost_ha", "volume_t", "value_kpesos"]
+        print(" ", y, len(g), "rows", flush=True)
+        new.append(g)
+    if new:
+        old = pd.concat([old[~old["year"].isin({int(g["year"].iloc[0]) for g in new})]] + new
+                        if len(old) else new)
+    old.sort_values(["year", "state", "cycle", "water", "crop"]).to_csv(path, index=False)
+    print("mx_production.csv:", len(old), "rows", int(old["year"].min()), "-", int(old["year"].max()))
+
+
+class _Siap:
+    """The avance (monthly progress) tool is a small xajax web app: POST a function name and
+    arguments, get XML wrapping an HTML table."""
+
+    def __init__(self):
+        self.s = requests.Session()
+        self.s.headers["User-Agent"] = UA["User-Agent"]
+        self.s.get(SIAP_AVANCE, timeout=60)
+
+    def call(self, fn, *args):
+        data = [("xajax", fn)] + [("xajaxargs[]", str(a)) for a in args]
+        r = self.s.post(SIAP_AVANCE, data=data, timeout=120)
+        r.raise_for_status()
+        return r.content.decode("iso-8859-1")
+
+    def months(self, year):
+        return sorted(int(m) for m in re.findall(r'<option value="(\d+)"', self.call("llenaMes", year)))
+
+    def report(self, kind, year, cycle, state, crop, month):
+        # tipo, anio, ciclo, modalidad (3 = riego + temporal), entidad (0 = national), distrito,
+        # municipio, cultivo, unidad, variedad, opcionDDRMpio, agric, tiprod, timerc, mes
+        return self.call("reporte", kind, year, cycle, 3, state, 0, 0, crop, 0, 0, 1, 0, 0, 0, month)
+
+
+def _nums(row_html):
+    vals = re.findall(r'<t[dh][^>]*class="tdNum"[^>]*>\s*([\d,.\-]+)\s*</t[dh]>', row_html)
+    return [float(v.replace(",", "")) for v in vals]
+
+
+def _siap_total(html):
+    """(sown, harvested, lost, production, yield) from the Total row of a tipo-2 report."""
+    html = re.sub(r"<!--.*?-->", "", html, flags=re.S)
+    m = re.search(r"<tr><th colspan=\"2\">Total</th>(.*?)</tr>", html, re.S)
+    n = _nums(m.group(1)) if m else []
+    return n if len(n) == 5 else None
+
+
+def build_mx_progress(years=None):
+    """National monthly planting and harvest progress by crop and cycle, cumulative to month-end."""
+    path = DATA / "mx_progress.csv"
+    cols = ["year", "month", "cycle", "crop", "sown_ha", "harvested_ha", "lost_ha", "volume_t",
+            "yield_t_ha"]
+    old = pd.read_csv(path) if path.exists() else pd.DataFrame(columns=cols)
+    siap = _Siap()
+    this = date.today().year
+    new = []
+    for y in years or range(2018, this + 1):
+        done = {(int(a), int(b), c, k) for a, b, c, k in
+                zip(old["year"], old["month"], old["cycle"], old["crop"])}
+        ms = siap.months(y)
+        for month in ms:
+            # the latest published month can still be revised: always refetch the newest two
+            recent = y == this and month >= max(ms) - 1
+            for cid, cname in MX_CYCLES.items():
+                for crop_id, crop in MX_CROPS.items():
+                    if (y, month, cname, crop) in done and not recent:
+                        continue
+                    n = _siap_total(siap.report(2, y, cid, 0, crop_id, month))
+                    if n:
+                        new.append((y, month, cname, crop, n[0], n[1], n[2], n[3], n[4]))
+                    time.sleep(0.2)
+            print(" ", y, month, len(new), "rows so far", flush=True)
+            if len(new) >= 200:  # checkpoint: a long run should not lose its work
+                old = _merge_progress(old, new, cols, path)
+                new = []
+    old = _merge_progress(old, new, cols, path)
+    print("mx_progress.csv:", len(old), "rows")
+
+
+def _merge_progress(old, new, cols, path):
+    if new:
+        add = pd.DataFrame(new, columns=cols)
+        key = ["year", "month", "cycle", "crop"]
+        old = pd.concat([old, add]).drop_duplicates(key, keep="last")
+    old.sort_values(["year", "month", "cycle", "crop"]).to_csv(path, index=False)
+    return old
+
+
+def build_mx_states():
+    """Latest-month state table (municipal tipo-1 report summed to state) for each crop and cycle."""
+    siap = _Siap()
+    y = date.today().year
+    month = max(siap.months(y)) if siap.months(y) else None
+    if month is None:
+        y, month = y - 1, max(siap.months(y - 1))
+    rows = []
+    for cid, cname in MX_CYCLES.items():
+        for crop_id, crop in MX_CROPS.items():
+            html = re.sub(r"<!--.*?-->", "", siap.report(1, y, cid, 0, crop_id, month), flags=re.S)
+            agg = {}
+            for tr in re.findall(r"<tr>(.*?)</tr>", html, re.S):
+                cells = re.findall(r"<td[^>]*>(.*?)</td>", tr, re.S)
+                n = _nums(tr)
+                if len(cells) >= 8 and len(n) == 5:
+                    st_name = re.sub(r"<[^>]+>|&nbsp;", "", cells[1]).strip()
+                    a = agg.setdefault(st_name, [0.0] * 4)
+                    for i in range(4):
+                        a[i] += n[i]
+            for st_name, a in agg.items():
+                rows.append((y, month, cname, crop, st_name, *a))
+            time.sleep(0.3)
+    out = pd.DataFrame(rows, columns=["year", "month", "cycle", "crop", "state", "sown_ha",
+                                      "harvested_ha", "lost_ha", "volume_t"])
+    out.to_csv(DATA / "mx_progress_states.csv", index=False)
+    print("mx_progress_states.csv:", len(out), "rows", y, month)
+
+
 STOCK_GEOS = ["Alberta", "Saskatchewan", "Manitoba", "Ontario", "Canada"]
 STOCK_CROPS = {"Canola (rapeseed)": "Canola", "Wheat, all excluding durum wheat": "Wheat ex-durum",
                "Wheat, durum": "Durum", "Barley": "Barley", "Corn for grain": "Corn",
@@ -449,6 +612,15 @@ if __name__ == "__main__":
         build_yields()
     if what in ("ab", "all"):
         build_ab(yrs)
+    if what == "mxprod":
+        build_mx_production(yrs or None)
+    if what == "mxprog":
+        build_mx_progress(yrs or None)
+    if what == "mxstates":
+        build_mx_states()
+    if what == "mxvh":
+        import vh
+        vh.build_mx()
     if what in ("stocks", "all"):
         build_stocks()
     if what in ("vh", "all"):
