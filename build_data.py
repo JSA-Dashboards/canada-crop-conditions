@@ -242,12 +242,27 @@ def _period_end(text, year):
     return date(year, mon, int(m.group(4))).isoformat() if mon else None
 
 
+SK_LANDING = ("https://www.saskatchewan.ca/business/agriculture-natural-resources-and-industry/"
+              "agribusiness-farmers-and-ranchers/market-and-trade-statistics/crops-statistics/"
+              "crop-report")
+
+
+def sk_current_product():
+    """Product id behind the landing page's 'Download the Crop Report' link: each new
+    season gets a new product, so the current year is discovered, not hard-coded."""
+    html = requests.get(SK_LANDING, headers=UA, timeout=60).text
+    m = re.search(r'<a[^>]+href="[^"]*/products/(\d+)/formats/\d+/download"[^>]*>\s*'
+                  r'Download the Crop Report', html)
+    return int(m.group(1)) if m else None
+
+
 def sk_listing(years):
     """[(period_end ISO date, pdf url)] for the requested Saskatchewan years."""
     out = []
     for y in years:
-        if y in SK_YEAR_PRODUCTS:
-            pid = SK_YEAR_PRODUCTS[y]
+        pid = SK_YEAR_PRODUCTS.get(y) or (sk_current_product() if y == date.today().year
+                                         else None)
+        if pid:
             prod = requests.get(f"{SK_API}/products/{pid}", headers=UA, timeout=60).json()
             for f in prod["productFormats"]:
                 if f.get("productFormatType") != "PDF":
