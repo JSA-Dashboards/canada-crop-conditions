@@ -5,6 +5,7 @@ import plotly.graph_objects as go
 import streamlit as st
 
 import model as M
+import tour
 import vh
 
 st.set_page_config(page_title="Canada crop conditions", page_icon=":material/grass:",
@@ -236,70 +237,209 @@ def load_vh(province):
     return vh.load(province)
 
 
+def vh_chart(df, col, year):
+    """One index by week for `year` and the two before it, over the min-max band and the
+    average of all earlier years."""
+    m = vh.matrix(df, col)
+    weeks = [w for w in m.index if 14 <= w <= 44]
+    hist = m[[y for y in m.columns if y < year]].loc[weeks]
+    x = [pd.Timestamp(vh.week_start(2001, w)) for w in weeks]  # common axis year
+    fmt = ":.3f" if col == "SMN" else ":.1f"
+    fig = go.Figure()
+    fig.add_trace(go.Scatter(x=x, y=hist.max(axis=1), line=dict(width=0), showlegend=False,
+                             hoverinfo="skip"))
+    fig.add_trace(go.Scatter(x=x, y=hist.min(axis=1), fill="tonexty", line=dict(width=0),
+                             fillcolor="rgba(50,55,60,0.15)", hoverinfo="skip",
+                             name=f"Range {hist.columns.min()}-{hist.columns.max()}"))
+    fig.add_trace(go.Scatter(x=x, y=hist.mean(axis=1), name="Average",
+                             line=dict(color=GREY, dash="dash"),
+                             hovertemplate="Average: %{y" + fmt + "}<extra></extra>"))
+    for yr, color, width, dash in ((year - 2, "#9ca3af", 1.5, "dot"), (year - 1, AMBER, 1.8, "solid"),
+                                   (year, BLUE, 4, "solid")):
+        if yr in m.columns:
+            last = df[df["year"] == yr]["week"].max()
+            s = m[yr].loc[weeks].where(lambda v: v.index <= last)
+            fig.add_trace(go.Scatter(x=x, y=s, name=str(yr), line=dict(color=color, width=width,
+                                                                          dash=dash)))
+    return fig, weeks
+
+
 @st.fragment
 def tab_satellite():
     df = load_vh(prov)
     win = vh.WINDOWS[crop]
-    cur = df[df["year"] == cur_year].sort_values("week")
-    if cur.empty:
+    if df[df["year"] == cur_year].empty:
         st.info(f"No satellite data for {prov} in {cur_year}.")
         return
-    hist = df[(df["year"] != cur_year) & df["week"].between(14, 44)]
-    band = hist.groupby("week")["SMN"].agg(["min", "mean", "max"])
-    fig = go.Figure()
-    wk = [pd.Timestamp(vh.week_start(2001, w)) for w in band.index]  # common axis year
-    fig.add_trace(go.Scatter(x=wk, y=band["max"], line=dict(width=0), showlegend=False,
-                             hoverinfo="skip"))
-    fig.add_trace(go.Scatter(x=wk, y=band["min"], fill="tonexty", line=dict(width=0),
-                             fillcolor="rgba(50,55,60,0.15)", name="1982+ range"))
-    fig.add_trace(go.Scatter(x=wk, y=band["mean"], name="Average",
-                             line=dict(color=GREY, dash="dash")))
-    prev = df[df["year"] == cur_year - 1].sort_values("week")
-    fig.add_trace(go.Scatter(x=[pd.Timestamp(vh.week_start(2001, w)) for w in prev["week"]],
-                             y=prev["SMN"], name=str(cur_year - 1),
-                             line=dict(color=AMBER, width=1.5)))
-    fig.add_trace(go.Scatter(x=[pd.Timestamp(vh.week_start(2001, w)) for w in cur["week"]],
-                             y=cur["SMN"], name=str(cur_year), line=dict(color=BLUE, width=4)))
+    ly, lw = vh.last_week(df)
+    st.caption(f"NOAA STAR Vegetation Health, {prov} cropland only, weekly, through week {lw} of "
+               f"{ly} (about {vh.week_start(ly, lw):%b %d}). StatCan's own weekly NDVI table stopped "
+               "in 2024, so this is the nearest current series. A province-wide average, not a "
+               "county or field measure; NOAA labels it experimental.")
+    col = st.radio("Index", ["SMN", "VCI", "VHI", "TCI"], horizontal=True, key="vh_index",
+                   format_func=lambda c: vh.LABEL[c])
+    fig, weeks = vh_chart(df, col, cur_year)
     fig.add_vrect(x0=pd.Timestamp(vh.week_start(2001, win[0])),
                   x1=pd.Timestamp(vh.week_start(2001, win[1] + 1)), fillcolor=BLUE,
                   opacity=0.08, line_width=0, annotation_text=f"{crop} window")
-    fig.update_layout(title=f"{prov} cropland NDVI (NOAA STAR, province average)",
-                      yaxis_title="NDVI", height=400, template="plotly_white",
-                      margin=dict(t=50, b=30), legend=dict(orientation="h", y=-0.15))
+    fig.update_layout(title=f"{prov} cropland, weekly {vh.LABEL[col]}", height=400,
+                      template="plotly_white", margin=dict(t=50, b=30), hovermode="x unified",
+                      legend=dict(orientation="h", y=-0.15))
     fig.update_xaxes(tickformat="%b %d")
     st.plotly_chart(fig, width="stretch")
-    ly, lw = vh.last_week(df)
-    rk = vh.season_rank(df, crop, cur_year)
+
+    season = vh.season_table(df, crop, cur_year)
+    if not season.empty:
+        a, b = win
+        end = pd.Timestamp(vh.week_start(cur_year, b)) + pd.Timedelta(days=6)
+        st.markdown(f"**{crop} crop window: weeks {a} to {b} (about "
+                    f"{vh.week_start(cur_year, a):%b %d} to {end:%b %d})**")
+
+        def f(c, v):
+            return f"{v:.3f}" if c == "SMN" else f"{v:.1f}"
+        st.dataframe(pd.DataFrame({
+            "Index": [vh.LABEL[c] for c in season["index"]],
+            str(cur_year): [f(c, v) for c, v in zip(season["index"], season["this_year"])],
+            "Average": [f(c, v) for c, v in zip(season["index"], season["average"])],
+            "Rank (1 = best)": [f"{r} of {n}" for r, n in zip(season["rank"], season["of"])]}),
+            width="stretch", hide_index=True)
+        pk, pk_prev = vh.peak(df, cur_year), vh.peak(df, cur_year - 1)
+        if pk:
+            st.caption(f"Peak NDVI this season: {pk[0]:.3f} in week {pk[1]}"
+                       + (f"; last year {pk_prev[0]:.3f}" if pk_prev else "")
+                       + f". Rank compares the same window in every year since "
+                         f"{int(season['first'].iloc[0])}.")
+    else:
+        st.info("The crop window has not finished yet, so there is no window readout.")
+
     s = yl[(yl["geo"] == prov) & (yl["crop"] == crop)].dropna(subset=["bu_ac"])
     done = {int(a): b for a, b in zip(s["year"], s["bu_ac"]) if a < cur_year}
     mod = vh.yield_model(df, crop, done, cur_year)
     latest = s[s["year"] == cur_year]["bu_ac"]
-    c = st.columns(4)
-    c[0].metric("Latest week", f"{vh.week_start(ly, lw):%b %d}", f"week {lw}", delta_color="off")
-    c[1].metric(f"{crop} window NDVI", f"{rk[0]:.3f}" if rk else "n/a",
-                f"{rk[0] - rk[1]:+.3f} vs average" if rk else None)
-    c[2].metric("Rank (1 = greenest)", f"{rk[2]} of {rk[3]}" if rk else "n/a")
-    c[3].metric("StatCan latest", f"{latest.iloc[0]:.1f} bu/ac" if len(latest) else "n/a")
-    if not mod:
-        st.warning("Not enough years to fit the satellite model.")
+    if not mod or mod["predicted"] is None:
+        st.warning("Not enough data for the satellite yield model yet.")
         return
     st.subheader(f"{prov} {crop}: trend vs trend plus greenness")
-    c = st.columns(3)
+    c = st.columns(4)
     c[0].metric("Trend yield", f"{mod['trend_year']:.1f} bu/ac")
-    c[1].metric("Trend + NDVI", f"{mod['predicted']:.1f} bu/ac" if mod["predicted"] else "n/a")
-    c[2].metric("Skill vs trend (leave-one-out)", f"{mod['skill'] * 100:+.0f}%")
-    st.caption(
-        f"Fit on {mod['n']} completed years. The NDVI window (weeks {win[0]}-{win[1]}) was fixed "
-        f"in advance, not searched. Leave-one-out error is {mod['rmse_loo']:.1f} bu/ac with NDVI "
-        f"against {mod['rmse_trend_loo']:.1f} for trend alone, so greenness explains little beyond "
-        "trend: it is better at flagging stress years than at ranking good ones. StatCan's "
-        "current-year figure is a model estimate until December and is kept out of the fit.")
+    c[1].metric("Trend + NDVI", f"{mod['predicted']:.1f} bu/ac")
+    c[2].metric("StatCan latest", f"{latest.iloc[0]:.1f} bu/ac" if len(latest) else "n/a")
+    c[3].metric("Skill vs trend (leave-one-out)", f"{mod['skill'] * 100:+.0f}%")
+    order = np.argsort(mod["x"])[::-1]
+    top, bottom = mod["anomaly"][order[:10]].mean(), mod["anomaly"][order[-10:]].mean()
+    rk = vh.season_rank(df, crop, cur_year)
+    st.markdown(
+        f"Using only the {cur_year} satellite reading and the yield trend, {prov} {crop.lower()} "
+        f"yield would be about **{mod['predicted']:.1f} bu/ac** (trend alone "
+        f"{mod['trend_year']:.1f}). **The signal is weak:** over {mod['n']} past years the "
+        f"satellite term cuts the leave-one-out error from {mod['rmse_trend_loo']:.1f} to "
+        f"{mod['rmse_loo']:.1f} bu/ac ({mod['skill']:.0%} better), and the window was fixed in "
+        f"advance rather than searched for the best fit. Years with a top-10 window finished "
+        f"{top:+.1f} bu/ac against trend on average, the 10 weakest {bottom:+.1f}."
+        + (f" The {cur_year} window ranks {rk[2]} of {rk[3]}: a good year, not a record, so the "
+           "satellite does not back a record-yield call." if rk and rk[2] > 3 else ""))
+    with st.expander("How the satellite reading maps to yield", expanded=False):
+        sc = go.Figure()
+        yrs = list(mod["years"])
+        sc.add_trace(go.Scatter(
+            x=mod["x"], y=mod["anomaly"], mode="markers+text", name="Years",
+            text=[str(y) if y >= 2010 or abs(a) > 8 else "" for y, a in zip(yrs, mod["anomaly"])],
+            textposition="top center", textfont=dict(size=9), marker=dict(size=8, color="#5e7164"),
+            customdata=yrs, hovertemplate="%{customdata}: NDVI %{x:.3f}, %{y:+.1f} bu/ac vs trend"
+                                          "<extra></extra>"))
+        k, i0 = np.polyfit(mod["x"], mod["anomaly"], 1)
+        xs = [float(min(mod["x"])), float(max(mod["x"]))]
+        sc.add_trace(go.Scatter(x=xs, y=[k * v + i0 for v in xs], mode="lines", name="Fit",
+                                line=dict(color=AMBER, dash="dash")))
+        if mod["x_now"] is not None:
+            sc.add_vline(x=mod["x_now"], line_color=BLUE, line_width=2.5,
+                         annotation_text=str(cur_year), annotation_font_color=BLUE)
+        sc.update_layout(title=f"{crop} yield vs trend against the crop-window NDVI",
+                         height=360, template="plotly_white", showlegend=False,
+                         margin=dict(t=50, b=40), xaxis_title="Mean NDVI over the crop window",
+                         yaxis_title="Yield minus trend (bu/ac)")
+        st.plotly_chart(sc, width="stretch")
+        st.caption(f"Each dot is a year: mean NDVI over weeks {win[0]}-{win[1]} against that "
+                   "year's StatCan yield minus the linear yield trend. NDVI saturates when crops "
+                   "are healthy, so it is better at flagging stress years than at ranking good ones.")
+
+
+def fmt_pct(v):
+    return "n/a" if pd.isna(v) else f"{v:+.0%}"
+
+
+@st.fragment
+def tab_estimates():
+    s = yl[(yl["geo"] == prov) & (yl["crop"] == crop)].dropna(subset=["bu_ac"])
+    sc_year = int(s["year"].max()) if len(s) else None
+    st.subheader(f"{prov} {crop}: how fresh is the crop estimate?")
+    if tour.available(crop) and prov == "Ontario" and sc_year:
+        stat = {int(a): b for a, b in zip(s["year"], s["bu_ac"])}
+        tbl = tour.table(crop, stat, sc_year)
+        prod = float(s[s["year"] == sc_year]["prod_t"].iloc[0])
+        ests = tour.estimates(tbl, crop, prod, sc_year)
+        st.caption("StatCan's mid-September model is the latest official figure and its final "
+                   "survey number comes in early December. The yield tour is an independent "
+                   "August cross-check.")
+        if ests:
+            st.dataframe(pd.DataFrame([{
+                "Estimate": e["label"], "Yield (bu/ac)": e["yield_bu"],
+                f"{sc_year} production (kt)": e["kt"],
+                "vs StatCan model": e["kt"] / ests[0]["kt"] - 1} for e in ests]).style.format(
+                {"Yield (bu/ac)": "{:.1f}", f"{sc_year} production (kt)": "{:,.0f}",
+                 "vs StatCan model": "{:+.1%}"}), width="stretch", hide_index=True)
+        with st.expander("How the August yield tour has compared with StatCan", expanded=False):
+            fin = tbl[tbl["final"]]
+            f = tour.factor(tbl)
+            fig = go.Figure()
+            fig.add_trace(go.Bar(x=tbl["year"], y=tbl["tour"], name="Yield tour (August)",
+                                 marker_color=AMBER))
+            fig.add_trace(go.Bar(x=tbl["year"], y=tbl["statcan"], name="StatCan (latest = model)",
+                                 marker_color="#5e7164"))
+            fig.update_layout(barmode="group", height=340, template="plotly_white",
+                              title="Yield tour vs StatCan yield (bu/ac)", margin=dict(t=50, b=30),
+                              legend=dict(orientation="h", y=-0.15))
+            fig.update_xaxes(tickvals=list(tbl["year"]))
+            st.plotly_chart(fig, width="stretch")
+            st.markdown(
+                f"Across {len(fin)} years ({fin['year'].min()}-{fin['year'].max()}) StatCan's final "
+                f"yield has been **{f:.2f}x** the tour's (median), so the tour "
+                f"{'has run high' if f < 0.97 else 'has been close to unbiased'} for "
+                f"{crop.lower()}. After scaling by that ratio the typical miss is about "
+                f"**{tour.miss(tbl):.1%}**. The {sc_year} tour is compared with StatCan's model, "
+                "not a final figure.")
+            st.caption(tour.SOURCE + ". The tour is a private sample, not a survey; the history is "
+                       "typed in by hand and does not update itself.")
+    else:
+        st.info("The Great Ontario Yield Tour covers Ontario corn and soybeans only. For the "
+                f"Prairies, StatCan's {sc_year} figure is the model estimate until December; see "
+                "the Yield model and Satellite tabs.")
+    st.subheader(f"{prov} {crop}: farm stocks")
+    fs = M.farm_stocks(prov, crop)
+    if fs.empty:
+        st.info("No StatCan farm stocks for this selection.")
+        return
+    st.dataframe(pd.DataFrame({
+        "Farm stocks": fs["date"], "kt": fs["kt"], "A year earlier": fs["year_ago"],
+        "Prior 5-yr average": fs["avg5"], "vs a year ago": fs["vs_year_ago"],
+        "vs 5-yr average": fs["vs_avg5"]}).style.format(
+        {"kt": "{:,.0f}", "A year earlier": "{:,.0f}", "Prior 5-yr average": "{:,.0f}",
+         "vs a year ago": "{:+.0%}", "vs 5-yr average": "{:+.0%}"}, na_rep="n/a"),
+        width="stretch", hide_index=True)
+    note = " Spring wheat uses all wheat except durum, including winter wheat." \
+        if crop == "Spring wheat" else ""
+    st.caption(f"StatCan table 32-10-0007-01, through {fs['date'].iloc[-1]}: stocks on farms in "
+               f"{prov}. Commercial stocks are not published by province." + note)
 
 
 def tab_sources():
     st.markdown("""
 **Satellite** - NOAA STAR Vegetation Health (province average of cropland pixels, weekly from
 1982, labelled experimental). StatCan's own NDVI tables stopped in 2021 and May 2024.
+
+**Farm stocks** - StatCan table 32-10-0007-01 (Mar 31, Jul 31, Dec 31, farm stocks only).
+
+**Yield tour** - Great Ontario Yield Tour (Farms.com), typed in by hand each August.
 
 **Ontario** - no weekly ratings are published, so corn and soybeans use the satellite model
 and StatCan yields. County production and the supply balance are in the Soy Crush Calculator.
@@ -319,11 +459,12 @@ region. Manitoba does not publish numeric condition ratings.
 **Yields** - Statistics Canada table 32-10-0359-01. The current year is a model estimate
 until the December survey and is kept out of the model fit.
 
-Refresh data with `python build_data.py ab`, `sk`, `mb`, `vh` and `yields`.
+Refresh data with `python build_data.py ab`, `sk`, `mb`, `vh`, `stocks` and `yields`.
 """)
 
 
-t1, t2, t3, t4, t5 = st.tabs(["Conditions", "Progress", "Yield model", "Satellite", "Sources"])
+t1, t2, t3, t4, t6, t5 = st.tabs(["Conditions", "Progress", "Yield model", "Satellite",
+                                  "Estimates and stocks", "Sources"])
 with t1:
     tab_conditions()
 with t2:
@@ -332,5 +473,7 @@ with t3:
     tab_yield()
 with t4:
     tab_satellite()
+with t6:
+    tab_estimates()
 with t5:
     tab_sources()

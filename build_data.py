@@ -5,6 +5,7 @@
     python build_data.py mb [year ...]     # Manitoba weekly PDFs -> data/mb_reports.csv
     python build_data.py sk [year ...]     # Saskatchewan weekly PDFs -> data/sk_reports.csv
     python build_data.py vh                # NOAA satellite crop condition -> data/vh.csv
+    python build_data.py stocks            # StatCan farm stocks (32-10-0007-01) -> data/stocks.csv
 
 Reports are parsed incrementally: report dates already in a CSV are skipped.
 """
@@ -394,6 +395,28 @@ def build_sk(years):
     _save(df, path)
 
 
+STOCK_GEOS = ["Alberta", "Saskatchewan", "Manitoba", "Ontario", "Canada"]
+STOCK_CROPS = {"Canola (rapeseed)": "Canola", "Wheat, all excluding durum wheat": "Wheat ex-durum",
+               "Wheat, durum": "Durum", "Barley": "Barley", "Corn for grain": "Corn",
+               "Soybeans": "Soybeans"}
+
+
+def build_stocks():
+    """StatCan 32-10-0007-01: farm stocks (Mar 31, Jul 31, Dec 31) by province, in kt."""
+    raw = _get("https://www150.statcan.gc.ca/n1/tbl/csv/32100007-eng.zip")
+    with zipfile.ZipFile(io.BytesIO(raw)) as z, z.open("32100007.csv") as f:
+        df = pd.read_csv(f, encoding="utf-8-sig", usecols=[
+            "REF_DATE", "GEO", "Type of stock", "Type of crop", "SCALAR_FACTOR", "VALUE"])
+    df = df[df["GEO"].isin(STOCK_GEOS) & df["Type of crop"].isin(STOCK_CROPS)
+            & (df["Type of stock"] == "Farm stocks")].dropna(subset=["VALUE"]).copy()
+    df["kt"] = df["VALUE"] * df["SCALAR_FACTOR"].map({"thousands": 1.0, "units": 0.001})
+    df["crop"] = df["Type of crop"].map(STOCK_CROPS)
+    out = df.rename(columns={"REF_DATE": "date", "GEO": "geo"})[["date", "geo", "crop", "kt"]]
+    DATA.mkdir(exist_ok=True)
+    out.sort_values(["geo", "crop", "date"]).to_csv(DATA / "stocks.csv", index=False)
+    print("stocks.csv:", len(out), "rows", out["date"].min(), "-", out["date"].max())
+
+
 def build_yields():
     raw = _get("https://www150.statcan.gc.ca/n1/tbl/csv/32100359-eng.zip")
     with zipfile.ZipFile(io.BytesIO(raw)) as z, z.open("32100359.csv") as f:
@@ -426,6 +449,8 @@ if __name__ == "__main__":
         build_yields()
     if what in ("ab", "all"):
         build_ab(yrs)
+    if what in ("stocks", "all"):
+        build_stocks()
     if what in ("vh", "all"):
         import vh
         vh.build()

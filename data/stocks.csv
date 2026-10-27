@@ -1,0 +1,3513 @@
+date,geo,crop,kt
+1980-03,Alberta,Barley,2286.0
+1980-07,Alberta,Barley,500.0
+1981-03,Alberta,Barley,2720.0
+1981-07,Alberta,Barley,610.0
+1981-12,Alberta,Barley,5300.0
+1982-03,Alberta,Barley,3700.0
+1982-07,Alberta,Barley,1070.0
+1982-12,Alberta,Barley,5600.0
+1983-03,Alberta,Barley,4030.0
+1983-07,Alberta,Barley,1560.0
+1983-12,Alberta,Barley,4000.0
+1984-03,Alberta,Barley,2450.0
+1984-07,Alberta,Barley,570.0
+1984-12,Alberta,Barley,3130.0
+1985-03,Alberta,Barley,1900.0
+1985-07,Alberta,Barley,450.0
+1985-12,Alberta,Barley,3700.0
+1986-03,Alberta,Barley,2300.0
+1986-07,Alberta,Barley,400.0
+1986-12,Alberta,Barley,4900.0
+1987-03,Alberta,Barley,2950.0
+1987-07,Alberta,Barley,700.0
+1987-12,Alberta,Barley,4900.0
+1988-03,Alberta,Barley,3300.0
+1988-07,Alberta,Barley,1200.0
+1988-12,Alberta,Barley,4600.0
+1989-03,Alberta,Barley,2900.0
+1989-07,Alberta,Barley,600.0
+1989-12,Alberta,Barley,3900.0
+1990-03,Alberta,Barley,2100.0
+1990-07,Alberta,Barley,550.0
+1990-12,Alberta,Barley,4500.0
+1991-03,Alberta,Barley,2800.0
+1991-07,Alberta,Barley,750.0
+1991-12,Alberta,Barley,4400.0
+1992-03,Alberta,Barley,2850.0
+1992-07,Alberta,Barley,850.0
+1992-12,Alberta,Barley,3700.0
+1993-03,Alberta,Barley,2300.0
+1993-07,Alberta,Barley,850.0
+1993-12,Alberta,Barley,4800.0
+1994-03,Alberta,Barley,2900.0
+1994-07,Alberta,Barley,1050.0
+1994-12,Alberta,Barley,3750.0
+1995-03,Alberta,Barley,2000.0
+1995-07,Alberta,Barley,600.0
+1995-12,Alberta,Barley,4100.0
+1996-03,Alberta,Barley,2300.0
+1996-07,Alberta,Barley,475.0
+1996-12,Alberta,Barley,4350.0
+1997-03,Alberta,Barley,2500.0
+1997-07,Alberta,Barley,900.0
+1997-12,Alberta,Barley,4200.0
+1998-03,Alberta,Barley,2550.0
+1998-07,Alberta,Barley,800.0
+1998-12,Alberta,Barley,4100.0
+1999-03,Alberta,Barley,2500.0
+1999-07,Alberta,Barley,1100.0
+1999-12,Alberta,Barley,4350.0
+2000-03,Alberta,Barley,2700.0
+2000-07,Alberta,Barley,1150.0
+2000-12,Alberta,Barley,3900.0
+2001-03,Alberta,Barley,2300.0
+2001-07,Alberta,Barley,850.0
+2001-12,Alberta,Barley,3200.0
+2002-03,Alberta,Barley,2700.0
+2002-07,Alberta,Barley,750.0
+2002-12,Alberta,Barley,1850.0
+2003-03,Alberta,Barley,1100.0
+2003-07,Alberta,Barley,450.0
+2003-12,Alberta,Barley,3500.0
+2004-03,Alberta,Barley,2400.0
+2004-07,Alberta,Barley,750.0
+2004-12,Alberta,Barley,4120.0
+2005-03,Alberta,Barley,2725.0
+2005-07,Alberta,Barley,1200.0
+2005-12,Alberta,Barley,4100.0
+2006-03,Alberta,Barley,2800.0
+2006-07,Alberta,Barley,1330.0
+2006-12,Alberta,Barley,3325.0
+2007-03,Alberta,Barley,1900.0
+2007-07,Alberta,Barley,550.0
+2007-12,Alberta,Barley,3200.0
+2008-03,Alberta,Barley,1875.0
+2008-07,Alberta,Barley,670.0
+2008-12,Alberta,Barley,3850.0
+2009-03,Alberta,Barley,2550.0
+2009-07,Alberta,Barley,1100.0
+2009-12,Alberta,Barley,2800.0
+2010-03,Alberta,Barley,1800.0
+2010-07,Alberta,Barley,800.0
+2010-12,Alberta,Barley,3080.0
+2011-03,Alberta,Barley,1900.0
+2011-07,Alberta,Barley,800.0
+2011-12,Alberta,Barley,3000.0
+2012-03,Alberta,Barley,1725.0
+2012-07,Alberta,Barley,600.0
+2012-12,Alberta,Barley,2800.0
+2013-03,Alberta,Barley,1650.0
+2013-07,Alberta,Barley,425.0
+2013-12,Alberta,Barley,3575.0
+2014-03,Alberta,Barley,2300.0
+2014-07,Alberta,Barley,850.0
+2014-12,Alberta,Barley,2915.0
+2015-03,Alberta,Barley,1775.0
+2015-07,Alberta,Barley,600.0
+2015-12,Alberta,Barley,2900.0
+2016-03,Alberta,Barley,1850.0
+2016-07,Alberta,Barley,650.0
+2016-12,Alberta,Barley,3200.0
+2017-03,Alberta,Barley,2210.0
+2017-07,Alberta,Barley,900.0
+2017-12,Alberta,Barley,3000.0
+2018-03,Alberta,Barley,1590.0
+2018-07,Alberta,Barley,510.0
+2018-12,Alberta,Barley,2300.0
+2019-03,Alberta,Barley,1100.0
+2019-07,Alberta,Barley,360.0
+2019-12,Alberta,Barley,2800.0
+2020-03,Alberta,Barley,1600.0
+2020-07,Alberta,Barley,370.0
+2020-12,Alberta,Barley,2400.0
+2021-03,Alberta,Barley,1270.0
+2021-07,Alberta,Barley,302.0
+2021-12,Alberta,Barley,1441.0
+2022-03,Alberta,Barley,676.0
+2022-07,Alberta,Barley,129.0
+2022-12,Alberta,Barley,2708.0
+2023-03,Alberta,Barley,1140.0
+2023-07,Alberta,Barley,272.0
+2023-12,Alberta,Barley,2500.0
+2024-03,Alberta,Barley,1200.0
+2024-07,Alberta,Barley,383.0
+2024-12,Alberta,Barley,2279.0
+2025-03,Alberta,Barley,1055.0
+2025-07,Alberta,Barley,350.0
+2025-12,Alberta,Barley,2709.0
+2026-03,Alberta,Barley,1038.0
+2026-07,Alberta,Barley,170.0
+1980-03,Alberta,Canola,658.0
+1980-07,Alberta,Canola,120.0
+1981-03,Alberta,Canola,703.0
+1981-07,Alberta,Canola,170.0
+1981-12,Alberta,Canola,520.0
+1982-03,Alberta,Canola,285.0
+1982-07,Alberta,Canola,34.0
+1982-12,Alberta,Canola,550.0
+1983-03,Alberta,Canola,190.0
+1983-07,Alberta,Canola,15.0
+1983-12,Alberta,Canola,490.0
+1984-03,Alberta,Canola,130.0
+1984-07,Alberta,Canola,3.0
+1984-12,Alberta,Canola,640.0
+1985-03,Alberta,Canola,280.0
+1985-07,Alberta,Canola,30.0
+1985-12,Alberta,Canola,700.0
+1986-03,Alberta,Canola,360.0
+1986-07,Alberta,Canola,85.0
+1986-12,Alberta,Canola,1020.0
+1987-03,Alberta,Canola,600.0
+1987-07,Alberta,Canola,70.0
+1987-12,Alberta,Canola,970.0
+1988-03,Alberta,Canola,365.0
+1988-07,Alberta,Canola,40.0
+1988-12,Alberta,Canola,1300.0
+1989-03,Alberta,Canola,790.0
+1989-07,Alberta,Canola,190.0
+1989-12,Alberta,Canola,880.0
+1990-03,Alberta,Canola,460.0
+1990-07,Alberta,Canola,100.0
+1990-12,Alberta,Canola,800.0
+1991-03,Alberta,Canola,420.0
+1991-07,Alberta,Canola,50.0
+1991-12,Alberta,Canola,950.0
+1992-03,Alberta,Canola,570.0
+1992-07,Alberta,Canola,120.0
+1992-12,Alberta,Canola,580.0
+1993-03,Alberta,Canola,270.0
+1993-07,Alberta,Canola,30.0
+1993-12,Alberta,Canola,1050.0
+1994-03,Alberta,Canola,350.0
+1994-07,Alberta,Canola,20.0
+1994-12,Alberta,Canola,1000.0
+1995-03,Alberta,Canola,410.0
+1995-07,Alberta,Canola,70.0
+1995-12,Alberta,Canola,1350.0
+1996-03,Alberta,Canola,800.0
+1996-07,Alberta,Canola,200.0
+1996-12,Alberta,Canola,980.0
+1997-03,Alberta,Canola,450.0
+1997-07,Alberta,Canola,90.0
+1997-12,Alberta,Canola,1000.0
+1998-03,Alberta,Canola,400.0
+1998-07,Alberta,Canola,40.0
+1998-12,Alberta,Canola,990.0
+1999-03,Alberta,Canola,530.0
+1999-07,Alberta,Canola,130.0
+1999-12,Alberta,Canola,1700.0
+2000-03,Alberta,Canola,1100.0
+2000-07,Alberta,Canola,450.0
+2000-12,Alberta,Canola,1450.0
+2001-03,Alberta,Canola,700.0
+2001-07,Alberta,Canola,190.0
+2001-12,Alberta,Canola,1000.0
+2002-03,Alberta,Canola,600.0
+2002-07,Alberta,Canola,150.0
+2002-12,Alberta,Canola,700.0
+2003-03,Alberta,Canola,400.0
+2003-07,Alberta,Canola,100.0
+2003-12,Alberta,Canola,965.0
+2004-03,Alberta,Canola,485.0
+2004-07,Alberta,Canola,50.0
+2004-12,Alberta,Canola,1660.0
+2005-03,Alberta,Canola,1000.0
+2005-07,Alberta,Canola,300.0
+2005-12,Alberta,Canola,2460.0
+2006-03,Alberta,Canola,1525.0
+2006-07,Alberta,Canola,350.0
+2006-12,Alberta,Canola,2175.0
+2007-03,Alberta,Canola,1360.0
+2007-07,Alberta,Canola,250.0
+2007-12,Alberta,Canola,2280.0
+2008-03,Alberta,Canola,1255.0
+2008-07,Alberta,Canola,165.0
+2008-12,Alberta,Canola,2725.0
+2009-03,Alberta,Canola,1540.0
+2009-07,Alberta,Canola,335.0
+2009-12,Alberta,Canola,2460.0
+2010-03,Alberta,Canola,1520.0
+2010-07,Alberta,Canola,250.0
+2010-12,Alberta,Canola,3035.0
+2011-03,Alberta,Canola,1945.0
+2011-07,Alberta,Canola,250.0
+2011-12,Alberta,Canola,3255.0
+2012-03,Alberta,Canola,1510.0
+2012-07,Alberta,Canola,55.0
+2012-12,Alberta,Canola,2765.0
+2013-03,Alberta,Canola,1240.0
+2013-07,Alberta,Canola,65.0
+2013-12,Alberta,Canola,4215.0
+2014-03,Alberta,Canola,2760.0
+2014-07,Alberta,Canola,480.0
+2014-12,Alberta,Canola,4040.0
+2015-03,Alberta,Canola,2625.0
+2015-07,Alberta,Canola,500.0
+2015-12,Alberta,Canola,3960.0
+2016-03,Alberta,Canola,2350.0
+2016-07,Alberta,Canola,300.0
+2016-12,Alberta,Canola,3925.0
+2017-03,Alberta,Canola,2190.0
+2017-07,Alberta,Canola,175.0
+2017-12,Alberta,Canola,4300.0
+2018-03,Alberta,Canola,2725.0
+2018-07,Alberta,Canola,875.0
+2018-12,Alberta,Canola,4500.0
+2019-03,Alberta,Canola,3330.0
+2019-07,Alberta,Canola,1450.0
+2019-12,Alberta,Canola,4312.0
+2020-03,Alberta,Canola,2955.0
+2020-07,Alberta,Canola,1030.0
+2020-12,Alberta,Canola,3665.0
+2021-03,Alberta,Canola,2160.0
+2021-07,Alberta,Canola,695.0
+2021-12,Alberta,Canola,2420.0
+2022-03,Alberta,Canola,1227.0
+2022-07,Alberta,Canola,148.0
+2022-12,Alberta,Canola,3234.0
+2023-03,Alberta,Canola,1764.0
+2023-07,Alberta,Canola,208.0
+2023-12,Alberta,Canola,3865.0
+2024-03,Alberta,Canola,2456.0
+2024-07,Alberta,Canola,418.0
+2024-12,Alberta,Canola,3430.0
+2025-03,Alberta,Canola,1810.0
+2025-07,Alberta,Canola,95.0
+2025-12,Alberta,Canola,4188.0
+2026-03,Alberta,Canola,2805.0
+2026-07,Alberta,Canola,240.0
+1980-03,Alberta,Corn,658.0
+1980-07,Alberta,Corn,120.0
+1981-03,Alberta,Corn,703.0
+1981-07,Alberta,Corn,170.0
+1981-12,Alberta,Corn,520.0
+1982-03,Alberta,Corn,285.0
+1982-07,Alberta,Corn,34.0
+1982-12,Alberta,Corn,550.0
+1983-03,Alberta,Corn,190.0
+1983-07,Alberta,Corn,15.0
+1983-12,Alberta,Corn,490.0
+1984-03,Alberta,Corn,130.0
+1984-07,Alberta,Corn,3.0
+1984-12,Alberta,Corn,640.0
+1985-03,Alberta,Corn,280.0
+1985-07,Alberta,Corn,30.0
+1985-12,Alberta,Corn,700.0
+1986-03,Alberta,Corn,360.0
+1986-07,Alberta,Corn,85.0
+1986-12,Alberta,Corn,1020.0
+1987-03,Alberta,Corn,0.0
+1987-07,Alberta,Corn,0.0
+1987-12,Alberta,Corn,0.0
+1988-03,Alberta,Corn,0.0
+1988-07,Alberta,Corn,0.0
+1988-12,Alberta,Corn,0.0
+1989-03,Alberta,Corn,0.0
+1989-07,Alberta,Corn,0.0
+1989-12,Alberta,Corn,0.0
+1990-03,Alberta,Corn,0.0
+1990-07,Alberta,Corn,0.0
+1990-12,Alberta,Corn,0.0
+1991-03,Alberta,Corn,0.0
+1991-07,Alberta,Corn,0.0
+1991-12,Alberta,Corn,10.0
+1992-03,Alberta,Corn,5.0
+1992-07,Alberta,Corn,1.0
+1992-12,Alberta,Corn,3.0
+1993-03,Alberta,Corn,2.0
+1993-07,Alberta,Corn,0.0
+1993-12,Alberta,Corn,5.0
+1994-03,Alberta,Corn,2.0
+1994-07,Alberta,Corn,0.0
+1994-12,Alberta,Corn,5.0
+1995-03,Alberta,Corn,2.0
+1995-07,Alberta,Corn,0.0
+1995-12,Alberta,Corn,6.0
+1996-03,Alberta,Corn,3.0
+1996-07,Alberta,Corn,0.0
+1996-12,Alberta,Corn,3.0
+1997-03,Alberta,Corn,2.0
+1997-07,Alberta,Corn,0.0
+1997-12,Alberta,Corn,3.0
+1998-03,Alberta,Corn,1.0
+1998-07,Alberta,Corn,0.0
+1998-12,Alberta,Corn,4.0
+1999-03,Alberta,Corn,2.0
+1999-07,Alberta,Corn,0.0
+1999-12,Alberta,Corn,10.0
+2000-03,Alberta,Corn,5.0
+2000-07,Alberta,Corn,0.0
+2000-12,Alberta,Corn,10.0
+2001-03,Alberta,Corn,3.0
+2001-07,Alberta,Corn,2.0
+2001-12,Alberta,Corn,10.0
+2002-03,Alberta,Corn,8.0
+2002-07,Alberta,Corn,5.0
+2002-12,Alberta,Corn,11.0
+2003-03,Alberta,Corn,6.0
+2003-07,Alberta,Corn,0.0
+2003-12,Alberta,Corn,0.0
+2004-03,Alberta,Corn,0.0
+2004-07,Alberta,Corn,0.0
+2004-12,Alberta,Corn,0.0
+2005-03,Alberta,Corn,0.0
+2005-07,Alberta,Corn,0.0
+2005-12,Alberta,Corn,2.0
+2006-03,Alberta,Corn,1.0
+2006-07,Alberta,Corn,0.0
+2006-12,Alberta,Corn,2.0
+2007-03,Alberta,Corn,0.0
+2007-07,Alberta,Corn,0.0
+2007-12,Alberta,Corn,17.0
+2008-03,Alberta,Corn,13.0
+2008-07,Alberta,Corn,0.0
+2008-12,Alberta,Corn,19.0
+2009-03,Alberta,Corn,8.0
+2009-07,Alberta,Corn,2.0
+2009-12,Alberta,Corn,24.0
+2010-03,Alberta,Corn,16.0
+2010-07,Alberta,Corn,5.0
+2010-12,Alberta,Corn,0.0
+2011-03,Alberta,Corn,0.0
+2011-07,Alberta,Corn,0.0
+2011-12,Alberta,Corn,18.0
+2012-03,Alberta,Corn,10.0
+2012-07,Alberta,Corn,0.0
+2012-12,Alberta,Corn,22.0
+2013-03,Alberta,Corn,15.0
+2013-07,Alberta,Corn,0.0
+2013-12,Alberta,Corn,40.0
+2014-03,Alberta,Corn,15.0
+2014-07,Alberta,Corn,0.0
+2014-12,Alberta,Corn,65.0
+2015-03,Alberta,Corn,35.0
+2015-07,Alberta,Corn,0.0
+2015-12,Alberta,Corn,65.0
+2016-03,Alberta,Corn,30.0
+2016-07,Alberta,Corn,0.0
+2016-12,Alberta,Corn,60.0
+2017-03,Alberta,Corn,3.0
+2017-07,Alberta,Corn,0.0
+2017-12,Alberta,Corn,100.0
+2018-03,Alberta,Corn,40.0
+2018-07,Alberta,Corn,5.0
+2018-12,Alberta,Corn,35.0
+2019-03,Alberta,Corn,20.0
+2019-07,Alberta,Corn,5.0
+2019-12,Alberta,Corn,19.0
+2020-03,Alberta,Corn,10.0
+2020-07,Alberta,Corn,5.0
+2020-12,Alberta,Corn,21.0
+2021-03,Alberta,Corn,4.0
+2021-07,Alberta,Corn,3.0
+2021-12,Alberta,Corn,73.0
+2022-03,Alberta,Corn,49.0
+2022-07,Alberta,Corn,35.0
+2022-12,Alberta,Corn,10.0
+2023-03,Alberta,Corn,9.0
+2023-07,Alberta,Corn,0.0
+2023-12,Alberta,Corn,50.0
+2024-03,Alberta,Corn,25.0
+2024-07,Alberta,Corn,19.0
+2024-12,Alberta,Corn,62.0
+2025-03,Alberta,Corn,46.0
+2025-07,Alberta,Corn,7.0
+2025-12,Alberta,Corn,82.0
+2026-03,Alberta,Corn,57.0
+2026-07,Alberta,Corn,0.0
+1980-03,Alberta,Durum,250.0
+1980-07,Alberta,Durum,144.0
+1981-03,Alberta,Durum,190.0
+1981-07,Alberta,Durum,22.0
+1981-12,Alberta,Durum,350.0
+1982-03,Alberta,Durum,260.0
+1982-07,Alberta,Durum,27.0
+1982-12,Alberta,Durum,250.0
+1983-03,Alberta,Durum,140.0
+1983-07,Alberta,Durum,12.0
+1983-12,Alberta,Durum,205.0
+1984-03,Alberta,Durum,120.0
+1984-07,Alberta,Durum,25.0
+1984-12,Alberta,Durum,110.0
+1985-03,Alberta,Durum,90.0
+1985-07,Alberta,Durum,25.0
+1985-12,Alberta,Durum,70.0
+1986-03,Alberta,Durum,50.0
+1986-07,Alberta,Durum,8.0
+1986-12,Alberta,Durum,270.0
+1987-03,Alberta,Durum,160.0
+1987-07,Alberta,Durum,30.0
+1987-12,Alberta,Durum,380.0
+1988-03,Alberta,Durum,230.0
+1988-07,Alberta,Durum,50.0
+1988-12,Alberta,Durum,210.0
+1989-03,Alberta,Durum,160.0
+1989-07,Alberta,Durum,20.0
+1989-12,Alberta,Durum,430.0
+1990-03,Alberta,Durum,305.0
+1990-07,Alberta,Durum,25.0
+1990-12,Alberta,Durum,400.0
+1991-03,Alberta,Durum,240.0
+1991-07,Alberta,Durum,40.0
+1991-12,Alberta,Durum,600.0
+1992-03,Alberta,Durum,430.0
+1992-07,Alberta,Durum,160.0
+1992-12,Alberta,Durum,380.0
+1993-03,Alberta,Durum,290.0
+1993-07,Alberta,Durum,100.0
+1993-12,Alberta,Durum,430.0
+1994-03,Alberta,Durum,320.0
+1994-07,Alberta,Durum,45.0
+1994-12,Alberta,Durum,500.0
+1995-03,Alberta,Durum,370.0
+1995-07,Alberta,Durum,15.0
+1995-12,Alberta,Durum,550.0
+1996-03,Alberta,Durum,395.0
+1996-07,Alberta,Durum,20.0
+1996-12,Alberta,Durum,515.0
+1997-03,Alberta,Durum,350.0
+1997-07,Alberta,Durum,50.0
+1997-12,Alberta,Durum,500.0
+1998-03,Alberta,Durum,300.0
+1998-07,Alberta,Durum,15.0
+1998-12,Alberta,Durum,750.0
+1999-03,Alberta,Durum,440.0
+1999-07,Alberta,Durum,50.0
+1999-12,Alberta,Durum,630.0
+2000-03,Alberta,Durum,445.0
+2000-07,Alberta,Durum,20.0
+2000-12,Alberta,Durum,560.0
+2001-03,Alberta,Durum,375.0
+2001-07,Alberta,Durum,70.0
+2001-12,Alberta,Durum,435.0
+2002-03,Alberta,Durum,300.0
+2002-07,Alberta,Durum,60.0
+2002-12,Alberta,Durum,770.0
+2003-03,Alberta,Durum,550.0
+2003-07,Alberta,Durum,30.0
+2003-12,Alberta,Durum,680.0
+2004-03,Alberta,Durum,485.0
+2004-07,Alberta,Durum,100.0
+2004-12,Alberta,Durum,650.0
+2005-03,Alberta,Durum,590.0
+2005-07,Alberta,Durum,145.0
+2005-12,Alberta,Durum,890.0
+2006-03,Alberta,Durum,745.0
+2006-07,Alberta,Durum,290.0
+2006-12,Alberta,Durum,755.0
+2007-03,Alberta,Durum,430.0
+2007-07,Alberta,Durum,70.0
+2007-12,Alberta,Durum,430.0
+2008-03,Alberta,Durum,210.0
+2008-07,Alberta,Durum,5.0
+2008-12,Alberta,Durum,810.0
+2009-03,Alberta,Durum,540.0
+2009-07,Alberta,Durum,135.0
+2009-12,Alberta,Durum,880.0
+2010-03,Alberta,Durum,670.0
+2010-07,Alberta,Durum,375.0
+2010-12,Alberta,Durum,500.0
+2011-03,Alberta,Durum,375.0
+2011-07,Alberta,Durum,160.0
+2011-12,Alberta,Durum,455.0
+2012-03,Alberta,Durum,310.0
+2012-07,Alberta,Durum,30.0
+2012-12,Alberta,Durum,503.0
+2013-03,Alberta,Durum,278.0
+2013-07,Alberta,Durum,20.0
+2013-12,Alberta,Durum,595.0
+2014-03,Alberta,Durum,360.0
+2014-07,Alberta,Durum,35.0
+2014-12,Alberta,Durum,337.0
+2015-03,Alberta,Durum,150.0
+2015-07,Alberta,Durum,15.0
+2015-12,Alberta,Durum,420.0
+2016-03,Alberta,Durum,180.0
+2016-07,Alberta,Durum,30.0
+2016-12,Alberta,Durum,900.0
+2017-03,Alberta,Durum,575.0
+2017-07,Alberta,Durum,130.0
+2017-12,Alberta,Durum,1000.0
+2018-03,Alberta,Durum,630.0
+2018-07,Alberta,Durum,260.0
+2018-12,Alberta,Durum,1050.0
+2019-03,Alberta,Durum,780.0
+2019-07,Alberta,Durum,350.0
+2019-12,Alberta,Durum,730.0
+2020-03,Alberta,Durum,590.0
+2020-07,Alberta,Durum,100.0
+2020-12,Alberta,Durum,960.0
+2021-03,Alberta,Durum,530.0
+2021-07,Alberta,Durum,65.0
+2021-12,Alberta,Durum,266.0
+2022-03,Alberta,Durum,168.0
+2022-07,Alberta,Durum,36.0
+2022-12,Alberta,Durum,830.0
+2023-03,Alberta,Durum,437.0
+2023-07,Alberta,Durum,142.0
+2023-12,Alberta,Durum,663.0
+2024-03,Alberta,Durum,392.0
+2024-07,Alberta,Durum,214.0
+2024-12,Alberta,Durum,933.0
+2025-03,Alberta,Durum,509.0
+2025-07,Alberta,Durum,22.0
+2025-12,Alberta,Durum,1139.0
+2026-03,Alberta,Durum,754.0
+2026-07,Alberta,Durum,166.0
+1980-03,Alberta,Wheat ex-durum,2662.0
+1980-07,Alberta,Wheat ex-durum,536.0
+1981-03,Alberta,Wheat ex-durum,2530.0
+1981-07,Alberta,Wheat ex-durum,333.0
+1981-12,Alberta,Wheat ex-durum,3950.0
+1982-03,Alberta,Wheat ex-durum,2920.0
+1982-07,Alberta,Wheat ex-durum,983.0
+1982-12,Alberta,Wheat ex-durum,4050.0
+1983-03,Alberta,Wheat ex-durum,2760.0
+1983-07,Alberta,Wheat ex-durum,488.0
+1983-12,Alberta,Wheat ex-durum,4345.0
+1984-03,Alberta,Wheat ex-durum,0.0
+1984-07,Alberta,Wheat ex-durum,0.0
+1984-12,Alberta,Wheat ex-durum,0.0
+1985-03,Alberta,Wheat ex-durum,3080.0
+1985-07,Alberta,Wheat ex-durum,455.0
+1985-12,Alberta,Wheat ex-durum,2490.0
+1986-03,Alberta,Wheat ex-durum,1460.0
+1986-07,Alberta,Wheat ex-durum,235.0
+1986-12,Alberta,Wheat ex-durum,2710.0
+1987-03,Alberta,Wheat ex-durum,3720.0
+1987-07,Alberta,Wheat ex-durum,900.0
+1987-12,Alberta,Wheat ex-durum,3450.0
+1988-03,Alberta,Wheat ex-durum,2190.0
+1988-07,Alberta,Wheat ex-durum,500.0
+1988-12,Alberta,Wheat ex-durum,2520.0
+1989-03,Alberta,Wheat ex-durum,1330.0
+1989-07,Alberta,Wheat ex-durum,200.0
+1989-12,Alberta,Wheat ex-durum,3500.0
+1990-03,Alberta,Wheat ex-durum,2100.0
+1990-07,Alberta,Wheat ex-durum,220.0
+1990-12,Alberta,Wheat ex-durum,4650.0
+1991-03,Alberta,Wheat ex-durum,2900.0
+1991-07,Alberta,Wheat ex-durum,280.0
+1991-12,Alberta,Wheat ex-durum,4890.0
+1992-03,Alberta,Wheat ex-durum,3000.0
+1992-07,Alberta,Wheat ex-durum,590.0
+1992-12,Alberta,Wheat ex-durum,4200.0
+1993-03,Alberta,Wheat ex-durum,2900.0
+1993-07,Alberta,Wheat ex-durum,750.0
+1993-12,Alberta,Wheat ex-durum,6000.0
+1994-03,Alberta,Wheat ex-durum,4250.0
+1994-07,Alberta,Wheat ex-durum,1150.0
+1994-12,Alberta,Wheat ex-durum,3500.0
+1995-03,Alberta,Wheat ex-durum,2000.0
+1995-07,Alberta,Wheat ex-durum,200.0
+1995-12,Alberta,Wheat ex-durum,3850.0
+1996-03,Alberta,Wheat ex-durum,2150.0
+1996-07,Alberta,Wheat ex-durum,300.0
+1996-12,Alberta,Wheat ex-durum,4700.0
+1997-03,Alberta,Wheat ex-durum,3350.0
+1997-07,Alberta,Wheat ex-durum,550.0
+1997-12,Alberta,Wheat ex-durum,3500.0
+1998-03,Alberta,Wheat ex-durum,2000.0
+1998-07,Alberta,Wheat ex-durum,300.0
+1998-12,Alberta,Wheat ex-durum,3500.0
+1999-03,Alberta,Wheat ex-durum,2200.0
+1999-07,Alberta,Wheat ex-durum,250.0
+1999-12,Alberta,Wheat ex-durum,4600.0
+2000-03,Alberta,Wheat ex-durum,2700.0
+2000-07,Alberta,Wheat ex-durum,420.0
+2000-12,Alberta,Wheat ex-durum,4300.0
+2001-03,Alberta,Wheat ex-durum,2700.0
+2001-07,Alberta,Wheat ex-durum,500.0
+2001-12,Alberta,Wheat ex-durum,3100.0
+2002-03,Alberta,Wheat ex-durum,1900.0
+2002-07,Alberta,Wheat ex-durum,430.0
+2002-12,Alberta,Wheat ex-durum,1900.0
+2003-03,Alberta,Wheat ex-durum,1300.0
+2003-07,Alberta,Wheat ex-durum,250.0
+2003-12,Alberta,Wheat ex-durum,3600.0
+2004-03,Alberta,Wheat ex-durum,2475.0
+2004-07,Alberta,Wheat ex-durum,300.0
+2004-12,Alberta,Wheat ex-durum,4300.0
+2005-03,Alberta,Wheat ex-durum,2700.0
+2005-07,Alberta,Wheat ex-durum,655.0
+2005-12,Alberta,Wheat ex-durum,5650.0
+2006-03,Alberta,Wheat ex-durum,4050.0
+2006-07,Alberta,Wheat ex-durum,1150.0
+2006-12,Alberta,Wheat ex-durum,5175.0
+2007-03,Alberta,Wheat ex-durum,3500.0
+2007-07,Alberta,Wheat ex-durum,750.0
+2007-12,Alberta,Wheat ex-durum,4150.0
+2008-03,Alberta,Wheat ex-durum,2740.0
+2008-07,Alberta,Wheat ex-durum,175.0
+2008-12,Alberta,Wheat ex-durum,5450.0
+2009-03,Alberta,Wheat ex-durum,3595.0
+2009-07,Alberta,Wheat ex-durum,305.0
+2009-12,Alberta,Wheat ex-durum,4400.0
+2010-03,Alberta,Wheat ex-durum,2825.0
+2010-07,Alberta,Wheat ex-durum,400.0
+2010-12,Alberta,Wheat ex-durum,6200.0
+2011-03,Alberta,Wheat ex-durum,4700.0
+2011-07,Alberta,Wheat ex-durum,1375.0
+2011-12,Alberta,Wheat ex-durum,6400.0
+2012-03,Alberta,Wheat ex-durum,4150.0
+2012-07,Alberta,Wheat ex-durum,650.0
+2012-12,Alberta,Wheat ex-durum,5200.0
+2013-03,Alberta,Wheat ex-durum,3060.0
+2013-07,Alberta,Wheat ex-durum,490.0
+2013-12,Alberta,Wheat ex-durum,7550.0
+2014-03,Alberta,Wheat ex-durum,5225.0
+2014-07,Alberta,Wheat ex-durum,1750.0
+2014-12,Alberta,Wheat ex-durum,6750.0
+2015-03,Alberta,Wheat ex-durum,4400.0
+2015-07,Alberta,Wheat ex-durum,875.0
+2015-12,Alberta,Wheat ex-durum,5275.0
+2016-03,Alberta,Wheat ex-durum,3150.0
+2016-07,Alberta,Wheat ex-durum,465.0
+2016-12,Alberta,Wheat ex-durum,5700.0
+2017-03,Alberta,Wheat ex-durum,3650.0
+2017-07,Alberta,Wheat ex-durum,550.0
+2017-12,Alberta,Wheat ex-durum,6015.0
+2018-03,Alberta,Wheat ex-durum,3900.0
+2018-07,Alberta,Wheat ex-durum,1100.0
+2018-12,Alberta,Wheat ex-durum,6425.0
+2019-03,Alberta,Wheat ex-durum,4280.0
+2019-07,Alberta,Wheat ex-durum,1200.0
+2019-12,Alberta,Wheat ex-durum,7000.0
+2020-03,Alberta,Wheat ex-durum,5050.0
+2020-07,Alberta,Wheat ex-durum,1400.0
+2020-12,Alberta,Wheat ex-durum,7000.0
+2021-03,Alberta,Wheat ex-durum,4700.0
+2021-07,Alberta,Wheat ex-durum,1500.0
+2021-12,Alberta,Wheat ex-durum,4323.0
+2022-03,Alberta,Wheat ex-durum,2388.0
+2022-07,Alberta,Wheat ex-durum,809.0
+2022-12,Alberta,Wheat ex-durum,7125.0
+2023-03,Alberta,Wheat ex-durum,4526.0
+2023-07,Alberta,Wheat ex-durum,1877.0
+2023-12,Alberta,Wheat ex-durum,6711.0
+2024-03,Alberta,Wheat ex-durum,4490.0
+2024-07,Alberta,Wheat ex-durum,1479.0
+2024-12,Alberta,Wheat ex-durum,6420.0
+2025-03,Alberta,Wheat ex-durum,3935.0
+2025-07,Alberta,Wheat ex-durum,1065.0
+2025-12,Alberta,Wheat ex-durum,7879.0
+2026-03,Alberta,Wheat ex-durum,5541.0
+2026-07,Alberta,Wheat ex-durum,1612.0
+1980-03,Canada,Barley,4616.0
+1980-07,Canada,Barley,1100.0
+1981-03,Canada,Barley,5520.0
+1981-07,Canada,Barley,1140.0
+1981-12,Canada,Barley,10039.0
+1982-03,Canada,Barley,7312.0
+1982-07,Canada,Barley,1950.0
+1982-12,Canada,Barley,11467.0
+1983-03,Canada,Barley,8603.0
+1983-07,Canada,Barley,3225.0
+1983-12,Canada,Barley,7888.0
+1984-03,Canada,Barley,5151.0
+1984-07,Canada,Barley,1080.0
+1984-12,Canada,Barley,6665.0
+1985-03,Canada,Barley,4360.0
+1985-07,Canada,Barley,865.0
+1985-12,Canada,Barley,9157.0
+1986-03,Canada,Barley,6175.0
+1986-07,Canada,Barley,1100.0
+1986-12,Canada,Barley,9630.0
+1987-03,Canada,Barley,6170.0
+1987-07,Canada,Barley,1570.0
+1987-12,Canada,Barley,10250.0
+1988-03,Canada,Barley,6930.0
+1988-07,Canada,Barley,2594.0
+1988-12,Canada,Barley,8270.0
+1989-03,Canada,Barley,5250.0
+1989-07,Canada,Barley,1065.0
+1989-12,Canada,Barley,7845.0
+1990-03,Canada,Barley,4500.0
+1990-07,Canada,Barley,1047.0
+1990-12,Canada,Barley,9240.0
+1991-03,Canada,Barley,5745.0
+1991-07,Canada,Barley,1455.0
+1991-12,Canada,Barley,8345.0
+1992-03,Canada,Barley,5190.0
+1992-07,Canada,Barley,1510.0
+1992-12,Canada,Barley,8050.0
+1993-03,Canada,Barley,5265.0
+1993-07,Canada,Barley,1795.0
+1993-12,Canada,Barley,10140.0
+1994-03,Canada,Barley,6370.0
+1994-07,Canada,Barley,2000.0
+1994-12,Canada,Barley,7940.0
+1995-03,Canada,Barley,4510.0
+1995-07,Canada,Barley,1055.0
+1995-12,Canada,Barley,8115.0
+1996-03,Canada,Barley,4575.0
+1996-07,Canada,Barley,885.0
+1996-12,Canada,Barley,9735.0
+1997-03,Canada,Barley,6025.0
+1997-07,Canada,Barley,1920.0
+1997-12,Canada,Barley,8910.0
+1998-03,Canada,Barley,5500.0
+1998-07,Canada,Barley,1700.0
+1998-12,Canada,Barley,8980.0
+1999-03,Canada,Barley,5540.0
+1999-07,Canada,Barley,1950.0
+1999-12,Canada,Barley,9180.0
+2000-03,Canada,Barley,5679.0
+2000-07,Canada,Barley,2089.0
+2000-12,Canada,Barley,9401.0
+2001-03,Canada,Barley,5602.0
+2001-07,Canada,Barley,1787.0
+2001-12,Canada,Barley,6895.0
+2002-03,Canada,Barley,5190.0
+2002-07,Canada,Barley,1455.0
+2002-12,Canada,Barley,4560.0
+2003-03,Canada,Barley,2800.0
+2003-07,Canada,Barley,1060.0
+2003-12,Canada,Barley,7650.0
+2004-03,Canada,Barley,5105.0
+2004-07,Canada,Barley,1570.0
+2004-12,Canada,Barley,9200.0
+2005-03,Canada,Barley,6305.0
+2005-07,Canada,Barley,2805.0
+2005-12,Canada,Barley,8875.0
+2006-03,Canada,Barley,6118.0
+2006-07,Canada,Barley,3027.0
+2006-12,Canada,Barley,6963.0
+2007-03,Canada,Barley,4062.0
+2007-07,Canada,Barley,1200.0
+2007-12,Canada,Barley,6403.0
+2008-03,Canada,Barley,3831.0
+2008-07,Canada,Barley,1195.0
+2008-12,Canada,Barley,7978.0
+2009-03,Canada,Barley,5382.0
+2009-07,Canada,Barley,2327.0
+2009-12,Canada,Barley,7077.0
+2010-03,Canada,Barley,4451.0
+2010-07,Canada,Barley,1998.0
+2010-12,Canada,Barley,5439.0
+2011-03,Canada,Barley,3274.0
+2011-07,Canada,Barley,1246.0
+2011-12,Canada,Barley,5075.0
+2012-03,Canada,Barley,2925.0
+2012-07,Canada,Barley,957.0
+2012-12,Canada,Barley,4993.0
+2013-03,Canada,Barley,2920.0
+2013-07,Canada,Barley,794.0
+2013-12,Canada,Barley,6475.0
+2014-03,Canada,Barley,4220.0
+2014-07,Canada,Barley,1697.0
+2014-12,Canada,Barley,5090.0
+2015-03,Canada,Barley,3101.0
+2015-07,Canada,Barley,1045.0
+2015-12,Canada,Barley,5454.0
+2016-03,Canada,Barley,3430.0
+2016-07,Canada,Barley,1288.0
+2016-12,Canada,Barley,6252.0
+2017-03,Canada,Barley,4243.0
+2017-07,Canada,Barley,1789.0
+2017-12,Canada,Barley,5753.0
+2018-03,Canada,Barley,3050.0
+2018-07,Canada,Barley,1023.0
+2018-12,Canada,Barley,4647.0
+2019-03,Canada,Barley,2371.0
+2019-07,Canada,Barley,636.0
+2019-12,Canada,Barley,5550.0
+2020-03,Canada,Barley,3140.0
+2020-07,Canada,Barley,688.0
+2020-12,Canada,Barley,5129.0
+2021-03,Canada,Barley,2421.0
+2021-07,Canada,Barley,551.0
+2021-12,Canada,Barley,2806.0
+2022-03,Canada,Barley,1533.0
+2022-07,Canada,Barley,324.0
+2022-12,Canada,Barley,4787.0
+2023-03,Canada,Barley,2210.0
+2023-07,Canada,Barley,557.0
+2023-12,Canada,Barley,5044.0
+2024-03,Canada,Barley,2624.0
+2024-07,Canada,Barley,878.0
+2024-12,Canada,Barley,4546.0
+2025-03,Canada,Barley,2512.0
+2025-07,Canada,Barley,994.0
+2025-12,Canada,Barley,5259.0
+2026-03,Canada,Barley,2415.0
+2026-07,Canada,Barley,624.0
+1980-03,Canada,Canola,1712.0
+1980-07,Canada,Canola,340.0
+1981-03,Canada,Canola,1679.0
+1981-07,Canada,Canola,404.0
+1981-12,Canada,Canola,1350.0
+1982-03,Canada,Canola,855.0
+1982-07,Canada,Canola,71.0
+1982-12,Canada,Canola,1255.0
+1983-03,Canada,Canola,620.0
+1983-07,Canada,Canola,40.0
+1983-12,Canada,Canola,1270.0
+1984-03,Canada,Canola,400.0
+1984-07,Canada,Canola,15.0
+1984-12,Canada,Canola,1720.0
+1985-03,Canada,Canola,890.0
+1985-07,Canada,Canola,85.0
+1985-12,Canada,Canola,2020.0
+1986-03,Canada,Canola,1285.0
+1986-07,Canada,Canola,275.0
+1986-12,Canada,Canola,2365.0
+1987-03,Canada,Canola,1450.0
+1987-07,Canada,Canola,170.0
+1987-12,Canada,Canola,2185.0
+1988-03,Canada,Canola,1065.0
+1988-07,Canada,Canola,145.0
+1988-12,Canada,Canola,2740.0
+1989-03,Canada,Canola,1670.0
+1989-07,Canada,Canola,420.0
+1989-12,Canada,Canola,2025.0
+1990-03,Canada,Canola,1137.0
+1990-07,Canada,Canola,205.0
+1990-12,Canada,Canola,2016.0
+1991-03,Canada,Canola,1115.0
+1991-07,Canada,Canola,140.0
+1991-12,Canada,Canola,2446.0
+1992-03,Canada,Canola,1480.0
+1992-07,Canada,Canola,330.0
+1992-12,Canada,Canola,1940.0
+1993-03,Canada,Canola,1010.0
+1993-07,Canada,Canola,110.0
+1993-12,Canada,Canola,2566.0
+1994-03,Canada,Canola,850.0
+1994-07,Canada,Canola,45.0
+1994-12,Canada,Canola,2915.0
+1995-03,Canada,Canola,1306.0
+1995-07,Canada,Canola,190.0
+1995-12,Canada,Canola,3466.0
+1996-03,Canada,Canola,2083.0
+1996-07,Canada,Canola,460.0
+1996-12,Canada,Canola,2878.0
+1997-03,Canada,Canola,1513.0
+1997-07,Canada,Canola,320.0
+1997-12,Canada,Canola,3111.0
+1998-03,Canada,Canola,1436.0
+1998-07,Canada,Canola,102.0
+1998-12,Canada,Canola,3064.0
+1999-03,Canada,Canola,1722.0
+1999-07,Canada,Canola,413.0
+1999-12,Canada,Canola,4935.0
+2000-03,Canada,Canola,3320.0
+2000-07,Canada,Canola,1455.0
+2000-12,Canada,Canola,4663.0
+2001-03,Canada,Canola,2321.0
+2001-07,Canada,Canola,600.0
+2001-12,Canada,Canola,3183.0
+2002-03,Canada,Canola,2101.0
+2002-07,Canada,Canola,640.0
+2002-12,Canada,Canola,2371.0
+2003-03,Canada,Canola,1595.0
+2003-07,Canada,Canola,350.0
+2003-12,Canada,Canola,3115.0
+2004-03,Canada,Canola,1520.0
+2004-07,Canada,Canola,220.0
+2004-12,Canada,Canola,4578.0
+2005-03,Canada,Canola,2982.0
+2005-07,Canada,Canola,925.0
+2005-12,Canada,Canola,6558.0
+2006-03,Canada,Canola,4105.0
+2006-07,Canada,Canola,1113.0
+2006-12,Canada,Canola,5920.0
+2007-03,Canada,Canola,3864.0
+2007-07,Canada,Canola,679.0
+2007-12,Canada,Canola,5945.0
+2008-03,Canada,Canola,3358.0
+2008-07,Canada,Canola,521.0
+2008-12,Canada,Canola,8525.0
+2009-03,Canada,Canola,5252.0
+2009-07,Canada,Canola,1260.0
+2009-12,Canada,Canola,9172.0
+2010-03,Canada,Canola,5921.0
+2010-07,Canada,Canola,1665.0
+2010-12,Canada,Canola,8320.0
+2011-03,Canada,Canola,5193.0
+2011-07,Canada,Canola,1150.0
+2011-12,Canada,Canola,8043.0
+2012-03,Canada,Canola,3899.0
+2012-07,Canada,Canola,168.0
+2012-12,Canada,Canola,7029.0
+2013-03,Canada,Canola,3228.0
+2013-07,Canada,Canola,180.0
+2013-12,Canada,Canola,12027.0
+2014-03,Canada,Canola,7886.0
+2014-07,Canada,Canola,1896.0
+2014-12,Canada,Canola,11320.0
+2015-03,Canada,Canola,6949.0
+2015-07,Canada,Canola,1235.0
+2015-12,Canada,Canola,11833.0
+2016-03,Canada,Canola,6982.0
+2016-07,Canada,Canola,990.0
+2016-12,Canada,Canola,11550.0
+2017-03,Canada,Canola,6351.0
+2017-07,Canada,Canola,424.0
+2017-12,Canada,Canola,12463.0
+2018-03,Canada,Canola,7656.0
+2018-07,Canada,Canola,1682.0
+2018-12,Canada,Canola,13675.0
+2019-03,Canada,Canola,9417.0
+2019-07,Canada,Canola,3232.0
+2019-12,Canada,Canola,14313.0
+2020-03,Canada,Canola,9364.0
+2020-07,Canada,Canola,2140.0
+2020-12,Canada,Canola,11442.0
+2021-03,Canada,Canola,6030.0
+2021-07,Canada,Canola,1072.0
+2021-12,Canada,Canola,7396.0
+2022-03,Canada,Canola,4015.0
+2022-07,Canada,Canola,852.0
+2022-12,Canada,Canola,11405.0
+2023-03,Canada,Canola,6104.0
+2023-07,Canada,Canola,854.0
+2023-12,Canada,Canola,13199.0
+2024-03,Canada,Canola,8287.0
+2024-07,Canada,Canola,1263.0
+2024-12,Canada,Canola,11813.0
+2025-03,Canada,Canola,6544.0
+2025-07,Canada,Canola,378.0
+2025-12,Canada,Canola,14785.0
+2026-03,Canada,Canola,8911.0
+2026-07,Canada,Canola,826.0
+1980-03,Canada,Corn,1712.0
+1980-07,Canada,Corn,340.0
+1981-03,Canada,Corn,1679.0
+1981-07,Canada,Corn,404.0
+1981-12,Canada,Corn,1350.0
+1982-03,Canada,Corn,855.0
+1982-07,Canada,Corn,71.0
+1982-12,Canada,Corn,1255.0
+1983-03,Canada,Corn,620.0
+1983-07,Canada,Corn,40.0
+1983-12,Canada,Corn,1270.0
+1984-03,Canada,Corn,400.0
+1984-07,Canada,Corn,15.0
+1984-12,Canada,Corn,1720.0
+1985-03,Canada,Corn,890.0
+1985-07,Canada,Corn,85.0
+1985-12,Canada,Corn,2020.0
+1986-03,Canada,Corn,1285.0
+1986-07,Canada,Corn,275.0
+1986-12,Canada,Corn,2365.0
+1987-03,Canada,Corn,2400.0
+1987-07,Canada,Corn,780.0
+1987-12,Canada,Corn,3940.0
+1988-03,Canada,Corn,2400.0
+1988-07,Canada,Corn,800.0
+1988-12,Canada,Corn,3250.0
+1989-03,Canada,Corn,2000.0
+1989-07,Canada,Corn,640.0
+1989-12,Canada,Corn,3500.0
+1990-03,Canada,Corn,2125.0
+1990-07,Canada,Corn,630.0
+1990-12,Canada,Corn,4200.0
+1991-03,Canada,Corn,2450.0
+1991-07,Canada,Corn,1020.0
+1991-12,Canada,Corn,3895.0
+1992-03,Canada,Corn,2529.0
+1992-07,Canada,Corn,1059.0
+1992-12,Canada,Corn,3078.0
+1993-03,Canada,Corn,1939.0
+1993-07,Canada,Corn,801.0
+1993-12,Canada,Corn,3654.0
+1994-03,Canada,Corn,2089.0
+1994-07,Canada,Corn,350.0
+1994-12,Canada,Corn,3885.0
+1995-03,Canada,Corn,2145.0
+1995-07,Canada,Corn,415.0
+1995-12,Canada,Corn,3901.0
+1996-03,Canada,Corn,2095.0
+1996-07,Canada,Corn,450.0
+1996-12,Canada,Corn,4209.0
+1997-03,Canada,Corn,2975.0
+1997-07,Canada,Corn,650.0
+1997-12,Canada,Corn,4593.0
+1998-03,Canada,Corn,2718.0
+1998-07,Canada,Corn,650.0
+1998-12,Canada,Corn,5335.0
+1999-03,Canada,Corn,2805.0
+1999-07,Canada,Corn,645.0
+1999-12,Canada,Corn,5534.0
+2000-03,Canada,Corn,3352.0
+2000-07,Canada,Corn,1225.0
+2000-12,Canada,Corn,4645.0
+2001-03,Canada,Corn,2905.0
+2001-07,Canada,Corn,700.0
+2001-12,Canada,Corn,4835.0
+2002-03,Canada,Corn,3330.0
+2002-07,Canada,Corn,800.0
+2002-12,Canada,Corn,5290.0
+2003-03,Canada,Corn,3550.0
+2003-07,Canada,Corn,800.0
+2003-12,Canada,Corn,5950.0
+2004-03,Canada,Corn,3835.0
+2004-07,Canada,Corn,850.0
+2004-12,Canada,Corn,6127.0
+2005-03,Canada,Corn,4265.0
+2005-07,Canada,Corn,1370.0
+2005-12,Canada,Corn,6555.0
+2006-03,Canada,Corn,4470.0
+2006-07,Canada,Corn,1580.0
+2006-12,Canada,Corn,6237.0
+2007-03,Canada,Corn,3874.0
+2007-07,Canada,Corn,850.0
+2007-12,Canada,Corn,7720.0
+2008-03,Canada,Corn,4805.0
+2008-07,Canada,Corn,1100.0
+2008-12,Canada,Corn,7080.0
+2009-03,Canada,Corn,4525.0
+2009-07,Canada,Corn,1400.0
+2009-12,Canada,Corn,6680.0
+2010-03,Canada,Corn,4355.0
+2010-07,Canada,Corn,1255.0
+2010-12,Canada,Corn,7390.0
+2011-03,Canada,Corn,3970.0
+2011-07,Canada,Corn,800.0
+2011-12,Canada,Corn,6995.0
+2012-03,Canada,Corn,4020.0
+2012-07,Canada,Corn,865.0
+2012-12,Canada,Corn,7815.0
+2013-03,Canada,Corn,4955.0
+2013-07,Canada,Corn,1125.0
+2013-12,Canada,Corn,9130.0
+2014-03,Canada,Corn,5985.0
+2014-07,Canada,Corn,1100.0
+2014-12,Canada,Corn,7680.0
+2015-03,Canada,Corn,4675.0
+2015-07,Canada,Corn,950.0
+2015-12,Canada,Corn,8585.0
+2016-03,Canada,Corn,5775.0
+2016-07,Canada,Corn,1625.0
+2016-12,Canada,Corn,8774.0
+2017-03,Canada,Corn,6295.0
+2017-07,Canada,Corn,1766.0
+2017-12,Canada,Corn,9460.0
+2018-03,Canada,Corn,6665.0
+2018-07,Canada,Corn,1561.0
+2018-12,Canada,Corn,8523.0
+2019-03,Canada,Corn,5874.0
+2019-07,Canada,Corn,1076.0
+2019-12,Canada,Corn,8040.0
+2020-03,Canada,Corn,5519.0
+2020-07,Canada,Corn,1994.0
+2020-12,Canada,Corn,8081.0
+2021-03,Canada,Corn,5350.0
+2021-07,Canada,Corn,1485.0
+2021-12,Canada,Corn,7520.0
+2022-03,Canada,Corn,5255.0
+2022-07,Canada,Corn,1584.0
+2022-12,Canada,Corn,7765.0
+2023-03,Canada,Corn,5699.0
+2023-07,Canada,Corn,894.0
+2023-12,Canada,Corn,7206.0
+2024-03,Canada,Corn,5308.0
+2024-07,Canada,Corn,1037.0
+2024-12,Canada,Corn,7910.0
+2025-03,Canada,Corn,4855.0
+2025-07,Canada,Corn,755.0
+2025-12,Canada,Corn,7289.0
+2026-03,Canada,Corn,4893.0
+2026-07,Canada,Corn,764.0
+1980-03,Canada,Durum,1987.0
+1980-07,Canada,Durum,1198.0
+1981-03,Canada,Durum,1497.0
+1981-07,Canada,Durum,163.0
+1981-12,Canada,Durum,1970.0
+1982-03,Canada,Durum,1430.0
+1982-07,Canada,Durum,195.0
+1982-12,Canada,Durum,2080.0
+1983-03,Canada,Durum,1580.0
+1983-07,Canada,Durum,146.0
+1983-12,Canada,Durum,1370.0
+1984-03,Canada,Durum,1000.0
+1984-07,Canada,Durum,160.0
+1984-12,Canada,Durum,850.0
+1985-03,Canada,Durum,700.0
+1985-07,Canada,Durum,140.0
+1985-12,Canada,Durum,755.0
+1986-03,Canada,Durum,580.0
+1986-07,Canada,Durum,60.0
+1986-12,Canada,Durum,2275.0
+1987-03,Canada,Durum,1755.0
+1987-07,Canada,Durum,425.0
+1987-12,Canada,Durum,2510.0
+1988-03,Canada,Durum,1830.0
+1988-07,Canada,Durum,500.0
+1988-12,Canada,Durum,1140.0
+1989-03,Canada,Durum,970.0
+1989-07,Canada,Durum,145.0
+1989-12,Canada,Durum,2115.0
+1990-03,Canada,Durum,1600.0
+1990-07,Canada,Durum,160.0
+1990-12,Canada,Durum,2980.0
+1991-03,Canada,Durum,2100.0
+1991-07,Canada,Durum,520.0
+1991-12,Canada,Durum,3900.0
+1992-03,Canada,Durum,3100.0
+1992-07,Canada,Durum,1130.0
+1992-12,Canada,Durum,2845.0
+1993-03,Canada,Durum,2280.0
+1993-07,Canada,Durum,1075.0
+1993-12,Canada,Durum,3010.0
+1994-03,Canada,Durum,2377.0
+1994-07,Canada,Durum,445.0
+1994-12,Canada,Durum,3280.0
+1995-03,Canada,Durum,2620.0
+1995-07,Canada,Durum,105.0
+1995-12,Canada,Durum,3150.0
+1996-03,Canada,Durum,2295.0
+1996-07,Canada,Durum,235.0
+1996-12,Canada,Durum,3340.0
+1997-03,Canada,Durum,2490.0
+1997-07,Canada,Durum,310.0
+1997-12,Canada,Durum,2670.0
+1998-03,Canada,Durum,1645.0
+1998-07,Canada,Durum,110.0
+1998-12,Canada,Durum,3750.0
+1999-03,Canada,Durum,2685.0
+1999-07,Canada,Durum,410.0
+1999-12,Canada,Durum,3110.0
+2000-03,Canada,Durum,2255.0
+2000-07,Canada,Durum,220.0
+2000-12,Canada,Durum,4140.0
+2001-03,Canada,Durum,3100.0
+2001-07,Canada,Durum,1190.0
+2001-12,Canada,Durum,2915.0
+2002-03,Canada,Durum,2210.0
+2002-07,Canada,Durum,520.0
+2002-12,Canada,Durum,2735.0
+2003-03,Canada,Durum,2100.0
+2003-07,Canada,Durum,275.0
+2003-12,Canada,Durum,2860.0
+2004-03,Canada,Durum,2280.0
+2004-07,Canada,Durum,700.0
+2004-12,Canada,Durum,3645.0
+2005-03,Canada,Durum,3025.0
+2005-07,Canada,Durum,1005.0
+2005-12,Canada,Durum,5148.0
+2006-03,Canada,Durum,4000.0
+2006-07,Canada,Durum,1640.0
+2006-12,Canada,Durum,3100.0
+2007-03,Canada,Durum,2130.0
+2007-07,Canada,Durum,300.0
+2007-12,Canada,Durum,2050.0
+2008-03,Canada,Durum,1135.0
+2008-07,Canada,Durum,40.0
+2008-12,Canada,Durum,3810.0
+2009-03,Canada,Durum,2765.0
+2009-07,Canada,Durum,835.0
+2009-12,Canada,Durum,4680.0
+2010-03,Canada,Durum,3630.0
+2010-07,Canada,Durum,1975.0
+2010-12,Canada,Durum,3135.0
+2011-03,Canada,Durum,2225.0
+2011-07,Canada,Durum,735.0
+2011-12,Canada,Durum,3040.0
+2012-03,Canada,Durum,2110.0
+2012-07,Canada,Durum,400.0
+2012-12,Canada,Durum,3040.0
+2013-03,Canada,Durum,1938.0
+2013-07,Canada,Durum,245.0
+2013-12,Canada,Durum,4620.0
+2014-03,Canada,Durum,3135.0
+2014-07,Canada,Durum,725.0
+2014-12,Canada,Durum,3222.0
+2015-03,Canada,Durum,1750.0
+2015-07,Canada,Durum,365.0
+2015-12,Canada,Durum,3320.0
+2016-03,Canada,Durum,1905.0
+2016-07,Canada,Durum,480.0
+2016-12,Canada,Durum,5250.0
+2017-03,Canada,Durum,3225.0
+2017-07,Canada,Durum,930.0
+2017-12,Canada,Durum,4100.0
+2018-03,Canada,Durum,2700.0
+2018-07,Canada,Durum,760.0
+2018-12,Canada,Durum,4605.0
+2019-03,Canada,Durum,3145.0
+2019-07,Canada,Durum,990.0
+2019-12,Canada,Durum,3741.0
+2020-03,Canada,Durum,2524.0
+2020-07,Canada,Durum,190.0
+2020-12,Canada,Durum,3996.0
+2021-03,Canada,Durum,2192.0
+2021-07,Canada,Durum,137.0
+2021-12,Canada,Durum,1521.0
+2022-03,Canada,Durum,1048.0
+2022-07,Canada,Durum,100.0
+2022-12,Canada,Durum,3368.0
+2023-03,Canada,Durum,1573.0
+2023-07,Canada,Durum,288.0
+2023-12,Canada,Durum,2744.0
+2024-03,Canada,Durum,1543.0
+2024-07,Canada,Durum,312.0
+2024-12,Canada,Durum,3915.0
+2025-03,Canada,Durum,2113.0
+2025-07,Canada,Durum,243.0
+2025-12,Canada,Durum,4554.0
+2026-03,Canada,Durum,2780.0
+2026-07,Canada,Durum,266.0
+1983-03,Canada,Soybeans,0.0
+1983-07,Canada,Soybeans,20.0
+1983-12,Canada,Soybeans,250.0
+1984-03,Canada,Soybeans,130.0
+1984-07,Canada,Soybeans,20.0
+1984-12,Canada,Soybeans,300.0
+1985-03,Canada,Soybeans,220.0
+1985-07,Canada,Soybeans,20.0
+1985-12,Canada,Soybeans,390.0
+1986-03,Canada,Soybeans,230.0
+1986-07,Canada,Soybeans,20.0
+1986-12,Canada,Soybeans,275.0
+1987-03,Canada,Soybeans,143.0
+1987-07,Canada,Soybeans,16.0
+1987-12,Canada,Soybeans,413.0
+1988-03,Canada,Soybeans,170.0
+1988-07,Canada,Soybeans,7.0
+1988-12,Canada,Soybeans,365.0
+1989-03,Canada,Soybeans,169.0
+1989-07,Canada,Soybeans,48.0
+1989-12,Canada,Soybeans,405.0
+1990-03,Canada,Soybeans,235.0
+1990-07,Canada,Soybeans,45.0
+1990-12,Canada,Soybeans,460.0
+1991-03,Canada,Soybeans,248.0
+1991-07,Canada,Soybeans,55.0
+1991-12,Canada,Soybeans,428.0
+1992-03,Canada,Soybeans,281.0
+1992-07,Canada,Soybeans,23.0
+1992-12,Canada,Soybeans,514.0
+1993-03,Canada,Soybeans,285.0
+1993-07,Canada,Soybeans,7.0
+1993-12,Canada,Soybeans,638.0
+1994-03,Canada,Soybeans,302.0
+1994-07,Canada,Soybeans,16.0
+1994-12,Canada,Soybeans,731.0
+1995-03,Canada,Soybeans,378.0
+1995-07,Canada,Soybeans,21.0
+1995-12,Canada,Soybeans,708.0
+1996-03,Canada,Soybeans,312.0
+1996-07,Canada,Soybeans,14.0
+1996-12,Canada,Soybeans,707.0
+1997-03,Canada,Soybeans,496.0
+1997-07,Canada,Soybeans,18.0
+1997-12,Canada,Soybeans,892.0
+1998-03,Canada,Soybeans,441.0
+1998-07,Canada,Soybeans,21.0
+1998-12,Canada,Soybeans,872.0
+1999-03,Canada,Soybeans,466.0
+1999-07,Canada,Soybeans,70.0
+1999-12,Canada,Soybeans,952.0
+2000-03,Canada,Soybeans,501.0
+2000-07,Canada,Soybeans,65.0
+2000-12,Canada,Soybeans,951.0
+2001-03,Canada,Soybeans,520.0
+2001-07,Canada,Soybeans,85.0
+2001-12,Canada,Soybeans,540.0
+2002-03,Canada,Soybeans,340.0
+2002-07,Canada,Soybeans,25.0
+2002-12,Canada,Soybeans,837.0
+2003-03,Canada,Soybeans,430.0
+2003-07,Canada,Soybeans,45.0
+2003-12,Canada,Soybeans,687.0
+2004-03,Canada,Soybeans,300.0
+2004-07,Canada,Soybeans,20.0
+2004-12,Canada,Soybeans,1277.0
+2005-03,Canada,Soybeans,796.0
+2005-07,Canada,Soybeans,90.0
+2005-12,Canada,Soybeans,1378.0
+2006-03,Canada,Soybeans,1021.0
+2006-07,Canada,Soybeans,200.0
+2006-12,Canada,Soybeans,1554.0
+2007-03,Canada,Soybeans,896.0
+2007-07,Canada,Soybeans,130.0
+2007-12,Canada,Soybeans,955.0
+2008-03,Canada,Soybeans,475.0
+2008-07,Canada,Soybeans,25.0
+2008-12,Canada,Soybeans,1156.0
+2009-03,Canada,Soybeans,603.0
+2009-07,Canada,Soybeans,45.0
+2009-12,Canada,Soybeans,1425.0
+2010-03,Canada,Soybeans,855.0
+2010-07,Canada,Soybeans,70.0
+2010-12,Canada,Soybeans,1460.0
+2011-03,Canada,Soybeans,785.0
+2011-07,Canada,Soybeans,65.0
+2011-12,Canada,Soybeans,1970.0
+2012-03,Canada,Soybeans,1105.0
+2012-07,Canada,Soybeans,25.0
+2012-12,Canada,Soybeans,1640.0
+2013-03,Canada,Soybeans,893.0
+2013-07,Canada,Soybeans,20.0
+2013-12,Canada,Soybeans,1887.0
+2014-03,Canada,Soybeans,989.0
+2014-07,Canada,Soybeans,25.0
+2014-12,Canada,Soybeans,2070.0
+2015-03,Canada,Soybeans,1122.0
+2015-07,Canada,Soybeans,117.0
+2015-12,Canada,Soybeans,2249.0
+2016-03,Canada,Soybeans,1168.0
+2016-07,Canada,Soybeans,16.0
+2016-12,Canada,Soybeans,1780.0
+2017-03,Canada,Soybeans,970.0
+2017-07,Canada,Soybeans,30.0
+2017-12,Canada,Soybeans,2985.0
+2018-03,Canada,Soybeans,1789.0
+2018-07,Canada,Soybeans,144.0
+2018-12,Canada,Soybeans,2857.0
+2019-03,Canada,Soybeans,2099.0
+2019-07,Canada,Soybeans,95.0
+2019-12,Canada,Soybeans,2623.0
+2020-03,Canada,Soybeans,1709.0
+2020-07,Canada,Soybeans,96.0
+2020-12,Canada,Soybeans,1866.0
+2021-03,Canada,Soybeans,1107.0
+2021-07,Canada,Soybeans,21.0
+2021-12,Canada,Soybeans,1890.0
+2022-03,Canada,Soybeans,981.0
+2022-07,Canada,Soybeans,37.0
+2022-12,Canada,Soybeans,2017.0
+2023-03,Canada,Soybeans,1163.0
+2023-07,Canada,Soybeans,118.0
+2023-12,Canada,Soybeans,2115.0
+2024-03,Canada,Soybeans,1321.0
+2024-07,Canada,Soybeans,134.0
+2024-12,Canada,Soybeans,3254.0
+2025-03,Canada,Soybeans,1989.0
+2025-07,Canada,Soybeans,322.0
+2025-12,Canada,Soybeans,2061.0
+2026-03,Canada,Soybeans,924.0
+2026-07,Canada,Soybeans,32.0
+1980-03,Canada,Wheat ex-durum,12491.0
+1980-07,Canada,Wheat ex-durum,3075.0
+1981-03,Canada,Wheat ex-durum,9063.0
+1981-07,Canada,Wheat ex-durum,1422.0
+1981-12,Canada,Wheat ex-durum,14764.0
+1982-03,Canada,Wheat ex-durum,11709.0
+1982-07,Canada,Wheat ex-durum,3365.0
+1982-12,Canada,Wheat ex-durum,16248.0
+1983-03,Canada,Wheat ex-durum,12939.0
+1983-07,Canada,Wheat ex-durum,1854.0
+1983-12,Canada,Wheat ex-durum,15917.0
+1984-03,Canada,Wheat ex-durum,13092.0
+1984-07,Canada,Wheat ex-durum,1575.0
+1984-12,Canada,Wheat ex-durum,9790.0
+1985-03,Canada,Wheat ex-durum,6857.0
+1985-07,Canada,Wheat ex-durum,940.0
+1985-12,Canada,Wheat ex-durum,13790.0
+1986-03,Canada,Wheat ex-durum,9540.0
+1986-07,Canada,Wheat ex-durum,710.0
+1986-12,Canada,Wheat ex-durum,20100.0
+1987-03,Canada,Wheat ex-durum,15847.0
+1987-07,Canada,Wheat ex-durum,4572.0
+1987-12,Canada,Wheat ex-durum,15240.0
+1988-03,Canada,Wheat ex-durum,10980.0
+1988-07,Canada,Wheat ex-durum,2668.0
+1988-12,Canada,Wheat ex-durum,7125.0
+1989-03,Canada,Wheat ex-durum,4860.0
+1989-07,Canada,Wheat ex-durum,667.0
+1989-12,Canada,Wheat ex-durum,12108.0
+1990-03,Canada,Wheat ex-durum,7960.0
+1990-07,Canada,Wheat ex-durum,540.0
+1990-12,Canada,Wheat ex-durum,18949.0
+1991-03,Canada,Wheat ex-durum,13240.0
+1991-07,Canada,Wheat ex-durum,1707.0
+1991-12,Canada,Wheat ex-durum,18670.0
+1992-03,Canada,Wheat ex-durum,12780.0
+1992-07,Canada,Wheat ex-durum,2310.0
+1992-12,Canada,Wheat ex-durum,18935.0
+1993-03,Canada,Wheat ex-durum,13705.0
+1993-07,Canada,Wheat ex-durum,3407.0
+1993-12,Canada,Wheat ex-durum,20225.0
+1994-03,Canada,Wheat ex-durum,14760.0
+1994-07,Canada,Wheat ex-durum,3360.0
+1994-12,Canada,Wheat ex-durum,11690.0
+1995-03,Canada,Wheat ex-durum,7135.0
+1995-07,Canada,Wheat ex-durum,565.0
+1995-12,Canada,Wheat ex-durum,11745.0
+1996-03,Canada,Wheat ex-durum,6670.0
+1996-07,Canada,Wheat ex-durum,780.0
+1996-12,Canada,Wheat ex-durum,16155.0
+1997-03,Canada,Wheat ex-durum,11605.0
+1997-07,Canada,Wheat ex-durum,1743.0
+1997-12,Canada,Wheat ex-durum,10920.0
+1998-03,Canada,Wheat ex-durum,6282.0
+1998-07,Canada,Wheat ex-durum,702.0
+1998-12,Canada,Wheat ex-durum,10800.0
+1999-03,Canada,Wheat ex-durum,6840.0
+1999-07,Canada,Wheat ex-durum,688.0
+1999-12,Canada,Wheat ex-durum,13115.0
+2000-03,Canada,Wheat ex-durum,7973.0
+2000-07,Canada,Wheat ex-durum,1037.0
+2000-12,Canada,Wheat ex-durum,12454.0
+2001-03,Canada,Wheat ex-durum,8152.0
+2001-07,Canada,Wheat ex-durum,1485.0
+2001-12,Canada,Wheat ex-durum,9725.0
+2002-03,Canada,Wheat ex-durum,6027.0
+2002-07,Canada,Wheat ex-durum,1070.0
+2002-12,Canada,Wheat ex-durum,6466.0
+2003-03,Canada,Wheat ex-durum,4750.0
+2003-07,Canada,Wheat ex-durum,720.0
+2003-12,Canada,Wheat ex-durum,10612.0
+2004-03,Canada,Wheat ex-durum,7228.0
+2004-07,Canada,Wheat ex-durum,840.0
+2004-12,Canada,Wheat ex-durum,12430.0
+2005-03,Canada,Wheat ex-durum,8028.0
+2005-07,Canada,Wheat ex-durum,2100.0
+2005-12,Canada,Wheat ex-durum,13896.0
+2006-03,Canada,Wheat ex-durum,9871.0
+2006-07,Canada,Wheat ex-durum,2625.0
+2006-12,Canada,Wheat ex-durum,13862.0
+2007-03,Canada,Wheat ex-durum,9113.0
+2007-07,Canada,Wheat ex-durum,1679.0
+2007-12,Canada,Wheat ex-durum,10256.0
+2008-03,Canada,Wheat ex-durum,6591.0
+2008-07,Canada,Wheat ex-durum,461.0
+2008-12,Canada,Wheat ex-durum,13866.0
+2009-03,Canada,Wheat ex-durum,9225.0
+2009-07,Canada,Wheat ex-durum,1046.0
+2009-12,Canada,Wheat ex-durum,13447.0
+2010-03,Canada,Wheat ex-durum,8278.0
+2010-07,Canada,Wheat ex-durum,1252.0
+2010-12,Canada,Wheat ex-durum,13791.0
+2011-03,Canada,Wheat ex-durum,9433.0
+2011-07,Canada,Wheat ex-durum,2241.0
+2011-12,Canada,Wheat ex-durum,13147.0
+2012-03,Canada,Wheat ex-durum,8115.0
+2012-07,Canada,Wheat ex-durum,1447.0
+2012-12,Canada,Wheat ex-durum,13605.0
+2013-03,Canada,Wheat ex-durum,8347.0
+2013-07,Canada,Wheat ex-durum,1460.0
+2013-12,Canada,Wheat ex-durum,20765.0
+2014-03,Canada,Wheat ex-durum,14922.0
+2014-07,Canada,Wheat ex-durum,5175.0
+2014-12,Canada,Wheat ex-durum,18020.0
+2015-03,Canada,Wheat ex-durum,11828.0
+2015-07,Canada,Wheat ex-durum,2503.0
+2015-12,Canada,Wheat ex-durum,14255.0
+2016-03,Canada,Wheat ex-durum,8490.0
+2016-07,Canada,Wheat ex-durum,1725.0
+2016-12,Canada,Wheat ex-durum,15127.0
+2017-03,Canada,Wheat ex-durum,9504.0
+2017-07,Canada,Wheat ex-durum,1457.0
+2017-12,Canada,Wheat ex-durum,15902.0
+2018-03,Canada,Wheat ex-durum,10511.0
+2018-07,Canada,Wheat ex-durum,2459.0
+2018-12,Canada,Wheat ex-durum,16028.0
+2019-03,Canada,Wheat ex-durum,10083.0
+2019-07,Canada,Wheat ex-durum,1814.0
+2019-12,Canada,Wheat ex-durum,17666.0
+2020-03,Canada,Wheat ex-durum,12049.0
+2020-07,Canada,Wheat ex-durum,2004.0
+2020-12,Canada,Wheat ex-durum,17704.0
+2021-03,Canada,Wheat ex-durum,10945.0
+2021-07,Canada,Wheat ex-durum,2295.0
+2021-12,Canada,Wheat ex-durum,11099.0
+2022-03,Canada,Wheat ex-durum,6280.0
+2022-07,Canada,Wheat ex-durum,1359.0
+2022-12,Canada,Wheat ex-durum,17354.0
+2023-03,Canada,Wheat ex-durum,10312.0
+2023-07,Canada,Wheat ex-durum,2701.0
+2023-12,Canada,Wheat ex-durum,18101.0
+2024-03,Canada,Wheat ex-durum,11326.0
+2024-07,Canada,Wheat ex-durum,2331.0
+2024-12,Canada,Wheat ex-durum,18544.0
+2025-03,Canada,Wheat ex-durum,11224.0
+2025-07,Canada,Wheat ex-durum,1600.0
+2025-12,Canada,Wheat ex-durum,20539.0
+2026-03,Canada,Wheat ex-durum,13504.0
+2026-07,Canada,Wheat ex-durum,2245.0
+1980-03,Manitoba,Barley,740.0
+1980-07,Manitoba,Barley,131.0
+1981-03,Manitoba,Barley,810.0
+1981-07,Manitoba,Barley,65.0
+1981-12,Manitoba,Barley,1530.0
+1982-03,Manitoba,Barley,1200.0
+1982-07,Manitoba,Barley,200.0
+1982-12,Manitoba,Barley,1780.0
+1983-03,Manitoba,Barley,1350.0
+1983-07,Manitoba,Barley,375.0
+1983-12,Manitoba,Barley,1100.0
+1984-03,Manitoba,Barley,660.0
+1984-07,Manitoba,Barley,70.0
+1984-12,Manitoba,Barley,1170.0
+1985-03,Manitoba,Barley,800.0
+1985-07,Manitoba,Barley,70.0
+1985-12,Manitoba,Barley,1730.0
+1986-03,Manitoba,Barley,1180.0
+1986-07,Manitoba,Barley,130.0
+1986-12,Manitoba,Barley,1150.0
+1987-03,Manitoba,Barley,750.0
+1987-07,Manitoba,Barley,160.0
+1987-12,Manitoba,Barley,1380.0
+1988-03,Manitoba,Barley,950.0
+1988-07,Manitoba,Barley,400.0
+1988-12,Manitoba,Barley,950.0
+1989-03,Manitoba,Barley,600.0
+1989-07,Manitoba,Barley,85.0
+1989-12,Manitoba,Barley,1000.0
+1990-03,Manitoba,Barley,640.0
+1990-07,Manitoba,Barley,120.0
+1990-12,Manitoba,Barley,1220.0
+1991-03,Manitoba,Barley,720.0
+1991-07,Manitoba,Barley,170.0
+1991-12,Manitoba,Barley,950.0
+1992-03,Manitoba,Barley,570.0
+1992-07,Manitoba,Barley,130.0
+1992-12,Manitoba,Barley,1100.0
+1993-03,Manitoba,Barley,800.0
+1993-07,Manitoba,Barley,250.0
+1993-12,Manitoba,Barley,1000.0
+1994-03,Manitoba,Barley,600.0
+1994-07,Manitoba,Barley,190.0
+1994-12,Manitoba,Barley,900.0
+1995-03,Manitoba,Barley,550.0
+1995-07,Manitoba,Barley,170.0
+1995-12,Manitoba,Barley,850.0
+1996-03,Manitoba,Barley,450.0
+1996-07,Manitoba,Barley,140.0
+1996-12,Manitoba,Barley,1400.0
+1997-03,Manitoba,Barley,900.0
+1997-07,Manitoba,Barley,300.0
+1997-12,Manitoba,Barley,1200.0
+1998-03,Manitoba,Barley,770.0
+1998-07,Manitoba,Barley,250.0
+1998-12,Manitoba,Barley,1220.0
+1999-03,Manitoba,Barley,800.0
+1999-07,Manitoba,Barley,250.0
+1999-12,Manitoba,Barley,1000.0
+2000-03,Manitoba,Barley,600.0
+2000-07,Manitoba,Barley,180.0
+2000-12,Manitoba,Barley,1100.0
+2001-03,Manitoba,Barley,800.0
+2001-07,Manitoba,Barley,250.0
+2001-12,Manitoba,Barley,800.0
+2002-03,Manitoba,Barley,550.0
+2002-07,Manitoba,Barley,150.0
+2002-12,Manitoba,Barley,650.0
+2003-03,Manitoba,Barley,400.0
+2003-07,Manitoba,Barley,150.0
+2003-12,Manitoba,Barley,900.0
+2004-03,Manitoba,Barley,650.0
+2004-07,Manitoba,Barley,200.0
+2004-12,Manitoba,Barley,980.0
+2005-03,Manitoba,Barley,725.0
+2005-07,Manitoba,Barley,350.0
+2005-12,Manitoba,Barley,600.0
+2006-03,Manitoba,Barley,450.0
+2006-07,Manitoba,Barley,260.0
+2006-12,Manitoba,Barley,775.0
+2007-03,Manitoba,Barley,500.0
+2007-07,Manitoba,Barley,170.0
+2007-12,Manitoba,Barley,740.0
+2008-03,Manitoba,Barley,500.0
+2008-07,Manitoba,Barley,125.0
+2008-12,Manitoba,Barley,825.0
+2009-03,Manitoba,Barley,575.0
+2009-07,Manitoba,Barley,250.0
+2009-12,Manitoba,Barley,780.0
+2010-03,Manitoba,Barley,510.0
+2010-07,Manitoba,Barley,250.0
+2010-12,Manitoba,Barley,410.0
+2011-03,Manitoba,Barley,245.0
+2011-07,Manitoba,Barley,80.0
+2011-12,Manitoba,Barley,210.0
+2012-03,Manitoba,Barley,130.0
+2012-07,Manitoba,Barley,75.0
+2012-12,Manitoba,Barley,425.0
+2013-03,Manitoba,Barley,250.0
+2013-07,Manitoba,Barley,60.0
+2013-12,Manitoba,Barley,450.0
+2014-03,Manitoba,Barley,300.0
+2014-07,Manitoba,Barley,145.0
+2014-12,Manitoba,Barley,350.0
+2015-03,Manitoba,Barley,245.0
+2015-07,Manitoba,Barley,90.0
+2015-12,Manitoba,Barley,435.0
+2016-03,Manitoba,Barley,310.0
+2016-07,Manitoba,Barley,150.0
+2016-12,Manitoba,Barley,475.0
+2017-03,Manitoba,Barley,375.0
+2017-07,Manitoba,Barley,235.0
+2017-12,Manitoba,Barley,400.0
+2018-03,Manitoba,Barley,260.0
+2018-07,Manitoba,Barley,95.0
+2018-12,Manitoba,Barley,320.0
+2019-03,Manitoba,Barley,225.0
+2019-07,Manitoba,Barley,90.0
+2019-12,Manitoba,Barley,331.0
+2020-03,Manitoba,Barley,210.0
+2020-07,Manitoba,Barley,73.0
+2020-12,Manitoba,Barley,440.0
+2021-03,Manitoba,Barley,240.0
+2021-07,Manitoba,Barley,73.0
+2021-12,Manitoba,Barley,300.0
+2022-03,Manitoba,Barley,235.0
+2022-07,Manitoba,Barley,110.0
+2022-12,Manitoba,Barley,450.0
+2023-03,Manitoba,Barley,340.0
+2023-07,Manitoba,Barley,176.0
+2023-12,Manitoba,Barley,520.0
+2024-03,Manitoba,Barley,450.0
+2024-07,Manitoba,Barley,305.0
+2024-12,Manitoba,Barley,447.0
+2025-03,Manitoba,Barley,329.0
+2025-07,Manitoba,Barley,169.0
+2025-12,Manitoba,Barley,356.0
+2026-03,Manitoba,Barley,210.0
+2026-07,Manitoba,Barley,50.0
+1980-03,Manitoba,Canola,351.0
+1980-07,Manitoba,Canola,91.0
+1981-03,Manitoba,Canola,250.0
+1981-07,Manitoba,Canola,46.0
+1981-12,Manitoba,Canola,220.0
+1982-03,Manitoba,Canola,175.0
+1982-07,Manitoba,Canola,14.0
+1982-12,Manitoba,Canola,210.0
+1983-03,Manitoba,Canola,140.0
+1983-07,Manitoba,Canola,10.0
+1983-12,Manitoba,Canola,190.0
+1984-03,Manitoba,Canola,65.0
+1984-07,Manitoba,Canola,2.0
+1984-12,Manitoba,Canola,260.0
+1985-03,Manitoba,Canola,120.0
+1985-07,Manitoba,Canola,5.0
+1985-12,Manitoba,Canola,380.0
+1986-03,Manitoba,Canola,240.0
+1986-07,Manitoba,Canola,20.0
+1986-12,Manitoba,Canola,310.0
+1987-03,Manitoba,Canola,170.0
+1987-07,Manitoba,Canola,10.0
+1987-12,Manitoba,Canola,290.0
+1988-03,Manitoba,Canola,150.0
+1988-07,Manitoba,Canola,20.0
+1988-12,Manitoba,Canola,360.0
+1989-03,Manitoba,Canola,210.0
+1989-07,Manitoba,Canola,45.0
+1989-12,Manitoba,Canola,240.0
+1990-03,Manitoba,Canola,145.0
+1990-07,Manitoba,Canola,15.0
+1990-12,Manitoba,Canola,260.0
+1991-03,Manitoba,Canola,125.0
+1991-07,Manitoba,Canola,10.0
+1991-12,Manitoba,Canola,425.0
+1992-03,Manitoba,Canola,250.0
+1992-07,Manitoba,Canola,50.0
+1992-12,Manitoba,Canola,500.0
+1993-03,Manitoba,Canola,260.0
+1993-07,Manitoba,Canola,20.0
+1993-12,Manitoba,Canola,350.0
+1994-03,Manitoba,Canola,100.0
+1994-07,Manitoba,Canola,0.0
+1994-12,Manitoba,Canola,500.0
+1995-03,Manitoba,Canola,240.0
+1995-07,Manitoba,Canola,20.0
+1995-12,Manitoba,Canola,580.0
+1996-03,Manitoba,Canola,370.0
+1996-07,Manitoba,Canola,50.0
+1996-12,Manitoba,Canola,580.0
+1997-03,Manitoba,Canola,310.0
+1997-07,Manitoba,Canola,50.0
+1997-12,Manitoba,Canola,690.0
+1998-03,Manitoba,Canola,330.0
+1998-07,Manitoba,Canola,10.0
+1998-12,Manitoba,Canola,700.0
+1999-03,Manitoba,Canola,390.0
+1999-07,Manitoba,Canola,80.0
+1999-12,Manitoba,Canola,1000.0
+2000-03,Manitoba,Canola,700.0
+2000-07,Manitoba,Canola,250.0
+2000-12,Manitoba,Canola,970.0
+2001-03,Manitoba,Canola,500.0
+2001-07,Manitoba,Canola,110.0
+2001-12,Manitoba,Canola,700.0
+2002-03,Manitoba,Canola,485.0
+2002-07,Manitoba,Canola,90.0
+2002-12,Manitoba,Canola,750.0
+2003-03,Manitoba,Canola,480.0
+2003-07,Manitoba,Canola,50.0
+2003-12,Manitoba,Canola,850.0
+2004-03,Manitoba,Canola,400.0
+2004-07,Manitoba,Canola,45.0
+2004-12,Manitoba,Canola,1000.0
+2005-03,Manitoba,Canola,620.0
+2005-07,Manitoba,Canola,165.0
+2005-12,Manitoba,Canola,850.0
+2006-03,Manitoba,Canola,550.0
+2006-07,Manitoba,Canola,150.0
+2006-12,Manitoba,Canola,1200.0
+2007-03,Manitoba,Canola,850.0
+2007-07,Manitoba,Canola,100.0
+2007-12,Manitoba,Canola,1115.0
+2008-03,Manitoba,Canola,660.0
+2008-07,Manitoba,Canola,65.0
+2008-12,Manitoba,Canola,1610.0
+2009-03,Manitoba,Canola,925.0
+2009-07,Manitoba,Canola,115.0
+2009-12,Manitoba,Canola,1815.0
+2010-03,Manitoba,Canola,1110.0
+2010-07,Manitoba,Canola,250.0
+2010-12,Manitoba,Canola,1225.0
+2011-03,Manitoba,Canola,785.0
+2011-07,Manitoba,Canola,140.0
+2011-12,Manitoba,Canola,725.0
+2012-03,Manitoba,Canola,290.0
+2012-07,Manitoba,Canola,20.0
+2012-12,Manitoba,Canola,950.0
+2013-03,Manitoba,Canola,400.0
+2013-07,Manitoba,Canola,15.0
+2013-12,Manitoba,Canola,1750.0
+2014-03,Manitoba,Canola,960.0
+2014-07,Manitoba,Canola,165.0
+2014-12,Manitoba,Canola,1595.0
+2015-03,Manitoba,Canola,960.0
+2015-07,Manitoba,Canola,100.0
+2015-12,Manitoba,Canola,1800.0
+2016-03,Manitoba,Canola,1170.0
+2016-07,Manitoba,Canola,165.0
+2016-12,Manitoba,Canola,1440.0
+2017-03,Manitoba,Canola,850.0
+2017-07,Manitoba,Canola,50.0
+2017-12,Manitoba,Canola,1650.0
+2018-03,Manitoba,Canola,1075.0
+2018-07,Manitoba,Canola,150.0
+2018-12,Manitoba,Canola,2080.0
+2019-03,Manitoba,Canola,1570.0
+2019-07,Manitoba,Canola,550.0
+2019-12,Manitoba,Canola,2195.0
+2020-03,Manitoba,Canola,1520.0
+2020-07,Manitoba,Canola,405.0
+2020-12,Manitoba,Canola,1690.0
+2021-03,Manitoba,Canola,861.0
+2021-07,Manitoba,Canola,120.0
+2021-12,Manitoba,Canola,1425.0
+2022-03,Manitoba,Canola,890.0
+2022-07,Manitoba,Canola,330.0
+2022-12,Manitoba,Canola,2015.0
+2023-03,Manitoba,Canola,1232.0
+2023-07,Manitoba,Canola,193.0
+2023-12,Manitoba,Canola,2075.0
+2024-03,Manitoba,Canola,1328.0
+2024-07,Manitoba,Canola,245.0
+2024-12,Manitoba,Canola,1885.0
+2025-03,Manitoba,Canola,1162.0
+2025-07,Manitoba,Canola,87.0
+2025-12,Manitoba,Canola,2025.0
+2026-03,Manitoba,Canola,1429.0
+2026-07,Manitoba,Canola,137.0
+1980-03,Manitoba,Corn,351.0
+1980-07,Manitoba,Corn,91.0
+1981-03,Manitoba,Corn,250.0
+1981-07,Manitoba,Corn,46.0
+1981-12,Manitoba,Corn,220.0
+1982-03,Manitoba,Corn,175.0
+1982-07,Manitoba,Corn,14.0
+1982-12,Manitoba,Corn,210.0
+1983-03,Manitoba,Corn,140.0
+1983-07,Manitoba,Corn,10.0
+1983-12,Manitoba,Corn,190.0
+1984-03,Manitoba,Corn,65.0
+1984-07,Manitoba,Corn,2.0
+1984-12,Manitoba,Corn,260.0
+1985-03,Manitoba,Corn,120.0
+1985-07,Manitoba,Corn,5.0
+1985-12,Manitoba,Corn,380.0
+1986-03,Manitoba,Corn,240.0
+1986-07,Manitoba,Corn,20.0
+1986-12,Manitoba,Corn,310.0
+1987-03,Manitoba,Corn,0.0
+1987-07,Manitoba,Corn,0.0
+1987-12,Manitoba,Corn,0.0
+1988-03,Manitoba,Corn,0.0
+1988-07,Manitoba,Corn,0.0
+1988-12,Manitoba,Corn,0.0
+1989-03,Manitoba,Corn,0.0
+1989-07,Manitoba,Corn,0.0
+1989-12,Manitoba,Corn,0.0
+1990-03,Manitoba,Corn,0.0
+1990-07,Manitoba,Corn,0.0
+1990-12,Manitoba,Corn,0.0
+1991-03,Manitoba,Corn,0.0
+1991-07,Manitoba,Corn,0.0
+1991-12,Manitoba,Corn,130.0
+1992-03,Manitoba,Corn,70.0
+1992-07,Manitoba,Corn,5.0
+1992-12,Manitoba,Corn,20.0
+1993-03,Manitoba,Corn,10.0
+1993-07,Manitoba,Corn,1.0
+1993-12,Manitoba,Corn,20.0
+1994-03,Manitoba,Corn,10.0
+1994-07,Manitoba,Corn,0.0
+1994-12,Manitoba,Corn,75.0
+1995-03,Manitoba,Corn,40.0
+1995-07,Manitoba,Corn,0.0
+1995-12,Manitoba,Corn,65.0
+1996-03,Manitoba,Corn,40.0
+1996-07,Manitoba,Corn,0.0
+1996-12,Manitoba,Corn,100.0
+1997-03,Manitoba,Corn,70.0
+1997-07,Manitoba,Corn,0.0
+1997-12,Manitoba,Corn,110.0
+1998-03,Manitoba,Corn,65.0
+1998-07,Manitoba,Corn,0.0
+1998-12,Manitoba,Corn,150.0
+1999-03,Manitoba,Corn,75.0
+1999-07,Manitoba,Corn,0.0
+1999-12,Manitoba,Corn,170.0
+2000-03,Manitoba,Corn,95.0
+2000-07,Manitoba,Corn,0.0
+2000-12,Manitoba,Corn,180.0
+2001-03,Manitoba,Corn,100.0
+2001-07,Manitoba,Corn,38.0
+2001-12,Manitoba,Corn,170.0
+2002-03,Manitoba,Corn,120.0
+2002-07,Manitoba,Corn,35.0
+2002-12,Manitoba,Corn,220.0
+2003-03,Manitoba,Corn,140.0
+2003-07,Manitoba,Corn,0.0
+2003-12,Manitoba,Corn,340.0
+2004-03,Manitoba,Corn,180.0
+2004-07,Manitoba,Corn,75.0
+2004-12,Manitoba,Corn,15.0
+2005-03,Manitoba,Corn,10.0
+2005-07,Manitoba,Corn,5.0
+2005-12,Manitoba,Corn,170.0
+2006-03,Manitoba,Corn,140.0
+2006-07,Manitoba,Corn,120.0
+2006-12,Manitoba,Corn,325.0
+2007-03,Manitoba,Corn,270.0
+2007-07,Manitoba,Corn,0.0
+2007-12,Manitoba,Corn,360.0
+2008-03,Manitoba,Corn,200.0
+2008-07,Manitoba,Corn,40.0
+2008-12,Manitoba,Corn,400.0
+2009-03,Manitoba,Corn,280.0
+2009-07,Manitoba,Corn,145.0
+2009-12,Manitoba,Corn,325.0
+2010-03,Manitoba,Corn,180.0
+2010-07,Manitoba,Corn,0.0
+2010-12,Manitoba,Corn,350.0
+2011-03,Manitoba,Corn,150.0
+2011-07,Manitoba,Corn,0.0
+2011-12,Manitoba,Corn,275.0
+2012-03,Manitoba,Corn,125.0
+2012-07,Manitoba,Corn,0.0
+2012-12,Manitoba,Corn,600.0
+2013-03,Manitoba,Corn,300.0
+2013-07,Manitoba,Corn,0.0
+2013-12,Manitoba,Corn,950.0
+2014-03,Manitoba,Corn,600.0
+2014-07,Manitoba,Corn,250.0
+2014-12,Manitoba,Corn,600.0
+2015-03,Manitoba,Corn,275.0
+2015-07,Manitoba,Corn,75.0
+2015-12,Manitoba,Corn,625.0
+2016-03,Manitoba,Corn,375.0
+2016-07,Manitoba,Corn,75.0
+2016-12,Manitoba,Corn,906.0
+2017-03,Manitoba,Corn,710.0
+2017-07,Manitoba,Corn,65.0
+2017-12,Manitoba,Corn,1000.0
+2018-03,Manitoba,Corn,750.0
+2018-07,Manitoba,Corn,75.0
+2018-12,Manitoba,Corn,900.0
+2019-03,Manitoba,Corn,734.0
+2019-07,Manitoba,Corn,50.0
+2019-12,Manitoba,Corn,771.0
+2020-03,Manitoba,Corn,652.0
+2020-07,Manitoba,Corn,90.0
+2020-12,Manitoba,Corn,745.0
+2021-03,Manitoba,Corn,552.0
+2021-07,Manitoba,Corn,62.0
+2021-12,Manitoba,Corn,647.0
+2022-03,Manitoba,Corn,552.0
+2022-07,Manitoba,Corn,39.0
+2022-12,Manitoba,Corn,702.0
+2023-03,Manitoba,Corn,636.0
+2023-07,Manitoba,Corn,58.0
+2023-12,Manitoba,Corn,979.0
+2024-03,Manitoba,Corn,800.0
+2024-07,Manitoba,Corn,101.0
+2024-12,Manitoba,Corn,874.0
+2025-03,Manitoba,Corn,648.0
+2025-07,Manitoba,Corn,104.0
+2025-12,Manitoba,Corn,1140.0
+2026-03,Manitoba,Corn,790.0
+2026-07,Manitoba,Corn,0.0
+1980-03,Manitoba,Durum,131.0
+1980-07,Manitoba,Durum,82.0
+1981-03,Manitoba,Durum,82.0
+1981-07,Manitoba,Durum,8.0
+1981-12,Manitoba,Durum,130.0
+1982-03,Manitoba,Durum,80.0
+1982-07,Manitoba,Durum,5.0
+1982-12,Manitoba,Durum,110.0
+1983-03,Manitoba,Durum,90.0
+1983-07,Manitoba,Durum,4.0
+1983-12,Manitoba,Durum,65.0
+1984-03,Manitoba,Durum,40.0
+1984-07,Manitoba,Durum,5.0
+1984-12,Manitoba,Durum,65.0
+1985-03,Manitoba,Durum,50.0
+1985-07,Manitoba,Durum,5.0
+1985-12,Manitoba,Durum,115.0
+1986-03,Manitoba,Durum,80.0
+1986-07,Manitoba,Durum,2.0
+1986-12,Manitoba,Durum,255.0
+1987-03,Manitoba,Durum,195.0
+1987-07,Manitoba,Durum,45.0
+1987-12,Manitoba,Durum,230.0
+1988-03,Manitoba,Durum,150.0
+1988-07,Manitoba,Durum,50.0
+1988-12,Manitoba,Durum,90.0
+1989-03,Manitoba,Durum,70.0
+1989-07,Manitoba,Durum,25.0
+1989-12,Manitoba,Durum,135.0
+1990-03,Manitoba,Durum,95.0
+1990-07,Manitoba,Durum,15.0
+1990-12,Manitoba,Durum,280.0
+1991-03,Manitoba,Durum,210.0
+1991-07,Manitoba,Durum,60.0
+1991-12,Manitoba,Durum,200.0
+1992-03,Manitoba,Durum,150.0
+1992-07,Manitoba,Durum,20.0
+1992-12,Manitoba,Durum,115.0
+1993-03,Manitoba,Durum,90.0
+1993-07,Manitoba,Durum,25.0
+1993-12,Manitoba,Durum,80.0
+1994-03,Manitoba,Durum,57.0
+1994-07,Manitoba,Durum,0.0
+1994-12,Manitoba,Durum,180.0
+1995-03,Manitoba,Durum,150.0
+1995-07,Manitoba,Durum,10.0
+1995-12,Manitoba,Durum,100.0
+1996-03,Manitoba,Durum,70.0
+1996-07,Manitoba,Durum,5.0
+1996-12,Manitoba,Durum,125.0
+1997-03,Manitoba,Durum,90.0
+1997-07,Manitoba,Durum,10.0
+1997-12,Manitoba,Durum,70.0
+1998-03,Manitoba,Durum,45.0
+1998-07,Manitoba,Durum,5.0
+1998-12,Manitoba,Durum,150.0
+1999-07,Manitoba,Durum,10.0
+2000-07,Manitoba,Durum,0.0
+2000-12,Manitoba,Durum,130.0
+2003-03,Manitoba,Durum,30.0
+2003-07,Manitoba,Durum,5.0
+2003-12,Manitoba,Durum,25.0
+2004-03,Manitoba,Durum,20.0
+2004-07,Manitoba,Durum,5.0
+2004-12,Manitoba,Durum,10.0
+2005-03,Manitoba,Durum,5.0
+2005-07,Manitoba,Durum,0.0
+2005-12,Manitoba,Durum,8.0
+2006-03,Manitoba,Durum,5.0
+2006-07,Manitoba,Durum,0.0
+2006-12,Manitoba,Durum,0.0
+2007-03,Manitoba,Durum,0.0
+2007-07,Manitoba,Durum,0.0
+2007-12,Manitoba,Durum,0.0
+2008-03,Manitoba,Durum,0.0
+2008-07,Manitoba,Durum,0.0
+2008-12,Manitoba,Durum,0.0
+2009-03,Manitoba,Durum,0.0
+2009-12,Manitoba,Durum,0.0
+2010-03,Manitoba,Durum,0.0
+2010-07,Manitoba,Durum,0.0
+2010-12,Manitoba,Durum,0.0
+2011-03,Manitoba,Durum,0.0
+2011-07,Manitoba,Durum,0.0
+2011-12,Manitoba,Durum,0.0
+2012-03,Manitoba,Durum,0.0
+2012-07,Manitoba,Durum,0.0
+2012-12,Manitoba,Durum,0.0
+2013-03,Manitoba,Durum,0.0
+2013-07,Manitoba,Durum,0.0
+2013-12,Manitoba,Durum,0.0
+2014-03,Manitoba,Durum,0.0
+2014-07,Manitoba,Durum,0.0
+2014-12,Manitoba,Durum,0.0
+2015-03,Manitoba,Durum,0.0
+2015-07,Manitoba,Durum,0.0
+2015-12,Manitoba,Durum,0.0
+2016-03,Manitoba,Durum,0.0
+2016-07,Manitoba,Durum,0.0
+2016-12,Manitoba,Durum,0.0
+2017-03,Manitoba,Durum,0.0
+2017-07,Manitoba,Durum,0.0
+2017-12,Manitoba,Durum,0.0
+2018-03,Manitoba,Durum,0.0
+2018-07,Manitoba,Durum,0.0
+2018-12,Manitoba,Durum,5.0
+2019-03,Manitoba,Durum,0.0
+2019-07,Manitoba,Durum,0.0
+2019-12,Manitoba,Durum,11.0
+2020-03,Manitoba,Durum,4.0
+2020-07,Manitoba,Durum,0.0
+2020-12,Manitoba,Durum,21.0
+2021-03,Manitoba,Durum,7.0
+2021-07,Manitoba,Durum,0.0
+2021-12,Manitoba,Durum,0.0
+2022-12,Manitoba,Durum,7.0
+2023-03,Manitoba,Durum,1.0
+2023-07,Manitoba,Durum,0.0
+2023-12,Manitoba,Durum,37.0
+2024-03,Manitoba,Durum,31.0
+2024-07,Manitoba,Durum,0.0
+2024-12,Manitoba,Durum,32.0
+2025-03,Manitoba,Durum,26.0
+2025-12,Manitoba,Durum,70.0
+2026-03,Manitoba,Durum,45.0
+2026-07,Manitoba,Durum,0.0
+2001-12,Manitoba,Soybeans,9.0
+2002-03,Manitoba,Soybeans,5.0
+2002-07,Manitoba,Soybeans,0.0
+2002-12,Manitoba,Soybeans,60.0
+2003-03,Manitoba,Soybeans,35.0
+2003-07,Manitoba,Soybeans,0.0
+2003-12,Manitoba,Soybeans,55.0
+2004-03,Manitoba,Soybeans,20.0
+2004-07,Manitoba,Soybeans,5.0
+2004-12,Manitoba,Soybeans,20.0
+2005-03,Manitoba,Soybeans,10.0
+2005-07,Manitoba,Soybeans,2.0
+2005-12,Manitoba,Soybeans,40.0
+2006-03,Manitoba,Soybeans,30.0
+2006-07,Manitoba,Soybeans,15.0
+2006-12,Manitoba,Soybeans,180.0
+2007-03,Manitoba,Soybeans,115.0
+2007-07,Manitoba,Soybeans,0.0
+2007-12,Manitoba,Soybeans,100.0
+2008-03,Manitoba,Soybeans,64.0
+2008-07,Manitoba,Soybeans,0.0
+2008-12,Manitoba,Soybeans,115.0
+2009-03,Manitoba,Soybeans,75.0
+2009-07,Manitoba,Soybeans,9.0
+2009-12,Manitoba,Soybeans,167.0
+2010-03,Manitoba,Soybeans,100.0
+2010-07,Manitoba,Soybeans,0.0
+2010-12,Manitoba,Soybeans,175.0
+2011-03,Manitoba,Soybeans,100.0
+2011-07,Manitoba,Soybeans,0.0
+2011-12,Manitoba,Soybeans,220.0
+2012-03,Manitoba,Soybeans,120.0
+2012-07,Manitoba,Soybeans,0.0
+2012-12,Manitoba,Soybeans,270.0
+2013-03,Manitoba,Soybeans,200.0
+2013-07,Manitoba,Soybeans,7.0
+2013-12,Manitoba,Soybeans,500.0
+2014-03,Manitoba,Soybeans,250.0
+2014-07,Manitoba,Soybeans,10.0
+2014-12,Manitoba,Soybeans,415.0
+2015-03,Manitoba,Soybeans,175.0
+2015-07,Manitoba,Soybeans,5.0
+2015-12,Manitoba,Soybeans,449.0
+2016-03,Manitoba,Soybeans,160.0
+2016-07,Manitoba,Soybeans,10.0
+2016-12,Manitoba,Soybeans,470.0
+2017-03,Manitoba,Soybeans,280.0
+2017-07,Manitoba,Soybeans,20.0
+2017-12,Manitoba,Soybeans,950.0
+2018-03,Manitoba,Soybeans,650.0
+2018-07,Manitoba,Soybeans,50.0
+2018-12,Manitoba,Soybeans,700.0
+2019-03,Manitoba,Soybeans,550.0
+2019-07,Manitoba,Soybeans,20.0
+2019-12,Manitoba,Soybeans,500.0
+2020-03,Manitoba,Soybeans,350.0
+2020-07,Manitoba,Soybeans,40.0
+2020-12,Manitoba,Soybeans,280.0
+2021-03,Manitoba,Soybeans,146.0
+2021-07,Manitoba,Soybeans,3.0
+2021-12,Manitoba,Soybeans,275.0
+2022-03,Manitoba,Soybeans,120.0
+2022-07,Manitoba,Soybeans,4.0
+2022-12,Manitoba,Soybeans,440.0
+2023-03,Manitoba,Soybeans,300.0
+2023-07,Manitoba,Soybeans,83.0
+2023-12,Manitoba,Soybeans,419.0
+2024-03,Manitoba,Soybeans,257.0
+2024-07,Manitoba,Soybeans,15.0
+2024-12,Manitoba,Soybeans,754.0
+2025-03,Manitoba,Soybeans,434.0
+2025-07,Manitoba,Soybeans,79.0
+2025-12,Manitoba,Soybeans,426.0
+2026-03,Manitoba,Soybeans,216.0
+2026-07,Manitoba,Soybeans,11.0
+1980-03,Manitoba,Wheat ex-durum,1692.0
+1980-07,Manitoba,Wheat ex-durum,245.0
+1981-03,Manitoba,Wheat ex-durum,818.0
+1981-07,Manitoba,Wheat ex-durum,47.0
+1981-12,Manitoba,Wheat ex-durum,1990.0
+1982-03,Manitoba,Wheat ex-durum,1550.0
+1982-07,Manitoba,Wheat ex-durum,265.0
+1982-12,Manitoba,Wheat ex-durum,2310.0
+1983-03,Manitoba,Wheat ex-durum,1910.0
+1983-07,Manitoba,Wheat ex-durum,106.0
+1983-12,Manitoba,Wheat ex-durum,2035.0
+1984-03,Manitoba,Wheat ex-durum,0.0
+1984-07,Manitoba,Wheat ex-durum,0.0
+1984-12,Manitoba,Wheat ex-durum,0.0
+1985-03,Manitoba,Wheat ex-durum,1660.0
+1985-07,Manitoba,Wheat ex-durum,65.0
+1985-12,Manitoba,Wheat ex-durum,1515.0
+1986-03,Manitoba,Wheat ex-durum,1050.0
+1986-07,Manitoba,Wheat ex-durum,35.0
+1986-12,Manitoba,Wheat ex-durum,3055.0
+1987-03,Manitoba,Wheat ex-durum,2400.0
+1987-07,Manitoba,Wheat ex-durum,495.0
+1987-12,Manitoba,Wheat ex-durum,2300.0
+1988-03,Manitoba,Wheat ex-durum,1780.0
+1988-07,Manitoba,Wheat ex-durum,400.0
+1988-12,Manitoba,Wheat ex-durum,1100.0
+1989-03,Manitoba,Wheat ex-durum,750.0
+1989-07,Manitoba,Wheat ex-durum,50.0
+1989-12,Manitoba,Wheat ex-durum,2400.0
+1990-03,Manitoba,Wheat ex-durum,1670.0
+1990-07,Manitoba,Wheat ex-durum,30.0
+1990-12,Manitoba,Wheat ex-durum,3900.0
+1991-03,Manitoba,Wheat ex-durum,2930.0
+1991-07,Manitoba,Wheat ex-durum,420.0
+1991-12,Manitoba,Wheat ex-durum,3000.0
+1992-03,Manitoba,Wheat ex-durum,2100.0
+1992-07,Manitoba,Wheat ex-durum,250.0
+1992-12,Manitoba,Wheat ex-durum,3800.0
+1993-03,Manitoba,Wheat ex-durum,2600.0
+1993-07,Manitoba,Wheat ex-durum,500.0
+1993-12,Manitoba,Wheat ex-durum,3100.0
+1994-03,Manitoba,Wheat ex-durum,2000.0
+1994-07,Manitoba,Wheat ex-durum,300.0
+1994-12,Manitoba,Wheat ex-durum,2300.0
+1995-03,Manitoba,Wheat ex-durum,1500.0
+1995-07,Manitoba,Wheat ex-durum,80.0
+1995-12,Manitoba,Wheat ex-durum,2050.0
+1996-03,Manitoba,Wheat ex-durum,1100.0
+1996-07,Manitoba,Wheat ex-durum,90.0
+1996-12,Manitoba,Wheat ex-durum,2700.0
+1997-03,Manitoba,Wheat ex-durum,1750.0
+1997-07,Manitoba,Wheat ex-durum,130.0
+1997-12,Manitoba,Wheat ex-durum,1750.0
+1998-03,Manitoba,Wheat ex-durum,1000.0
+1998-07,Manitoba,Wheat ex-durum,50.0
+1998-12,Manitoba,Wheat ex-durum,1900.0
+1999-03,Manitoba,Wheat ex-durum,1200.0
+1999-07,Manitoba,Wheat ex-durum,80.0
+1999-12,Manitoba,Wheat ex-durum,1860.0
+2000-03,Manitoba,Wheat ex-durum,1200.0
+2000-07,Manitoba,Wheat ex-durum,90.0
+2000-12,Manitoba,Wheat ex-durum,2650.0
+2001-03,Manitoba,Wheat ex-durum,1850.0
+2001-07,Manitoba,Wheat ex-durum,200.0
+2001-12,Manitoba,Wheat ex-durum,2150.0
+2002-03,Manitoba,Wheat ex-durum,1400.0
+2002-07,Manitoba,Wheat ex-durum,70.0
+2002-12,Manitoba,Wheat ex-durum,1700.0
+2003-03,Manitoba,Wheat ex-durum,1100.0
+2003-07,Manitoba,Wheat ex-durum,50.0
+2003-12,Manitoba,Wheat ex-durum,2225.0
+2004-03,Manitoba,Wheat ex-durum,1510.0
+2004-07,Manitoba,Wheat ex-durum,80.0
+2004-12,Manitoba,Wheat ex-durum,2225.0
+2005-03,Manitoba,Wheat ex-durum,1380.0
+2005-07,Manitoba,Wheat ex-durum,280.0
+2005-12,Manitoba,Wheat ex-durum,1475.0
+2006-03,Manitoba,Wheat ex-durum,935.0
+2006-07,Manitoba,Wheat ex-durum,215.0
+2006-12,Manitoba,Wheat ex-durum,2225.0
+2007-03,Manitoba,Wheat ex-durum,1425.0
+2007-07,Manitoba,Wheat ex-durum,210.0
+2007-12,Manitoba,Wheat ex-durum,1850.0
+2008-03,Manitoba,Wheat ex-durum,1135.0
+2008-07,Manitoba,Wheat ex-durum,30.0
+2008-12,Manitoba,Wheat ex-durum,2500.0
+2009-03,Manitoba,Wheat ex-durum,1750.0
+2009-07,Manitoba,Wheat ex-durum,145.0
+2009-12,Manitoba,Wheat ex-durum,2650.0
+2010-03,Manitoba,Wheat ex-durum,1600.0
+2010-07,Manitoba,Wheat ex-durum,150.0
+2010-12,Manitoba,Wheat ex-durum,1965.0
+2011-03,Manitoba,Wheat ex-durum,1250.0
+2011-07,Manitoba,Wheat ex-durum,130.0
+2011-12,Manitoba,Wheat ex-durum,1075.0
+2012-03,Manitoba,Wheat ex-durum,670.0
+2012-07,Manitoba,Wheat ex-durum,150.0
+2012-12,Manitoba,Wheat ex-durum,2200.0
+2013-03,Manitoba,Wheat ex-durum,1425.0
+2013-07,Manitoba,Wheat ex-durum,225.0
+2013-12,Manitoba,Wheat ex-durum,3075.0
+2014-03,Manitoba,Wheat ex-durum,2225.0
+2014-07,Manitoba,Wheat ex-durum,470.0
+2014-12,Manitoba,Wheat ex-durum,2500.0
+2015-03,Manitoba,Wheat ex-durum,1585.0
+2015-07,Manitoba,Wheat ex-durum,200.0
+2015-12,Manitoba,Wheat ex-durum,2430.0
+2016-03,Manitoba,Wheat ex-durum,1415.0
+2016-07,Manitoba,Wheat ex-durum,165.0
+2016-12,Manitoba,Wheat ex-durum,2670.0
+2017-03,Manitoba,Wheat ex-durum,1745.0
+2017-07,Manitoba,Wheat ex-durum,130.0
+2017-12,Manitoba,Wheat ex-durum,2745.0
+2018-03,Manitoba,Wheat ex-durum,1925.0
+2018-07,Manitoba,Wheat ex-durum,360.0
+2018-12,Manitoba,Wheat ex-durum,2750.0
+2019-03,Manitoba,Wheat ex-durum,1915.0
+2019-07,Manitoba,Wheat ex-durum,150.0
+2019-12,Manitoba,Wheat ex-durum,2865.0
+2020-03,Manitoba,Wheat ex-durum,2017.0
+2020-07,Manitoba,Wheat ex-durum,130.0
+2020-12,Manitoba,Wheat ex-durum,3195.0
+2021-03,Manitoba,Wheat ex-durum,1908.0
+2021-07,Manitoba,Wheat ex-durum,143.0
+2021-12,Manitoba,Wheat ex-durum,2067.0
+2022-03,Manitoba,Wheat ex-durum,1310.0
+2022-07,Manitoba,Wheat ex-durum,290.0
+2022-12,Manitoba,Wheat ex-durum,3175.0
+2023-03,Manitoba,Wheat ex-durum,1980.0
+2023-07,Manitoba,Wheat ex-durum,392.0
+2023-12,Manitoba,Wheat ex-durum,3542.0
+2024-03,Manitoba,Wheat ex-durum,2300.0
+2024-07,Manitoba,Wheat ex-durum,281.0
+2024-12,Manitoba,Wheat ex-durum,3524.0
+2025-03,Manitoba,Wheat ex-durum,2350.0
+2025-07,Manitoba,Wheat ex-durum,236.0
+2025-12,Manitoba,Wheat ex-durum,3895.0
+2026-03,Manitoba,Wheat ex-durum,2659.0
+2026-07,Manitoba,Wheat ex-durum,169.0
+1980-03,Ontario,Barley,196.0
+1980-07,Ontario,Barley,72.0
+1981-03,Ontario,Barley,194.0
+1981-07,Ontario,Barley,100.0
+1981-12,Ontario,Barley,320.0
+1982-03,Ontario,Barley,216.0
+1982-07,Ontario,Barley,70.0
+1982-12,Ontario,Barley,400.0
+1983-03,Ontario,Barley,280.0
+1983-07,Ontario,Barley,80.0
+1983-12,Ontario,Barley,300.0
+1984-03,Ontario,Barley,200.0
+1984-07,Ontario,Barley,60.0
+1984-12,Ontario,Barley,310.0
+1985-03,Ontario,Barley,200.0
+1985-07,Ontario,Barley,80.0
+1985-12,Ontario,Barley,420.0
+1986-03,Ontario,Barley,280.0
+1986-07,Ontario,Barley,130.0
+1986-12,Ontario,Barley,450.0
+1987-03,Ontario,Barley,260.0
+1987-07,Ontario,Barley,160.0
+1987-12,Ontario,Barley,500.0
+1988-03,Ontario,Barley,280.0
+1988-07,Ontario,Barley,100.0
+1988-12,Ontario,Barley,300.0
+1989-03,Ontario,Barley,150.0
+1989-07,Ontario,Barley,35.0
+1989-12,Ontario,Barley,330.0
+1990-03,Ontario,Barley,200.0
+1990-07,Ontario,Barley,60.0
+1990-12,Ontario,Barley,350.0
+1991-03,Ontario,Barley,210.0
+1991-07,Ontario,Barley,70.0
+1991-12,Ontario,Barley,350.0
+1992-03,Ontario,Barley,170.0
+1992-07,Ontario,Barley,65.0
+1992-12,Ontario,Barley,360.0
+1993-03,Ontario,Barley,250.0
+1993-07,Ontario,Barley,110.0
+1993-12,Ontario,Barley,340.0
+1994-03,Ontario,Barley,170.0
+1994-07,Ontario,Barley,60.0
+1994-12,Ontario,Barley,230.0
+1995-03,Ontario,Barley,120.0
+1995-07,Ontario,Barley,40.0
+1995-12,Ontario,Barley,210.0
+1996-03,Ontario,Barley,135.0
+1996-07,Ontario,Barley,25.0
+1996-12,Ontario,Barley,190.0
+1997-03,Ontario,Barley,120.0
+1997-07,Ontario,Barley,40.0
+1997-12,Ontario,Barley,220.0
+1998-03,Ontario,Barley,150.0
+1998-07,Ontario,Barley,60.0
+1998-12,Ontario,Barley,225.0
+1999-03,Ontario,Barley,155.0
+1999-07,Ontario,Barley,65.0
+1999-12,Ontario,Barley,250.0
+2000-03,Ontario,Barley,160.0
+2000-07,Ontario,Barley,80.0
+2000-12,Ontario,Barley,200.0
+2001-03,Ontario,Barley,140.0
+2001-07,Ontario,Barley,60.0
+2001-12,Ontario,Barley,250.0
+2002-03,Ontario,Barley,180.0
+2002-07,Ontario,Barley,85.0
+2002-12,Ontario,Barley,225.0
+2003-03,Ontario,Barley,130.0
+2003-07,Ontario,Barley,45.0
+2003-12,Ontario,Barley,200.0
+2004-03,Ontario,Barley,125.0
+2004-07,Ontario,Barley,55.0
+2004-12,Ontario,Barley,225.0
+2005-03,Ontario,Barley,150.0
+2005-07,Ontario,Barley,85.0
+2005-12,Ontario,Barley,200.0
+2006-03,Ontario,Barley,140.0
+2006-07,Ontario,Barley,80.0
+2006-12,Ontario,Barley,225.0
+2007-03,Ontario,Barley,150.0
+2007-07,Ontario,Barley,90.0
+2007-12,Ontario,Barley,175.0
+2008-03,Ontario,Barley,85.0
+2008-07,Ontario,Barley,40.0
+2008-12,Ontario,Barley,120.0
+2009-03,Ontario,Barley,75.0
+2009-07,Ontario,Barley,30.0
+2009-12,Ontario,Barley,135.0
+2010-03,Ontario,Barley,80.0
+2010-07,Ontario,Barley,35.0
+2010-12,Ontario,Barley,115.0
+2011-03,Ontario,Barley,66.0
+2011-07,Ontario,Barley,32.0
+2011-12,Ontario,Barley,85.0
+2012-03,Ontario,Barley,50.0
+2012-07,Ontario,Barley,19.0
+2012-12,Ontario,Barley,110.0
+2013-03,Ontario,Barley,70.0
+2013-07,Ontario,Barley,20.0
+2013-12,Ontario,Barley,75.0
+2014-03,Ontario,Barley,45.0
+2014-07,Ontario,Barley,20.0
+2014-12,Ontario,Barley,100.0
+2015-03,Ontario,Barley,65.0
+2015-07,Ontario,Barley,25.0
+2015-12,Ontario,Barley,105.0
+2016-03,Ontario,Barley,73.0
+2016-07,Ontario,Barley,40.0
+2016-12,Ontario,Barley,70.0
+2017-03,Ontario,Barley,50.0
+2017-07,Ontario,Barley,30.0
+2017-12,Ontario,Barley,55.0
+2018-03,Ontario,Barley,32.0
+2018-07,Ontario,Barley,17.0
+2018-12,Ontario,Barley,48.0
+2019-03,Ontario,Barley,35.0
+2019-07,Ontario,Barley,18.0
+2019-12,Ontario,Barley,57.0
+2020-03,Ontario,Barley,38.0
+2020-07,Ontario,Barley,18.0
+2020-12,Ontario,Barley,54.0
+2021-03,Ontario,Barley,35.0
+2021-07,Ontario,Barley,13.0
+2021-12,Ontario,Barley,40.0
+2022-03,Ontario,Barley,29.0
+2022-07,Ontario,Barley,13.0
+2022-12,Ontario,Barley,48.0
+2023-03,Ontario,Barley,32.0
+2023-07,Ontario,Barley,8.0
+2023-12,Ontario,Barley,39.0
+2024-03,Ontario,Barley,27.0
+2024-07,Ontario,Barley,4.0
+2024-12,Ontario,Barley,45.0
+2025-03,Ontario,Barley,33.0
+2025-07,Ontario,Barley,6.0
+2025-12,Ontario,Barley,40.0
+2026-03,Ontario,Barley,28.0
+2026-07,Ontario,Barley,7.0
+1989-03,Ontario,Canola,0.0
+1989-07,Ontario,Canola,0.0
+1989-12,Ontario,Canola,5.0
+1990-03,Ontario,Canola,2.0
+1990-07,Ontario,Canola,0.0
+1990-12,Ontario,Canola,6.0
+1991-03,Ontario,Canola,5.0
+1991-07,Ontario,Canola,0.0
+1991-12,Ontario,Canola,1.0
+1992-03,Ontario,Canola,0.0
+1992-07,Ontario,Canola,0.0
+1992-12,Ontario,Canola,2.0
+1993-03,Ontario,Canola,0.0
+1993-07,Ontario,Canola,0.0
+1993-12,Ontario,Canola,1.0
+1994-03,Ontario,Canola,0.0
+1994-07,Ontario,Canola,0.0
+1994-12,Ontario,Canola,3.0
+1995-03,Ontario,Canola,1.0
+1995-07,Ontario,Canola,0.0
+1995-12,Ontario,Canola,11.0
+1996-03,Ontario,Canola,3.0
+1996-07,Ontario,Canola,0.0
+1996-12,Ontario,Canola,10.0
+1997-03,Ontario,Canola,2.0
+1997-07,Ontario,Canola,0.0
+1997-12,Ontario,Canola,10.0
+1998-03,Ontario,Canola,2.0
+1998-07,Ontario,Canola,0.0
+1998-12,Ontario,Canola,5.0
+1999-03,Ontario,Canola,2.0
+1999-07,Ontario,Canola,0.0
+1999-12,Ontario,Canola,8.0
+2000-03,Ontario,Canola,3.0
+2000-07,Ontario,Canola,2.0
+2000-12,Ontario,Canola,8.0
+2001-03,Ontario,Canola,4.0
+2001-07,Ontario,Canola,0.0
+2001-12,Ontario,Canola,10.0
+2002-03,Ontario,Canola,5.0
+2002-07,Ontario,Canola,0.0
+2002-12,Ontario,Canola,7.0
+2003-03,Ontario,Canola,4.0
+2003-07,Ontario,Canola,0.0
+2003-12,Ontario,Canola,7.0
+2004-03,Ontario,Canola,2.0
+2004-07,Ontario,Canola,0.0
+2004-12,Ontario,Canola,15.0
+2005-03,Ontario,Canola,5.0
+2005-07,Ontario,Canola,0.0
+2005-12,Ontario,Canola,5.0
+2006-03,Ontario,Canola,2.0
+2006-07,Ontario,Canola,0.0
+2006-12,Ontario,Canola,5.0
+2007-03,Ontario,Canola,3.0
+2007-07,Ontario,Canola,0.0
+2007-12,Ontario,Canola,12.0
+2008-03,Ontario,Canola,5.0
+2008-07,Ontario,Canola,0.0
+2008-12,Ontario,Canola,15.0
+2009-03,Ontario,Canola,7.0
+2009-07,Ontario,Canola,0.0
+2009-12,Ontario,Canola,17.0
+2010-03,Ontario,Canola,10.0
+2010-07,Ontario,Canola,0.0
+2010-12,Ontario,Canola,16.0
+2011-03,Ontario,Canola,7.0
+2011-07,Ontario,Canola,0.0
+2011-12,Ontario,Canola,20.0
+2012-03,Ontario,Canola,7.0
+2012-07,Ontario,Canola,3.0
+2012-12,Ontario,Canola,16.0
+2013-03,Ontario,Canola,6.0
+2013-07,Ontario,Canola,0.0
+2013-12,Ontario,Canola,11.0
+2014-03,Ontario,Canola,4.0
+2014-07,Ontario,Canola,0.0
+2014-12,Ontario,Canola,7.0
+2015-03,Ontario,Canola,3.0
+2015-07,Ontario,Canola,0.0
+2015-12,Ontario,Canola,9.0
+2016-03,Ontario,Canola,5.0
+2016-07,Ontario,Canola,0.0
+2016-12,Ontario,Canola,7.0
+2017-03,Ontario,Canola,3.0
+2017-07,Ontario,Canola,0.0
+2017-12,Ontario,Canola,12.0
+2018-03,Ontario,Canola,6.0
+2018-07,Ontario,Canola,0.0
+2018-12,Ontario,Canola,32.0
+2019-03,Ontario,Canola,24.0
+2019-07,Ontario,Canola,13.0
+2019-12,Ontario,Canola,32.0
+2020-03,Ontario,Canola,15.0
+2020-07,Ontario,Canola,7.0
+2020-12,Ontario,Canola,21.0
+2021-03,Ontario,Canola,11.0
+2021-07,Ontario,Canola,4.0
+2021-12,Ontario,Canola,16.0
+2022-03,Ontario,Canola,10.0
+2022-07,Ontario,Canola,9.0
+2022-12,Ontario,Canola,32.0
+2023-03,Ontario,Canola,18.0
+2023-07,Ontario,Canola,7.0
+2023-12,Ontario,Canola,31.0
+2024-03,Ontario,Canola,20.0
+2024-07,Ontario,Canola,0.0
+2024-12,Ontario,Canola,33.0
+2025-03,Ontario,Canola,25.0
+2025-07,Ontario,Canola,11.0
+2025-12,Ontario,Canola,35.0
+2026-03,Ontario,Canola,26.0
+2026-07,Ontario,Canola,7.0
+1987-03,Ontario,Corn,1700.0
+1987-07,Ontario,Corn,580.0
+1987-12,Ontario,Corn,2900.0
+1988-03,Ontario,Corn,1800.0
+1988-07,Ontario,Corn,600.0
+1988-12,Ontario,Corn,2100.0
+1989-03,Ontario,Corn,1300.0
+1989-07,Ontario,Corn,360.0
+1989-12,Ontario,Corn,2350.0
+1990-03,Ontario,Corn,1500.0
+1990-07,Ontario,Corn,480.0
+1990-12,Ontario,Corn,2700.0
+1991-03,Ontario,Corn,1750.0
+1991-07,Ontario,Corn,650.0
+1991-12,Ontario,Corn,2350.0
+1992-03,Ontario,Corn,1550.0
+1992-07,Ontario,Corn,700.0
+1992-12,Ontario,Corn,1950.0
+1993-03,Ontario,Corn,1200.0
+1993-07,Ontario,Corn,500.0
+1993-12,Ontario,Corn,2250.0
+1994-03,Ontario,Corn,1275.0
+1994-07,Ontario,Corn,200.0
+1994-12,Ontario,Corn,2350.0
+1995-03,Ontario,Corn,1300.0
+1995-07,Ontario,Corn,300.0
+1995-12,Ontario,Corn,2400.0
+1996-03,Ontario,Corn,1250.0
+1996-07,Ontario,Corn,290.0
+1996-12,Ontario,Corn,2350.0
+1997-03,Ontario,Corn,1750.0
+1997-07,Ontario,Corn,450.0
+1997-12,Ontario,Corn,2800.0
+1998-03,Ontario,Corn,1600.0
+1998-07,Ontario,Corn,400.0
+1998-12,Ontario,Corn,3150.0
+1999-03,Ontario,Corn,1600.0
+1999-07,Ontario,Corn,420.0
+1999-12,Ontario,Corn,3100.0
+2000-03,Ontario,Corn,1800.0
+2000-07,Ontario,Corn,800.0
+2000-12,Ontario,Corn,2750.0
+2001-03,Ontario,Corn,1700.0
+2001-07,Ontario,Corn,475.0
+2001-12,Ontario,Corn,2500.0
+2002-03,Ontario,Corn,1850.0
+2002-07,Ontario,Corn,500.0
+2002-12,Ontario,Corn,2800.0
+2003-03,Ontario,Corn,1950.0
+2003-07,Ontario,Corn,450.0
+2003-12,Ontario,Corn,3000.0
+2004-03,Ontario,Corn,2000.0
+2004-07,Ontario,Corn,525.0
+2004-12,Ontario,Corn,3400.0
+2005-03,Ontario,Corn,2300.0
+2005-07,Ontario,Corn,750.0
+2005-12,Ontario,Corn,3650.0
+2006-03,Ontario,Corn,2450.0
+2006-07,Ontario,Corn,950.0
+2006-12,Ontario,Corn,3700.0
+2007-03,Ontario,Corn,2250.0
+2007-07,Ontario,Corn,550.0
+2007-12,Ontario,Corn,4200.0
+2008-03,Ontario,Corn,2660.0
+2008-07,Ontario,Corn,600.0
+2008-12,Ontario,Corn,4175.0
+2009-03,Ontario,Corn,2625.0
+2009-07,Ontario,Corn,840.0
+2009-12,Ontario,Corn,4150.0
+2010-03,Ontario,Corn,2700.0
+2010-07,Ontario,Corn,850.0
+2010-12,Ontario,Corn,4650.0
+2011-03,Ontario,Corn,2500.0
+2011-07,Ontario,Corn,500.0
+2011-12,Ontario,Corn,4350.0
+2012-03,Ontario,Corn,2500.0
+2012-07,Ontario,Corn,600.0
+2012-12,Ontario,Corn,4550.0
+2013-03,Ontario,Corn,2875.0
+2013-07,Ontario,Corn,600.0
+2013-12,Ontario,Corn,5100.0
+2014-03,Ontario,Corn,3500.0
+2014-07,Ontario,Corn,500.0
+2014-12,Ontario,Corn,4550.0
+2015-03,Ontario,Corn,2900.0
+2015-07,Ontario,Corn,600.0
+2015-12,Ontario,Corn,4900.0
+2016-03,Ontario,Corn,3400.0
+2016-07,Ontario,Corn,1050.0
+2016-12,Ontario,Corn,4700.0
+2017-03,Ontario,Corn,3460.0
+2017-07,Ontario,Corn,950.0
+2017-12,Ontario,Corn,5100.0
+2018-03,Ontario,Corn,3700.0
+2018-07,Ontario,Corn,975.0
+2018-12,Ontario,Corn,4700.0
+2019-03,Ontario,Corn,3210.0
+2019-07,Ontario,Corn,590.0
+2019-12,Ontario,Corn,4900.0
+2020-03,Ontario,Corn,3400.0
+2020-07,Ontario,Corn,1400.0
+2020-12,Ontario,Corn,4950.0
+2021-03,Ontario,Corn,3450.0
+2021-07,Ontario,Corn,1000.0
+2021-12,Ontario,Corn,4301.0
+2022-03,Ontario,Corn,3014.0
+2022-07,Ontario,Corn,954.0
+2022-12,Ontario,Corn,4291.0
+2023-03,Ontario,Corn,3200.0
+2023-07,Ontario,Corn,497.0
+2023-12,Ontario,Corn,3705.0
+2024-03,Ontario,Corn,2695.0
+2024-07,Ontario,Corn,482.0
+2024-12,Ontario,Corn,4310.0
+2025-03,Ontario,Corn,2433.0
+2025-07,Ontario,Corn,250.0
+2025-12,Ontario,Corn,3829.0
+2026-03,Ontario,Corn,2540.0
+2026-07,Ontario,Corn,386.0
+1983-03,Ontario,Soybeans,0.0
+1983-07,Ontario,Soybeans,20.0
+1983-12,Ontario,Soybeans,250.0
+1984-03,Ontario,Soybeans,130.0
+1984-07,Ontario,Soybeans,20.0
+1984-12,Ontario,Soybeans,300.0
+1985-03,Ontario,Soybeans,220.0
+1985-07,Ontario,Soybeans,20.0
+1985-12,Ontario,Soybeans,390.0
+1986-03,Ontario,Soybeans,230.0
+1986-07,Ontario,Soybeans,20.0
+1986-12,Ontario,Soybeans,270.0
+1987-03,Ontario,Soybeans,140.0
+1987-07,Ontario,Soybeans,15.0
+1987-12,Ontario,Soybeans,405.0
+1988-03,Ontario,Soybeans,165.0
+1988-07,Ontario,Soybeans,5.0
+1988-12,Ontario,Soybeans,350.0
+1989-03,Ontario,Soybeans,160.0
+1989-07,Ontario,Soybeans,45.0
+1989-12,Ontario,Soybeans,380.0
+1990-03,Ontario,Soybeans,220.0
+1990-07,Ontario,Soybeans,40.0
+1990-12,Ontario,Soybeans,430.0
+1991-03,Ontario,Soybeans,230.0
+1991-07,Ontario,Soybeans,50.0
+1991-12,Ontario,Soybeans,390.0
+1992-03,Ontario,Soybeans,260.0
+1992-07,Ontario,Soybeans,20.0
+1992-12,Ontario,Soybeans,470.0
+1993-03,Ontario,Soybeans,260.0
+1993-07,Ontario,Soybeans,5.0
+1993-12,Ontario,Soybeans,580.0
+1994-03,Ontario,Soybeans,270.0
+1994-07,Ontario,Soybeans,15.0
+1994-12,Ontario,Soybeans,650.0
+1995-03,Ontario,Soybeans,330.0
+1995-07,Ontario,Soybeans,20.0
+1995-12,Ontario,Soybeans,650.0
+1996-03,Ontario,Soybeans,275.0
+1996-07,Ontario,Soybeans,13.0
+1996-12,Ontario,Soybeans,600.0
+1997-03,Ontario,Soybeans,430.0
+1997-07,Ontario,Soybeans,15.0
+1997-12,Ontario,Soybeans,750.0
+1998-03,Ontario,Soybeans,350.0
+1998-07,Ontario,Soybeans,20.0
+1998-12,Ontario,Soybeans,720.0
+1999-03,Ontario,Soybeans,375.0
+1999-07,Ontario,Soybeans,60.0
+1999-12,Ontario,Soybeans,750.0
+2000-03,Ontario,Soybeans,380.0
+2000-07,Ontario,Soybeans,55.0
+2000-12,Ontario,Soybeans,750.0
+2001-03,Ontario,Soybeans,400.0
+2001-07,Ontario,Soybeans,60.0
+2001-12,Ontario,Soybeans,375.0
+2002-03,Ontario,Soybeans,240.0
+2002-07,Ontario,Soybeans,15.0
+2002-12,Ontario,Soybeans,650.0
+2003-03,Ontario,Soybeans,320.0
+2003-07,Ontario,Soybeans,40.0
+2003-12,Ontario,Soybeans,500.0
+2004-03,Ontario,Soybeans,200.0
+2004-07,Ontario,Soybeans,15.0
+2004-12,Ontario,Soybeans,980.0
+2005-03,Ontario,Soybeans,620.0
+2005-07,Ontario,Soybeans,70.0
+2005-12,Ontario,Soybeans,1075.0
+2006-03,Ontario,Soybeans,780.0
+2006-07,Ontario,Soybeans,150.0
+2006-12,Ontario,Soybeans,1075.0
+2007-03,Ontario,Soybeans,580.0
+2007-07,Ontario,Soybeans,85.0
+2007-12,Ontario,Soybeans,675.0
+2008-03,Ontario,Soybeans,313.0
+2008-07,Ontario,Soybeans,15.0
+2008-12,Ontario,Soybeans,800.0
+2009-03,Ontario,Soybeans,390.0
+2009-07,Ontario,Soybeans,30.0
+2009-12,Ontario,Soybeans,1020.0
+2010-03,Ontario,Soybeans,600.0
+2010-07,Ontario,Soybeans,60.0
+2010-12,Ontario,Soybeans,985.0
+2011-03,Ontario,Soybeans,525.0
+2011-07,Ontario,Soybeans,45.0
+2011-12,Ontario,Soybeans,1340.0
+2012-03,Ontario,Soybeans,755.0
+2012-07,Ontario,Soybeans,15.0
+2012-12,Ontario,Soybeans,1075.0
+2013-03,Ontario,Soybeans,535.0
+2013-07,Ontario,Soybeans,5.0
+2013-12,Ontario,Soybeans,1050.0
+2014-03,Ontario,Soybeans,575.0
+2014-07,Ontario,Soybeans,10.0
+2014-12,Ontario,Soybeans,1175.0
+2015-03,Ontario,Soybeans,650.0
+2015-07,Ontario,Soybeans,60.0
+2015-12,Ontario,Soybeans,1200.0
+2016-03,Ontario,Soybeans,700.0
+2016-07,Ontario,Soybeans,5.0
+2016-12,Ontario,Soybeans,820.0
+2017-03,Ontario,Soybeans,415.0
+2017-07,Ontario,Soybeans,5.0
+2017-12,Ontario,Soybeans,1300.0
+2018-03,Ontario,Soybeans,700.0
+2018-07,Ontario,Soybeans,30.0
+2018-12,Ontario,Soybeans,1480.0
+2019-03,Ontario,Soybeans,1020.0
+2019-07,Ontario,Soybeans,20.0
+2019-12,Ontario,Soybeans,1400.0
+2020-03,Ontario,Soybeans,870.0
+2020-07,Ontario,Soybeans,10.0
+2020-12,Ontario,Soybeans,1190.0
+2021-03,Ontario,Soybeans,760.0
+2021-07,Ontario,Soybeans,7.0
+2021-12,Ontario,Soybeans,1144.0
+2022-03,Ontario,Soybeans,612.0
+2022-07,Ontario,Soybeans,12.0
+2022-12,Ontario,Soybeans,1140.0
+2023-03,Ontario,Soybeans,619.0
+2023-07,Ontario,Soybeans,18.0
+2023-12,Ontario,Soybeans,1052.0
+2024-03,Ontario,Soybeans,615.0
+2024-07,Ontario,Soybeans,25.0
+2024-12,Ontario,Soybeans,1712.0
+2025-03,Ontario,Soybeans,1038.0
+2025-07,Ontario,Soybeans,151.0
+2025-12,Ontario,Soybeans,1002.0
+2026-03,Ontario,Soybeans,357.0
+2026-07,Ontario,Soybeans,13.0
+1980-03,Ontario,Wheat ex-durum,54.0
+1980-07,Ontario,Wheat ex-durum,68.0
+1981-03,Ontario,Wheat ex-durum,37.0
+1981-07,Ontario,Wheat ex-durum,20.0
+1981-12,Ontario,Wheat ex-durum,50.0
+1982-03,Ontario,Wheat ex-durum,30.0
+1982-07,Ontario,Wheat ex-durum,15.0
+1982-12,Ontario,Wheat ex-durum,30.0
+1983-03,Ontario,Wheat ex-durum,20.0
+1983-07,Ontario,Wheat ex-durum,15.0
+1983-12,Ontario,Wheat ex-durum,40.0
+1984-03,Ontario,Wheat ex-durum,0.0
+1984-07,Ontario,Wheat ex-durum,0.0
+1984-12,Ontario,Wheat ex-durum,0.0
+1985-03,Ontario,Wheat ex-durum,25.0
+1985-07,Ontario,Wheat ex-durum,20.0
+1985-12,Ontario,Wheat ex-durum,30.0
+1986-03,Ontario,Wheat ex-durum,15.0
+1986-07,Ontario,Wheat ex-durum,5.0
+1986-12,Ontario,Wheat ex-durum,45.0
+1987-03,Ontario,Wheat ex-durum,15.0
+1987-07,Ontario,Wheat ex-durum,5.0
+1987-12,Ontario,Wheat ex-durum,40.0
+1988-03,Ontario,Wheat ex-durum,15.0
+1988-07,Ontario,Wheat ex-durum,5.0
+1988-12,Ontario,Wheat ex-durum,60.0
+1989-03,Ontario,Wheat ex-durum,15.0
+1989-07,Ontario,Wheat ex-durum,5.0
+1989-12,Ontario,Wheat ex-durum,90.0
+1990-03,Ontario,Wheat ex-durum,30.0
+1990-07,Ontario,Wheat ex-durum,5.0
+1990-12,Ontario,Wheat ex-durum,100.0
+1991-03,Ontario,Wheat ex-durum,35.0
+1991-07,Ontario,Wheat ex-durum,0.0
+1991-12,Ontario,Wheat ex-durum,65.0
+1992-03,Ontario,Wheat ex-durum,25.0
+1992-07,Ontario,Wheat ex-durum,7.0
+1992-12,Ontario,Wheat ex-durum,150.0
+1993-03,Ontario,Wheat ex-durum,60.0
+1993-07,Ontario,Wheat ex-durum,4.0
+1993-12,Ontario,Wheat ex-durum,85.0
+1994-03,Ontario,Wheat ex-durum,20.0
+1994-07,Ontario,Wheat ex-durum,4.0
+1994-12,Ontario,Wheat ex-durum,160.0
+1995-03,Ontario,Wheat ex-durum,45.0
+1995-07,Ontario,Wheat ex-durum,5.0
+1995-12,Ontario,Wheat ex-durum,170.0
+1996-03,Ontario,Wheat ex-durum,55.0
+1996-07,Ontario,Wheat ex-durum,3.0
+1996-12,Ontario,Wheat ex-durum,90.0
+1997-03,Ontario,Wheat ex-durum,40.0
+1997-07,Ontario,Wheat ex-durum,5.0
+1997-12,Ontario,Wheat ex-durum,100.0
+1998-03,Ontario,Wheat ex-durum,40.0
+1998-07,Ontario,Wheat ex-durum,0.0
+1998-12,Ontario,Wheat ex-durum,200.0
+1999-03,Ontario,Wheat ex-durum,75.0
+1999-07,Ontario,Wheat ex-durum,5.0
+1999-12,Ontario,Wheat ex-durum,255.0
+2000-03,Ontario,Wheat ex-durum,105.0
+2000-07,Ontario,Wheat ex-durum,25.0
+2000-12,Ontario,Wheat ex-durum,230.0
+2001-03,Ontario,Wheat ex-durum,80.0
+2001-07,Ontario,Wheat ex-durum,25.0
+2001-12,Ontario,Wheat ex-durum,165.0
+2002-03,Ontario,Wheat ex-durum,75.0
+2002-07,Ontario,Wheat ex-durum,12.0
+2002-12,Ontario,Wheat ex-durum,150.0
+2003-03,Ontario,Wheat ex-durum,80.0
+2003-07,Ontario,Wheat ex-durum,15.0
+2003-12,Ontario,Wheat ex-durum,325.0
+2004-03,Ontario,Wheat ex-durum,130.0
+2004-07,Ontario,Wheat ex-durum,25.0
+2004-12,Ontario,Wheat ex-durum,350.0
+2005-03,Ontario,Wheat ex-durum,165.0
+2005-07,Ontario,Wheat ex-durum,50.0
+2005-12,Ontario,Wheat ex-durum,355.0
+2006-03,Ontario,Wheat ex-durum,135.0
+2006-07,Ontario,Wheat ex-durum,15.0
+2006-12,Ontario,Wheat ex-durum,385.0
+2007-03,Ontario,Wheat ex-durum,175.0
+2007-07,Ontario,Wheat ex-durum,60.0
+2007-12,Ontario,Wheat ex-durum,275.0
+2008-03,Ontario,Wheat ex-durum,150.0
+2008-07,Ontario,Wheat ex-durum,18.0
+2008-12,Ontario,Wheat ex-durum,675.0
+2009-03,Ontario,Wheat ex-durum,350.0
+2009-07,Ontario,Wheat ex-durum,125.0
+2009-12,Ontario,Wheat ex-durum,715.0
+2010-03,Ontario,Wheat ex-durum,255.0
+2010-07,Ontario,Wheat ex-durum,90.0
+2010-12,Ontario,Wheat ex-durum,515.0
+2011-03,Ontario,Wheat ex-durum,275.0
+2011-07,Ontario,Wheat ex-durum,100.0
+2011-12,Ontario,Wheat ex-durum,775.0
+2012-03,Ontario,Wheat ex-durum,425.0
+2012-07,Ontario,Wheat ex-durum,125.0
+2012-12,Ontario,Wheat ex-durum,600.0
+2013-03,Ontario,Wheat ex-durum,300.0
+2013-07,Ontario,Wheat ex-durum,60.0
+2013-12,Ontario,Wheat ex-durum,825.0
+2014-03,Ontario,Wheat ex-durum,475.0
+2014-07,Ontario,Wheat ex-durum,155.0
+2014-12,Ontario,Wheat ex-durum,625.0
+2015-03,Ontario,Wheat ex-durum,350.0
+2015-07,Ontario,Wheat ex-durum,55.0
+2015-12,Ontario,Wheat ex-durum,475.0
+2016-03,Ontario,Wheat ex-durum,250.0
+2016-07,Ontario,Wheat ex-durum,50.0
+2016-12,Ontario,Wheat ex-durum,900.0
+2017-03,Ontario,Wheat ex-durum,520.0
+2017-07,Ontario,Wheat ex-durum,210.0
+2017-12,Ontario,Wheat ex-durum,750.0
+2018-03,Ontario,Wheat ex-durum,500.0
+2018-07,Ontario,Wheat ex-durum,240.0
+2018-12,Ontario,Wheat ex-durum,650.0
+2019-03,Ontario,Wheat ex-durum,350.0
+2019-07,Ontario,Wheat ex-durum,150.0
+2019-12,Ontario,Wheat ex-durum,400.0
+2020-03,Ontario,Wheat ex-durum,250.0
+2020-07,Ontario,Wheat ex-durum,100.0
+2020-12,Ontario,Wheat ex-durum,458.0
+2021-03,Ontario,Wheat ex-durum,243.0
+2021-07,Ontario,Wheat ex-durum,90.0
+2021-12,Ontario,Wheat ex-durum,470.0
+2022-03,Ontario,Wheat ex-durum,230.0
+2022-07,Ontario,Wheat ex-durum,30.0
+2022-12,Ontario,Wheat ex-durum,687.0
+2023-03,Ontario,Wheat ex-durum,495.0
+2023-07,Ontario,Wheat ex-durum,190.0
+2023-12,Ontario,Wheat ex-durum,744.0
+2024-03,Ontario,Wheat ex-durum,443.0
+2024-07,Ontario,Wheat ex-durum,45.0
+2024-12,Ontario,Wheat ex-durum,514.0
+2025-03,Ontario,Wheat ex-durum,284.0
+2025-07,Ontario,Wheat ex-durum,26.0
+2025-12,Ontario,Wheat ex-durum,641.0
+2026-03,Ontario,Wheat ex-durum,287.0
+2026-07,Ontario,Wheat ex-durum,21.0
+1980-03,Saskatchewan,Barley,1219.0
+1980-07,Saskatchewan,Barley,327.0
+1981-03,Saskatchewan,Barley,1590.0
+1981-07,Saskatchewan,Barley,285.0
+1981-12,Saskatchewan,Barley,2460.0
+1982-03,Saskatchewan,Barley,1960.0
+1982-07,Saskatchewan,Barley,520.0
+1982-12,Saskatchewan,Barley,3180.0
+1983-03,Saskatchewan,Barley,2600.0
+1983-07,Saskatchewan,Barley,1100.0
+1983-12,Saskatchewan,Barley,2050.0
+1984-03,Saskatchewan,Barley,1460.0
+1984-07,Saskatchewan,Barley,280.0
+1984-12,Saskatchewan,Barley,1570.0
+1985-03,Saskatchewan,Barley,1100.0
+1985-07,Saskatchewan,Barley,170.0
+1985-12,Saskatchewan,Barley,2800.0
+1986-03,Saskatchewan,Barley,2000.0
+1986-07,Saskatchewan,Barley,280.0
+1986-12,Saskatchewan,Barley,2550.0
+1987-03,Saskatchewan,Barley,1850.0
+1987-07,Saskatchewan,Barley,450.0
+1987-12,Saskatchewan,Barley,3000.0
+1988-03,Saskatchewan,Barley,2150.0
+1988-07,Saskatchewan,Barley,850.0
+1988-12,Saskatchewan,Barley,2000.0
+1989-03,Saskatchewan,Barley,1400.0
+1989-07,Saskatchewan,Barley,300.0
+1989-12,Saskatchewan,Barley,2150.0
+1990-03,Saskatchewan,Barley,1300.0
+1990-07,Saskatchewan,Barley,250.0
+1990-12,Saskatchewan,Barley,2700.0
+1991-03,Saskatchewan,Barley,1700.0
+1991-07,Saskatchewan,Barley,400.0
+1991-12,Saskatchewan,Barley,2250.0
+1992-03,Saskatchewan,Barley,1400.0
+1992-07,Saskatchewan,Barley,400.0
+1992-12,Saskatchewan,Barley,2400.0
+1993-03,Saskatchewan,Barley,1600.0
+1993-07,Saskatchewan,Barley,500.0
+1993-12,Saskatchewan,Barley,3600.0
+1994-03,Saskatchewan,Barley,2500.0
+1994-07,Saskatchewan,Barley,650.0
+1994-12,Saskatchewan,Barley,2750.0
+1995-03,Saskatchewan,Barley,1700.0
+1995-07,Saskatchewan,Barley,200.0
+1995-12,Saskatchewan,Barley,2600.0
+1996-03,Saskatchewan,Barley,1500.0
+1996-07,Saskatchewan,Barley,200.0
+1996-12,Saskatchewan,Barley,3450.0
+1997-03,Saskatchewan,Barley,2300.0
+1997-07,Saskatchewan,Barley,600.0
+1997-12,Saskatchewan,Barley,2900.0
+1998-03,Saskatchewan,Barley,1800.0
+1998-07,Saskatchewan,Barley,500.0
+1998-12,Saskatchewan,Barley,3000.0
+1999-03,Saskatchewan,Barley,1850.0
+1999-07,Saskatchewan,Barley,450.0
+1999-12,Saskatchewan,Barley,3200.0
+2000-03,Saskatchewan,Barley,2000.0
+2000-07,Saskatchewan,Barley,600.0
+2000-12,Saskatchewan,Barley,3800.0
+2001-03,Saskatchewan,Barley,2100.0
+2001-07,Saskatchewan,Barley,550.0
+2001-12,Saskatchewan,Barley,2200.0
+2002-03,Saskatchewan,Barley,1500.0
+2002-07,Saskatchewan,Barley,400.0
+2002-12,Saskatchewan,Barley,1350.0
+2003-03,Saskatchewan,Barley,900.0
+2003-07,Saskatchewan,Barley,350.0
+2003-12,Saskatchewan,Barley,2650.0
+2004-03,Saskatchewan,Barley,1700.0
+2004-07,Saskatchewan,Barley,500.0
+2004-12,Saskatchewan,Barley,3500.0
+2005-03,Saskatchewan,Barley,2475.0
+2005-07,Saskatchewan,Barley,1100.0
+2005-12,Saskatchewan,Barley,3600.0
+2006-03,Saskatchewan,Barley,2500.0
+2006-07,Saskatchewan,Barley,1300.0
+2006-12,Saskatchewan,Barley,2350.0
+2007-03,Saskatchewan,Barley,1340.0
+2007-07,Saskatchewan,Barley,350.0
+2007-12,Saskatchewan,Barley,2000.0
+2008-03,Saskatchewan,Barley,1200.0
+2008-07,Saskatchewan,Barley,320.0
+2008-12,Saskatchewan,Barley,2900.0
+2009-03,Saskatchewan,Barley,2000.0
+2009-07,Saskatchewan,Barley,900.0
+2009-12,Saskatchewan,Barley,3100.0
+2010-03,Saskatchewan,Barley,1900.0
+2010-07,Saskatchewan,Barley,875.0
+2010-12,Saskatchewan,Barley,1600.0
+2011-03,Saskatchewan,Barley,925.0
+2011-07,Saskatchewan,Barley,300.0
+2011-12,Saskatchewan,Barley,1550.0
+2012-03,Saskatchewan,Barley,875.0
+2012-07,Saskatchewan,Barley,225.0
+2012-12,Saskatchewan,Barley,1425.0
+2013-03,Saskatchewan,Barley,825.0
+2013-07,Saskatchewan,Barley,265.0
+2013-12,Saskatchewan,Barley,2100.0
+2014-03,Saskatchewan,Barley,1400.0
+2014-07,Saskatchewan,Barley,650.0
+2014-12,Saskatchewan,Barley,1540.0
+2015-03,Saskatchewan,Barley,900.0
+2015-07,Saskatchewan,Barley,300.0
+2015-12,Saskatchewan,Barley,1800.0
+2016-03,Saskatchewan,Barley,1050.0
+2016-07,Saskatchewan,Barley,400.0
+2016-12,Saskatchewan,Barley,2300.0
+2017-03,Saskatchewan,Barley,1485.0
+2017-07,Saskatchewan,Barley,595.0
+2017-12,Saskatchewan,Barley,2100.0
+2018-03,Saskatchewan,Barley,1050.0
+2018-07,Saskatchewan,Barley,377.0
+2018-12,Saskatchewan,Barley,1800.0
+2019-03,Saskatchewan,Barley,900.0
+2019-07,Saskatchewan,Barley,150.0
+2019-12,Saskatchewan,Barley,2200.0
+2020-03,Saskatchewan,Barley,1200.0
+2020-07,Saskatchewan,Barley,212.0
+2020-12,Saskatchewan,Barley,2100.0
+2021-03,Saskatchewan,Barley,800.0
+2021-07,Saskatchewan,Barley,147.0
+2021-12,Saskatchewan,Barley,871.0
+2022-03,Saskatchewan,Barley,502.0
+2022-07,Saskatchewan,Barley,53.0
+2022-12,Saskatchewan,Barley,1423.0
+2023-03,Saskatchewan,Barley,601.0
+2023-07,Saskatchewan,Barley,88.0
+2023-12,Saskatchewan,Barley,1868.0
+2024-03,Saskatchewan,Barley,880.0
+2024-07,Saskatchewan,Barley,180.0
+2024-12,Saskatchewan,Barley,1618.0
+2025-03,Saskatchewan,Barley,1002.0
+2025-07,Saskatchewan,Barley,455.0
+2025-12,Saskatchewan,Barley,1992.0
+2026-03,Saskatchewan,Barley,1036.0
+2026-07,Saskatchewan,Barley,380.0
+1980-03,Saskatchewan,Canola,646.0
+1980-07,Saskatchewan,Canola,122.0
+1981-03,Saskatchewan,Canola,703.0
+1981-07,Saskatchewan,Canola,181.0
+1981-12,Saskatchewan,Canola,600.0
+1982-03,Saskatchewan,Canola,385.0
+1982-07,Saskatchewan,Canola,23.0
+1982-12,Saskatchewan,Canola,460.0
+1983-03,Saskatchewan,Canola,270.0
+1983-07,Saskatchewan,Canola,15.0
+1983-12,Saskatchewan,Canola,560.0
+1984-03,Saskatchewan,Canola,190.0
+1984-07,Saskatchewan,Canola,10.0
+1984-12,Saskatchewan,Canola,790.0
+1985-03,Saskatchewan,Canola,470.0
+1985-07,Saskatchewan,Canola,50.0
+1985-12,Saskatchewan,Canola,930.0
+1986-03,Saskatchewan,Canola,680.0
+1986-07,Saskatchewan,Canola,170.0
+1986-12,Saskatchewan,Canola,1020.0
+1987-03,Saskatchewan,Canola,670.0
+1987-07,Saskatchewan,Canola,90.0
+1987-12,Saskatchewan,Canola,900.0
+1988-03,Saskatchewan,Canola,530.0
+1988-07,Saskatchewan,Canola,80.0
+1988-12,Saskatchewan,Canola,1050.0
+1989-03,Saskatchewan,Canola,650.0
+1989-07,Saskatchewan,Canola,180.0
+1989-12,Saskatchewan,Canola,880.0
+1990-03,Saskatchewan,Canola,520.0
+1990-07,Saskatchewan,Canola,90.0
+1990-12,Saskatchewan,Canola,940.0
+1991-03,Saskatchewan,Canola,560.0
+1991-07,Saskatchewan,Canola,80.0
+1991-12,Saskatchewan,Canola,1050.0
+1992-03,Saskatchewan,Canola,650.0
+1992-07,Saskatchewan,Canola,160.0
+1992-12,Saskatchewan,Canola,850.0
+1993-03,Saskatchewan,Canola,480.0
+1993-07,Saskatchewan,Canola,60.0
+1993-12,Saskatchewan,Canola,1150.0
+1994-03,Saskatchewan,Canola,400.0
+1994-07,Saskatchewan,Canola,25.0
+1994-12,Saskatchewan,Canola,1400.0
+1995-03,Saskatchewan,Canola,650.0
+1995-07,Saskatchewan,Canola,100.0
+1995-12,Saskatchewan,Canola,1500.0
+1996-03,Saskatchewan,Canola,900.0
+1996-07,Saskatchewan,Canola,210.0
+1996-12,Saskatchewan,Canola,1300.0
+1997-03,Saskatchewan,Canola,750.0
+1997-07,Saskatchewan,Canola,180.0
+1997-12,Saskatchewan,Canola,1400.0
+1998-03,Saskatchewan,Canola,700.0
+1998-07,Saskatchewan,Canola,50.0
+1998-12,Saskatchewan,Canola,1350.0
+1999-03,Saskatchewan,Canola,790.0
+1999-07,Saskatchewan,Canola,200.0
+1999-12,Saskatchewan,Canola,2200.0
+2000-03,Saskatchewan,Canola,1500.0
+2000-07,Saskatchewan,Canola,750.0
+2000-12,Saskatchewan,Canola,2200.0
+2001-03,Saskatchewan,Canola,1100.0
+2001-07,Saskatchewan,Canola,300.0
+2001-12,Saskatchewan,Canola,1450.0
+2002-03,Saskatchewan,Canola,1000.0
+2002-07,Saskatchewan,Canola,400.0
+2002-12,Saskatchewan,Canola,900.0
+2003-03,Saskatchewan,Canola,700.0
+2003-07,Saskatchewan,Canola,200.0
+2003-12,Saskatchewan,Canola,1265.0
+2004-03,Saskatchewan,Canola,620.0
+2004-07,Saskatchewan,Canola,125.0
+2004-12,Saskatchewan,Canola,1880.0
+2005-03,Saskatchewan,Canola,1350.0
+2005-07,Saskatchewan,Canola,460.0
+2005-12,Saskatchewan,Canola,3225.0
+2006-03,Saskatchewan,Canola,2020.0
+2006-07,Saskatchewan,Canola,610.0
+2006-12,Saskatchewan,Canola,2525.0
+2007-03,Saskatchewan,Canola,1645.0
+2007-07,Saskatchewan,Canola,325.0
+2007-12,Saskatchewan,Canola,2525.0
+2008-03,Saskatchewan,Canola,1435.0
+2008-07,Saskatchewan,Canola,290.0
+2008-12,Saskatchewan,Canola,4165.0
+2009-03,Saskatchewan,Canola,2775.0
+2009-07,Saskatchewan,Canola,810.0
+2009-12,Saskatchewan,Canola,4865.0
+2010-03,Saskatchewan,Canola,3270.0
+2010-07,Saskatchewan,Canola,1165.0
+2010-12,Saskatchewan,Canola,4030.0
+2011-03,Saskatchewan,Canola,2450.0
+2011-07,Saskatchewan,Canola,760.0
+2011-12,Saskatchewan,Canola,4015.0
+2012-03,Saskatchewan,Canola,2075.0
+2012-07,Saskatchewan,Canola,90.0
+2012-12,Saskatchewan,Canola,3275.0
+2013-03,Saskatchewan,Canola,1570.0
+2013-07,Saskatchewan,Canola,100.0
+2013-12,Saskatchewan,Canola,6000.0
+2014-03,Saskatchewan,Canola,4150.0
+2014-07,Saskatchewan,Canola,1250.0
+2014-12,Saskatchewan,Canola,5660.0
+2015-03,Saskatchewan,Canola,3355.0
+2015-07,Saskatchewan,Canola,635.0
+2015-12,Saskatchewan,Canola,6050.0
+2016-03,Saskatchewan,Canola,3450.0
+2016-07,Saskatchewan,Canola,525.0
+2016-12,Saskatchewan,Canola,6150.0
+2017-03,Saskatchewan,Canola,3290.0
+2017-07,Saskatchewan,Canola,190.0
+2017-12,Saskatchewan,Canola,6450.0
+2018-03,Saskatchewan,Canola,3830.0
+2018-07,Saskatchewan,Canola,655.0
+2018-12,Saskatchewan,Canola,6994.0
+2019-03,Saskatchewan,Canola,4450.0
+2019-07,Saskatchewan,Canola,1214.0
+2019-12,Saskatchewan,Canola,7718.0
+2020-03,Saskatchewan,Canola,4843.0
+2020-07,Saskatchewan,Canola,696.0
+2020-12,Saskatchewan,Canola,6026.0
+2021-03,Saskatchewan,Canola,2977.0
+2021-07,Saskatchewan,Canola,242.0
+2021-12,Saskatchewan,Canola,3485.0
+2022-03,Saskatchewan,Canola,1855.0
+2022-07,Saskatchewan,Canola,340.0
+2022-12,Saskatchewan,Canola,6053.0
+2023-03,Saskatchewan,Canola,3036.0
+2023-07,Saskatchewan,Canola,420.0
+2023-12,Saskatchewan,Canola,7140.0
+2024-03,Saskatchewan,Canola,4417.0
+2024-07,Saskatchewan,Canola,555.0
+2024-12,Saskatchewan,Canola,6375.0
+2025-03,Saskatchewan,Canola,3480.0
+2025-07,Saskatchewan,Canola,144.0
+2025-12,Saskatchewan,Canola,8416.0
+2026-03,Saskatchewan,Canola,4551.0
+2026-07,Saskatchewan,Canola,359.0
+1980-03,Saskatchewan,Durum,1606.0
+1980-07,Saskatchewan,Durum,972.0
+1981-03,Saskatchewan,Durum,1225.0
+1981-07,Saskatchewan,Durum,133.0
+1981-12,Saskatchewan,Durum,1490.0
+1982-03,Saskatchewan,Durum,1090.0
+1982-07,Saskatchewan,Durum,163.0
+1982-12,Saskatchewan,Durum,1720.0
+1983-03,Saskatchewan,Durum,1350.0
+1983-07,Saskatchewan,Durum,130.0
+1983-12,Saskatchewan,Durum,1100.0
+1984-03,Saskatchewan,Durum,840.0
+1984-07,Saskatchewan,Durum,130.0
+1984-12,Saskatchewan,Durum,675.0
+1985-03,Saskatchewan,Durum,560.0
+1985-07,Saskatchewan,Durum,110.0
+1985-12,Saskatchewan,Durum,570.0
+1986-03,Saskatchewan,Durum,450.0
+1986-07,Saskatchewan,Durum,50.0
+1986-12,Saskatchewan,Durum,1750.0
+1987-03,Saskatchewan,Durum,1400.0
+1987-07,Saskatchewan,Durum,350.0
+1987-12,Saskatchewan,Durum,1900.0
+1988-03,Saskatchewan,Durum,1450.0
+1988-07,Saskatchewan,Durum,400.0
+1988-12,Saskatchewan,Durum,840.0
+1989-03,Saskatchewan,Durum,740.0
+1989-07,Saskatchewan,Durum,100.0
+1989-12,Saskatchewan,Durum,1550.0
+1990-03,Saskatchewan,Durum,1200.0
+1990-07,Saskatchewan,Durum,120.0
+1990-12,Saskatchewan,Durum,2300.0
+1991-03,Saskatchewan,Durum,1650.0
+1991-07,Saskatchewan,Durum,420.0
+1991-12,Saskatchewan,Durum,3100.0
+1992-03,Saskatchewan,Durum,2520.0
+1992-07,Saskatchewan,Durum,950.0
+1992-12,Saskatchewan,Durum,2350.0
+1993-03,Saskatchewan,Durum,1900.0
+1993-07,Saskatchewan,Durum,950.0
+1993-12,Saskatchewan,Durum,2500.0
+1994-03,Saskatchewan,Durum,2000.0
+1994-07,Saskatchewan,Durum,400.0
+1994-12,Saskatchewan,Durum,2600.0
+1995-03,Saskatchewan,Durum,2100.0
+1995-07,Saskatchewan,Durum,80.0
+1995-12,Saskatchewan,Durum,2500.0
+1996-03,Saskatchewan,Durum,1830.0
+1996-07,Saskatchewan,Durum,210.0
+1996-12,Saskatchewan,Durum,2700.0
+1997-03,Saskatchewan,Durum,2050.0
+1997-07,Saskatchewan,Durum,250.0
+1997-12,Saskatchewan,Durum,2100.0
+1998-03,Saskatchewan,Durum,1300.0
+1998-07,Saskatchewan,Durum,90.0
+1998-12,Saskatchewan,Durum,2850.0
+1999-03,Saskatchewan,Durum,2150.0
+1999-07,Saskatchewan,Durum,350.0
+1999-12,Saskatchewan,Durum,2450.0
+2000-03,Saskatchewan,Durum,1800.0
+2000-07,Saskatchewan,Durum,200.0
+2000-12,Saskatchewan,Durum,3450.0
+2001-03,Saskatchewan,Durum,2600.0
+2001-07,Saskatchewan,Durum,1070.0
+2001-12,Saskatchewan,Durum,2400.0
+2002-03,Saskatchewan,Durum,1850.0
+2002-07,Saskatchewan,Durum,450.0
+2002-12,Saskatchewan,Durum,1925.0
+2003-03,Saskatchewan,Durum,1520.0
+2003-07,Saskatchewan,Durum,240.0
+2003-12,Saskatchewan,Durum,2155.0
+2004-03,Saskatchewan,Durum,1775.0
+2004-07,Saskatchewan,Durum,595.0
+2004-12,Saskatchewan,Durum,2985.0
+2005-03,Saskatchewan,Durum,2430.0
+2005-07,Saskatchewan,Durum,860.0
+2005-12,Saskatchewan,Durum,4250.0
+2006-03,Saskatchewan,Durum,3250.0
+2006-07,Saskatchewan,Durum,1350.0
+2006-12,Saskatchewan,Durum,2345.0
+2007-03,Saskatchewan,Durum,1700.0
+2007-07,Saskatchewan,Durum,230.0
+2007-12,Saskatchewan,Durum,1620.0
+2008-03,Saskatchewan,Durum,925.0
+2008-07,Saskatchewan,Durum,35.0
+2008-12,Saskatchewan,Durum,3000.0
+2009-03,Saskatchewan,Durum,2225.0
+2009-07,Saskatchewan,Durum,700.0
+2009-12,Saskatchewan,Durum,3800.0
+2010-03,Saskatchewan,Durum,2960.0
+2010-07,Saskatchewan,Durum,1600.0
+2010-12,Saskatchewan,Durum,2635.0
+2011-03,Saskatchewan,Durum,1850.0
+2011-07,Saskatchewan,Durum,575.0
+2011-12,Saskatchewan,Durum,2585.0
+2012-03,Saskatchewan,Durum,1800.0
+2012-07,Saskatchewan,Durum,370.0
+2012-12,Saskatchewan,Durum,2537.0
+2013-03,Saskatchewan,Durum,1660.0
+2013-07,Saskatchewan,Durum,225.0
+2013-12,Saskatchewan,Durum,4025.0
+2014-03,Saskatchewan,Durum,2775.0
+2014-07,Saskatchewan,Durum,690.0
+2014-12,Saskatchewan,Durum,2885.0
+2015-03,Saskatchewan,Durum,1600.0
+2015-07,Saskatchewan,Durum,350.0
+2015-12,Saskatchewan,Durum,2900.0
+2016-03,Saskatchewan,Durum,1725.0
+2016-07,Saskatchewan,Durum,450.0
+2016-12,Saskatchewan,Durum,4350.0
+2017-03,Saskatchewan,Durum,2650.0
+2017-07,Saskatchewan,Durum,800.0
+2017-12,Saskatchewan,Durum,3100.0
+2018-03,Saskatchewan,Durum,2070.0
+2018-07,Saskatchewan,Durum,500.0
+2018-12,Saskatchewan,Durum,3550.0
+2019-03,Saskatchewan,Durum,2365.0
+2019-07,Saskatchewan,Durum,640.0
+2019-12,Saskatchewan,Durum,3000.0
+2020-03,Saskatchewan,Durum,1930.0
+2020-07,Saskatchewan,Durum,90.0
+2020-12,Saskatchewan,Durum,3015.0
+2021-03,Saskatchewan,Durum,1655.0
+2021-07,Saskatchewan,Durum,72.0
+2021-12,Saskatchewan,Durum,1255.0
+2022-03,Saskatchewan,Durum,880.0
+2022-07,Saskatchewan,Durum,64.0
+2022-12,Saskatchewan,Durum,2531.0
+2023-03,Saskatchewan,Durum,1135.0
+2023-07,Saskatchewan,Durum,146.0
+2023-12,Saskatchewan,Durum,2044.0
+2024-03,Saskatchewan,Durum,1120.0
+2024-07,Saskatchewan,Durum,98.0
+2024-12,Saskatchewan,Durum,2951.0
+2025-03,Saskatchewan,Durum,1578.0
+2025-07,Saskatchewan,Durum,221.0
+2025-12,Saskatchewan,Durum,3344.0
+2026-03,Saskatchewan,Durum,1981.0
+2026-07,Saskatchewan,Durum,100.0
+2013-12,Saskatchewan,Soybeans,55.0
+2014-03,Saskatchewan,Soybeans,40.0
+2014-07,Saskatchewan,Soybeans,0.0
+2014-12,Saskatchewan,Soybeans,55.0
+2015-03,Saskatchewan,Soybeans,25.0
+2015-07,Saskatchewan,Soybeans,0.0
+2015-12,Saskatchewan,Soybeans,75.0
+2016-03,Saskatchewan,Soybeans,15.0
+2016-07,Saskatchewan,Soybeans,0.0
+2016-12,Saskatchewan,Soybeans,70.0
+2017-03,Saskatchewan,Soybeans,45.0
+2017-07,Saskatchewan,Soybeans,0.0
+2017-12,Saskatchewan,Soybeans,175.0
+2018-07,Saskatchewan,Soybeans,10.0
+2018-12,Saskatchewan,Soybeans,50.0
+2019-03,Saskatchewan,Soybeans,35.0
+2019-07,Saskatchewan,Soybeans,4.0
+2019-12,Saskatchewan,Soybeans,60.0
+2020-03,Saskatchewan,Soybeans,35.0
+2020-07,Saskatchewan,Soybeans,10.0
+2020-12,Saskatchewan,Soybeans,22.0
+2021-03,Saskatchewan,Soybeans,14.0
+2021-07,Saskatchewan,Soybeans,1.0
+2021-12,Saskatchewan,Soybeans,28.0
+2022-07,Saskatchewan,Soybeans,12.0
+2022-12,Saskatchewan,Soybeans,25.0
+2023-03,Saskatchewan,Soybeans,19.0
+2023-07,Saskatchewan,Soybeans,10.0
+2023-12,Saskatchewan,Soybeans,29.0
+2024-03,Saskatchewan,Soybeans,21.0
+2024-07,Saskatchewan,Soybeans,10.0
+2024-12,Saskatchewan,Soybeans,28.0
+2025-03,Saskatchewan,Soybeans,21.0
+2025-07,Saskatchewan,Soybeans,5.0
+2025-12,Saskatchewan,Soybeans,73.0
+2026-03,Saskatchewan,Soybeans,55.0
+2026-07,Saskatchewan,Soybeans,0.0
+1980-03,Saskatchewan,Wheat ex-durum,7974.0
+1980-07,Saskatchewan,Wheat ex-durum,2158.0
+1981-03,Saskatchewan,Wheat ex-durum,5555.0
+1981-07,Saskatchewan,Wheat ex-durum,982.0
+1981-12,Saskatchewan,Wheat ex-durum,8560.0
+1982-03,Saskatchewan,Wheat ex-durum,7080.0
+1982-07,Saskatchewan,Wheat ex-durum,2067.0
+1982-12,Saskatchewan,Wheat ex-durum,9680.0
+1983-03,Saskatchewan,Wheat ex-durum,8150.0
+1983-07,Saskatchewan,Wheat ex-durum,1210.0
+1983-12,Saskatchewan,Wheat ex-durum,9300.0
+1984-03,Saskatchewan,Wheat ex-durum,0.0
+1984-07,Saskatchewan,Wheat ex-durum,0.0
+1984-12,Saskatchewan,Wheat ex-durum,0.0
+1985-03,Saskatchewan,Wheat ex-durum,8210.0
+1985-07,Saskatchewan,Wheat ex-durum,1000.0
+1985-12,Saskatchewan,Wheat ex-durum,5575.0
+1986-03,Saskatchewan,Wheat ex-durum,4240.0
+1986-07,Saskatchewan,Wheat ex-durum,640.0
+1986-12,Saskatchewan,Wheat ex-durum,7830.0
+1987-03,Saskatchewan,Wheat ex-durum,9600.0
+1987-07,Saskatchewan,Wheat ex-durum,3150.0
+1987-12,Saskatchewan,Wheat ex-durum,9300.0
+1988-03,Saskatchewan,Wheat ex-durum,6900.0
+1988-07,Saskatchewan,Wheat ex-durum,1750.0
+1988-12,Saskatchewan,Wheat ex-durum,3300.0
+1989-03,Saskatchewan,Wheat ex-durum,2700.0
+1989-07,Saskatchewan,Wheat ex-durum,400.0
+1989-12,Saskatchewan,Wheat ex-durum,6000.0
+1990-03,Saskatchewan,Wheat ex-durum,4100.0
+1990-07,Saskatchewan,Wheat ex-durum,280.0
+1990-12,Saskatchewan,Wheat ex-durum,10150.0
+1991-03,Saskatchewan,Wheat ex-durum,7300.0
+1991-07,Saskatchewan,Wheat ex-durum,1000.0
+1991-12,Saskatchewan,Wheat ex-durum,10600.0
+1992-03,Saskatchewan,Wheat ex-durum,7600.0
+1992-07,Saskatchewan,Wheat ex-durum,1455.0
+1992-12,Saskatchewan,Wheat ex-durum,10700.0
+1993-03,Saskatchewan,Wheat ex-durum,8100.0
+1993-07,Saskatchewan,Wheat ex-durum,2150.0
+1993-12,Saskatchewan,Wheat ex-durum,10900.0
+1994-03,Saskatchewan,Wheat ex-durum,8400.0
+1994-07,Saskatchewan,Wheat ex-durum,1900.0
+1994-12,Saskatchewan,Wheat ex-durum,5600.0
+1995-03,Saskatchewan,Wheat ex-durum,3500.0
+1995-07,Saskatchewan,Wheat ex-durum,270.0
+1995-12,Saskatchewan,Wheat ex-durum,5500.0
+1996-03,Saskatchewan,Wheat ex-durum,3250.0
+1996-07,Saskatchewan,Wheat ex-durum,380.0
+1996-12,Saskatchewan,Wheat ex-durum,8550.0
+1997-03,Saskatchewan,Wheat ex-durum,6400.0
+1997-07,Saskatchewan,Wheat ex-durum,1050.0
+1997-12,Saskatchewan,Wheat ex-durum,5500.0
+1998-03,Saskatchewan,Wheat ex-durum,3200.0
+1998-07,Saskatchewan,Wheat ex-durum,350.0
+1998-12,Saskatchewan,Wheat ex-durum,5100.0
+1999-03,Saskatchewan,Wheat ex-durum,3300.0
+1999-07,Saskatchewan,Wheat ex-durum,350.0
+1999-12,Saskatchewan,Wheat ex-durum,6300.0
+2000-03,Saskatchewan,Wheat ex-durum,3900.0
+2000-07,Saskatchewan,Wheat ex-durum,500.0
+2000-12,Saskatchewan,Wheat ex-durum,5150.0
+2001-03,Saskatchewan,Wheat ex-durum,3450.0
+2001-07,Saskatchewan,Wheat ex-durum,750.0
+2001-12,Saskatchewan,Wheat ex-durum,4200.0
+2002-03,Saskatchewan,Wheat ex-durum,2600.0
+2002-07,Saskatchewan,Wheat ex-durum,550.0
+2002-12,Saskatchewan,Wheat ex-durum,2600.0
+2003-03,Saskatchewan,Wheat ex-durum,2200.0
+2003-07,Saskatchewan,Wheat ex-durum,400.0
+2003-12,Saskatchewan,Wheat ex-durum,4325.0
+2004-03,Saskatchewan,Wheat ex-durum,3040.0
+2004-07,Saskatchewan,Wheat ex-durum,420.0
+2004-12,Saskatchewan,Wheat ex-durum,5425.0
+2005-03,Saskatchewan,Wheat ex-durum,3700.0
+2005-07,Saskatchewan,Wheat ex-durum,1100.0
+2005-12,Saskatchewan,Wheat ex-durum,6275.0
+2006-03,Saskatchewan,Wheat ex-durum,4675.0
+2006-07,Saskatchewan,Wheat ex-durum,1225.0
+2006-12,Saskatchewan,Wheat ex-durum,5950.0
+2007-03,Saskatchewan,Wheat ex-durum,3950.0
+2007-07,Saskatchewan,Wheat ex-durum,650.0
+2007-12,Saskatchewan,Wheat ex-durum,3850.0
+2008-03,Saskatchewan,Wheat ex-durum,2490.0
+2008-07,Saskatchewan,Wheat ex-durum,230.0
+2008-12,Saskatchewan,Wheat ex-durum,5100.0
+2009-03,Saskatchewan,Wheat ex-durum,3450.0
+2009-07,Saskatchewan,Wheat ex-durum,455.0
+2009-12,Saskatchewan,Wheat ex-durum,5550.0
+2010-03,Saskatchewan,Wheat ex-durum,3525.0
+2010-07,Saskatchewan,Wheat ex-durum,600.0
+2010-12,Saskatchewan,Wheat ex-durum,5000.0
+2011-03,Saskatchewan,Wheat ex-durum,3150.0
+2011-07,Saskatchewan,Wheat ex-durum,625.0
+2011-12,Saskatchewan,Wheat ex-durum,4750.0
+2012-03,Saskatchewan,Wheat ex-durum,2800.0
+2012-07,Saskatchewan,Wheat ex-durum,500.0
+2012-12,Saskatchewan,Wheat ex-durum,5500.0
+2013-03,Saskatchewan,Wheat ex-durum,3500.0
+2013-07,Saskatchewan,Wheat ex-durum,675.0
+2013-12,Saskatchewan,Wheat ex-durum,9150.0
+2014-03,Saskatchewan,Wheat ex-durum,6925.0
+2014-07,Saskatchewan,Wheat ex-durum,2775.0
+2014-12,Saskatchewan,Wheat ex-durum,8000.0
+2015-03,Saskatchewan,Wheat ex-durum,5400.0
+2015-07,Saskatchewan,Wheat ex-durum,1350.0
+2015-12,Saskatchewan,Wheat ex-durum,5875.0
+2016-03,Saskatchewan,Wheat ex-durum,3540.0
+2016-07,Saskatchewan,Wheat ex-durum,1000.0
+2016-12,Saskatchewan,Wheat ex-durum,5600.0
+2017-03,Saskatchewan,Wheat ex-durum,3450.0
+2017-07,Saskatchewan,Wheat ex-durum,525.0
+2017-12,Saskatchewan,Wheat ex-durum,6160.0
+2018-03,Saskatchewan,Wheat ex-durum,4050.0
+2018-07,Saskatchewan,Wheat ex-durum,710.0
+2018-12,Saskatchewan,Wheat ex-durum,5985.0
+2019-03,Saskatchewan,Wheat ex-durum,3410.0
+2019-07,Saskatchewan,Wheat ex-durum,300.0
+2019-12,Saskatchewan,Wheat ex-durum,7210.0
+2020-03,Saskatchewan,Wheat ex-durum,4610.0
+2020-07,Saskatchewan,Wheat ex-durum,360.0
+2020-12,Saskatchewan,Wheat ex-durum,6891.0
+2021-03,Saskatchewan,Wheat ex-durum,4004.0
+2021-07,Saskatchewan,Wheat ex-durum,548.0
+2021-12,Saskatchewan,Wheat ex-durum,4052.0
+2022-03,Saskatchewan,Wheat ex-durum,2241.0
+2022-07,Saskatchewan,Wheat ex-durum,208.0
+2022-12,Saskatchewan,Wheat ex-durum,6098.0
+2023-03,Saskatchewan,Wheat ex-durum,3140.0
+2023-07,Saskatchewan,Wheat ex-durum,212.0
+2023-12,Saskatchewan,Wheat ex-durum,6870.0
+2024-03,Saskatchewan,Wheat ex-durum,3950.0
+2024-07,Saskatchewan,Wheat ex-durum,490.0
+2024-12,Saskatchewan,Wheat ex-durum,7807.0
+2025-03,Saskatchewan,Wheat ex-durum,4467.0
+2025-07,Saskatchewan,Wheat ex-durum,225.0
+2025-12,Saskatchewan,Wheat ex-durum,7845.0
+2026-03,Saskatchewan,Wheat ex-durum,4841.0
+2026-07,Saskatchewan,Wheat ex-durum,400.0

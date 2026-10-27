@@ -29,6 +29,7 @@ main() {
   git pull --ff-only --quiet
 
   "$PY" -u build_data.py yields
+  "$PY" -u build_data.py stocks
   "$PY" -u build_data.py vh
   "$PY" -u build_data.py ab "$YEAR"
   "$PY" -u build_data.py sk "$YEAR"

@@ -54,6 +54,37 @@ def yields():
     return pd.read_csv(DATA / "yields.csv")
 
 
+STOCK_CROP = {"Canola": "Canola", "Spring wheat": "Wheat ex-durum", "Durum": "Durum",
+              "Barley": "Barley", "Corn": "Corn", "Soybeans": "Soybeans"}
+
+
+def farm_stocks(geo, crop):
+    """Latest Dec 31, Mar 31 and Jul 31 farm stocks (kt) against a year earlier and the prior
+    five-year average (StatCan 32-10-0007-01). Empty when the table has none."""
+    p = DATA / "stocks.csv"
+    if not p.exists():
+        return pd.DataFrame()
+    d = pd.read_csv(p)
+    s = d[(d["geo"] == geo) & (d["crop"] == STOCK_CROP[crop])].set_index("date")["kt"]
+    if s.empty:
+        return pd.DataFrame()
+    last = s.index.max()
+    rows = []
+    for mm, lab in (("12", "Dec 31"), ("03", "Mar 31"), ("07", "Jul 31")):
+        ys = sorted(int(k[:4]) for k in s.index if k.endswith("-" + mm))
+        ys = [y for y in ys if f"{y}-{mm}" <= last]
+        if not ys:
+            continue
+        y = ys[-1]
+        prev5 = [s[f"{yy}-{mm}"] for yy in range(y - 5, y) if f"{yy}-{mm}" in s.index]
+        rows.append({"date": f"{lab} {y}", "kt": s[f"{y}-{mm}"], "year_ago": s.get(f"{y - 1}-{mm}"),
+                     "avg5": sum(prev5) / len(prev5) if prev5 else np.nan})
+    df = pd.DataFrame(rows)
+    df["vs_year_ago"] = df["kt"] / df["year_ago"] - 1
+    df["vs_avg5"] = df["kt"] / df["avg5"] - 1
+    return df
+
+
 def series(df, kind, crop, region):
     s = df[(df["kind"] == kind) & (df["crop"] == crop) & (df["region"] == region)]
     return s.sort_values("date")

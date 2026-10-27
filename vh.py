@@ -18,6 +18,8 @@ URL = "https://www.star.nesdis.noaa.gov/smcd/emb/vci/VH/get_TS_admin.php"
 DATA = Path(__file__).parent / "data" / "vh.csv"
 PROVINCE_ID = {"Alberta": 1, "Manitoba": 3, "Ontario": 9, "Saskatchewan": 12}
 COLS = ["SMN", "SMT", "VCI", "TCI", "VHI"]
+LABEL = {"SMN": "NDVI (greenness)", "VCI": "VCI (vegetation condition)", "TCI": "TCI (thermal condition)",
+         "VHI": "VHI (vegetation health)"}
 FIRST_YEAR = 1982
 # Windows fixed in advance on crop stage, never searched for the best fit:
 # Prairie canola and cereals flowering to grain fill, Ontario soybean pod set and fill, corn silking and fill.
@@ -79,6 +81,37 @@ def window_mean(df, year, window, col="SMN"):
     return float(s[col].mean()) if len(s) == b - a + 1 else None
 
 
+def matrix(df, col):
+    """Weeks down, years across."""
+    return df.pivot(index="week", columns="year", values=col)
+
+
+def season_table(df, crop, year):
+    """The crop window's mean for each index in `year` against every other year:
+    one row per index with this year's value, the average of the others, rank (1 = best)."""
+    win = WINDOWS[crop]
+    rows = []
+    for col in ("SMN", "VCI", "VHI", "TCI"):
+        vals = {y: window_mean(df, y, win, col) for y in sorted(df["year"].unique())}
+        vals = {y: v for y, v in vals.items() if v is not None}
+        if year not in vals:
+            continue
+        others = [v for y, v in vals.items() if y != year]
+        rows.append({"index": col, "this_year": vals[year], "average": float(np.mean(others)),
+                     "rank": int(sum(v > vals[year] for v in others)) + 1, "of": len(vals),
+                     "first": min(vals)})
+    return pd.DataFrame(rows)
+
+
+def peak(df, year):
+    """(peak NDVI, week) between weeks 20 and 42 of `year`, or None."""
+    s = df[(df["year"] == year) & df["week"].between(20, 42)]
+    if s.empty:
+        return None
+    i = s["SMN"].idxmax()
+    return float(s.loc[i, "SMN"]), int(s.loc[i, "week"])
+
+
 def season_rank(df, crop, year, col="SMN"):
     """The crop window's mean against every other year: (value, average, rank with 1 = best, years compared)."""
     win = WINDOWS[crop]
@@ -117,7 +150,8 @@ def yield_model(df, crop, yields, year, col="SMN"):
         e0.append(y_[i] - (b0[0] + b0[1] * t[i]))
     full, base = fit(np.ones(n, bool), True), fit(np.ones(n, bool), False)
     x_now = window_mean(df, year, win, col)
-    out = {"n": n, "years": yrs, "window": win, "x_now": x_now,
+    anomaly = y_ - (base[0] + base[1] * t)  # yield minus its linear trend, per past year
+    out = {"n": n, "years": yrs, "window": win, "x_now": x_now, "x": x, "anomaly": anomaly,
            "rmse_loo": float(np.sqrt(np.mean(np.square(e1)))),
            "rmse_trend_loo": float(np.sqrt(np.mean(np.square(e0)))),
            "trend_year": float(base[0] + base[1] * (year - 2000)),
