@@ -30,8 +30,11 @@ def clockwise(g):
 def feature(name, geom, tol):
     geom = geom.simplify(tol, preserve_topology=True)
     polys = [p for p in clockwise(geom) if not p.is_empty]
-    out = mapping(unary_union(polys) if len(polys) > 1 else polys[0])
-    return {"type": "Feature", "properties": {"name": name, "key": geo.key(name)}, "geometry": out}
+    whole = unary_union(polys) if len(polys) > 1 else polys[0]
+    big = max(whole.geoms, key=lambda p: p.area) if whole.geom_type == "MultiPolygon" else whole
+    pt = big.representative_point()          # label position, stored so the app needs no shapely
+    return {"type": "Feature", "geometry": mapping(whole),
+            "properties": {"name": name, "key": geo.key(name), "lon": round(pt.x, 3), "lat": round(pt.y, 3)}}
 
 
 def main(src):

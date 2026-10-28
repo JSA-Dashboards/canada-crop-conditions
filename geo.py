@@ -24,16 +24,9 @@ def load(iso):
 
 @st.cache_data(show_spinner=False)
 def centroids(iso):
-    """key -> (lon, lat) of the largest piece of each unit, for the share labels."""
-    from shapely.geometry import shape
-    out = {}
-    for f in load(iso)["features"]:
-        g = shape(f["geometry"])
-        if g.geom_type == "MultiPolygon":
-            g = max(g.geoms, key=lambda p: p.area)
-        c = g.representative_point()
-        out[f["properties"]["key"]] = (c.x, c.y)
-    return out
+    """key -> (lon, lat) label position of each unit (computed by build_geo.py)."""
+    return {f["properties"]["key"]: (f["properties"]["lon"], f["properties"]["lat"])
+            for f in load(iso)["features"]}
 
 
 def production_map(iso, df, unit, title, label_top=8, fit_to_data=True):
