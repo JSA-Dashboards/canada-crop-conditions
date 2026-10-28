@@ -1,4 +1,730 @@
 date,kind,crop,region,value
+2022-05-17,seeding,Corn,Manitoba,10.0
+2022-05-31,seeding,Field Pea,Manitoba,75.0
+2022-05-31,seeding,Soybeans,Manitoba,40.0
+2022-06-07,seeding,Canola,Manitoba,47.5
+2022-06-07,seeding,Soybeans,Manitoba,75.0
+2022-06-14,seeding,Soybeans,Manitoba,75.0
+2022-06-21,seeding,Dry Bean,Manitoba,20.0
+2022-06-28,seeding,Canola,Manitoba,90.0
+2022-07-05,seeding,Canola,Manitoba,10.0
+2022-08-23,seeding,Barley,Manitoba,5.0
+2022-08-23,seeding,Canola,Manitoba,40.0
+2022-08-30,seeding,Barley,Manitoba,5.0
+2022-09-06,seeding,Barley,Manitoba,5.0
+2022-09-27,seeding,Winter Wheat,Manitoba,36.0
+2024-04-30,seeding,All crops,Manitoba,2.0
+2024-04-30,seeding,Barley,Manitoba,4.0
+2024-04-30,seeding,Field Pea,Manitoba,4.0
+2024-04-30,seeding,Spring Wheat,Manitoba,4.0
+2024-05-07,seeding,All crops,Manitoba,4.0
+2024-05-07,seeding,Barley,Manitoba,9.0
+2024-05-07,seeding,Field Pea,Manitoba,11.0
+2024-05-07,seeding,Spring Wheat,Manitoba,9.0
+2024-05-14,seeding,All crops,Manitoba,30.0
+2024-05-14,seeding,Barley,Manitoba,58.0
+2024-05-14,seeding,Canola,Manitoba,6.0
+2024-05-14,seeding,Corn,Manitoba,60.0
+2024-05-14,seeding,Field Pea,Manitoba,72.0
+2024-05-14,seeding,Soybeans,Manitoba,15.0
+2024-05-14,seeding,Spring Wheat,Manitoba,58.0
+2024-05-14,seeding,Sunflowers,Manitoba,13.0
+2024-05-21,seeding,All crops,Manitoba,47.0
+2024-05-21,seeding,Barley,Manitoba,77.0
+2024-05-21,seeding,Canola,Manitoba,20.0
+2024-05-21,seeding,Corn,Manitoba,65.0
+2024-05-21,seeding,Field Pea,Manitoba,90.0
+2024-05-21,seeding,Soybeans,Manitoba,34.0
+2024-05-21,seeding,Spring Wheat,Manitoba,77.0
+2024-05-21,seeding,Sunflowers,Manitoba,26.0
+2024-05-28,seeding,All crops,Manitoba,64.0
+2024-05-28,seeding,Barley,Manitoba,79.0
+2024-05-28,seeding,Canola,Manitoba,41.0
+2024-05-28,seeding,Corn,Manitoba,80.0
+2024-05-28,seeding,Dry Bean,Manitoba,24.0
+2024-05-28,seeding,Field Pea,Manitoba,96.0
+2024-05-28,seeding,Oats,Manitoba,76.0
+2024-05-28,seeding,Soybeans,Manitoba,55.0
+2024-05-28,seeding,Spring Wheat,Manitoba,87.0
+2024-05-28,seeding,Sunflowers,Manitoba,41.0
+2024-06-04,seeding,All crops,Manitoba,83.0
+2024-06-04,seeding,Barley,Manitoba,88.0
+2024-06-04,seeding,Canola,Manitoba,71.0
+2024-06-04,seeding,Corn,Manitoba,95.0
+2024-06-04,seeding,Dry Bean,Manitoba,66.0
+2024-06-04,seeding,Field Pea,Manitoba,97.0
+2024-06-04,seeding,Oats,Manitoba,87.0
+2024-06-04,seeding,Soybeans,Manitoba,82.0
+2024-06-04,seeding,Spring Wheat,Manitoba,94.0
+2024-06-04,seeding,Sunflowers,Manitoba,53.0
+2024-06-11,seeding,All crops,Manitoba,92.0
+2024-06-11,seeding,Barley,Manitoba,97.0
+2024-06-11,seeding,Canola,Manitoba,88.0
+2024-06-11,seeding,Corn,Manitoba,98.0
+2024-06-11,seeding,Dry Bean,Manitoba,86.0
+2024-06-11,seeding,Field Pea,Manitoba,97.0
+2024-06-11,seeding,Oats,Manitoba,97.0
+2024-06-11,seeding,Soybeans,Manitoba,92.0
+2024-06-11,seeding,Spring Wheat,Manitoba,98.0
+2024-06-11,seeding,Sunflowers,Manitoba,61.0
+2024-06-18,seeding,All crops,Manitoba,97.0
+2024-06-18,seeding,Barley,Manitoba,98.0
+2024-06-18,seeding,Canola,Manitoba,96.0
+2024-06-18,seeding,Oats,Manitoba,98.0
+2024-06-18,seeding,Soybeans,Manitoba,97.0
+2024-06-18,seeding,Spring Wheat,Manitoba,99.0
+2024-08-13,harvest,All crops,Central,1.0
+2024-08-13,harvest,All crops,Eastern,1.0
+2024-08-13,harvest,All crops,Manitoba,1.0
+2024-08-13,harvest,All crops,Southwest,1.0
+2024-08-13,harvest,Barley,Central,10.0
+2024-08-13,harvest,Barley,Manitoba,5.0
+2024-08-13,harvest,Barley,Southwest,5.0
+2024-08-13,harvest,Fall Rye,Central,50.0
+2024-08-13,harvest,Fall Rye,Eastern,80.0
+2024-08-13,harvest,Fall Rye,Interlake,30.0
+2024-08-13,harvest,Fall Rye,Manitoba,39.0
+2024-08-13,harvest,Fall Rye,Southwest,40.0
+2024-08-13,harvest,Field Pea,Manitoba,1.0
+2024-08-13,harvest,Field Pea,Southwest,2.0
+2024-08-13,harvest,Spring Wheat,Central,1.0
+2024-08-13,harvest,Spring Wheat,Manitoba,1.0
+2024-08-13,harvest,Spring Wheat,Southwest,1.0
+2024-08-13,harvest,Winter Wheat,Central,25.0
+2024-08-13,harvest,Winter Wheat,Eastern,5.0
+2024-08-13,harvest,Winter Wheat,Interlake,5.0
+2024-08-13,harvest,Winter Wheat,Manitoba,17.0
+2024-08-13,harvest,Winter Wheat,Southwest,25.0
+2024-08-20,harvest,All crops,Central,6.0
+2024-08-20,harvest,All crops,Eastern,1.0
+2024-08-20,harvest,All crops,Interlake,1.0
+2024-08-20,harvest,All crops,Manitoba,3.0
+2024-08-20,harvest,All crops,Southwest,2.0
+2024-08-20,harvest,Barley,Central,40.0
+2024-08-20,harvest,Barley,Manitoba,15.0
+2024-08-20,harvest,Barley,Southwest,5.0
+2024-08-20,harvest,Canola,Central,1.0
+2024-08-20,harvest,Fall Rye,Central,95.0
+2024-08-20,harvest,Fall Rye,Eastern,95.0
+2024-08-20,harvest,Fall Rye,Interlake,60.0
+2024-08-20,harvest,Fall Rye,Manitoba,72.0
+2024-08-20,harvest,Fall Rye,Northwest,5.0
+2024-08-20,harvest,Fall Rye,Southwest,80.0
+2024-08-20,harvest,Field Pea,Central,40.0
+2024-08-20,harvest,Field Pea,Interlake,5.0
+2024-08-20,harvest,Field Pea,Manitoba,21.0
+2024-08-20,harvest,Field Pea,Northwest,5.0
+2024-08-20,harvest,Field Pea,Southwest,20.0
+2024-08-20,harvest,Oats,Central,10.0
+2024-08-20,harvest,Oats,Eastern,1.0
+2024-08-20,harvest,Oats,Manitoba,3.0
+2024-08-20,harvest,Spring Wheat,Central,7.0
+2024-08-20,harvest,Spring Wheat,Eastern,1.0
+2024-08-20,harvest,Spring Wheat,Interlake,2.0
+2024-08-20,harvest,Spring Wheat,Manitoba,3.0
+2024-08-20,harvest,Spring Wheat,Northwest,1.0
+2024-08-20,harvest,Spring Wheat,Southwest,1.0
+2024-08-20,harvest,Winter Wheat,Central,80.0
+2024-08-20,harvest,Winter Wheat,Eastern,95.0
+2024-08-20,harvest,Winter Wheat,Interlake,25.0
+2024-08-20,harvest,Winter Wheat,Manitoba,60.0
+2024-08-20,harvest,Winter Wheat,Northwest,5.0
+2024-08-20,harvest,Winter Wheat,Southwest,70.0
+2024-08-27,harvest,All crops,Central,16.0
+2024-08-27,harvest,All crops,Eastern,3.0
+2024-08-27,harvest,All crops,Interlake,4.0
+2024-08-27,harvest,All crops,Manitoba,8.0
+2024-08-27,harvest,All crops,Northwest,3.0
+2024-08-27,harvest,All crops,Southwest,6.0
+2024-08-27,harvest,Barley,Central,50.0
+2024-08-27,harvest,Barley,Interlake,5.0
+2024-08-27,harvest,Barley,Manitoba,22.0
+2024-08-27,harvest,Barley,Northwest,1.0
+2024-08-27,harvest,Barley,Southwest,15.0
+2024-08-27,harvest,Canola,Central,10.0
+2024-08-27,harvest,Canola,Manitoba,3.0
+2024-08-27,harvest,Fall Rye,Central,99.0
+2024-08-27,harvest,Fall Rye,Eastern,100.0
+2024-08-27,harvest,Fall Rye,Interlake,75.0
+2024-08-27,harvest,Fall Rye,Manitoba,87.0
+2024-08-27,harvest,Fall Rye,Northwest,60.0
+2024-08-27,harvest,Fall Rye,Southwest,90.0
+2024-08-27,harvest,Field Pea,Central,75.0
+2024-08-27,harvest,Field Pea,Interlake,65.0
+2024-08-27,harvest,Field Pea,Manitoba,59.0
+2024-08-27,harvest,Field Pea,Northwest,40.0
+2024-08-27,harvest,Field Pea,Southwest,65.0
+2024-08-27,harvest,Oats,Central,15.0
+2024-08-27,harvest,Oats,Eastern,5.0
+2024-08-27,harvest,Oats,Interlake,5.0
+2024-08-27,harvest,Oats,Manitoba,6.0
+2024-08-27,harvest,Oats,Southwest,1.0
+2024-08-27,harvest,Spring Wheat,Central,25.0
+2024-08-27,harvest,Spring Wheat,Eastern,5.0
+2024-08-27,harvest,Spring Wheat,Interlake,5.0
+2024-08-27,harvest,Spring Wheat,Manitoba,13.0
+2024-08-27,harvest,Spring Wheat,Northwest,4.0
+2024-08-27,harvest,Spring Wheat,Southwest,10.0
+2024-08-27,harvest,Winter Wheat,Central,99.0
+2024-08-27,harvest,Winter Wheat,Eastern,100.0
+2024-08-27,harvest,Winter Wheat,Interlake,70.0
+2024-08-27,harvest,Winter Wheat,Manitoba,87.0
+2024-08-27,harvest,Winter Wheat,Northwest,60.0
+2024-08-27,harvest,Winter Wheat,Southwest,90.0
+2024-09-03,harvest,All crops,Central,41.0
+2024-09-03,harvest,All crops,Eastern,18.0
+2024-09-03,harvest,All crops,Interlake,14.0
+2024-09-03,harvest,All crops,Manitoba,24.0
+2024-09-03,harvest,All crops,Northwest,8.0
+2024-09-03,harvest,All crops,Southwest,19.0
+2024-09-03,harvest,Barley,Central,75.0
+2024-09-03,harvest,Barley,Eastern,10.0
+2024-09-03,harvest,Barley,Interlake,40.0
+2024-09-03,harvest,Barley,Manitoba,49.0
+2024-09-03,harvest,Barley,Northwest,20.0
+2024-09-03,harvest,Barley,Southwest,50.0
+2024-09-03,harvest,Canola,Central,35.0
+2024-09-03,harvest,Canola,Eastern,5.0
+2024-09-03,harvest,Canola,Manitoba,13.0
+2024-09-03,harvest,Canola,Southwest,5.0
+2024-09-03,harvest,Fall Rye,Central,100.0
+2024-09-03,harvest,Fall Rye,Eastern,100.0
+2024-09-03,harvest,Fall Rye,Interlake,90.0
+2024-09-03,harvest,Fall Rye,Manitoba,97.0
+2024-09-03,harvest,Fall Rye,Northwest,90.0
+2024-09-03,harvest,Fall Rye,Southwest,100.0
+2024-09-03,harvest,Field Pea,Central,95.0
+2024-09-03,harvest,Field Pea,Eastern,30.0
+2024-09-03,harvest,Field Pea,Interlake,85.0
+2024-09-03,harvest,Field Pea,Manitoba,81.0
+2024-09-03,harvest,Field Pea,Northwest,60.0
+2024-09-03,harvest,Field Pea,Southwest,90.0
+2024-09-03,harvest,Oats,Central,75.0
+2024-09-03,harvest,Oats,Eastern,40.0
+2024-09-03,harvest,Oats,Interlake,30.0
+2024-09-03,harvest,Oats,Manitoba,47.0
+2024-09-03,harvest,Oats,Northwest,20.0
+2024-09-03,harvest,Oats,Southwest,40.0
+2024-09-03,harvest,Spring Wheat,Central,65.0
+2024-09-03,harvest,Spring Wheat,Eastern,40.0
+2024-09-03,harvest,Spring Wheat,Interlake,30.0
+2024-09-03,harvest,Spring Wheat,Manitoba,41.0
+2024-09-03,harvest,Spring Wheat,Northwest,15.0
+2024-09-03,harvest,Spring Wheat,Southwest,35.0
+2024-09-03,harvest,Winter Wheat,Central,100.0
+2024-09-03,harvest,Winter Wheat,Eastern,100.0
+2024-09-03,harvest,Winter Wheat,Interlake,90.0
+2024-09-03,harvest,Winter Wheat,Manitoba,97.0
+2024-09-03,harvest,Winter Wheat,Northwest,90.0
+2024-09-03,harvest,Winter Wheat,Southwest,100.0
+2024-09-10,harvest,All crops,Central,51.0
+2024-09-10,harvest,All crops,Eastern,47.0
+2024-09-10,harvest,All crops,Interlake,34.0
+2024-09-10,harvest,All crops,Manitoba,40.0
+2024-09-10,harvest,All crops,Northwest,25.0
+2024-09-10,harvest,All crops,Southwest,38.0
+2024-09-10,harvest,Barley,Central,90.0
+2024-09-10,harvest,Barley,Eastern,85.0
+2024-09-10,harvest,Barley,Interlake,65.0
+2024-09-10,harvest,Barley,Manitoba,76.0
+2024-09-10,harvest,Barley,Northwest,50.0
+2024-09-10,harvest,Barley,Southwest,75.0
+2024-09-10,harvest,Canola,Central,45.0
+2024-09-10,harvest,Canola,Eastern,30.0
+2024-09-10,harvest,Canola,Interlake,20.0
+2024-09-10,harvest,Canola,Manitoba,30.0
+2024-09-10,harvest,Canola,Northwest,15.0
+2024-09-10,harvest,Canola,Southwest,25.0
+2024-09-10,harvest,Fall Rye,Central,100.0
+2024-09-10,harvest,Fall Rye,Eastern,100.0
+2024-09-10,harvest,Fall Rye,Interlake,95.0
+2024-09-10,harvest,Fall Rye,Manitoba,99.0
+2024-09-10,harvest,Fall Rye,Northwest,99.0
+2024-09-10,harvest,Fall Rye,Southwest,100.0
+2024-09-10,harvest,Field Pea,Central,100.0
+2024-09-10,harvest,Field Pea,Eastern,100.0
+2024-09-10,harvest,Field Pea,Interlake,95.0
+2024-09-10,harvest,Field Pea,Manitoba,98.0
+2024-09-10,harvest,Field Pea,Northwest,95.0
+2024-09-10,harvest,Field Pea,Southwest,100.0
+2024-09-10,harvest,Oats,Central,90.0
+2024-09-10,harvest,Oats,Eastern,85.0
+2024-09-10,harvest,Oats,Interlake,50.0
+2024-09-10,harvest,Oats,Manitoba,73.0
+2024-09-10,harvest,Oats,Northwest,50.0
+2024-09-10,harvest,Oats,Southwest,70.0
+2024-09-10,harvest,Spring Wheat,Central,80.0
+2024-09-10,harvest,Spring Wheat,Eastern,85.0
+2024-09-10,harvest,Spring Wheat,Interlake,70.0
+2024-09-10,harvest,Spring Wheat,Manitoba,68.0
+2024-09-10,harvest,Spring Wheat,Northwest,40.0
+2024-09-10,harvest,Spring Wheat,Southwest,65.0
+2024-09-10,harvest,Winter Wheat,Central,100.0
+2024-09-10,harvest,Winter Wheat,Eastern,100.0
+2024-09-10,harvest,Winter Wheat,Interlake,95.0
+2024-09-10,harvest,Winter Wheat,Manitoba,99.0
+2024-09-10,harvest,Winter Wheat,Northwest,99.0
+2024-09-10,harvest,Winter Wheat,Southwest,100.0
+2024-09-17,harvest,All crops,Central,68.0
+2024-09-17,harvest,All crops,Eastern,54.0
+2024-09-17,harvest,All crops,Interlake,51.0
+2024-09-17,harvest,All crops,Manitoba,55.0
+2024-09-17,harvest,All crops,Northwest,39.0
+2024-09-17,harvest,All crops,Southwest,52.0
+2024-09-17,harvest,Barley,Central,95.0
+2024-09-17,harvest,Barley,Eastern,95.0
+2024-09-17,harvest,Barley,Interlake,80.0
+2024-09-17,harvest,Barley,Manitoba,88.0
+2024-09-17,harvest,Barley,Northwest,70.0
+2024-09-17,harvest,Barley,Southwest,90.0
+2024-09-17,harvest,Canola,Central,70.0
+2024-09-17,harvest,Canola,Eastern,40.0
+2024-09-17,harvest,Canola,Interlake,45.0
+2024-09-17,harvest,Canola,Manitoba,49.0
+2024-09-17,harvest,Canola,Northwest,25.0
+2024-09-17,harvest,Canola,Southwest,45.0
+2024-09-17,harvest,Fall Rye,Central,100.0
+2024-09-17,harvest,Fall Rye,Eastern,100.0
+2024-09-17,harvest,Fall Rye,Interlake,100.0
+2024-09-17,harvest,Fall Rye,Manitoba,100.0
+2024-09-17,harvest,Fall Rye,Northwest,100.0
+2024-09-17,harvest,Fall Rye,Southwest,100.0
+2024-09-17,harvest,Field Pea,Central,100.0
+2024-09-17,harvest,Field Pea,Eastern,100.0
+2024-09-17,harvest,Field Pea,Interlake,99.0
+2024-09-17,harvest,Field Pea,Manitoba,99.0
+2024-09-17,harvest,Field Pea,Northwest,98.0
+2024-09-17,harvest,Field Pea,Southwest,100.0
+2024-09-17,harvest,Oats,Central,95.0
+2024-09-17,harvest,Oats,Eastern,95.0
+2024-09-17,harvest,Oats,Interlake,80.0
+2024-09-17,harvest,Oats,Manitoba,86.0
+2024-09-17,harvest,Oats,Northwest,70.0
+2024-09-17,harvest,Oats,Southwest,85.0
+2024-09-17,harvest,Spring Wheat,Central,95.0
+2024-09-17,harvest,Spring Wheat,Eastern,95.0
+2024-09-17,harvest,Spring Wheat,Interlake,90.0
+2024-09-17,harvest,Spring Wheat,Manitoba,87.0
+2024-09-17,harvest,Spring Wheat,Northwest,70.0
+2024-09-17,harvest,Spring Wheat,Southwest,85.0
+2024-09-17,harvest,Winter Wheat,Central,100.0
+2024-09-17,harvest,Winter Wheat,Eastern,100.0
+2024-09-17,harvest,Winter Wheat,Interlake,100.0
+2024-09-17,harvest,Winter Wheat,Manitoba,100.0
+2024-09-17,harvest,Winter Wheat,Northwest,100.0
+2024-09-17,harvest,Winter Wheat,Southwest,100.0
+2024-09-24,harvest,All crops,Central,68.0
+2024-09-24,harvest,All crops,Eastern,54.0
+2024-09-24,harvest,All crops,Interlake,54.0
+2024-09-24,harvest,All crops,Manitoba,58.0
+2024-09-24,harvest,All crops,Northwest,47.0
+2024-09-24,harvest,All crops,Southwest,56.0
+2024-09-24,harvest,Barley,Central,95.0
+2024-09-24,harvest,Barley,Eastern,95.0
+2024-09-24,harvest,Barley,Interlake,85.0
+2024-09-24,harvest,Barley,Manitoba,90.0
+2024-09-24,harvest,Barley,Northwest,70.0
+2024-09-24,harvest,Barley,Southwest,95.0
+2024-09-24,harvest,Canola,Central,70.0
+2024-09-24,harvest,Canola,Eastern,40.0
+2024-09-24,harvest,Canola,Interlake,50.0
+2024-09-24,harvest,Canola,Manitoba,55.0
+2024-09-24,harvest,Canola,Northwest,45.0
+2024-09-24,harvest,Canola,Southwest,50.0
+2024-09-24,harvest,Fall Rye,Central,100.0
+2024-09-24,harvest,Fall Rye,Eastern,100.0
+2024-09-24,harvest,Fall Rye,Interlake,100.0
+2024-09-24,harvest,Fall Rye,Manitoba,100.0
+2024-09-24,harvest,Fall Rye,Northwest,100.0
+2024-09-24,harvest,Fall Rye,Southwest,100.0
+2024-09-24,harvest,Field Pea,Central,100.0
+2024-09-24,harvest,Field Pea,Eastern,100.0
+2024-09-24,harvest,Field Pea,Interlake,100.0
+2024-09-24,harvest,Field Pea,Manitoba,99.0
+2024-09-24,harvest,Field Pea,Northwest,99.0
+2024-09-24,harvest,Field Pea,Southwest,100.0
+2024-09-24,harvest,Oats,Central,95.0
+2024-09-24,harvest,Oats,Eastern,95.0
+2024-09-24,harvest,Oats,Interlake,85.0
+2024-09-24,harvest,Oats,Manitoba,88.0
+2024-09-24,harvest,Oats,Northwest,70.0
+2024-09-24,harvest,Oats,Southwest,90.0
+2024-09-24,harvest,Spring Wheat,Central,95.0
+2024-09-24,harvest,Spring Wheat,Eastern,95.0
+2024-09-24,harvest,Spring Wheat,Interlake,95.0
+2024-09-24,harvest,Spring Wheat,Manitoba,90.0
+2024-09-24,harvest,Spring Wheat,Northwest,75.0
+2024-09-24,harvest,Spring Wheat,Southwest,90.0
+2024-09-24,harvest,Winter Wheat,Central,100.0
+2024-09-24,harvest,Winter Wheat,Eastern,100.0
+2024-09-24,harvest,Winter Wheat,Interlake,100.0
+2024-09-24,harvest,Winter Wheat,Manitoba,100.0
+2024-09-24,harvest,Winter Wheat,Northwest,100.0
+2024-09-24,harvest,Winter Wheat,Southwest,100.0
+2024-10-08,harvest,All crops,Central,94.0
+2024-10-08,harvest,All crops,Eastern,75.0
+2024-10-08,harvest,All crops,Interlake,82.0
+2024-10-08,harvest,All crops,Manitoba,85.0
+2024-10-08,harvest,All crops,Northwest,77.0
+2024-10-08,harvest,All crops,Southwest,82.0
+2024-10-08,harvest,Barley,Central,100.0
+2024-10-08,harvest,Barley,Eastern,100.0
+2024-10-08,harvest,Barley,Interlake,100.0
+2024-10-08,harvest,Barley,Manitoba,99.0
+2024-10-08,harvest,Barley,Northwest,95.0
+2024-10-08,harvest,Barley,Southwest,100.0
+2024-10-08,harvest,Canola,Central,97.0
+2024-10-08,harvest,Canola,Eastern,90.0
+2024-10-08,harvest,Canola,Interlake,95.0
+2024-10-08,harvest,Canola,Manitoba,94.0
+2024-10-08,harvest,Canola,Northwest,85.0
+2024-10-08,harvest,Canola,Southwest,95.0
+2024-10-08,harvest,Dry Bean,Central,85.0
+2024-10-08,harvest,Dry Bean,Manitoba,85.0
+2024-10-08,harvest,Dry Bean,Southwest,85.0
+2024-10-08,harvest,Fall Rye,Central,100.0
+2024-10-08,harvest,Fall Rye,Eastern,100.0
+2024-10-08,harvest,Fall Rye,Interlake,100.0
+2024-10-08,harvest,Fall Rye,Manitoba,100.0
+2024-10-08,harvest,Fall Rye,Northwest,100.0
+2024-10-08,harvest,Fall Rye,Southwest,100.0
+2024-10-08,harvest,Field Pea,Central,100.0
+2024-10-08,harvest,Field Pea,Eastern,100.0
+2024-10-08,harvest,Field Pea,Interlake,100.0
+2024-10-08,harvest,Field Pea,Manitoba,100.0
+2024-10-08,harvest,Field Pea,Northwest,100.0
+2024-10-08,harvest,Field Pea,Southwest,100.0
+2024-10-08,harvest,Flax,Central,100.0
+2024-10-08,harvest,Flax,Eastern,100.0
+2024-10-08,harvest,Flax,Interlake,60.0
+2024-10-08,harvest,Flax,Manitoba,61.0
+2024-10-08,harvest,Flax,Southwest,45.0
+2024-10-08,harvest,Oats,Central,100.0
+2024-10-08,harvest,Oats,Eastern,100.0
+2024-10-08,harvest,Oats,Interlake,100.0
+2024-10-08,harvest,Oats,Manitoba,99.0
+2024-10-08,harvest,Oats,Northwest,95.0
+2024-10-08,harvest,Oats,Southwest,100.0
+2024-10-08,harvest,Spring Wheat,Central,100.0
+2024-10-08,harvest,Spring Wheat,Eastern,100.0
+2024-10-08,harvest,Spring Wheat,Interlake,100.0
+2024-10-08,harvest,Spring Wheat,Manitoba,96.0
+2024-10-08,harvest,Spring Wheat,Northwest,98.0
+2024-10-08,harvest,Spring Wheat,Southwest,100.0
+2024-10-08,harvest,Winter Wheat,Central,100.0
+2024-10-08,harvest,Winter Wheat,Eastern,100.0
+2024-10-08,harvest,Winter Wheat,Interlake,100.0
+2024-10-08,harvest,Winter Wheat,Manitoba,100.0
+2024-10-08,harvest,Winter Wheat,Northwest,100.0
+2024-10-08,harvest,Winter Wheat,Southwest,100.0
+2025-04-29,seeding,All crops,Manitoba,3.0
+2025-05-06,seeding,All crops,Manitoba,8.0
+2025-05-13,seeding,All crops,Manitoba,32.0
+2025-05-13,seeding,Soybeans,Manitoba,25.0
+2025-05-27,seeding,All crops,Manitoba,85.0
+2025-05-27,seeding,Barley,Manitoba,89.0
+2025-05-27,seeding,Canola,Manitoba,76.0
+2025-05-27,seeding,Corn,Manitoba,98.0
+2025-05-27,seeding,Dry Bean,Manitoba,28.0
+2025-05-27,seeding,Flax,Manitoba,54.0
+2025-05-27,seeding,Oats,Manitoba,89.0
+2025-05-27,seeding,Soybeans,Manitoba,76.0
+2025-05-27,seeding,Sunflowers,Manitoba,83.0
+2025-06-03,seeding,All crops,Manitoba,95.0
+2025-06-03,seeding,Barley,Manitoba,97.0
+2025-06-03,seeding,Canola,Manitoba,90.0
+2025-06-03,seeding,Dry Bean,Manitoba,90.0
+2025-06-03,seeding,Flax,Manitoba,75.0
+2025-06-03,seeding,Oats,Manitoba,97.0
+2025-06-03,seeding,Soybeans,Manitoba,93.0
+2025-06-03,seeding,Sunflowers,Manitoba,98.0
+2025-06-10,seeding,All crops,Manitoba,99.0
+2025-08-12,seeding,Canola,Manitoba,30.0
+2025-08-19,harvest,All crops,Central,7.0
+2025-08-19,harvest,All crops,Eastern,4.0
+2025-08-19,harvest,All crops,Interlake,6.0
+2025-08-19,harvest,All crops,Manitoba,4.0
+2025-08-19,harvest,All crops,Northwest,1.0
+2025-08-19,harvest,All crops,Southwest,2.0
+2025-08-19,harvest,Barley,Central,20.0
+2025-08-19,harvest,Barley,Eastern,7.0
+2025-08-19,harvest,Barley,Interlake,5.0
+2025-08-19,harvest,Barley,Manitoba,8.0
+2025-08-19,harvest,Canola,Central,2.0
+2025-08-19,harvest,Fall Rye,Central,80.0
+2025-08-19,harvest,Fall Rye,Eastern,80.0
+2025-08-19,harvest,Fall Rye,Interlake,70.0
+2025-08-19,harvest,Fall Rye,Manitoba,52.0
+2025-08-19,harvest,Fall Rye,Northwest,30.0
+2025-08-19,harvest,Fall Rye,Southwest,25.0
+2025-08-19,harvest,Field Pea,Central,30.0
+2025-08-19,harvest,Field Pea,Eastern,20.0
+2025-08-19,harvest,Field Pea,Interlake,15.0
+2025-08-19,harvest,Field Pea,Manitoba,19.0
+2025-08-19,harvest,Field Pea,Northwest,20.0
+2025-08-19,harvest,Field Pea,Southwest,10.0
+2025-08-19,harvest,Oats,Central,10.0
+2025-08-19,harvest,Oats,Eastern,5.0
+2025-08-19,harvest,Oats,Interlake,5.0
+2025-08-19,harvest,Oats,Manitoba,4.0
+2025-08-19,harvest,Spring Wheat,Central,10.0
+2025-08-19,harvest,Spring Wheat,Eastern,5.0
+2025-08-19,harvest,Spring Wheat,Interlake,10.0
+2025-08-19,harvest,Spring Wheat,Manitoba,6.0
+2025-08-19,harvest,Spring Wheat,Northwest,1.0
+2025-08-19,harvest,Spring Wheat,Southwest,5.0
+2025-08-19,harvest,Winter Wheat,Central,80.0
+2025-08-19,harvest,Winter Wheat,Eastern,80.0
+2025-08-19,harvest,Winter Wheat,Interlake,70.0
+2025-08-19,harvest,Winter Wheat,Manitoba,52.0
+2025-08-19,harvest,Winter Wheat,Northwest,30.0
+2025-08-19,harvest,Winter Wheat,Southwest,25.0
+2025-08-26,harvest,All crops,Central,16.0
+2025-08-26,harvest,All crops,Eastern,6.0
+2025-08-26,harvest,All crops,Interlake,11.0
+2025-08-26,harvest,All crops,Manitoba,10.0
+2025-08-26,harvest,All crops,Northwest,4.0
+2025-08-26,harvest,All crops,Southwest,9.0
+2025-08-26,harvest,Barley,Central,30.0
+2025-08-26,harvest,Barley,Eastern,7.0
+2025-08-26,harvest,Barley,Interlake,15.0
+2025-08-26,harvest,Barley,Manitoba,20.0
+2025-08-26,harvest,Barley,Southwest,25.0
+2025-08-26,harvest,Canola,Central,4.0
+2025-08-26,harvest,Canola,Eastern,1.0
+2025-08-26,harvest,Canola,Manitoba,1.0
+2025-08-26,harvest,Fall Rye,Central,95.0
+2025-08-26,harvest,Fall Rye,Eastern,80.0
+2025-08-26,harvest,Fall Rye,Interlake,80.0
+2025-08-26,harvest,Fall Rye,Manitoba,85.0
+2025-08-26,harvest,Fall Rye,Northwest,60.0
+2025-08-26,harvest,Fall Rye,Southwest,90.0
+2025-08-26,harvest,Field Pea,Central,80.0
+2025-08-26,harvest,Field Pea,Eastern,20.0
+2025-08-26,harvest,Field Pea,Interlake,45.0
+2025-08-26,harvest,Field Pea,Manitoba,65.0
+2025-08-26,harvest,Field Pea,Northwest,40.0
+2025-08-26,harvest,Field Pea,Southwest,80.0
+2025-08-26,harvest,Oats,Central,25.0
+2025-08-26,harvest,Oats,Eastern,10.0
+2025-08-26,harvest,Oats,Interlake,15.0
+2025-08-26,harvest,Oats,Manitoba,10.0
+2025-08-26,harvest,Spring Wheat,Central,30.0
+2025-08-26,harvest,Spring Wheat,Eastern,10.0
+2025-08-26,harvest,Spring Wheat,Interlake,20.0
+2025-08-26,harvest,Spring Wheat,Manitoba,18.0
+2025-08-26,harvest,Spring Wheat,Northwest,5.0
+2025-08-26,harvest,Spring Wheat,Southwest,15.0
+2025-08-26,harvest,Winter Wheat,Central,95.0
+2025-08-26,harvest,Winter Wheat,Eastern,80.0
+2025-08-26,harvest,Winter Wheat,Interlake,80.0
+2025-08-26,harvest,Winter Wheat,Manitoba,85.0
+2025-08-26,harvest,Winter Wheat,Northwest,60.0
+2025-08-26,harvest,Winter Wheat,Southwest,90.0
+2025-09-09,harvest,All crops,Central,51.0
+2025-09-09,harvest,All crops,Eastern,38.0
+2025-09-09,harvest,All crops,Interlake,49.0
+2025-09-09,harvest,All crops,Manitoba,40.0
+2025-09-09,harvest,All crops,Northwest,35.0
+2025-09-09,harvest,All crops,Southwest,33.0
+2025-09-09,harvest,Barley,Central,90.0
+2025-09-09,harvest,Barley,Eastern,85.0
+2025-09-09,harvest,Barley,Interlake,80.0
+2025-09-09,harvest,Barley,Manitoba,77.0
+2025-09-09,harvest,Barley,Northwest,50.0
+2025-09-09,harvest,Barley,Southwest,75.0
+2025-09-09,harvest,Canola,Central,35.0
+2025-09-09,harvest,Canola,Eastern,10.0
+2025-09-09,harvest,Canola,Interlake,25.0
+2025-09-09,harvest,Canola,Manitoba,18.0
+2025-09-09,harvest,Canola,Northwest,2.0
+2025-09-09,harvest,Canola,Southwest,10.0
+2025-09-09,harvest,Fall Rye,Central,100.0
+2025-09-09,harvest,Fall Rye,Eastern,100.0
+2025-09-09,harvest,Fall Rye,Interlake,100.0
+2025-09-09,harvest,Fall Rye,Manitoba,100.0
+2025-09-09,harvest,Fall Rye,Northwest,100.0
+2025-09-09,harvest,Fall Rye,Southwest,100.0
+2025-09-09,harvest,Field Pea,Central,100.0
+2025-09-09,harvest,Field Pea,Eastern,100.0
+2025-09-09,harvest,Field Pea,Interlake,95.0
+2025-09-09,harvest,Field Pea,Manitoba,99.0
+2025-09-09,harvest,Field Pea,Northwest,95.0
+2025-09-09,harvest,Field Pea,Southwest,100.0
+2025-09-09,harvest,Oats,Central,90.0
+2025-09-09,harvest,Oats,Eastern,60.0
+2025-09-09,harvest,Oats,Interlake,80.0
+2025-09-09,harvest,Oats,Manitoba,63.0
+2025-09-09,harvest,Oats,Northwest,50.0
+2025-09-09,harvest,Oats,Southwest,40.0
+2025-09-09,harvest,Spring Wheat,Central,90.0
+2025-09-09,harvest,Spring Wheat,Eastern,80.0
+2025-09-09,harvest,Spring Wheat,Interlake,85.0
+2025-09-09,harvest,Spring Wheat,Manitoba,79.0
+2025-09-09,harvest,Spring Wheat,Northwest,75.0
+2025-09-09,harvest,Spring Wheat,Southwest,70.0
+2025-09-09,harvest,Winter Wheat,Central,100.0
+2025-09-09,harvest,Winter Wheat,Eastern,100.0
+2025-09-09,harvest,Winter Wheat,Interlake,100.0
+2025-09-09,harvest,Winter Wheat,Manitoba,100.0
+2025-09-09,harvest,Winter Wheat,Northwest,100.0
+2025-09-09,harvest,Winter Wheat,Southwest,100.0
+2025-09-16,harvest,All crops,Central,63.0
+2025-09-16,harvest,All crops,Eastern,57.0
+2025-09-16,harvest,All crops,Interlake,59.0
+2025-09-16,harvest,All crops,Manitoba,50.0
+2025-09-16,harvest,All crops,Northwest,42.0
+2025-09-16,harvest,All crops,Southwest,42.0
+2025-09-16,harvest,Barley,Central,99.0
+2025-09-16,harvest,Barley,Eastern,95.0
+2025-09-16,harvest,Barley,Interlake,90.0
+2025-09-16,harvest,Barley,Manitoba,87.0
+2025-09-16,harvest,Barley,Northwest,75.0
+2025-09-16,harvest,Barley,Southwest,80.0
+2025-09-16,harvest,Canola,Central,60.0
+2025-09-16,harvest,Canola,Eastern,50.0
+2025-09-16,harvest,Canola,Interlake,40.0
+2025-09-16,harvest,Canola,Manitoba,33.0
+2025-09-16,harvest,Canola,Northwest,8.0
+2025-09-16,harvest,Canola,Southwest,15.0
+2025-09-16,harvest,Fall Rye,Central,100.0
+2025-09-16,harvest,Fall Rye,Eastern,100.0
+2025-09-16,harvest,Fall Rye,Interlake,100.0
+2025-09-16,harvest,Fall Rye,Manitoba,100.0
+2025-09-16,harvest,Fall Rye,Northwest,100.0
+2025-09-16,harvest,Fall Rye,Southwest,100.0
+2025-09-16,harvest,Field Pea,Central,100.0
+2025-09-16,harvest,Field Pea,Eastern,100.0
+2025-09-16,harvest,Field Pea,Interlake,100.0
+2025-09-16,harvest,Field Pea,Manitoba,100.0
+2025-09-16,harvest,Field Pea,Northwest,100.0
+2025-09-16,harvest,Field Pea,Southwest,100.0
+2025-09-16,harvest,Oats,Central,95.0
+2025-09-16,harvest,Oats,Eastern,95.0
+2025-09-16,harvest,Oats,Interlake,90.0
+2025-09-16,harvest,Oats,Manitoba,79.0
+2025-09-16,harvest,Oats,Northwest,75.0
+2025-09-16,harvest,Oats,Southwest,65.0
+2025-09-16,harvest,Spring Wheat,Central,97.0
+2025-09-16,harvest,Spring Wheat,Eastern,95.0
+2025-09-16,harvest,Spring Wheat,Interlake,95.0
+2025-09-16,harvest,Spring Wheat,Manitoba,90.0
+2025-09-16,harvest,Spring Wheat,Northwest,80.0
+2025-09-16,harvest,Spring Wheat,Southwest,85.0
+2025-09-16,harvest,Winter Wheat,Central,100.0
+2025-09-16,harvest,Winter Wheat,Eastern,100.0
+2025-09-16,harvest,Winter Wheat,Interlake,100.0
+2025-09-16,harvest,Winter Wheat,Manitoba,100.0
+2025-09-16,harvest,Winter Wheat,Northwest,100.0
+2025-09-16,harvest,Winter Wheat,Southwest,100.0
+2025-09-23,harvest,All crops,Central,69.0
+2025-09-23,harvest,All crops,Eastern,67.0
+2025-09-23,harvest,All crops,Interlake,72.0
+2025-09-23,harvest,All crops,Manitoba,56.0
+2025-09-23,harvest,All crops,Northwest,44.0
+2025-09-23,harvest,All crops,Southwest,45.0
+2025-09-23,harvest,Barley,Central,100.0
+2025-09-23,harvest,Barley,Eastern,100.0
+2025-09-23,harvest,Barley,Interlake,99.0
+2025-09-23,harvest,Barley,Manitoba,89.0
+2025-09-23,harvest,Barley,Northwest,75.0
+2025-09-23,harvest,Barley,Southwest,80.0
+2025-09-23,harvest,Canola,Central,75.0
+2025-09-23,harvest,Canola,Eastern,75.0
+2025-09-23,harvest,Canola,Interlake,70.0
+2025-09-23,harvest,Canola,Manitoba,45.0
+2025-09-23,harvest,Canola,Northwest,10.0
+2025-09-23,harvest,Canola,Southwest,20.0
+2025-09-23,harvest,Fall Rye,Central,100.0
+2025-09-23,harvest,Fall Rye,Eastern,100.0
+2025-09-23,harvest,Fall Rye,Interlake,100.0
+2025-09-23,harvest,Fall Rye,Manitoba,100.0
+2025-09-23,harvest,Fall Rye,Northwest,100.0
+2025-09-23,harvest,Fall Rye,Southwest,100.0
+2025-09-23,harvest,Field Pea,Central,100.0
+2025-09-23,harvest,Field Pea,Eastern,100.0
+2025-09-23,harvest,Field Pea,Interlake,100.0
+2025-09-23,harvest,Field Pea,Manitoba,100.0
+2025-09-23,harvest,Field Pea,Northwest,100.0
+2025-09-23,harvest,Field Pea,Southwest,100.0
+2025-09-23,harvest,Oats,Central,95.0
+2025-09-23,harvest,Oats,Eastern,100.0
+2025-09-23,harvest,Oats,Interlake,99.0
+2025-09-23,harvest,Oats,Manitoba,84.0
+2025-09-23,harvest,Oats,Northwest,75.0
+2025-09-23,harvest,Oats,Southwest,70.0
+2025-09-23,harvest,Soybeans,Interlake,7.0
+2025-09-23,harvest,Soybeans,Manitoba,10.0
+2025-09-23,harvest,Spring Wheat,Central,97.0
+2025-09-23,harvest,Spring Wheat,Eastern,95.0
+2025-09-23,harvest,Spring Wheat,Interlake,100.0
+2025-09-23,harvest,Spring Wheat,Manitoba,93.0
+2025-09-23,harvest,Spring Wheat,Northwest,85.0
+2025-09-23,harvest,Spring Wheat,Southwest,90.0
+2025-09-23,harvest,Winter Wheat,Central,100.0
+2025-09-23,harvest,Winter Wheat,Eastern,100.0
+2025-09-23,harvest,Winter Wheat,Interlake,100.0
+2025-09-23,harvest,Winter Wheat,Manitoba,100.0
+2025-09-23,harvest,Winter Wheat,Northwest,100.0
+2025-09-23,harvest,Winter Wheat,Southwest,100.0
+2025-10-07,harvest,All crops,Central,94.0
+2025-10-07,harvest,All crops,Eastern,85.0
+2025-10-07,harvest,All crops,Interlake,89.0
+2025-10-07,harvest,All crops,Manitoba,86.0
+2025-10-07,harvest,All crops,Northwest,82.0
+2025-10-07,harvest,All crops,Southwest,85.0
+2025-10-07,harvest,Barley,Central,100.0
+2025-10-07,harvest,Barley,Eastern,100.0
+2025-10-07,harvest,Barley,Interlake,100.0
+2025-10-07,harvest,Barley,Manitoba,98.0
+2025-10-07,harvest,Barley,Northwest,90.0
+2025-10-07,harvest,Barley,Southwest,99.0
+2025-10-07,harvest,Canola,Central,95.0
+2025-10-07,harvest,Canola,Eastern,90.0
+2025-10-07,harvest,Canola,Interlake,90.0
+2025-10-07,harvest,Canola,Manitoba,92.0
+2025-10-07,harvest,Canola,Northwest,90.0
+2025-10-07,harvest,Canola,Southwest,90.0
+2025-10-07,harvest,Dry Bean,Interlake,90.0
+2025-10-07,harvest,Dry Bean,Manitoba,90.0
+2025-10-07,harvest,Fall Rye,Central,100.0
+2025-10-07,harvest,Fall Rye,Eastern,100.0
+2025-10-07,harvest,Fall Rye,Interlake,100.0
+2025-10-07,harvest,Fall Rye,Manitoba,100.0
+2025-10-07,harvest,Fall Rye,Northwest,100.0
+2025-10-07,harvest,Fall Rye,Southwest,100.0
+2025-10-07,harvest,Field Pea,Central,100.0
+2025-10-07,harvest,Field Pea,Eastern,100.0
+2025-10-07,harvest,Field Pea,Interlake,100.0
+2025-10-07,harvest,Field Pea,Manitoba,100.0
+2025-10-07,harvest,Field Pea,Northwest,100.0
+2025-10-07,harvest,Field Pea,Southwest,100.0
+2025-10-07,harvest,Oats,Central,100.0
+2025-10-07,harvest,Oats,Eastern,100.0
+2025-10-07,harvest,Oats,Interlake,100.0
+2025-10-07,harvest,Oats,Manitoba,98.0
+2025-10-07,harvest,Oats,Northwest,90.0
+2025-10-07,harvest,Oats,Southwest,99.0
+2025-10-07,harvest,Potatoes,Eastern,80.0
+2025-10-07,harvest,Potatoes,Southwest,90.0
+2025-10-07,harvest,Spring Wheat,Central,100.0
+2025-10-07,harvest,Spring Wheat,Eastern,100.0
+2025-10-07,harvest,Spring Wheat,Interlake,100.0
+2025-10-07,harvest,Spring Wheat,Manitoba,99.0
+2025-10-07,harvest,Spring Wheat,Northwest,98.0
+2025-10-07,harvest,Spring Wheat,Southwest,99.0
+2025-10-07,harvest,Winter Wheat,Central,100.0
+2025-10-07,harvest,Winter Wheat,Eastern,100.0
+2025-10-07,harvest,Winter Wheat,Interlake,100.0
+2025-10-07,harvest,Winter Wheat,Manitoba,100.0
+2025-10-07,harvest,Winter Wheat,Northwest,100.0
+2025-10-07,harvest,Winter Wheat,Southwest,100.0
+2026-05-26,seeding,Spring Wheat,Manitoba,75.0
+2026-06-02,seeding,Canola,Manitoba,60.0
+2026-06-02,seeding,Soybeans,Manitoba,64.0
+2026-06-02,seeding,Spring Wheat,Manitoba,88.0
+2026-06-16,seeding,Canola,Manitoba,75.0
+2026-06-23,seeding,Canola,Manitoba,85.0
 2026-08-25,harvest,All crops,Central,9.0
 2026-08-25,harvest,All crops,Eastern,5.0
 2026-08-25,harvest,All crops,Interlake,2.0

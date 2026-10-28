@@ -140,6 +140,59 @@ def parse_mb_pdf(content, report_date):
     return rows
 
 
+MB_SEED_CROPS = [("spring wheat", "Spring Wheat"), ("winter wheat", "Winter Wheat"),
+                 ("barley", "Barley"), ("oats", "Oats"),
+                 ("canola", "Canola"), ("sunflower", "Sunflowers"), ("flax", "Flax"),
+                 ("soybean", "Soybeans"), ("corn", "Corn"), ("field pea", "Field Pea"),
+                 ("pea", "Field Pea"), ("dry bean", "Dry Bean"), ("edible bean", "Dry Bean")]
+_MB_PCT = re.compile(r"(\d{1,3})(?:\s?(?:-|–|�|to)\s?(\d{1,3}))?\s?%")
+
+
+def parse_mb_seeding(content, report_date):
+    """Manitoba gives seeding progress only as sentences: the province-wide ones sit in the
+    Cereals / Oilseeds / Pulses sections, before the regional comments. Each percent is paired
+    with the crops named before it; ranges take the midpoint; sentences about a region are skipped."""
+    with pdfplumber.open(io.BytesIO(content)) as pdf:
+        lines = [ln for p in pdf.pages for ln in (p.extract_text() or "").split("\n")]
+    rows, seen = [], set()
+
+    def add(crop, v):
+        if (crop not in seen) and 0 <= v <= 100:
+            seen.add(crop)
+            rows.append((report_date, "seeding", crop, "Manitoba", float(v)))
+    starts = [i for i, ln in enumerate(lines) if ln.strip() == "Cereals"]
+    ends = [i for i, ln in enumerate(lines) if ln.strip().startswith("Forages & Livestock")]
+    if starts:
+        s = starts[-1]
+        e = next((i for i in ends if i > s), s + 40)
+        text = " ".join(lines[s:e])
+        for sent in re.split(r"(?<=[a-z%)])\.\s+|�\s*|•\s*", text):
+            sent = re.split(r",? with | region|Northwest|Southwest|Central|Eastern|Interlake", sent)[0]
+            low = sent.lower()
+            if not re.search(r"seed|plant|complete", low) or re.search(
+                    r"5-year|five-year|average of|harvest", low):
+                continue
+            pos, names = 0, []
+            for m in _MB_PCT.finditer(sent):
+                seg = sent[pos:m.start()].lower()
+                found = [name for key, name in MB_SEED_CROPS if key in seg]
+                if not found:  # "approximately 60% of the canola acres"
+                    nxt = _MB_PCT.search(sent, m.end())
+                    seg2 = sent[m.end():nxt.start() if nxt else None].lower()
+                    found = [name for key, name in MB_SEED_CROPS if key in seg2]
+                found = list(dict.fromkeys(found))
+                v = (int(m.group(1)) + int(m.group(2))) / 2 if m.group(2) else int(m.group(1))
+                for n in found:
+                    add(n, v)
+                pos = m.end()
+    txt = " ".join(lines)
+    m = re.search(r"[Pp]rovincial seeding progress is (?:about |at |around )?(\d{1,3})\s?%", txt) or \
+        re.search(r"[Ss]eeding progress[^.]{0,80}?province[^.]{0,40}?(\d{1,3})\s?%", txt)
+    if m:
+        add("All crops", int(m.group(1)))
+    return rows
+
+
 def _load(path):
     return pd.read_csv(path) if path.exists() else pd.DataFrame(
         columns=["date", "kind", "crop", "region", "value"])
@@ -200,20 +253,30 @@ def build_mb(years):
     done = set(df["date"])
     new = []
     for y in years:
-        d = date(y, 8, 1)
+        d = date(y, 4, 20)  # seeding reports from late April, harvest ones to November
         while d.weekday() != 1:  # Tuesdays
             d += timedelta(days=1)
         while d <= min(date(y, 11, 30), date.today()):
             ds = d.isoformat()
             d += timedelta(days=7)
-            if ds in done:
+            if ds in done or date(y, 7, 8) < date.fromisoformat(ds) < date(y, 8, 1):
                 continue
-            r = requests.get(MB_URL.format(d=ds), headers=UA, timeout=60)
-            if r.status_code != 200 or not r.content.startswith(b"%PDF"):
+            r = None
+            for attempt in range(4):
+                try:
+                    r = requests.get(MB_URL.format(d=ds), headers=UA, timeout=60)
+                    break
+                except requests.RequestException:
+                    time.sleep(3 * (attempt + 1))
+            if r is None or r.status_code != 200 or not r.content.startswith(b"%PDF"):
                 continue
-            got = parse_mb_pdf(r.content, ds)
-            print(" ", ds, len(got), "values")
+            got = parse_mb_pdf(r.content, ds) + parse_mb_seeding(r.content, ds)
+            print(" ", ds, len(got), "values", flush=True)
             new += got
+        if new:  # checkpoint per year: a dropped connection should not lose the run
+            df = pd.concat([df, pd.DataFrame(new, columns=df.columns)])
+            _save(df, path)
+            new = []
     if new:
         df = pd.concat([df, pd.DataFrame(new, columns=df.columns)])
     _save(df, path)
@@ -377,6 +440,78 @@ def parse_sk_pdf(content, report_date):
     return rows
 
 
+_SK_PC = r"(\d{1,3}(?:\.\d)?)\s*(?:per ?cent|%)"
+_SK_REGION_WORDS = re.compile(r"southwest|southeast|northwest|northeast|east-central|west-central|"
+                              r"region", re.I)
+_SK_NAMES = {**{c.lower(): c for c in SK_CROPS},
+             **{k.lower(): v for k, v in SK_PROGRESS_NAMES.items()},
+             "spring wheat": "Spring Wheat", "lentil": "Lentils", "pea": "Field Peas"}
+
+
+def parse_sk_prose(content, report_date):
+    """Province-wide seeding and harvest progress stated in the narrative on the first pages
+    (the regional pages come later and are not read). Overall: 'Harvest is currently 74 per cent
+    complete'. Per crop only where the crop sits next to its percent: '93 per cent of durum acres
+    have been harvested' or 'canola harvest is at 47 per cent'."""
+    texts = _page_texts(content)
+    if texts is None:
+        with pdfplumber.open(io.BytesIO(content)) as pdf:
+            texts = [(pg.extract_text() or "") for pg in pdf.pages[:2]]
+    flat = re.sub(r"\s+", " ", " ".join(texts[:2]))
+    rows, seen = [], set()
+
+    def add(kind, crop, v):
+        if (kind, crop) not in seen and 0 <= v <= 100:
+            seen.add((kind, crop))
+            rows.append((report_date, kind, crop, "Saskatchewan", float(v)))
+    for sent in re.split(r"(?<=[a-z%)])\.\s+", flat):
+        if _SK_REGION_WORDS.search(sent) or re.search(r"average|last year", sent, re.I):
+            continue
+        low = sent.lower()
+        kind = "harvest" if "harvest" in low or "combin" in low else (
+            "seeding" if "seed" in low else None)
+        if not kind:
+            continue
+        m = re.search(r"(?:harvest|seeding)\w*(?: progress)? (?:is|was|has|had)?\s*(?:currently |now |"
+                      r"nearly |about |at )*" + _SK_PC + r"(?: complete)?", sent, re.I) or \
+            re.search(_SK_PC + r" (?:complete|of (?:all |the )?(?:crop )?acres|of crops|of the crop)",
+                      sent, re.I)
+        if m:
+            add(kind, "All crops", float(m.group(1)))
+        def crop_name(txt):
+            txt = txt.lower().strip(" ,")
+            return _SK_NAMES.get(txt) or _SK_NAMES.get(txt.split(" ")[0])
+        for pct, crop in re.findall(_SK_PC + r" of (?:the )?([a-z]+(?: [a-z]+)?)", sent, re.I):
+            name = crop_name(crop)
+            if name:
+                add(kind, name, float(pct))
+        for crop, pct in re.findall(r"([A-Za-z]+(?: [a-z]+)?) (?:harvest |seeding )?(?:progress )?"
+                                    r"(?:is|are|was|were|at)(?: reported to be| currently| now| at| about)* "
+                                    + _SK_PC, sent):
+            name = crop_name(crop)
+            if name:
+                add(kind, name, float(pct))
+    return rows
+
+
+def build_sk_prose(years):
+    """Re-read every listed report for the narrative figures (adds rows, never replaces)."""
+    path = DATA / "sk_reports.csv"
+    df = _load(path)
+    new = []
+    for d, url in sk_listing(years or sorted({*SK_YEAR_PRODUCTS, *SK_YEAR_CATEGORIES})):
+        try:
+            got = parse_sk_prose(_get(url), d)
+        except Exception as e:
+            print("  FAILED", d, e)
+            continue
+        print(" ", d, [(k[0], c, v) for _, k, c, _, v in got][:6], flush=True)
+        new += got
+    if new:
+        df = pd.concat([df, pd.DataFrame(new, columns=df.columns)])
+    _save(df, path)
+
+
 def build_sk(years):
     path = DATA / "sk_reports.csv"
     df = _load(path)
@@ -386,7 +521,8 @@ def build_sk(years):
         if d in done:
             continue
         try:
-            got = parse_sk_pdf(_get(url), d)
+            content = _get(url)
+            got = parse_sk_pdf(content, d) + parse_sk_prose(content, d)
         except Exception as e:
             print("  FAILED", d, e)
             continue
@@ -1219,6 +1355,8 @@ if __name__ == "__main__":
     if what in ("vh", "all"):
         import vh
         vh.build()
+    if what == "skprose":
+        build_sk_prose(yrs)
     if what in ("sk", "all"):
         build_sk(yrs)
     if what in ("mb", "all"):

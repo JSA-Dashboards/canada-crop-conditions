@@ -183,21 +183,30 @@ def tab_progress():
                     st.info(f"No {prov} {word} data parsed for {crop}.")
     else:
         st.info(f"{prov} progress is not parsed here. Manitoba harvest progress is below.")
-    st.subheader("Manitoba harvest progress")
+    st.subheader("Manitoba seeding and harvest progress")
     if mb.empty:
         st.info("No Manitoba data. Run build_data.py mb.")
         return
-    latest = mb["date"].max()
-    m = mb[(mb["date"] == latest) & (mb["kind"] == "harvest")]
-    wide = m.pivot_table(index="crop", columns="region", values="value")
-    wide = wide[[r for r in MB_REGIONS if r in wide.columns]]
-    st.caption(f"Manitoba Agriculture weekly report, harvest completion to {latest:%b %d, %Y}")
-    st.dataframe(wide.style.format("{:.0f}%", na_rep="-").map(
-        shade(0, 100, *WHITE_BLUE)), width="stretch")
-    mc = M.series(mb, "harvest", M.MB_LABEL.get(crop, ""), "Manitoba")
-    if len(mc):
-        st.plotly_chart(year_lines(mc, f"Manitoba {M.MB_LABEL[crop]} harvest (province)",
-                                   "% harvested", cur_year), width="stretch")
+    hv = mb[mb["kind"] == "harvest"]
+    if len(hv):
+        latest = hv["date"].max()
+        wide = hv[hv["date"] == latest].pivot_table(index="crop", columns="region", values="value")
+        wide = wide[[r for r in MB_REGIONS if r in wide.columns]]
+        st.caption(f"Manitoba Agriculture weekly report, harvest completion to "
+                   f"{pd.Timestamp(latest):%b %d, %Y}")
+        st.dataframe(wide.style.format("{:.0f}%", na_rep="-").map(
+            shade(0, 100, *WHITE_BLUE)), width="stretch")
+    for kind, word in (("seeding", "seeded"), ("harvest", "harvested")):
+        mc = M.series(mb, kind, M.MB_LABEL.get(crop, ""), "Manitoba")
+        if len(mc):
+            st.plotly_chart(year_lines(mc, f"Manitoba {M.MB_LABEL[crop]} {word} (province)",
+                                       f"% {word}", cur_year), width="stretch")
+        elif kind == "seeding":
+            st.info("No Manitoba seeding figures parsed for this crop. Manitoba states seeding "
+                    "progress only in report sentences, so some weeks have none.")
+    st.caption("Manitoba harvest comes from the report's table. Seeding is read from the "
+               "province-wide sentences in the Cereals, Oilseeds and Pulses sections, so a week "
+               "can be missing for a crop the report did not give a percent for.")
 
 
 @st.fragment

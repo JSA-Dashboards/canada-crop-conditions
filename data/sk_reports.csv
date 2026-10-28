@@ -1,12 +1,216 @@
 date,kind,crop,region,value
+2020-05-04,seeding,All crops,Saskatchewan,13.0
+2020-05-04,seeding,Chickpea,Saskatchewan,4.0
 2020-05-11,seeding,All crops,Saskatchewan,18.0
+2020-05-18,seeding,Canola,Saskatchewan,38.0
+2020-05-25,seeding,All crops,Saskatchewan,92.0
 2020-06-01,seeding,All crops,Saskatchewan,96.0
+2020-06-01,seeding,Barley,Saskatchewan,93.0
+2020-06-01,seeding,Canola,Saskatchewan,95.0
+2020-06-01,seeding,Durum,Saskatchewan,98.0
+2020-06-01,seeding,Field Pea,Saskatchewan,99.0
+2020-06-01,seeding,Flax,Saskatchewan,94.0
+2020-06-01,seeding,Oats,Saskatchewan,88.0
+2020-06-01,seeding,Spring Wheat,Saskatchewan,96.0
+2020-06-08,seeding,All crops,Saskatchewan,98.0
+2020-06-08,seeding,Flax,Saskatchewan,28.0
+2020-06-15,seeding,All crops,Saskatchewan,99.0
+2020-08-17,harvest,Barley,Saskatchewan,12.0
+2020-08-17,harvest,Field Pea,Saskatchewan,22.0
+2020-08-17,harvest,Lentil,Saskatchewan,19.0
+2020-08-17,harvest,Winter Wheat,Saskatchewan,37.0
+2020-08-24,harvest,Barley,Saskatchewan,35.0
+2020-08-24,harvest,Canola,Saskatchewan,16.0
+2020-08-24,harvest,Durum,Saskatchewan,15.0
+2020-08-24,harvest,Field Pea,Saskatchewan,56.0
+2020-08-24,harvest,Lentil,Saskatchewan,59.0
+2020-08-24,harvest,Spring Wheat,Saskatchewan,14.0
+2020-08-24,harvest,Winter Wheat,Saskatchewan,82.0
+2020-08-31,harvest,All crops,Saskatchewan,50.0
+2020-08-31,harvest,Chickpea,Saskatchewan,28.0
+2020-08-31,harvest,Durum,Saskatchewan,37.0
+2020-08-31,harvest,Field Pea,Saskatchewan,73.0
+2020-08-31,harvest,Lentil,Saskatchewan,81.0
+2020-08-31,harvest,Mustard,Saskatchewan,53.0
+2020-08-31,harvest,Spring Wheat,Saskatchewan,19.0
+2020-08-31,harvest,Winter Wheat,Saskatchewan,96.0
+2020-09-07,harvest,All crops,Saskatchewan,71.0
+2020-09-07,harvest,Barley,Saskatchewan,58.0
+2020-09-07,harvest,Chickpea,Saskatchewan,39.0
+2020-09-07,harvest,Durum,Saskatchewan,62.0
+2020-09-07,harvest,Field Pea,Saskatchewan,87.0
+2020-09-07,harvest,Spring Wheat,Saskatchewan,32.0
+2020-09-14,harvest,Barley,Saskatchewan,72.0
+2020-09-14,harvest,Canola,Saskatchewan,47.0
+2020-09-14,harvest,Chickpea,Saskatchewan,69.0
+2020-09-14,harvest,Durum,Saskatchewan,86.0
+2020-09-14,harvest,Field Pea,Saskatchewan,94.0
+2020-09-14,harvest,Flax,Saskatchewan,28.0
+2020-09-14,harvest,Mustard,Saskatchewan,87.0
+2020-09-14,harvest,Spring Wheat,Saskatchewan,55.0
+2020-09-21,harvest,Barley,Saskatchewan,86.0
+2020-09-21,harvest,Chickpea,Saskatchewan,77.0
+2020-09-21,harvest,Durum,Saskatchewan,95.0
+2020-09-21,harvest,Field Pea,Saskatchewan,98.0
+2020-09-21,harvest,Flax,Saskatchewan,52.0
+2020-09-21,harvest,Oats,Saskatchewan,71.0
+2020-09-28,harvest,Barley,Saskatchewan,97.0
+2020-09-28,harvest,Canola,Saskatchewan,80.0
+2020-09-28,harvest,Chickpea,Saskatchewan,98.0
+2020-09-28,harvest,Flax,Saskatchewan,69.0
+2020-09-28,harvest,Oats,Saskatchewan,87.0
+2020-09-28,harvest,Soybean,Saskatchewan,59.0
+2020-09-28,harvest,Spring Wheat,Saskatchewan,88.0
+2020-09-28,seeding,Canola,Saskatchewan,18.0
+2020-10-05,harvest,All crops,Saskatchewan,96.0
+2020-10-05,harvest,Canola,Saskatchewan,100.0
+2020-10-05,harvest,Flax,Saskatchewan,86.0
+2020-10-05,harvest,Oats,Saskatchewan,95.0
+2020-10-05,harvest,Soybean,Saskatchewan,81.0
+2020-10-05,harvest,Spring Wheat,Saskatchewan,97.0
+2020-10-12,harvest,All crops,Saskatchewan,99.0
+2021-05-03,seeding,Barley,Saskatchewan,22.0
+2021-05-03,seeding,Durum,Saskatchewan,19.0
+2021-05-17,seeding,Barley,Saskatchewan,75.0
+2021-05-17,seeding,Canola,Saskatchewan,78.0
+2021-05-17,seeding,Chickpea,Saskatchewan,83.0
+2021-05-17,seeding,Durum,Saskatchewan,83.0
+2021-05-17,seeding,Lentil,Saskatchewan,93.0
+2021-05-17,seeding,Spring Wheat,Saskatchewan,80.0
+2021-05-24,seeding,All crops,Saskatchewan,80.0
+2021-05-31,seeding,All crops,Saskatchewan,96.0
+2021-05-31,seeding,Barley,Saskatchewan,96.0
+2021-05-31,seeding,Chickpea,Saskatchewan,98.0
+2021-05-31,seeding,Durum,Saskatchewan,98.0
+2021-05-31,seeding,Lentil,Saskatchewan,95.0
+2021-05-31,seeding,Oats,Saskatchewan,92.0
+2021-05-31,seeding,Spring Wheat,Saskatchewan,97.0
+2021-08-16,harvest,All crops,Saskatchewan,20.0
+2021-08-16,harvest,Barley,Saskatchewan,25.0
+2021-08-16,harvest,Field Pea,Saskatchewan,64.0
+2021-08-23,harvest,Barley,Saskatchewan,42.0
+2021-08-23,harvest,Durum,Saskatchewan,31.0
+2021-08-23,harvest,Fall Rye,Saskatchewan,78.0
+2021-08-23,harvest,Field Pea,Saskatchewan,81.0
+2021-08-23,harvest,Lentil,Saskatchewan,76.0
+2021-08-23,harvest,Spring Wheat,Saskatchewan,25.0
+2021-08-30,harvest,Canola,Saskatchewan,11.0
+2021-08-30,harvest,Chickpea,Saskatchewan,11.0
+2021-08-30,harvest,Durum,Saskatchewan,40.0
+2021-08-30,harvest,Fall Rye,Saskatchewan,83.0
+2021-08-30,harvest,Field Pea,Saskatchewan,84.0
+2021-08-30,harvest,Lentil,Saskatchewan,85.0
+2021-08-30,harvest,Mustard,Saskatchewan,57.0
+2021-08-30,harvest,Spring Wheat,Saskatchewan,36.0
+2021-09-06,harvest,Barley,Saskatchewan,66.0
+2021-09-06,harvest,Canola,Saskatchewan,31.0
+2021-09-06,harvest,Durum,Saskatchewan,75.0
+2021-09-06,harvest,Lentil,Saskatchewan,93.0
+2021-09-06,harvest,Mustard,Saskatchewan,74.0
+2021-09-06,harvest,Spring Wheat,Saskatchewan,58.0
+2021-09-13,harvest,Barley,Saskatchewan,82.0
+2021-09-13,harvest,Canola,Saskatchewan,54.0
+2021-09-13,harvest,Durum,Saskatchewan,89.0
+2021-09-13,harvest,Field Pea,Saskatchewan,98.0
+2021-09-13,harvest,Flax,Saskatchewan,25.0
+2021-09-13,harvest,Mustard,Saskatchewan,86.0
+2021-09-13,harvest,Spring Wheat,Saskatchewan,83.0
+2021-09-21,harvest,Canola,Saskatchewan,80.0
+2021-09-21,harvest,Durum,Saskatchewan,94.0
+2021-09-21,harvest,Field Pea,Saskatchewan,99.0
+2021-09-21,harvest,Flax,Saskatchewan,64.0
+2021-09-21,harvest,Oats,Saskatchewan,80.0
 2022-05-02,seeding,All crops,Saskatchewan,1.0
+2022-05-09,seeding,All crops,Saskatchewan,38.0
+2022-05-16,seeding,Barley,Saskatchewan,27.0
+2022-05-16,seeding,Durum,Saskatchewan,51.0
+2022-05-16,seeding,Field Pea,Saskatchewan,57.0
+2022-05-30,seeding,All crops,Saskatchewan,76.0
+2022-05-30,seeding,Barley,Saskatchewan,69.0
+2022-05-30,seeding,Canaryseed,Saskatchewan,79.0
+2022-05-30,seeding,Canola,Saskatchewan,97.0
+2022-05-30,seeding,Durum,Saskatchewan,91.0
+2022-05-30,seeding,Field Pea,Saskatchewan,93.0
+2022-05-30,seeding,Flax,Saskatchewan,65.0
+2022-05-30,seeding,Lentil,Saskatchewan,96.0
+2022-05-30,seeding,Spring Wheat,Saskatchewan,75.0
+2022-06-13,seeding,All crops,Saskatchewan,98.0
+2022-08-22,harvest,Durum,Saskatchewan,30.0
+2022-08-22,harvest,Fall Rye,Saskatchewan,36.0
+2022-08-22,harvest,Field Pea,Saskatchewan,43.0
+2022-08-22,harvest,Lentil,Saskatchewan,52.0
+2022-08-22,harvest,Winter Wheat,Saskatchewan,63.0
+2022-08-29,harvest,Durum,Saskatchewan,51.0
+2022-08-29,harvest,Fall Rye,Saskatchewan,62.0
+2022-08-29,harvest,Field Pea,Saskatchewan,66.0
+2022-08-29,harvest,Lentil,Saskatchewan,74.0
+2022-08-29,harvest,Mustard,Saskatchewan,46.0
+2022-08-29,harvest,Spring Wheat,Saskatchewan,16.0
+2022-09-05,harvest,Barley,Saskatchewan,52.0
+2022-09-05,harvest,Canola,Saskatchewan,22.0
+2022-09-05,harvest,Durum,Saskatchewan,70.0
+2022-09-05,harvest,Fall Rye,Saskatchewan,84.0
+2022-09-05,harvest,Spring Wheat,Saskatchewan,40.0
+2022-09-05,harvest,Winter Wheat,Saskatchewan,96.0
+2022-09-15,harvest,Barley,Saskatchewan,72.0
+2022-09-15,harvest,Canola,Saskatchewan,39.0
+2022-09-15,harvest,Durum,Saskatchewan,90.0
+2022-09-15,harvest,Flax,Saskatchewan,23.0
+2022-09-15,harvest,Spring Wheat,Saskatchewan,68.0
+2022-09-19,harvest,Barley,Saskatchewan,78.0
+2022-09-19,harvest,Canola,Saskatchewan,52.0
+2022-09-19,harvest,Durum,Saskatchewan,94.0
+2022-09-19,harvest,Flax,Saskatchewan,35.0
+2022-09-19,harvest,Spring Wheat,Saskatchewan,77.0
+2022-09-26,harvest,Barley,Saskatchewan,86.0
+2022-09-26,harvest,Canola,Saskatchewan,66.0
+2022-09-26,harvest,Chickpea,Saskatchewan,94.0
+2022-09-26,harvest,Spring Wheat,Saskatchewan,83.0
+2022-10-03,harvest,Barley,Saskatchewan,90.0
+2022-10-03,harvest,Canola,Saskatchewan,82.0
+2022-10-03,harvest,Chickpea,Saskatchewan,97.0
+2022-10-03,harvest,Flax,Saskatchewan,66.0
+2023-05-15,seeding,All crops,Saskatchewan,38.0
 2023-05-22,seeding,All crops,Saskatchewan,68.0
 2023-05-29,seeding,All crops,Saskatchewan,89.0
 2023-06-05,seeding,All crops,Saskatchewan,96.0
+2023-06-05,seeding,Flax,Saskatchewan,34.0
+2023-06-12,seeding,All crops,Saskatchewan,99.0
+2023-07-10,seeding,Canaryseed,Saskatchewan,21.0
+2023-08-14,harvest,Fall Rye,Saskatchewan,61.0
+2023-08-14,harvest,Winter Wheat,Saskatchewan,56.0
+2023-08-21,harvest,Fall Rye,Saskatchewan,89.0
+2023-08-21,harvest,Field Pea,Saskatchewan,66.0
+2023-08-21,harvest,Lentil,Saskatchewan,60.0
+2023-08-21,harvest,Winter Wheat,Saskatchewan,74.0
+2023-08-28,harvest,All crops,Saskatchewan,23.0
+2023-08-28,harvest,Barley,Saskatchewan,46.0
+2023-08-28,harvest,Durum,Saskatchewan,48.0
+2023-08-28,harvest,Oats,Saskatchewan,19.0
+2023-08-28,harvest,Spring Wheat,Saskatchewan,26.0
+2023-09-04,harvest,All crops,Saskatchewan,51.0
+2023-09-04,harvest,Durum,Saskatchewan,73.0
+2023-09-04,seeding,All crops,Saskatchewan,68.0
+2023-09-04,seeding,Flax,Saskatchewan,14.0
+2023-09-11,harvest,All crops,Saskatchewan,78.0
+2023-09-11,harvest,Canola,Saskatchewan,42.0
+2023-09-11,harvest,Flax,Saskatchewan,25.0
+2023-09-11,harvest,Mustard,Saskatchewan,84.0
+2023-09-11,harvest,Soybean,Saskatchewan,31.0
+2023-09-18,harvest,All crops,Saskatchewan,82.0
+2023-09-25,harvest,Canola,Saskatchewan,80.0
+2023-09-25,harvest,Flax,Saskatchewan,63.0
+2023-09-25,seeding,All crops,Saskatchewan,93.0
+2023-09-25,seeding,Canaryseed,Saskatchewan,88.0
+2023-09-25,seeding,Oats,Saskatchewan,93.0
+2023-10-16,harvest,All crops,Saskatchewan,98.0
 2024-05-06,seeding,All crops,Saskatchewan,12.0
 2024-05-13,seeding,All crops,Saskatchewan,32.0
+2024-05-13,seeding,Barley,Saskatchewan,30.0
+2024-05-13,seeding,Canaryseed,Saskatchewan,19.0
+2024-05-13,seeding,Chickpea,Saskatchewan,39.0
+2024-05-13,seeding,Durum,Saskatchewan,38.0
+2024-05-13,seeding,Field Pea,Saskatchewan,53.0
 2024-05-20,seeding,All crops,Saskatchewan,56.0
 2024-05-27,rating,Chickpea,Southwest,100.0
 2024-05-27,rating,Field Pea,Southwest,100.0
@@ -14,6 +218,12 @@ date,kind,crop,region,value
 2024-05-27,rating,Mustard,Southwest,94.0
 2024-05-27,rating,Soybean,Southwest,98.0
 2024-05-27,rating,Triticale,Southwest,98.0
+2024-05-27,seeding,All crops,Saskatchewan,77.0
+2024-05-27,seeding,Barley,Saskatchewan,28.0
+2024-05-27,seeding,Canaryseed,Saskatchewan,27.0
+2024-05-27,seeding,Mustard,Saskatchewan,78.0
+2024-05-27,seeding,Oats,Saskatchewan,22.0
+2024-06-03,seeding,All crops,Saskatchewan,94.0
 2024-06-10,rating,Barley,East-central,88.0
 2024-06-10,rating,Barley,Northeast,74.0
 2024-06-10,rating,Barley,Northwest,88.0
@@ -115,6 +325,7 @@ date,kind,crop,region,value
 2024-06-10,rating,Winter Wheat,Southeast,96.0
 2024-06-10,rating,Winter Wheat,Southwest,95.0
 2024-06-10,rating,Winter Wheat,West-central,86.0
+2024-06-10,seeding,All crops,Saskatchewan,99.0
 2024-06-24,rating,Barley,East-central,76.0
 2024-06-24,rating,Barley,Northeast,72.0
 2024-06-24,rating,Barley,Northwest,94.0
@@ -319,9 +530,66 @@ date,kind,crop,region,value
 2024-07-08,rating,Winter Wheat,Southeast,80.0
 2024-07-08,rating,Winter Wheat,Southwest,50.0
 2024-07-08,rating,Winter Wheat,West-central,50.0
+2024-08-05,harvest,Fall Rye,Saskatchewan,15.0
+2024-08-05,harvest,Winter Wheat,Saskatchewan,12.0
+2024-08-12,harvest,All crops,Saskatchewan,28.0
+2024-08-12,harvest,Fall Rye,Saskatchewan,42.0
+2024-08-12,harvest,Field Pea,Saskatchewan,26.0
+2024-08-12,harvest,Lentil,Saskatchewan,28.0
+2024-08-12,harvest,Winter Wheat,Saskatchewan,55.0
+2024-08-19,harvest,All crops,Saskatchewan,62.0
+2024-08-19,harvest,Barley,Saskatchewan,17.0
+2024-08-19,harvest,Durum,Saskatchewan,14.0
+2024-08-19,harvest,Lentil,Saskatchewan,50.0
+2024-08-19,harvest,Oats,Saskatchewan,11.0
+2024-09-02,harvest,All crops,Saskatchewan,51.0
+2024-09-02,harvest,Field Pea,Saskatchewan,90.0
+2024-09-02,harvest,Oats,Saskatchewan,32.0
+2024-09-02,harvest,Winter Wheat,Saskatchewan,93.0
+2024-09-09,harvest,Barley,Saskatchewan,70.0
+2024-09-09,harvest,Canaryseed,Saskatchewan,32.0
+2024-09-09,harvest,Durum,Saskatchewan,83.0
+2024-09-09,harvest,Oats,Saskatchewan,53.0
+2024-09-09,harvest,Spring Wheat,Saskatchewan,60.0
+2024-09-16,harvest,All crops,Saskatchewan,74.0
+2024-09-16,harvest,Barley,Saskatchewan,88.0
+2024-09-16,harvest,Durum,Saskatchewan,93.0
+2024-09-16,harvest,Flax,Saskatchewan,33.0
+2024-09-16,harvest,Oats,Saskatchewan,73.0
+2024-09-16,harvest,Soybean,Saskatchewan,25.0
+2024-09-23,harvest,All crops,Saskatchewan,95.0
+2024-09-23,harvest,Mustard,Saskatchewan,93.0
+2024-09-23,harvest,Spring Wheat,Saskatchewan,85.0
+2024-09-23,seeding,Canaryseed,Saskatchewan,68.0
+2024-09-30,harvest,All crops,Saskatchewan,91.0
+2024-09-30,harvest,Barley,Saskatchewan,98.0
+2024-09-30,harvest,Canaryseed,Saskatchewan,92.0
+2024-09-30,harvest,Canola,Saskatchewan,82.0
+2024-09-30,harvest,Flax,Saskatchewan,68.0
+2024-09-30,harvest,Oats,Saskatchewan,94.0
+2024-09-30,harvest,Spring Wheat,Saskatchewan,96.0
+2024-10-07,harvest,Oats,Saskatchewan,96.0
+2024-10-14,harvest,All crops,Saskatchewan,99.0
+2024-10-21,harvest,All crops,Saskatchewan,100.0
+2025-05-05,seeding,All crops,Saskatchewan,12.0
+2025-05-05,seeding,Durum,Saskatchewan,33.0
+2025-05-05,seeding,Field Pea,Saskatchewan,31.0
+2025-05-05,seeding,Spring Wheat,Saskatchewan,13.0
+2025-05-05,seeding,Triticale,Saskatchewan,31.0
 2025-05-12,seeding,All crops,Saskatchewan,49.0
+2025-05-12,seeding,Barley,Saskatchewan,45.0
+2025-05-12,seeding,Canaryseed,Saskatchewan,23.0
+2025-05-12,seeding,Chickpea,Saskatchewan,65.0
+2025-05-12,seeding,Field Pea,Saskatchewan,78.0
+2025-05-12,seeding,Lentil,Saskatchewan,71.0
+2025-05-12,seeding,Oats,Saskatchewan,28.0
+2025-05-12,seeding,Spring Wheat,Saskatchewan,53.0
 2025-05-19,seeding,All crops,Saskatchewan,72.0
+2025-05-19,seeding,Spring Wheat,Saskatchewan,80.0
 2025-05-26,seeding,All crops,Saskatchewan,88.0
+2025-05-26,seeding,Barley,Saskatchewan,89.0
+2025-05-26,seeding,Canaryseed,Saskatchewan,75.0
+2025-05-26,seeding,Mustard,Saskatchewan,92.0
 2025-06-02,rating,Barley,East-central,69.0
 2025-06-02,rating,Barley,Northeast,34.0
 2025-06-02,rating,Barley,Northwest,49.0
@@ -419,6 +687,7 @@ date,kind,crop,region,value
 2025-06-02,rating,Winter Wheat,Southwest,63.0
 2025-06-02,rating,Winter Wheat,West-central,70.0
 2025-06-02,seeding,All crops,Saskatchewan,97.0
+2025-06-02,seeding,Canaryseed,Saskatchewan,10.0
 2025-06-09,seeding,All crops,Saskatchewan,100.0
 2025-06-30,rating,Barley,East-central,78.0
 2025-06-30,rating,Barley,Northeast,66.0
@@ -727,6 +996,11 @@ date,kind,crop,region,value
 2025-07-28,rating,Winter Wheat,Southeast,91.0
 2025-07-28,rating,Winter Wheat,Southwest,59.0
 2025-07-28,rating,Winter Wheat,West-central,80.0
+2025-08-04,harvest,Winter Wheat,Saskatchewan,13.0
+2025-08-11,harvest,Fall Rye,Saskatchewan,14.0
+2025-08-11,harvest,Winter Wheat,Saskatchewan,16.0
+2025-08-18,harvest,All crops,Saskatchewan,46.0
+2025-08-18,harvest,Fall Rye,Saskatchewan,44.0
 2026-05-04,seeding,All crops,Saskatchewan,3.0
 2026-05-11,seeding,All crops,Saskatchewan,16.0
 2026-05-18,seeding,All crops,Saskatchewan,29.0
@@ -836,7 +1110,10 @@ date,kind,crop,region,value
 2026-06-01,rating,Winter Wheat,Southeast,52.0
 2026-06-01,rating,Winter Wheat,Southwest,85.0
 2026-06-01,rating,Winter Wheat,West-central,74.0
+2026-06-01,seeding,All crops,Saskatchewan,80.0
 2026-06-14,seeding,All crops,Saskatchewan,93.0
+2026-06-14,seeding,Canola,Saskatchewan,35.0
+2026-06-14,seeding,Flax,Saskatchewan,35.0
 2026-06-15,rating,Barley,East-central,71.0
 2026-06-15,rating,Barley,Northeast,89.0
 2026-06-15,rating,Barley,Northwest,96.0
@@ -943,6 +1220,7 @@ date,kind,crop,region,value
 2026-06-15,rating,Winter Wheat,Southwest,76.0
 2026-06-15,rating,Winter Wheat,West-central,90.0
 2026-06-15,seeding,All crops,Saskatchewan,97.0
+2026-06-22,seeding,All crops,Saskatchewan,99.0
 2026-06-29,rating,Barley,East-central,72.0
 2026-06-29,rating,Barley,Northeast,80.0
 2026-06-29,rating,Barley,Northwest,85.0
@@ -1048,6 +1326,8 @@ date,kind,crop,region,value
 2026-06-29,rating,Winter Wheat,Southeast,83.0
 2026-06-29,rating,Winter Wheat,Southwest,96.0
 2026-06-29,rating,Winter Wheat,West-central,97.0
+2026-07-06,seeding,Canola,Saskatchewan,8.0
+2026-07-06,seeding,Flax,Saskatchewan,24.0
 2026-07-13,rating,Barley,East-central,76.0
 2026-07-13,rating,Barley,Northeast,72.0
 2026-07-13,rating,Barley,Northwest,88.0
@@ -1254,9 +1534,11 @@ date,kind,crop,region,value
 2026-07-27,rating,Winter Wheat,West-central,90.0
 2026-08-03,harvest,Triticale,Saskatchewan,37.0
 2026-08-03,harvest,Winter Wheat,Saskatchewan,7.0
+2026-08-10,harvest,All crops,Saskatchewan,2.0
 2026-08-10,harvest,Lentil,Saskatchewan,2.0
 2026-08-10,harvest,Triticale,Saskatchewan,37.0
 2026-08-10,harvest,Winter Wheat,Saskatchewan,18.0
+2026-08-17,harvest,All crops,Saskatchewan,4.0
 2026-08-17,harvest,Lentil,Saskatchewan,13.0
 2026-08-17,harvest,Triticale,Saskatchewan,37.0
 2026-08-17,harvest,Winter Wheat,Saskatchewan,33.0
@@ -1264,6 +1546,7 @@ date,kind,crop,region,value
 2026-08-24,harvest,Mustard,Saskatchewan,2.0
 2026-08-24,harvest,Triticale,Saskatchewan,56.0
 2026-08-24,harvest,Winter Wheat,Saskatchewan,60.0
+2026-08-31,harvest,All crops,Saskatchewan,18.0
 2026-08-31,harvest,Lentil,Saskatchewan,73.0
 2026-08-31,harvest,Mustard,Saskatchewan,25.0
 2026-08-31,harvest,Triticale,Saskatchewan,68.0
@@ -1272,6 +1555,7 @@ date,kind,crop,region,value
 2026-09-07,harvest,Mustard,Saskatchewan,50.0
 2026-09-07,harvest,Triticale,Saskatchewan,79.0
 2026-09-07,harvest,Winter Wheat,Saskatchewan,87.0
+2026-09-14,harvest,All crops,Saskatchewan,32.0
 2026-09-14,harvest,Lentil,Saskatchewan,88.0
 2026-09-14,harvest,Mustard,Saskatchewan,51.0
 2026-09-14,harvest,Triticale,Saskatchewan,89.0
@@ -1284,14 +1568,17 @@ date,kind,crop,region,value
 2026-09-28,harvest,Lentil,Saskatchewan,96.0
 2026-09-28,harvest,Mustard,Saskatchewan,84.0
 2026-09-28,harvest,Triticale,Saskatchewan,97.0
+2026-10-05,harvest,All crops,Saskatchewan,82.0
 2026-10-05,harvest,Fall Rye,Saskatchewan,100.0
 2026-10-05,harvest,Field Pea,Saskatchewan,99.0
 2026-10-05,harvest,Mustard,Saskatchewan,95.0
 2026-10-05,harvest,Triticale,Saskatchewan,100.0
+2026-10-12,harvest,All crops,Saskatchewan,93.0
 2026-10-12,harvest,Fall Rye,Saskatchewan,100.0
 2026-10-12,harvest,Lentil,Saskatchewan,99.0
 2026-10-12,harvest,Mustard,Saskatchewan,98.0
 2026-10-12,harvest,Triticale,Saskatchewan,100.0
+2026-10-19,harvest,All crops,Saskatchewan,97.0
 2026-10-19,harvest,Fall Rye,Saskatchewan,100.0
 2026-10-19,harvest,Lentil,Saskatchewan,99.0
 2026-10-19,harvest,Mustard,Saskatchewan,100.0
