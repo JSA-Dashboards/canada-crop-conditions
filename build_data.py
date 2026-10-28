@@ -1020,6 +1020,80 @@ def build_br_progress():
           f"{old['entry'].nunique()} weekly entries; {len(bad)} entries without a usable workbook")
 
 
+# ── USDA PSD balance-sheet history (World Agricultural Supply and Demand Estimates database) ────
+PSD_API = "https://api.fas.usda.gov/api/psd"
+PSD_COMMODITIES = {"Corn": "0440000", "Wheat": "0410000", "Soybeans": "2222000", "Barley": "0430000",
+                   "Sorghum": "0459200", "Canola (Rapeseed)": "2226000", "Sunflowerseed": "2224000"}
+PSD_COUNTRIES = {"CA": "Canada", "MX": "Mexico", "E4": "European Union", "BR": "Brazil",
+                 "AR": "Argentina", "SF": "South Africa"}
+PSD_COLS = ["commodity_code", "country_code", "market_year", "attribute_id", "unit_id", "value", "as_of"]
+
+
+def _psd_get(path, key):
+    for attempt in range(6):
+        try:
+            r = requests.get(f"{PSD_API}{path}", params={"api_key": key}, timeout=90,
+                             headers={"User-Agent": "JSA-crop-conditions/1.0"})
+        except requests.RequestException:
+            time.sleep(5 * (attempt + 1))
+            continue
+        left = int(r.headers.get("X-Ratelimit-Remaining", "999"))
+        if r.status_code == 429 or left < 8:
+            print(f"    rate limit low ({left} left, HTTP {r.status_code}); pausing 5 min", flush=True)
+            time.sleep(300)
+            if r.status_code == 429:
+                continue
+        if r.status_code == 200:
+            return r.json()
+        if r.status_code in (400, 404):
+            return []
+        time.sleep(5 * (attempt + 1))
+    raise RuntimeError(f"PSD API failed for {path}")
+
+
+def build_psd(min_year=1960, refresh_only=False):
+    """One API call per commodity-year returns every country; only the six countries in this app are
+    kept. A full load is about 470 calls (the API allows ~1,000 an hour); the refresh re-pulls the
+    last three marketing years, which USDA still revises. Needs FAS_API_KEY in the environment."""
+    from concurrent.futures import ThreadPoolExecutor
+    key = os.environ.get("FAS_API_KEY", "").strip()
+    if not key:
+        print("  FAS_API_KEY is not set - skipping the PSD balance sheets")
+        return
+    path = DATA / "psd_history.csv"
+    old = pd.read_csv(path, dtype={"commodity_code": str}) if path.exists() else pd.DataFrame(columns=PSD_COLS)
+    this_year = date.today().year
+    recent = this_year - 3
+    keep = set(PSD_COUNTRIES)
+    frames = [old]
+    for name, code in PSD_COMMODITIES.items():
+        have = set(old.loc[old["commodity_code"] == code, "market_year"].astype(int))
+        if refresh_only:
+            years = list(range(recent, this_year + 2))
+        else:
+            years = [y for y in range(min_year, this_year + 2) if y not in have or y >= recent]
+        print(f"{name} ({code}): {len(years)} marketing years", flush=True)
+        with ThreadPoolExecutor(max_workers=4) as pool:
+            results = list(pool.map(lambda y: (y, _psd_get(f"/commodity/{code}/country/all/year/{y}", key)), years))
+        rows = []
+        for y, got in results:
+            for r in got or []:
+                if r["countryCode"] in keep:
+                    rows.append((code, r["countryCode"], int(r["marketYear"]), r["attributeId"], r["unitId"],
+                                 r["value"], int(r["calendarYear"]) * 100 + int(r["month"])))
+        if not rows:
+            continue
+        new = pd.DataFrame(rows, columns=PSD_COLS)
+        old_c = frames[0]
+        frames[0] = old_c[~((old_c["commodity_code"] == code) & old_c["market_year"].isin(new["market_year"].unique()))]
+        frames.append(new)
+        out = pd.concat(frames).sort_values(PSD_COLS[:4])
+        DATA.mkdir(exist_ok=True)
+        out.to_csv(path, index=False)          # checkpoint after every commodity
+        frames = [out]
+        print(f"  stored: {len(out):,} rows in total", flush=True)
+
+
 # ── Argentina (MAGyP agricultural estimates) ────────────────────────────────────
 MAGYP_PACKAGE = "https://datos.gob.ar/api/3/action/package_show?id=estimaciones-agricolas"
 # normalised MAGyP crop name -> app name
@@ -1404,7 +1478,7 @@ def build_yields():
 
 if __name__ == "__main__":
     what = sys.argv[1] if len(sys.argv) > 1 else "all"
-    yrs = [int(a) for a in sys.argv[2:]]
+    yrs = [int(a) for a in sys.argv[2:] if a.isdigit()]
     if what in ("yields", "all"):
         build_yields()
     if what in ("ab", "all"):
@@ -1416,6 +1490,8 @@ if __name__ == "__main__":
     if what == "zavh":
         import vh
         vh.build_za()
+    if what == "psd":
+        build_psd(refresh_only="--refresh" in sys.argv)
     if what == "arprog":
         build_ar_progress()
     if what == "aryields":
