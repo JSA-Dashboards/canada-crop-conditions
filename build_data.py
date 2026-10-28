@@ -6,6 +6,7 @@
     python build_data.py sk [year ...]     # Saskatchewan weekly PDFs -> data/sk_reports.csv
     python build_data.py vh                # NOAA satellite crop condition -> data/vh.csv
     python build_data.py stocks            # StatCan farm stocks (32-10-0007-01) -> data/stocks.csv
+    python build_data.py brseries|brprog|brvh      # Brazil: CONAB state series, CONAB weekly progress, NOAA by state
     python build_data.py frcereobs|fragreste|frvh|frmars|fryields   # France: Céré'Obs maize, Agreste estimates, NOAA by region
     python build_data.py mxprod|mxprog|mxstates|mxvh   # Mexico: SIAP production, SIAP monthly progress, state table, NOAA by state
 
@@ -726,6 +727,161 @@ def build_fr_yields():
           f"{out['area'].nunique()} areas")
 
 
+# ── Brazil (CONAB) ──────────────────────────────────────────────────────────────
+CONAB_ROOT = "https://www.gov.br/conab/pt-br/atuacao/informacoes-agropecuarias/safras"
+CONAB_INDEX = f"{CONAB_ROOT}/progresso-de-safra"
+CONAB_SERIES = f"{CONAB_ROOT}/series-historicas/graos"
+BR_SERIES_FILES = {"Soybeans": "soja/sojaseriehist.xls", "Corn 1st crop": "milho/milho1aseriehist.xls",
+                   "Corn 2nd crop": "milho/milho2aseriehist.xls", "Wheat": "trigo/trigoseriehist.xls"}
+BR_CROP_NAME = {"Soja": "Soybeans", "Milho 1ª": "Corn 1st crop", "Milho 2ª": "Corn 2nd crop",
+                "Trigo": "Wheat", "Arroz": "Rice", "Feijão 1ª": "Beans 1st crop",
+                "Feijão 2ª": "Beans 2nd crop", "Feijão 3ª": "Beans 3rd crop", "Algodão": "Cotton"}
+BR_UF = {"AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR",
+         "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO", "SP"}
+
+
+def _conab_get(url, tries=6):
+    """gov.br resets connections at random: retry with backoff."""
+    for i in range(tries):
+        try:
+            r = requests.get(url, headers=BROWSER_UA, timeout=90)
+            if r.status_code == 200:
+                return r
+            if r.status_code == 404:
+                return None
+        except requests.RequestException:
+            pass
+        time.sleep(3 * (i + 1))
+    raise RuntimeError(f"CONAB: {url} kept failing")
+
+
+def build_br_series():
+    """CONAB historical series by state (crop years 1976/77+): area, yield, production."""
+    rows = []
+    for crop, path in BR_SERIES_FILES.items():
+        r = _conab_get(f"{CONAB_SERIES}/{path}")
+        book = pd.ExcelFile(io.BytesIO(r.content))
+        data = {}
+        for sheet_i, metric in enumerate(["area_kha", "yield_kgha", "prod_kt"]):
+            d = book.parse(book.sheet_names[sheet_i], header=None)
+            header = d.iloc[5].tolist()
+            for _, row in d.iloc[6:].iterrows():
+                uf = str(row.iloc[0]).strip()
+                if uf.lower().startswith("legenda"):
+                    break
+                if uf not in BR_UF and uf != "BRASIL":
+                    continue
+                for ci in range(1, len(header)):
+                    lab = str(header[ci])
+                    m = re.match(r"\s*(\d{4})", lab)
+                    v = pd.to_numeric(row.iloc[ci], errors="coerce")
+                    if m and pd.notna(v):
+                        data.setdefault((uf, int(m.group(1)), "prev" in lab.lower()), {})[metric] = float(v)
+        for (uf, y, fc), v in data.items():
+            rows.append((crop, uf, y, fc, v.get("area_kha"), v.get("yield_kgha"), v.get("prod_kt")))
+    out = pd.DataFrame(rows, columns=["crop", "uf", "start_year", "forecast", "area_kha",
+                                      "yield_kgha", "prod_kt"])
+    DATA.mkdir(exist_ok=True)
+    out.to_csv(DATA / "br_series.csv", index=False)
+    print(f"br_series.csv: {len(out)} rows, {int(out['start_year'].min())}-{int(out['start_year'].max())}, "
+          f"crops {sorted(out['crop'].unique())}")
+
+
+def br_entries():
+    """Weekly 'Acompanhamento das lavouras' entry URLs, newest first, across the index's pages."""
+    seen, out = set(), []
+    for start in range(0, 400, 20):
+        r = _conab_get(f"{CONAB_INDEX}?b_start:int={start}")
+        if r is None:
+            break
+        links = re.findall(r'href="(https://www\.gov\.br/conab/pt-br/atuacao/informacoes-agropecuarias/'
+                           r'safras/progresso-de-safra/(acompanhamento-das-lavouras[^"/]+)/[^"]+)"', r.text)
+        fresh = [(u, s) for u, s in links if s not in seen]
+        if not fresh:
+            break
+        for u, s in fresh:
+            seen.add(s)
+            out.append((s, u))
+        time.sleep(0.3)
+    return out
+
+
+def parse_br_progress(content):
+    """The weekly 'plantio-e-colheita' workbook: blocks per crop (and activity) with state rows
+    and four columns: same week last year, previous week, this week, five-year average."""
+    d = pd.read_excel(io.BytesIO(content), header=None)
+    rows, crop, safra, act, i = [], None, None, None, 0
+    while i < len(d):
+        c = d.iloc[i, 1]
+        s = c.strip() if isinstance(c, str) else ""
+        m = re.match(r"^(.+?)\s*-\s*Safra\s*(\S+)", s)
+        if m and not s.startswith("("):
+            crop, safra, act = BR_CROP_NAME.get(m.group(1).strip(), m.group(1).strip()), m.group(2), None
+        elif re.match(r"^(Semeadura|Plantio|Colheita)", s):
+            act = "harvest" if s.startswith("Colheita") else "sowing"
+        elif s in ("Estado", "Unidade da Federação") and crop and act:
+            week_end = pd.to_datetime(d.iloc[i + 2, 4], errors="coerce")
+            j = i + 3
+            while j < len(d) and isinstance(d.iloc[j, 1], str):
+                name = d.iloc[j, 1].strip()
+                v = pd.to_numeric(d.iloc[j, 2:6], errors="coerce").tolist()
+                if pd.notna(week_end) and any(pd.notna(x) for x in v):
+                    name = "Total" if re.match(r"^\d+ estados", name) else name
+                    rows.append((week_end.date().isoformat(), crop, safra, act, name, *v))
+                j += 1
+            i = j
+            continue
+        i += 1
+    return pd.DataFrame(rows, columns=["week_end", "crop", "safra", "activity", "state",
+                                       "last_year", "prev_week", "this_week", "avg5"])
+
+
+def build_br_progress():
+    """CONAB weekly planting and harvest progress by state, from the archive of weekly entries."""
+    path = DATA / "br_progress.csv"
+    old = pd.read_csv(path) if path.exists() else pd.DataFrame()
+    done = set(old["entry"]) if len(old) else set()
+    new, bad = [], []
+    for n, (slug, url) in enumerate(br_entries()):
+        # the newest entry can be republished with corrections: always refetch the latest two
+        if slug in done and n >= 2:
+            continue
+        page = _conab_get(url)
+        if page is None:
+            continue
+        # most entries link the workbook as .../plantio-e-colheita-DD-MM-a-DD-MM.xlsx, some without the
+        # extension (the URL still serves the xlsx); never the /view HTML page
+        files = [h for h in re.findall(r'href="([^"]*plantio-e-colheita[^"]*)"', page.text)
+                 if not h.rstrip("/").endswith("/view")]
+        if not files:
+            bad.append(slug)
+            continue
+        furl = files[0] if files[0].startswith("http") else requests.compat.urljoin(url, files[0])
+        f = _conab_get(furl)
+        if f is None:
+            bad.append(slug)
+            continue
+        try:
+            t = parse_br_progress(f.content)
+        except Exception as e:
+            print("  FAILED", slug, e, flush=True)
+            bad.append(slug)
+            continue
+        t.insert(0, "entry", slug)
+        new.append(t)
+        print(" ", slug, len(t), "rows", flush=True)
+        time.sleep(0.3)
+    if new:
+        add = pd.concat(new)
+        if len(old):
+            old = old[~old["entry"].isin(set(add["entry"]))]
+        old = pd.concat([old, add]) if len(old) else add
+    old = old.drop_duplicates(["week_end", "crop", "safra", "activity", "state"], keep="last")
+    old.sort_values(["week_end", "crop", "activity", "state"]).to_csv(path, index=False)
+    print(f"br_progress.csv: {len(old)} rows, {old['week_end'].min()} to {old['week_end'].max()}, "
+          f"{old['entry'].nunique()} weekly entries; {len(bad)} entries without a usable workbook")
+
+
 STOCK_GEOS = ["Alberta", "Saskatchewan", "Manitoba", "Ontario", "Canada"]
 STOCK_CROPS = {"Canola (rapeseed)": "Canola", "Wheat, all excluding durum wheat": "Wheat ex-durum",
                "Wheat, durum": "Durum", "Barley": "Barley", "Corn for grain": "Corn",
@@ -780,6 +936,13 @@ if __name__ == "__main__":
         build_yields()
     if what in ("ab", "all"):
         build_ab(yrs)
+    if what == "brseries":
+        build_br_series()
+    if what == "brprog":
+        build_br_progress()
+    if what == "brvh":
+        import vh
+        vh.build_br()
     if what == "frcereobs":
         build_fr_cereobs()
     if what == "fragreste":

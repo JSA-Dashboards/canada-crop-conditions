@@ -42,6 +42,9 @@ main() {
   "$PY" -u build_data.py frcereobs
   "$PY" -u build_data.py frmars
   "$PY" -u build_data.py fryields
+  "$PY" -u build_data.py brvh
+  "$PY" -u build_data.py brseries
+  "$PY" -u build_data.py brprog
 
   git config user.email '275148418+koltenpostin93-blip@users.noreply.github.com'
   git config user.name 'JSA Droplet'

@@ -187,6 +187,59 @@ def combine_fr(regions, weights=None):
     return out.reset_index()
 
 
+BR_DATA = Path(__file__).parent / "data" / "vh_br.csv"
+# Brazilian state: UF -> (name, NOAA STAR provinceID); ids from getProvinceNames.php?country_code=BRA
+BR_STATES = {"AC": ("Acre", 1), "AL": ("Alagoas", 2), "AP": ("Amapá", 3), "AM": ("Amazonas", 4),
+             "BA": ("Bahia", 5), "CE": ("Ceará", 6), "DF": ("Distrito Federal", 7),
+             "ES": ("Espírito Santo", 8), "GO": ("Goiás", 9), "MA": ("Maranhão", 10),
+             "MT": ("Mato Grosso", 11), "MS": ("Mato Grosso do Sul", 12), "MG": ("Minas Gerais", 13),
+             "PA": ("Pará", 14), "PB": ("Paraíba", 15), "PR": ("Paraná", 16), "PE": ("Pernambuco", 17),
+             "PI": ("Piauí", 18), "RJ": ("Rio de Janeiro", 19), "RN": ("Rio Grande do Norte", 20),
+             "RS": ("Rio Grande do Sul", 21), "RO": ("Rondônia", 22), "RR": ("Roraima", 23),
+             "SC": ("Santa Catarina", 24), "SP": ("São Paulo", 25), "SE": ("Sergipe", 26),
+             "TO": ("Tocantins", 27)}
+# Windows fixed in advance by crop stage, in the calendar year the crop is harvested: soybeans
+# and first-crop corn flower and fill grain in Dec-Feb (weeks 1-9 of the harvest year), second-crop
+# corn (safrinha, sown Jan-Mar) in Mar-Jun, wheat (sown May-Jul, harvested Oct-Dec) in Aug-Oct.
+BR_WINDOWS = {"Soybeans": (1, 9), "Corn 1st crop": (1, 9), "Corn 2nd crop": (12, 24), "Wheat": (31, 41)}
+
+
+def fetch_br(state_id, timeout=30.0):
+    params = {"provinceID": state_id, "country": "BRA", "adminVHversion": "GC_current",
+              "yearlyTag": "weekly", "type": "Mean", "TagCropland": "crop", "year1": FIRST_YEAR,
+              "year2": datetime.date.today().year}
+    r = requests.get(URL, params=params, timeout=timeout,
+                     headers={"User-Agent": "jsa-canada-crop-conditions"})
+    r.raise_for_status()
+    df = parse(r.text)
+    if df.empty or f"{state_id}: " not in r.text[:400]:
+        raise RuntimeError(f"NOAA STAR returned no series for Brazilian state {state_id}")
+    return df
+
+
+def build_br():
+    """Refresh data/vh_br.csv: weekly cropland NDVI/VCI/TCI/VHI for the 27 Brazilian states."""
+    frames, skipped = [], []
+    for uf, (name, sid) in BR_STATES.items():
+        try:
+            df = fetch_br(sid)
+        except RuntimeError:  # a state with no cropland pixels returns an empty series
+            skipped.append(name)
+            continue
+        df.insert(0, "uf", uf)
+        frames.append(df)
+    out = pd.concat(frames).round(3)
+    BR_DATA.parent.mkdir(exist_ok=True)
+    out.to_csv(BR_DATA, index=False)
+    print(f"vh_br.csv: {len(out)} rows, {out['year'].min()}-{out['year'].max()}, {len(frames)} "
+          f"states; no series for: {', '.join(skipped) or 'none'}")
+
+
+def load_br(uf):
+    df = pd.read_csv(BR_DATA)
+    return df[df["uf"] == uf].drop(columns="uf").reset_index(drop=True)
+
+
 def load_mx(state):
     df = pd.read_csv(MX_DATA)
     return df[df["state"] == state].drop(columns="state").reset_index(drop=True)

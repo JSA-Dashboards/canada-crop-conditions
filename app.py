@@ -33,8 +33,8 @@ ab, sk, mb, yl = load()
 REPORTS = {"Alberta": ab, "Saskatchewan": sk}
 
 with st.sidebar:
-    country = st.segmented_control("Country", ["Canada", "Mexico", "France"], default="Canada",
-                                   key="country") or "Canada"
+    country = st.segmented_control("Country", ["Canada", "Mexico", "France", "Brazil"],
+                                   default="Canada", key="country") or "Canada"
 if country == "Mexico":
     import mx_view
     mx_view.render()
@@ -42,6 +42,10 @@ if country == "Mexico":
 if country == "France":
     import fr_view
     fr_view.render()
+    st.stop()
+if country == "Brazil":
+    import br_view
+    br_view.render()
     st.stop()
 
 st.title("Canada crop conditions and yield model")
