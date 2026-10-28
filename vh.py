@@ -291,6 +291,52 @@ def load_ar(province):
     return df[df["province"] == province].drop(columns="province").reset_index(drop=True)
 
 
+ZA_DATA = Path(__file__).parent / "data" / "vh_za.csv"
+# South African province (CEC names) -> NOAA STAR provinceID (getProvinceNames.php?country_code=ZAF)
+ZA_PROVINCES = {"Eastern Cape": 1, "Gauteng": 2, "KwaZulu-Natal": 3, "Limpopo": 4, "Mpumalanga": 5,
+                "North West": 6, "Northern Cape": 7, "Free State": 8, "Western Cape": 10}
+# Windows fixed in advance by crop stage, in the calendar year the crop is harvested. Summer crops
+# are sown Oct-Dec and fill grain Jan-Apr; wheat (sown May-Jun) flowers and fills grain Sep-Oct.
+ZA_WINDOWS = {"Maize": (3, 14), "Soybeans": (5, 15), "Sunflower": (4, 13), "Sorghum": (5, 15),
+              "Groundnuts": (6, 16), "Dry beans": (5, 14), "Wheat": (36, 44)}
+
+
+def fetch_za(province_id, timeout=30.0):
+    params = {"provinceID": province_id, "country": "ZAF", "adminVHversion": "GC_current",
+              "yearlyTag": "weekly", "type": "Mean", "TagCropland": "crop", "year1": FIRST_YEAR,
+              "year2": datetime.date.today().year}
+    r = requests.get(URL, params=params, timeout=timeout,
+                     headers={"User-Agent": "jsa-canada-crop-conditions"})
+    r.raise_for_status()
+    df = parse(r.text)
+    if df.empty or f"{province_id}: " not in r.text[:400]:
+        raise RuntimeError(f"NOAA STAR returned no series for South African province {province_id}")
+    return df
+
+
+def build_za():
+    """Refresh data/vh_za.csv: weekly cropland NDVI/VCI/TCI/VHI for the South African provinces."""
+    frames, skipped = [], []
+    for name, pid in ZA_PROVINCES.items():
+        try:
+            df = fetch_za(pid)
+        except RuntimeError:
+            skipped.append(name)
+            continue
+        df.insert(0, "province", name)
+        frames.append(df)
+    out = pd.concat(frames).round(3)
+    ZA_DATA.parent.mkdir(exist_ok=True)
+    out.to_csv(ZA_DATA, index=False)
+    print(f"vh_za.csv: {len(out)} rows, {out['year'].min()}-{out['year'].max()}, {len(frames)} "
+          f"provinces; no series for: {', '.join(skipped) or 'none'}")
+
+
+def load_za(province):
+    df = pd.read_csv(ZA_DATA)
+    return df[df["province"] == province].drop(columns="province").reset_index(drop=True)
+
+
 def load_mx(state):
     df = pd.read_csv(MX_DATA)
     return df[df["state"] == state].drop(columns="state").reset_index(drop=True)

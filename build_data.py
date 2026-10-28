@@ -6,6 +6,7 @@
     python build_data.py sk [year ...]     # Saskatchewan weekly PDFs -> data/sk_reports.csv
     python build_data.py vh                # NOAA satellite crop condition -> data/vh.csv
     python build_data.py stocks            # StatCan farm stocks (32-10-0007-01) -> data/stocks.csv
+    python build_data.py zanat|zacec|zavh          # South Africa: SAGIS national history, CEC province releases, NOAA by province
     python build_data.py aryields|arvh              # Argentina: MAGyP province yields (run from a PC), NOAA by province
     python build_data.py brseries|brprog|brvh      # Brazil: CONAB state series, CONAB weekly progress, NOAA by state
     python build_data.py frcereobs|fragreste|frvh|frmars|fryields   # France: Céré'Obs maize, Agreste estimates, NOAA by region
@@ -935,6 +936,191 @@ def build_ar_yields():
           f"{int(out['start_year'].max())}, file {res['url'].rsplit('/', 1)[-1]}")
 
 
+# ── South Africa (Crop Estimates Committee via SAGIS) ───────────────────────────
+SAGIS = "https://www.sagis.org.za"
+ZA_PROVINCES = ["Western Cape", "Northern Cape", "Free State", "Eastern Cape", "KwaZulu-Natal",
+                "Mpumalanga", "Limpopo", "Gauteng", "North West"]
+ZA_CROP_HEADINGS = {"WHITE AND YELLOW MAIZE": "Maize", "SUNFLOWER SEED": "Sunflower",
+                    "SOYBEANS": "Soybeans", "GROUNDNUTS": "Groundnuts", "DRY BEANS": "Dry beans",
+                    "SORGHUM": "Sorghum", "WHEAT": "Wheat", "BARLEY": "Barley", "CANOLA": "Canola"}
+ZA_NAT_COLS = {"Maize": "Maize commercial", "Soybeans": "Soybeans", "Groundnuts": "Groundnuts",
+               "Sunflowerseed": "Sunflower", "Sorghum": "Sorghum", "Wheat": "Wheat",
+               "Barley": "Barley", "Canola": "Canola"}
+
+
+def _sagis_page(slug):
+    r = requests.get(f"{SAGIS}/{slug}/", headers=BROWSER_UA, timeout=90)
+    r.raise_for_status()
+    return r.text
+
+
+def build_za_national():
+    """SAGIS 'Historic_WGO_Production_Info' workbook: national commercial area, production and
+    yield by crop since 1910/11. Seasons are labelled by harvest year (2024/25 -> 2025)."""
+    html = _sagis_page("non-sagis-historic-info")
+    link = sorted(set(re.findall(r'href="([^"]*Historic_WGO_Production_Info[^"]*\.xlsx)"', html)))[-1]
+    raw = requests.get(link, headers=BROWSER_UA, timeout=120)
+    raw.raise_for_status()
+    d = pd.read_excel(io.BytesIO(raw.content), header=None)
+    crops = d.iloc[1].tolist()
+    rows = []
+    col = 1
+    while col < d.shape[1]:
+        name = str(crops[col]).strip()
+        if name in ZA_NAT_COLS or name == "Maize":
+            label = str(d.iloc[1, col + 1]) if name == "Maize" else name
+            # the 'Maize' group repeats: total RSA, commercial, non-commercial (header text in the next cell)
+            sub = str(d.iloc[1, col + 1]) if name == "Maize" else ""
+            crop = ("Maize commercial" if "Commercial" in sub else
+                    "Maize non-commercial" if "Non-Commercial" in sub else "Maize total") \
+                if name == "Maize" else ZA_NAT_COLS[name]
+            for i in range(4, d.shape[0]):
+                season = str(d.iloc[i, 0])
+                m = re.match(r"(\d{4})/(\d{2})", season)
+                if not m:
+                    continue
+                ha = pd.to_numeric(d.iloc[i, col], errors="coerce")
+                t = pd.to_numeric(d.iloc[i, col + 1], errors="coerce")
+                if pd.notna(ha) and pd.notna(t) and ha > 0:
+                    start = int(m.group(1))
+                    # winter crops are labelled by their calendar year, summer crops by the harvest year
+                    year = start if crop in ("Wheat", "Barley", "Canola") else start + 1
+                    rows.append((crop, year, float(ha), float(t), float(t) / float(ha)))
+            col += 3
+        else:
+            col += 1
+    out = pd.DataFrame(rows, columns=["crop", "year", "area_ha", "prod_t", "yield_tha"])
+    out = out.drop_duplicates(["crop", "year"], keep="first")
+    DATA.mkdir(exist_ok=True)
+    out.to_csv(DATA / "za_national.csv", index=False)
+    print(f"za_national.csv: {len(out)} rows, crops {sorted(out['crop'].unique())}, "
+          f"{int(out['year'].min())}-{int(out['year'].max())}")
+
+
+def _za_num(s):
+    s = str(s).replace("\xa0", " ").replace(" ", "").replace(",", ".")
+    try:
+        return float(s)
+    except ValueError:
+        return None
+
+
+def _za_headings(text):
+    out = []
+    for line in text.split("\n"):
+        up = line.upper()
+        if not re.search(r"PLANTED|ESTIMATE|FORECAST", up) or not re.search(r"[–-]", line):
+            continue
+        for m in re.finditer(r"(WHITE AND YELLOW MAIZE|SUNFLOWER SEED|SOYBEANS|GROUNDNUTS|DRY BEANS|"
+                             r"SORGHUM|WHEAT|BARLEY|CANOLA)\s*[–-]", up):
+            yr = re.search(r":\s*(\d{4})", up[m.end():])
+            out.append((ZA_CROP_HEADINGS[m.group(1)], "INTENTION" in up,
+                        int(yr.group(1)) if yr else None))
+    return out
+
+
+def _za_tables(page):
+    res = []
+    for tb in page.extract_tables():
+        rows = []
+        for r in tb:
+            if not r or not r[0]:
+                continue
+            lab = str(r[0]).split("/")[0].strip()
+            low = lab.lower()
+            if low == "kwazulu-natal" or any(low.startswith(p.lower()) for p in ZA_PROVINCES) \
+                    or low.startswith("total"):
+                vals = [v for v in (_za_num(c) for c in r[1:] if c not in (None, "")) if v is not None]
+                rows.append((lab, vals))
+        if sum(1 for lab, _ in rows if not lab.lower().startswith("total")) >= 7:
+            res.append(rows)
+    return res
+
+
+def _za_release_date(path_name, text):
+    m = re.search(r"(\d{1,2})\s+(January|February|March|April|May|June|July|August|September|"
+                  r"October|November|December)\s+(20\d\d)", text)
+    if m:
+        return pd.to_datetime(f"{m.group(1)} {m.group(2)} {m.group(3)}").date().isoformat()
+    m = re.search(r"(20\d\d)-(\d\d)(?:-(\d\d))?", path_name)
+    return f"{m.group(1)}-{m.group(2)}-{m.group(3) or '15'}" if m else None
+
+
+def parse_za_pdf(content, name):
+    """Province tables of one CEC release: per crop and province the current-season area and
+    forecast plus the previous season's area and FINAL crop. Layouts: 4 numbers per row (area,
+    forecast, previous area, previous final), 12 for maize (white/yellow/total x 4), and the
+    January 'preliminary' layout (3, or 9 for maize)."""
+    recs = []
+    with pdfplumber.open(io.BytesIO(content)) as pdf:
+        date_ = None
+        for pg in pdf.pages:
+            tx = pg.extract_text() or ""
+            date_ = date_ or _za_release_date(name, tx)
+            heads = _za_headings(tx)
+            tabs = _za_tables(pg)
+            if not tabs or len(heads) != len(tabs):
+                continue
+            for (crop, intent, year), rows in zip(heads, tabs):
+                if intent or year is None:
+                    continue
+                for lab, v in rows:
+                    n = len(v)
+                    if n == 4:
+                        cur_a, cur_p, prev_a, prev_p = v
+                    elif n == 12:
+                        cur_a, cur_p, prev_a, prev_p = v[2], v[5], v[8], v[11]
+                    elif n == 3:
+                        cur_a, cur_p, prev_a, prev_p = v[0], None, v[1], v[2]
+                    elif n == 9:
+                        cur_a, cur_p, prev_a, prev_p = v[2], None, v[5], v[8]
+                    else:
+                        continue
+                    prov = re.sub(r"(?i)^kwazulu-natal$", "KwaZulu-Natal", lab)
+                    prov = "Total" if prov.lower().startswith("total") else \
+                        next((p for p in ZA_PROVINCES if prov.lower().startswith(p.lower())), prov)
+                    recs.append((date_, crop, year, prov, cur_a, cur_p, prev_a, prev_p))
+    return recs
+
+
+def build_za_province():
+    """CEC releases on SAGIS (2010+): province area, forecast and final crop by release."""
+    html = _sagis_page("crop-estimates-committee-2")
+    links = {}
+    for h in re.findall(r'href="([^"]+\.pdf)"', html, re.I):
+        n = h.rsplit("/", 1)[-1]
+        m = re.match(r"CEC[-_](\d{4})-(\d{2})", n) or re.match(r"CEC-\d{2}-[A-Za-z]{3}-(\d{4})", n)
+        if m and int(m.group(1)) >= 2012 and n not in links:
+            links[n] = h
+    path = DATA / "za_cec_records.csv"
+    cols = ["release", "crop", "year", "province", "area_cur", "prod_cur", "area_prev", "prod_prev",
+            "file"]
+    old = pd.read_csv(path) if path.exists() else pd.DataFrame(columns=cols)
+    done = set(old["file"])
+    new = []
+    for n, h in sorted(links.items()):
+        # the newest few releases can be revised: always refetch the latest three
+        recent = n >= sorted(links)[-3]
+        if n in done and not recent:
+            continue
+        try:
+            r = requests.get(h, headers=BROWSER_UA, timeout=180)
+            r.raise_for_status()
+            recs = parse_za_pdf(r.content, n)
+        except Exception as e:
+            print("  FAILED", n, str(e)[:80], flush=True)
+            continue
+        print(" ", n, len(recs), "rows", flush=True)
+        new += [(*x, n) for x in recs] or [(None, None, None, None, None, None, None, None, n)]
+    if new:
+        add = pd.DataFrame(new, columns=cols)
+        old = old[~old["file"].isin(set(add["file"]))] if len(old) else old
+        old = pd.concat([old, add]) if len(old) else add
+    old = old.dropna(subset=["crop"])
+    old.to_csv(path, index=False)
+    print(f"za_cec_records.csv: {len(old)} rows from {old['file'].nunique()} releases")
+
+
 STOCK_GEOS = ["Alberta", "Saskatchewan", "Manitoba", "Ontario", "Canada"]
 STOCK_CROPS = {"Canola (rapeseed)": "Canola", "Wheat, all excluding durum wheat": "Wheat ex-durum",
                "Wheat, durum": "Durum", "Barley": "Barley", "Corn for grain": "Corn",
@@ -989,6 +1175,13 @@ if __name__ == "__main__":
         build_yields()
     if what in ("ab", "all"):
         build_ab(yrs)
+    if what == "zanat":
+        build_za_national()
+    if what == "zacec":
+        build_za_province()
+    if what == "zavh":
+        import vh
+        vh.build_za()
     if what == "aryields":
         build_ar_yields()
     if what == "arvh":
