@@ -6,6 +6,7 @@ import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 
+import balance
 import production
 import vh
 from charts import AMBER, BLUE, GREY, vh_chart
@@ -80,8 +81,8 @@ def render():
         st.caption("Autumn-winter crops are planted Oct-Jan (irrigated Sinaloa and Sonora corn "
                    "and wheat); spring-summer crops Apr-Jul, mostly rainfed.")
 
-    t1, t2, t5, t3, t6, t4 = st.tabs(["Satellite", "Production", "Yield model",
-                                      "Monthly progress", "Areas and calendar", "Sources"])
+    t1, t2, t5, t3, t6, t7, t4 = st.tabs(["Satellite", "Production", "Yield Model", "Monthly Progress",
+                                          "Areas and Calendar", "Balance Sheet", "Sources"])
     with t1:
         _satellite(state, cycle)
     with t2:
@@ -92,6 +93,8 @@ def render():
         _progress(prog, states_now, crop, cycle)
     with t6:
         production.areas_tab("Mexico", crop, CROPS[crop])
+    with t7:
+        balance.balance_tab("Mexico", crop, CROPS[crop])
     with t4:
         st.markdown("""
 **Satellite** - NOAA STAR Vegetation Health, state average of cropland pixels, weekly from

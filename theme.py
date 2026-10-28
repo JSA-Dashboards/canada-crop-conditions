@@ -6,6 +6,8 @@ adjusted in place, so every figure that asks for it picks up the palette without
 import plotly.io as pio
 import streamlit as st
 
+import titles
+
 JSA_GREEN = "#5e7164"
 BG, SURFACE, BORDER = "#f6f8f7", "#ffffff", "#d7e2dc"
 TEXT, MUTED = "#32373c", "#5f7267"
@@ -23,8 +25,9 @@ def _plotly():
     t.layout.yaxis.update(**axis)
 
 
-def apply(title="Crop conditions and yields", subtitle="Satellite, reports and yield models"):
+def apply(title="Crop Conditions and Yields", subtitle="Satellite, Reports and Yield Models"):
     _plotly()
+    titles.apply()
     st.markdown(f"""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600&family=Source+Sans+3:wght@400;600;700&display=swap');

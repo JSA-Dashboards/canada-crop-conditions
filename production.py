@@ -209,7 +209,7 @@ def areas_tab(country, crop, crop_label=None):
     """Render the map and the calendar for `crop` (the key the country's own selector uses)."""
     iso, provider = PROVIDERS[country]
     label = crop_label or crop
-    st.subheader(f"{country}: where {label.lower()} is grown")
+    st.subheader(f"{country} {label} Production Areas")
     got = provider(crop)
     if got is None or got[0].empty:
         st.info(f"No production-by-area data for {label}.")
@@ -224,7 +224,7 @@ def areas_tab(country, crop, crop_label=None):
         st.caption(f"Average annual production {years}, from the same series the yield model uses. "
                    "Shading shows tonnes; the table gives each area's share of the national total. "
                    "Boundaries: Natural Earth (public domain).")
-    st.subheader(f"{country}: crop calendar")
+    st.subheader(f"{country} {label} Crop Calendar")
     st.markdown(calendar_html(country, crop), unsafe_allow_html=True)
     st.caption(CAL_NOTE[country] + " Typical windows for the main producing zone; a given year runs a "
                "few weeks early or late. The selected crop is highlighted.")

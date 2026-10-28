@@ -6,6 +6,7 @@ import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 
+import balance
 import production
 import vh
 from charts import AMBER, BLUE, GREY, vh_chart
@@ -41,10 +42,12 @@ def render():
         province = st.selectbox("Province", provs, index=provs.index("Córdoba"), key="ar_province")
         st.caption("Soybeans, corn and sunflower are sown from Sep to Dec and harvested Feb to "
                    "Jun; wheat is sown May to Jul and harvested Dec to Jan.")
-    t0, t1, t2, t4, t3 = st.tabs(["National progress", "Satellite", "Yield model",
-                                  "Areas and calendar", "Sources"])
+    t0, t1, t2, t4, t5, t3 = st.tabs(["National Progress", "Satellite", "Yield Model",
+                                      "Areas and Calendar", "Balance Sheet", "Sources"])
     with t4:
         production.areas_tab("Argentina", crop)
+    with t5:
+        balance.balance_tab("Argentina", crop)
     with t0:
         _progress()
     with t1:

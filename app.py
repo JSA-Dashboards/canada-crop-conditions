@@ -4,6 +4,7 @@ import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 
+import balance
 import model as M
 import production
 import theme
@@ -11,9 +12,9 @@ import tour
 import vh
 from charts import vh_chart
 
-st.set_page_config(page_title="Canada crop conditions", page_icon=":material/grass:",
+st.set_page_config(page_title="Crop Conditions and Yields", page_icon=":material/grass:",
                    layout="wide")
-theme.apply("Crop conditions and yields", "Satellite, official reports and yield models")
+theme.apply("Crop Conditions and Yields", "Satellite, Official Reports and Yield Models")
 
 BLUE, GREY, AMBER, RED = "#6fa8c4", "#32373c", "#c4785a", "#dc2626"
 PROVINCES = {
@@ -480,8 +481,9 @@ Refresh data with `python build_data.py ab`, `sk`, `mb`, `vh`, `stocks` and `yie
 
 
 with st.container(key="view_ca"):
-    t1, t2, t3, t4, t6, t7, t5 = st.tabs(["Conditions", "Progress", "Yield model", "Satellite",
-                                          "Estimates and stocks", "Areas and calendar", "Sources"])
+    t1, t2, t3, t4, t6, t7, t8, t5 = st.tabs(["Conditions", "Progress", "Yield Model", "Satellite",
+                                              "Estimates and Stocks", "Areas and Calendar",
+                                              "Balance Sheet", "Sources"])
     with t1:
         tab_conditions()
     with t2:
@@ -494,5 +496,7 @@ with st.container(key="view_ca"):
         tab_estimates()
     with t7:
         production.areas_tab("Canada", crop)
+    with t8:
+        balance.balance_tab("Canada", crop)
     with t5:
         tab_sources()

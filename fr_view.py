@@ -6,6 +6,7 @@ import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 
+import balance
 import production
 import vh
 from charts import AMBER, BLUE, GREY, vh_chart
@@ -56,11 +57,13 @@ def render():
                               index=list(vh.FR_REGIONS.values()).index("Centre"), key="fr_region")
         st.caption("NOAA STAR uses France's 22 pre-2016 regions; Céré'Obs and Agreste use the "
                    "13 current ones.")
-    t1, t2, t6, t3, t4, t7, t5 = st.tabs(["Maize conditions", "Satellite", "Yield model",
-                                          "Agreste estimates", "MARS notes",
-                                          "Areas and calendar", "Sources"])
+    t1, t2, t6, t3, t4, t7, t8, t5 = st.tabs(["Maize Conditions", "Satellite", "Yield Model",
+                                              "Agreste Estimates", "MARS Notes",
+                                              "Areas and Calendar", "Balance Sheet", "Sources"])
     with t7:
         production.areas_tab("France", crop)
+    with t8:
+        balance.balance_tab("France", crop)
     with t1:
         _cereobs()
     with t2:

@@ -47,6 +47,12 @@ main() {
   "$PY" -u build_data.py brprog
   "$PY" -u build_data.py arvh
   "$PY" -u build_data.py arprog
+  # USDA PSD balance sheets: the key lives in the WASDE app's .env on this box (only that one line is read)
+  if [ -f /opt/jpsi/wasde/.env ]; then
+    FAS_API_KEY="$(grep -E '^FAS_API_KEY=' /opt/jpsi/wasde/.env | head -1 | cut -d= -f2- | tr -d "\"'")"
+    export FAS_API_KEY
+  fi
+  "$PY" -u build_data.py psd --refresh
   "$PY" -u build_data.py zavh
   "$PY" -u build_data.py zanat
   "$PY" -u build_data.py zacec
