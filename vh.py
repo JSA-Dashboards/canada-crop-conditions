@@ -157,6 +157,36 @@ def load_fr(region):
     return df[df["region"] == region].drop(columns="region").reset_index(drop=True)
 
 
+# Current French region (Agreste SAA) -> the pre-2016 regions NOAA STAR reports
+FR_REGION_MAP = {
+    "Île-de-France": ["Île-de-France"], "Centre-Val de Loire": ["Centre"],
+    "Bourgogne-Franche-Comté": ["Bourgogne", "Franche-Comté"],
+    "Normandie": ["Basse-Normandie", "Haute-Normandie"],
+    "Hauts de France": ["Nord-Pas-de-Calais", "Picardie"],
+    "Grand Est": ["Alsace", "Champagne-Ardenne", "Lorraine"],
+    "Pays de la Loire": ["Pays de la Loire"], "Bretagne": ["Bretagne"],
+    "Nouvelle Aquitaine": ["Aquitaine", "Limousin", "Poitou-Charentes"],
+    "Occitanie": ["Languedoc-Roussillon", "Midi-Pyrénées"],
+    "Auvergne-Rhône-Alpes": ["Auvergne", "Rhône-Alpes"],
+    "Provence-Alpes-Côte d'Azur": ["Provence-Alpes-Côte d'Azur"], "Corse": ["Corse"]}
+# Windows fixed in advance by crop stage (rapeseed flowers and fills pods with the cereals' window)
+FR_CROP_WINDOW = {"Soft wheat": (14, 26), "Durum": (14, 26), "Barley": (14, 26),
+                  "Rapeseed": (14, 26), "Grain maize": (29, 37)}
+
+
+def combine_fr(regions, weights=None):
+    """Weighted mean of NOAA regions' weekly series (a current region is several old ones)."""
+    allv = pd.read_csv(FR_DATA)
+    sub = allv[allv["region"].isin(regions)].copy()
+    w = pd.Series({r: (weights or {}).get(r, 1.0) for r in regions})
+    sub["w"] = sub["region"].map(w)
+    cols = [c for c in COLS]
+    g = sub.groupby(["year", "week"])
+    out = g.apply(lambda d: pd.Series({c: (d[c] * d["w"]).sum() / d["w"].sum() for c in cols}),
+                  include_groups=False)
+    return out.reset_index()
+
+
 def load_mx(state):
     df = pd.read_csv(MX_DATA)
     return df[df["state"] == state].drop(columns="state").reset_index(drop=True)

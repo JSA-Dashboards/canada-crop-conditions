@@ -55,12 +55,14 @@ def render():
                               index=list(vh.FR_REGIONS.values()).index("Centre"), key="fr_region")
         st.caption("NOAA STAR uses France's 22 pre-2016 regions; Céré'Obs and Agreste use the "
                    "13 current ones.")
-    t1, t2, t3, t4, t5 = st.tabs(["Maize conditions", "Satellite", "Agreste estimates", "MARS notes",
-                                  "Sources"])
+    t1, t2, t6, t3, t4, t5 = st.tabs(["Maize conditions", "Satellite", "Yield model",
+                                      "Agreste estimates", "MARS notes", "Sources"])
     with t1:
         _cereobs()
     with t2:
         _satellite(crop, region)
+    with t6:
+        _model()
     with t3:
         _agreste()
     with t4:
@@ -77,6 +79,8 @@ not as open files, so they are not here.
 labelled experimental. Windows are fixed by crop stage in advance (winter cereals weeks 14-26,
 grain maize weeks 29-37), not fitted. NOAA's regions are the pre-2016 ones.
 
+**Yield model** - Agreste Statistique agricole annuelle regional series (13 current regions, 2010 onward, latest year provisional; national soft wheat and barley from 1996) against the year trend, with and without the mean NDVI over a fixed crop-stage window. Skill is the cut in leave-one-out error. Regions are matched to NOAA's pre-2016 regions. Eurostat has no regional data for France.
+
 **Agreste estimates** - Agreste "Infos rapides - Grandes cultures" figure workbooks: early
 estimates of area, yield and production against last year, and the national soft wheat and barley
 yield series since 1996. Issue ids are not predictable, so new issues are added by hand in
@@ -86,7 +90,7 @@ yield series since 1996. Issue ids are not predictable, so new issues are added 
 bulletin PDFs and the Agri4Cast portal reject scripted downloads, so the yield-forecast tables are
 not available here.
 
-Refresh with `python build_data.py frcereobs`, `frvh`, `fragreste` and `frmars`.
+Refresh with `python build_data.py frcereobs`, `frvh`, `fryields`, `fragreste` and `frmars`.
 """)
 
 
@@ -182,6 +186,160 @@ def _satellite(crop, region):
     if pk:
         st.caption(f"Peak NDVI in {year} (any week): {pk[0]:.3f} in week {pk[1]}. Rank compares the "
                    f"same window in every year since {int(season['first'].iloc[0])}.")
+
+
+AGRESTE_NAME = {"Soft wheat": "Blé tendre", "Durum": "Blé dur", "Barley": "Orge, escourgeon",
+                "Rapeseed": "Colza"}
+
+
+@st.cache_data(ttl=3600)
+def _yields_fr():
+    return _csv("fr_yields.csv")
+
+
+def _weights(crop):
+    """NOAA old-region weights for a national mean: each current region's mean crop area, split
+    evenly across the old regions it contains."""
+    y = _yields_fr()
+    reg = y[(y["crop"] == crop) & y["area"].isin(vh.FR_REGION_MAP)].groupby("area")["area_ha"].mean()
+    w = {}
+    for a, ar in reg.items():
+        for o in vh.FR_REGION_MAP[a]:
+            w[o] = ar / len(vh.FR_REGION_MAP[a])
+    return w
+
+
+@st.cache_data(ttl=3600)
+def _ndvi(area, crop):
+    if area == "France":
+        w = _weights(crop)
+        return vh.combine_fr(list(w), w)
+    return vh.combine_fr(vh.FR_REGION_MAP[area])
+
+
+def _history(area, crop):
+    """({year: q/ha}, source note). France soft wheat and barley use Agreste's 1996+ national
+    series; everything else the regional SAA series from 2010."""
+    if area == "France" and crop in ("Soft wheat", "Barley"):
+        ser = _csv("fr_agreste_series.csv")
+        s = ser[ser["crop"] == crop]
+        return {int(a): float(b) for a, b in zip(s["year"], s["yield_qha"])}, "Agreste national series, 1996 onward"
+    y = _yields_fr()
+    s = y[(y["area"] == area) & (y["crop"] == crop)]
+    return {int(a): float(b) for a, b in zip(s["year"], s["yield_qha"])}, "Agreste SAA regional series, 2010 onward"
+
+
+def _fit(area, crop):
+    hist, src = _history(area, crop)
+    target = 2026 if vh.window_mean(_ndvi(area, crop), 2026, vh.FR_CROP_WINDOW[crop]) is not None else None
+    if target is None:
+        return None, hist, src, None
+    done = {k: v for k, v in hist.items() if k < target}
+    return vh.yield_model(_ndvi(area, crop), None, done, target, win=vh.FR_CROP_WINDOW[crop]), done, src, target
+
+
+@st.cache_data(ttl=3600)
+def _scan(crop):
+    rows = []
+    y = _yields_fr()
+    for area in vh.FR_REGION_MAP:
+        s = y[(y["area"] == area) & (y["crop"] == crop)]
+        if len(s) < 12:
+            continue
+        m, done, _, target = _fit(area, crop)
+        if m and m["predicted"] is not None:
+            last = max(done)
+            rows.append({"Region": area, "Mean area (kha)": s["area_ha"].mean() / 1000,
+                         f"Last yield {last} (q/ha)": done[last], "Trend (q/ha)": m["trend_year"],
+                         "Trend + NDVI (q/ha)": m["predicted"], "Skill vs trend": m["skill"]})
+    return pd.DataFrame(rows).sort_values("Mean area (kha)", ascending=False)
+
+
+def _model():
+    y = _yields_fr()
+    if y.empty:
+        st.info("No Agreste yield data. Run build_data.py fryields.")
+        return
+    c1, c2 = st.columns(2)
+    crop = c1.selectbox("Crop", list(vh.FR_CROP_WINDOW), key="frm_crop")
+    areas = ["France"] + sorted(a for a in vh.FR_REGION_MAP if len(y[(y["area"] == a) & (y["crop"] == crop)]) >= 12)
+    area = c2.selectbox("Area", areas, key="frm_area")
+    m, hist, src, target = _fit(area, crop)
+    st.subheader(f"{area} {crop.lower()}: trend vs trend plus greenness")
+    if not m or m["predicted"] is None:
+        st.info("The satellite window has not finished, or there is too little history for a model.")
+        return
+    win = vh.FR_CROP_WINDOW[crop]
+    last = max(hist)
+    est = _csv("fr_agreste_estimates.csv")
+    ag = None
+    if area == "France" and crop in AGRESTE_NAME and len(est):
+        r = est[(est["crop"] == AGRESTE_NAME[crop]) & (est["issue"] == est["issue"].max())]
+        ag = float(r["yield26_qha"].iloc[0]) if len(r) else None
+    c = st.columns(4)
+    c[0].metric(f"Trend, {target}", f"{m['trend_year']:.1f} q/ha")
+    c[1].metric(f"Trend + NDVI, {target}", f"{m['predicted']:.1f} q/ha")
+    c[2].metric(f"Last yield ({last})", f"{hist[last]:.1f} q/ha")
+    c[3].metric("Skill vs trend (leave-one-out)", f"{m['skill'] * 100:+.0f}%")
+    if ag is not None:
+        st.info(f"Agreste's July early estimate for {target} is {ag:.1f} q/ha "
+                f"({m['predicted'] - ag:+.1f} q/ha from the trend + NDVI figure).")
+    if m["skill"] <= 0.03:
+        st.warning("Here the satellite reading adds nothing measurable to the yield trend: the "
+                   "leave-one-out error is no lower with NDVI. Use the trend.")
+    st.caption(
+        f"Fit on {m['n']} completed years ({src}; the latest year is provisional). The window "
+        f"(weeks {win[0]}-{win[1]}) was fixed by crop stage, not searched. Leave-one-out error is "
+        f"{m['rmse_loo']:.2f} q/ha with NDVI against {m['rmse_trend_loo']:.2f} for trend alone. "
+        "A current region's NDVI is the mean of the pre-2016 NOAA regions it contains; France is "
+        "weighted by each region's mean crop area. Weather shocks that hit yields without showing "
+        "in greenness (heat at grain fill, 2016 floods and low sunshine) are where this fails.")
+    fig = go.Figure()
+    fig.add_trace(go.Scatter(x=list(hist), y=list(hist.values()), mode="lines+markers",
+                             name="Yield", line=dict(color=GREY)))
+    ks, b0 = np.polyfit(list(hist), list(hist.values()), 1)
+    yrs = list(range(min(hist), target + 1))
+    fig.add_trace(go.Scatter(x=yrs, y=[ks * v + b0 for v in yrs], name="Trend",
+                             line=dict(color=AMBER, dash="dash")))
+    fig.add_trace(go.Scatter(x=[target], y=[m["predicted"]], mode="markers", name="Trend + NDVI",
+                             marker=dict(size=13, color=BLUE)))
+    if ag is not None:
+        fig.add_trace(go.Scatter(x=[target], y=[ag], mode="markers", name="Agreste estimate",
+                                 marker=dict(size=11, color="#2e7d32", symbol="diamond")))
+    fig.update_layout(height=360, template="plotly_white", yaxis_title="q/ha",
+                      margin=dict(t=30, b=30), legend=dict(orientation="h", y=-0.15))
+    st.plotly_chart(fig, width="stretch")
+    with st.expander("How the satellite reading maps to yield", expanded=False):
+        yrs_ = list(m["years"])
+        sc = go.Figure()
+        sc.add_trace(go.Scatter(
+            x=m["x"], y=m["anomaly"], mode="markers+text", name="Years", customdata=yrs_,
+            text=[str(v) if v >= 2016 or abs(a) > m["rmse_trend_loo"] * 1.5 else ""
+                  for v, a in zip(yrs_, m["anomaly"])], textposition="top center",
+            textfont=dict(size=9), marker=dict(size=8, color="#5e7164"),
+            hovertemplate="%{customdata}: NDVI %{x:.3f}, %{y:+.1f} q/ha vs trend<extra></extra>"))
+        kk, ii = np.polyfit(m["x"], m["anomaly"], 1)
+        xs = [float(min(m["x"])), float(max(m["x"]))]
+        sc.add_trace(go.Scatter(x=xs, y=[kk * v + ii for v in xs], mode="lines", name="Fit",
+                                line=dict(color=AMBER, dash="dash")))
+        if m["x_now"] is not None:
+            sc.add_vline(x=m["x_now"], line_color=BLUE, line_width=2.5,
+                         annotation_text=str(target), annotation_font_color=BLUE)
+        sc.update_layout(title="Yield minus trend against the window NDVI", height=340,
+                         template="plotly_white", showlegend=False, margin=dict(t=50, b=40),
+                         xaxis_title="Mean NDVI over the window", yaxis_title="Yield minus trend (q/ha)")
+        st.plotly_chart(sc, width="stretch")
+    st.subheader(f"Where the satellite helps: {crop.lower()}, by region")
+    scan = _scan(crop)
+    if scan.empty:
+        st.info("No region has enough history.")
+        return
+    st.dataframe(scan.style.format({c: "{:.1f}" for c in scan.columns if c not in ("Region", "Skill vs trend")}
+                                   | {"Skill vs trend": "{:+.0%}"}), width="stretch", hide_index=True)
+    helped = int((scan["Skill vs trend"] > 0.03).sum())
+    st.caption(f"Skill is the cut in leave-one-out yield error from adding the window NDVI to the "
+               f"trend (15 years of fit, so small differences are noise); the satellite helps in "
+               f"{helped} of {len(scan)} regions here.")
 
 
 def _agreste():

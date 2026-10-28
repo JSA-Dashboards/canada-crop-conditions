@@ -6,7 +6,7 @@
     python build_data.py sk [year ...]     # Saskatchewan weekly PDFs -> data/sk_reports.csv
     python build_data.py vh                # NOAA satellite crop condition -> data/vh.csv
     python build_data.py stocks            # StatCan farm stocks (32-10-0007-01) -> data/stocks.csv
-    python build_data.py frcereobs|fragreste|frvh|frmars   # France: Céré'Obs maize, Agreste estimates, NOAA by region
+    python build_data.py frcereobs|fragreste|frvh|frmars|fryields   # France: Céré'Obs maize, Agreste estimates, NOAA by region
     python build_data.py mxprod|mxprog|mxstates|mxvh   # Mexico: SIAP production, SIAP monthly progress, state table, NOAA by state
 
 Reports are parsed incrementally: report dates already in a CSV are skipped.
@@ -687,6 +687,45 @@ def build_fr_mars():
     print(f"mars_news.csv: {len(out)} bulletins, {int((out['france'] != '').sum())} mention France")
 
 
+SAA_ZIP = ("https://agreste.agriculture.gouv.fr/agreste-web/download/publication/publie/"
+           "SAA-SeriesLongues/SAA-SeriesLongues-2010-2025_DonneesProvisoires-"
+           "DepartementalesRegionales.zip")
+SAA_FILE = "SAA_2010-2025_provisoires_donnees_regionales.xlsx"
+# SAA row labels -> crop names used in the app (grain maize is irrigated + non-irrigated)
+SAA_CROPS = {"03 - Total blé tendre (01 + 02)": "Soft wheat", "06 - Total blé dur (04 + 05)": "Durum",
+             "10 - Total orge et escourgeon (08 + 09)": "Barley",
+             "14 - Maïs grain irrigué": "Grain maize", "15 - Maïs grain non irrigué": "Grain maize",
+             "31 - Total colza grain et navette (29 + 30)": "Rapeseed"}
+
+
+def build_fr_yields():
+    """Agreste Statistique agricole annuelle, regional series 2010+: area, yield and production
+    of soft wheat, durum, barley, grain maize and rapeseed by region (13 current regions) and for
+    metropolitan France. The latest year is provisional."""
+    raw = requests.get(SAA_ZIP, headers={**UA, "Accept": "*/*"}, timeout=300)
+    raw.raise_for_status()
+    with zipfile.ZipFile(io.BytesIO(raw.content)) as z, z.open(SAA_FILE) as f:
+        d = pd.read_excel(f, sheet_name="COP", header=5)
+    d = d[d["LIB_SAA"].isin(SAA_CROPS)].copy()
+    d["crop"] = d["LIB_SAA"].map(SAA_CROPS)
+    d["area"] = d["LIB_REG2"].str.replace(r"^\d+ - ", "", regex=True)
+    d = d[~d["area"].isin(["FRANCE"])]  # keep "FRANCE (Hors DROM)" as the national row
+    d["area"] = d["area"].replace({"FRANCE (Hors DROM)": "France"})
+    years = sorted({int(c[5:]) for c in d.columns if c.startswith("SURF_")})
+    rows = []
+    for (area, crop), g in d.groupby(["area", "crop"]):
+        for y in years:
+            surf = pd.to_numeric(g[f"SURF_{y}"], errors="coerce").sum(min_count=1)
+            prod = pd.to_numeric(g[f"PROD_{y}"], errors="coerce").sum(min_count=1)
+            if pd.notna(surf) and surf > 0 and pd.notna(prod):
+                rows.append((area, crop, y, surf, prod / surf))  # quintals per hectare
+    out = pd.DataFrame(rows, columns=["area", "crop", "year", "area_ha", "yield_qha"])
+    DATA.mkdir(exist_ok=True)
+    out.to_csv(DATA / "fr_yields.csv", index=False)
+    print(f"fr_yields.csv: {len(out)} rows, {out['year'].min()}-{out['year'].max()}, "
+          f"{out['area'].nunique()} areas")
+
+
 STOCK_GEOS = ["Alberta", "Saskatchewan", "Manitoba", "Ontario", "Canada"]
 STOCK_CROPS = {"Canola (rapeseed)": "Canola", "Wheat, all excluding durum wheat": "Wheat ex-durum",
                "Wheat, durum": "Durum", "Barley": "Barley", "Corn for grain": "Corn",
@@ -745,6 +784,8 @@ if __name__ == "__main__":
         build_fr_cereobs()
     if what == "fragreste":
         build_fr_agreste()
+    if what == "fryields":
+        build_fr_yields()
     if what == "frmars":
         build_fr_mars()
     if what == "frvh":
