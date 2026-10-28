@@ -105,6 +105,8 @@ def main():
                 {"label": label(c) + (" (municipality level)" if country == "Mexico" and "_" not in c
                                       and not c.startswith("Total") or c == "Total_barl" else ""),
                  "path": files[c], "token": itok.get(files[c])} for c in codes if c in files]
+    spec = json.loads(Path(__file__).parent.joinpath("data", "usda_calendars_spec.json").read_text(encoding="utf-8"))
+    out["calendars"] = {c: [{**o, "token": itok.get(o["path"])} for o in v] for c, v in spec.items()}
     Path(__file__).parent.joinpath("data", "usda_maps.json").write_text(
         json.dumps(out, indent=1, ensure_ascii=False), encoding="utf-8")
     print({c: {k: len(v) for k, v in m.items()} for c, m in out["maps"].items()})

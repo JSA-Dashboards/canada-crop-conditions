@@ -370,5 +370,79 @@
     }
    ]
   }
+ },
+ "calendars": {
+  "Canada": [
+   {
+    "label": "USDA crop calendar 1",
+    "path": "crop-calendars/2026-09/CA/can_ca_1_calendar.png",
+    "token": "k3572y2i"
+   },
+   {
+    "label": "USDA crop calendar 2",
+    "path": "crop-calendars/2026-09/CA/can_ca_2_calendar.png",
+    "token": "hyujkSqD"
+   }
+  ],
+  "Mexico": [
+   {
+    "label": "USDA crop calendar 1",
+    "path": "crop-calendars/2026-09/MX/mx_mx_1_calendar.png",
+    "token": "ZUYaHGOU"
+   },
+   {
+    "label": "USDA crop calendar 2",
+    "path": "crop-calendars/2026-09/MX/mx_mx_2_calendar.png",
+    "token": "GAU0sb4f"
+   }
+  ],
+  "Brazil": [
+   {
+    "label": "USDA crop calendar 1",
+    "path": "crop-calendars/2026-09/BR/br_br_1_calendar.png",
+    "token": "3nw_vuyF"
+   },
+   {
+    "label": "USDA crop calendar 2",
+    "path": "crop-calendars/2026-09/BR/br_br_2_calendar.png",
+    "token": "9xQEd6P9"
+   }
+  ],
+  "Argentina": [
+   {
+    "label": "USDA crop calendar 1",
+    "path": "crop-calendars/2026-09/AR/ssa_ar_1_calendar.png",
+    "token": "RcOEY3Kl"
+   },
+   {
+    "label": "USDA crop calendar 2",
+    "path": "crop-calendars/2026-09/AR/ssa_ar_2_calendar.png",
+    "token": "iz2Pdanq"
+   }
+  ],
+  "South Africa": [
+   {
+    "label": "USDA crop calendar 1",
+    "path": "crop-calendars/2026-09/SF/safrica_sf_1_calendar.png",
+    "token": "_D_tjv-r"
+   },
+   {
+    "label": "USDA crop calendar 2",
+    "path": "crop-calendars/2026-09/SF/safrica_sf_2_calendar.png",
+    "token": "IjWOq2mZ"
+   }
+  ],
+  "France": [
+   {
+    "label": "USDA crop calendar 1",
+    "path": "crop-calendars/2026-09/E4/europe_e4_1_calendar.png",
+    "token": "Ajs2sdnT"
+   },
+   {
+    "label": "USDA crop calendar 2",
+    "path": "crop-calendars/2026-09/E4/europe_e4_2_calendar.png",
+    "token": "LnpkT8DJ"
+   }
+  ]
  }
 }

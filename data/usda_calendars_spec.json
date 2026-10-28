@@ -1,0 +1,62 @@
+{
+"Canada": [
+{
+"label": "USDA crop calendar 1",
+"path": "crop-calendars/2026-09/CA/can_ca_1_calendar.png"
+},
+{
+"label": "USDA crop calendar 2",
+"path": "crop-calendars/2026-09/CA/can_ca_2_calendar.png"
+}
+],
+"Mexico": [
+{
+"label": "USDA crop calendar 1",
+"path": "crop-calendars/2026-09/MX/mx_mx_1_calendar.png"
+},
+{
+"label": "USDA crop calendar 2",
+"path": "crop-calendars/2026-09/MX/mx_mx_2_calendar.png"
+}
+],
+"Brazil": [
+{
+"label": "USDA crop calendar 1",
+"path": "crop-calendars/2026-09/BR/br_br_1_calendar.png"
+},
+{
+"label": "USDA crop calendar 2",
+"path": "crop-calendars/2026-09/BR/br_br_2_calendar.png"
+}
+],
+"Argentina": [
+{
+"label": "USDA crop calendar 1",
+"path": "crop-calendars/2026-09/AR/ssa_ar_1_calendar.png"
+},
+{
+"label": "USDA crop calendar 2",
+"path": "crop-calendars/2026-09/AR/ssa_ar_2_calendar.png"
+}
+],
+"South Africa": [
+{
+"label": "USDA crop calendar 1",
+"path": "crop-calendars/2026-09/SF/safrica_sf_1_calendar.png"
+},
+{
+"label": "USDA crop calendar 2",
+"path": "crop-calendars/2026-09/SF/safrica_sf_2_calendar.png"
+}
+],
+"France": [
+{
+"label": "USDA crop calendar 1",
+"path": "crop-calendars/2026-09/E4/europe_e4_1_calendar.png"
+},
+{
+"label": "USDA crop calendar 2",
+"path": "crop-calendars/2026-09/E4/europe_e4_2_calendar.png"
+}
+]
+}

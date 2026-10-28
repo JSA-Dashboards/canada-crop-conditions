@@ -268,3 +268,20 @@ def _calendar(country, crop, label):
     st.markdown(calendar_html(country, crop), unsafe_allow_html=True)
     st.caption(CAL_NOTE[country] + " Typical windows for the main producing zone; a given year runs a "
                "few weeks early or late. The selected crop is highlighted.")
+    _usda_calendars(country)
+
+
+def _usda_calendars(country):
+    """USDA FAS's own crop calendar pictures for the country, shown as published, with credit."""
+    m = _usda_maps()
+    cals = m.get("calendars", {}).get(country, [])
+    if not cals:
+        return
+    st.subheader(f"USDA Crop Calendar: {country}")
+    for c in cals:
+        url = f'{m["thumb"]}{c["path"]}?itok={c["token"]}' if c.get("token") else m["site"] + c["path"]
+        st.image(url, width=650)
+    who = "the European Union (USDA publishes no France-only calendar)" if country == "France" else country
+    st.caption(f"Source: [USDA Foreign Agricultural Service, International Production Assessment Division]"
+               f"({m['pages'][country]}), crop calendars for {who}, {m['month']} release, shown unaltered. "
+               "Planting, growth and harvest by month for the main crops.")
