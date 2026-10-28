@@ -109,68 +109,69 @@ PROVIDERS = {"Canada": ("CAN", _canada), "Mexico": ("MEX", _mexico), "Brazil": (
 # . nothing. Typical windows for the main producing zone; a given year moves by a few weeks. ----------
 CAL = {
     "Brazil": {
-        "Corn 1st crop": [("Corn - 1st crop", "GHHHHHH..PPP")],
-        "Corn 2nd crop": [("Corn - 2nd crop", "PPGGGGHHH...")],
-        "Soybeans": [("Soybeans", "GGHHHH...PPP")],
-        "Wheat": [("Wheat (south)", "...PPPGGHHHH")],
+        "Corn 1st crop": [("Corn - 1st crop", "GHHHHH...PPP")],
+        "Corn 2nd crop": [("Corn - 2nd crop", "PPGGGHHHH...")],
+        "Soybeans": [("Soybeans", "HHHHHH..PPPP")],
+        "Wheat": [("Wheat (south)", "....PPGGGHHH")],
     },
     "Argentina": {
-        "Corn": [("Corn", "GGGHHH..PPPP")],
-        "Soybeans": [("Soybeans - 1st", "GGGGHH....PP"), ("Soybeans - 2nd", "GGGGHH.....P")],
-        "Sunflower": [("Sunflower", "GHHH....PPPP")],
-        "Sorghum": [("Sorghum", "GGHHH...PPPP")],
-        "Wheat": [("Wheat", "H...PPPGGGHH")],
+        "Corn": [("Corn", "PGGHHHHHPPPP")],
+        "Soybeans": [("Soybeans - 1st", "GGGHH.....PP"), ("Soybeans - 2nd", "GGGGHH.....P")],
+        "Sunflower": [("Sunflower", "GGHH....PPGG")],
+        "Sorghum": [("Sorghum", "GGGHHH...PPP")],
+        "Wheat": [("Wheat", "H...PPPGGGGH")],
     },
     "Canada": {
-        "Canola": [("Canola", "....PPGGHH..")],
-        "Spring wheat": [("Spring wheat", "...PPPGHHH..")],
+        "Canola": [("Canola", "....PPGHHH..")],
+        "Spring wheat": [("Spring wheat", "....PPGHHH..")],
         "Durum": [("Durum", "....PPGHHH..")],
-        "Barley": [("Barley", "...PPPGHHH..")],
-        "Corn": [("Corn (Ontario)", "...PPGGGGHH.")],
-        "Soybeans": [("Soybeans (Ontario)", "....PGGGGHH.")],
+        "Barley": [("Barley", "....PPGHHH..")],
+        "Corn": [("Corn (Ontario)", "....PPGGGHH.")],
+        "Soybeans": [("Soybeans (Ontario)", "....PPGGGHH.")],
     },
     "Mexico": {
-        "Maíz grano": [("Corn - spring-summer", "....PPPGGHHH"),
-                       ("Corn - autumn-winter", "GGGHHH....PP")],
-        "Sorgo grano": [("Sorghum - autumn-winter", "PPPGHHH....."),
-                        ("Sorghum - spring-summer", ".....PPPGHHH")],
-        "Trigo grano": [("Wheat - autumn-winter", "GGGHHH....PP")],
-        "Soya": [("Soybeans - spring-summer", "......PPGGHH")],
+        "Maíz grano": [("Corn - spring-summer", "HH.PPPPPGHHH"),
+                       ("Corn - autumn-winter", "PPGHHHH...PP")],
+        "Sorgo grano": [("Sorghum - autumn-winter", "PPHHHHH..PPP"),
+                        ("Sorghum - spring-summer", "HH.PPPPPPHHH")],
+        "Trigo grano": [("Wheat - autumn-winter", "PPGHHHH...PP")],
+        "Soya": [("Soybeans - spring-summer", "HH...PPPGGHH")],
         "Frijol": [("Dry beans - spring-summer", "......PPGGHH"),
                    ("Dry beans - autumn-winter", "GHHH......PP")],
-        "Cebada grano": [("Barley - autumn-winter", "PPPHHH.....P")],
+        "Cebada grano": [("Barley - autumn-winter", "PPPHHHH....P")],
         "Garbanzo grano": [("Chickpeas - autumn-winter", "GGHHHH....PP")],
         "Cártamo": [("Safflower - autumn-winter", "GGGHHHHH..PP")],
     },
     "France": {
-        "Soft wheat": [("Soft wheat", "GGGGGGHH.PPG")],
+        "Soft wheat": [("Soft wheat", "GGGGGHHHPPPP")],
         "Winter barley": [("Winter barley", "GGGGGHH.PPGG")],
-        "Grain maize": [("Grain maize", "...PPGGGHHH.")],
+        "Grain maize": [("Grain maize", "..PPPGGGHHHH")],
     },
     "South Africa": {
-        "Maize": [("Maize", "GGGGHHH..PPP")],
-        "Soybeans": [("Soybeans", "GGGHH....PPP")],
-        "Sunflower": [("Sunflower", "GGGHHH....PP")],
-        "Sorghum": [("Sorghum", "GGGHHH....PP")],
-        "Wheat": [("Wheat", "H....PPGGGHH")],
+        "Maize": [("Maize", "GGGGHHHH.PPP")],
+        "Soybeans": [("Soybeans", "GGGHHH...PPP")],
+        "Sunflower": [("Sunflower", "PGGHH.....PP")],
+        "Sorghum": [("Sorghum", "PGGGGH.....P")],
+        "Wheat": [("Wheat", "....PPGGGHH.")],
     },
 }
 assert all(len(pat) == 12 and set(pat) <= set("PGH.") for c in CAL.values() for v in c.values()
            for _, pat in v), "calendar pattern must be 12 letters of P/G/H/."
 CAL_NOTE = {
-    "Brazil": "Brazil follows the USDA FAS South American growing-season calendar; wheat is the "
-              "southern winter crop, sown May-Jun by CONAB's progress series.",
-    "Argentina": "Corn and soybeans follow the USDA FAS South American growing-season calendar; "
-                 "wheat, sunflower and sorghum follow FAS GAIN reports and the month-by-month "
-                 "cycle (sorghum harvest is inferred from its March marketing year).",
-    "Canada": "Prairie windows are checked against the Alberta and Saskatchewan weekly seeding "
-              "and harvest series (10% to 90% done); Ontario corn and soybeans are general.",
-    "Mexico": "Windows come from SIAP's monthly sown and harvested area by cycle (months holding "
-              "the bulk of each crop's sowing and harvest).",
-    "France": "Wheat and barley follow the usual French sowing and harvest windows; maize is "
-              "checked against Cere'Obs weekly sowing and harvest stages.",
-    "South Africa": "Maize and soybean planting follow the Department of Agriculture and "
-                    "analyst planting windows; sunflower, sorghum and wheat are general.",
+    "Brazil": "Windows follow USDA FAS's crop calendar for Brazil (shown below). USDA shows no "
+              "mid-season stage for soybeans.",
+    "Argentina": "Windows follow USDA FAS's crop calendars for Argentina (shown below); the 2nd "
+                 "soybean crop is read from the same calendar.",
+    "Canada": "Windows follow USDA FAS's crop calendar for Canada (shown below) and match the "
+              "Alberta and Saskatchewan weekly seeding and harvest series. Ontario corn and "
+              "soybeans use the same national calendar.",
+    "Mexico": "Windows follow USDA FAS's crop calendars for Mexico (shown below). Dry beans, "
+              "chickpeas and safflower are not on USDA's calendar: they come from SIAP's monthly "
+              "sown and harvested area.",
+    "France": "Windows follow USDA FAS's crop calendars for the European Union (shown below, "
+              "the nearest USDA publishes), and match Cere'Obs maize sowing and harvest stages.",
+    "South Africa": "Windows follow USDA FAS's crop calendars for South Africa (shown below). "
+                    "Maize is shown for the East and West regions combined.",
 }
 START_MONTH = {"Brazil": 7, "Argentina": 7, "South Africa": 7, "France": 7, "Canada": 1, "Mexico": 1}
 MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
@@ -266,8 +267,8 @@ def areas_tab(country, crop, crop_label=None):
 def _calendar(country, crop, label):
     st.subheader(f"{country} {label} Crop Calendar")
     st.markdown(calendar_html(country, crop), unsafe_allow_html=True)
-    st.caption(CAL_NOTE[country] + " Typical windows for the main producing zone; a given year runs a "
-               "few weeks early or late. The selected crop is highlighted.")
+    st.caption(CAL_NOTE[country] + " A given year runs a few weeks early or late. The selected crop is "
+               "highlighted.")
     _usda_calendars(country)
 
 
