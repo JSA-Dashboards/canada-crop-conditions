@@ -1027,6 +1027,104 @@ AR_CROPS = {"soja total": "Soybeans", "maiz": "Corn", "trigo total": "Wheat", "g
             "cebada total": "Barley", "sorgo": "Sorghum"}
 
 
+MAGYP_REPORTS = "https://www.magyp.gob.ar/sitio/areas/estimaciones/estimaciones/informes/"
+AR_PROG_COLS = ["date", "kind", "crop", "value", "last_year"]
+AR_PROG_CROPS = {"ARROZ": "Rice", "GIRASOL": "Sunflower", "MAIZ": "Corn", "SOJA": "Soybeans",
+                 "TRIGO": "Wheat", "SORGO": "Sorghum", "CEBADA": "Barley", "MANI": "Peanuts",
+                 "ALGODON": "Cotton"}
+_AR_NATIONAL = re.compile(r"nivel (?:nacional|pa[ií]s)|a nivel del pa[ií]s|grado actual de avance|"
+                          r"en el pa[ií]s|total del pa[ií]s", re.I)
+
+
+def parse_ar_progress(content, report_date):
+    """MAGyP 'Informe Semanal': national sowing / harvest progress exists only as a sentence in each
+    crop's paragraph ('...se estima una superficie implantada que representa el 19% del total
+    previsto', 'el grado actual de avance del 35% ... la campaña previa 31%'). Only sentences that
+    name the national level are read; provincial and delegation percentages are skipped."""
+    exe = shutil.which("pdftotext")
+    if exe:
+        with tempfile.NamedTemporaryFile(suffix=".pdf", delete=False) as f:
+            f.write(content)
+        try:
+            text = subprocess.run([exe, "-layout", "-enc", "UTF-8", f.name, "-"], capture_output=True,
+                                  text=True, encoding="utf-8", errors="replace").stdout
+        finally:
+            os.unlink(f.name)
+    else:
+        with pdfplumber.open(io.BytesIO(content)) as pdf:
+            text = "\n".join((pg.extract_text() or "") for pg in pdf.pages)
+    rows, seen, crop = [], set(), None
+    body = []
+
+    def flush():
+        if not crop or not body:
+            return
+        flat = re.sub(r"\s+", " ", " ".join(body))
+        for sent in re.split(r"(?<=[a-z%)])\.\s+", flat):
+            if not _AR_NATIONAL.search(sent) or "provincial" in sent.lower():
+                continue
+            pcts = [float(x.replace(",", ".")) for x in re.findall(r"(\d{1,3}(?:,\d)?)\s?%", sent)]
+            if not pcts:
+                continue
+            kind = "harvest" if re.search(r"cosech|trill", sent, re.I) else "seeding"
+            if (kind, crop) in seen:
+                continue
+            seen.add((kind, crop))
+            ly = pcts[1] if len(pcts) > 1 and re.search(
+                r"pasada|previa|anterior|a[ñn]o pasado", sent, re.I) else None
+            rows.append((report_date, kind, crop, pcts[0], ly))
+    for ln in text.split("\n"):
+        s = ln.strip()
+        head = _norm(s).upper()
+        if head in AR_PROG_CROPS:
+            flush()
+            crop, body = AR_PROG_CROPS[head], []
+        elif crop and re.fullmatch(r"[A-ZÁÉÍÓÚÑ ,/()0-9\-]{4,60}", s) and head not in AR_PROG_CROPS:
+            flush()
+            crop, body = None, []
+        elif crop:
+            body.append(s)
+    flush()
+    return rows
+
+
+def build_ar_progress():
+    """Forward-only weekly job: read the reports page (it lists only the current month) and fetch
+    just the PDFs not yet filed - a handful of requests a week. The site's WAF returns 403 after a
+    burst of requests, so this stops at the first 403 instead of retrying."""
+    path = DATA / "ar_progress.csv"
+    df = pd.read_csv(path) if path.exists() else pd.DataFrame(columns=AR_PROG_COLS)
+    done = set(df["date"].astype(str))
+    try:
+        page = requests.get(MAGYP_REPORTS, headers=UA, timeout=60)
+    except requests.RequestException as e:  # unreachable from some hosts: not worth failing the refresh
+        print("  reports page unreachable:", e)
+        return
+    if page.status_code != 200:
+        print("  reports page returned", page.status_code, "- nothing fetched")
+        return
+    from urllib.parse import quote
+    found = sorted(set(re.findall(r'href="([^"]*Informe Semanal al (\d\d)_(\d\d)_(\d{4})\.pdf)"', page.text)))
+    new = []
+    for href, dd, mm, yy in found:
+        d = f"{yy}-{mm}-{dd}"
+        if d in done:
+            continue
+        time.sleep(4)
+        r = requests.get("https://www.magyp.gob.ar" + quote(href, safe="/:"), headers=UA, timeout=90)
+        if r.status_code != 200 or not r.content.startswith(b"%PDF"):
+            print("  ", d, "HTTP", r.status_code, "- stopping")
+            break
+        got = parse_ar_progress(r.content, d)
+        print(" ", d, [(k[0], c, v, ly) for _, k, c, v, ly in got])
+        new += got or [(d, "none", "", None, None)]  # mark the week read even if no figure parsed
+    if new:
+        df = pd.concat([df, pd.DataFrame(new, columns=AR_PROG_COLS)])
+    DATA.mkdir(exist_ok=True)
+    df.drop_duplicates(["date", "kind", "crop"]).sort_values(["date", "kind", "crop"]).to_csv(path, index=False)
+    print(f"ar_progress.csv: {len(df):,} rows, {df['date'].nunique()} reports")
+
+
 def _norm(s):
     import unicodedata
     return unicodedata.normalize("NFKD", str(s)).encode("ascii", "ignore").decode().strip().lower()
@@ -1318,6 +1416,8 @@ if __name__ == "__main__":
     if what == "zavh":
         import vh
         vh.build_za()
+    if what == "arprog":
+        build_ar_progress()
     if what == "aryields":
         build_ar_yields()
     if what == "arvh":

@@ -40,7 +40,9 @@ def render():
         province = st.selectbox("Province", provs, index=provs.index("Córdoba"), key="ar_province")
         st.caption("Soybeans, corn and sunflower are sown from Sep to Dec and harvested Feb to "
                    "Jun; wheat is sown May to Jul and harvested Dec to Jan.")
-    t1, t2, t3 = st.tabs(["Satellite", "Yield model", "Sources"])
+    t0, t1, t2, t3 = st.tabs(["National progress", "Satellite", "Yield model", "Sources"])
+    with t0:
+        _progress()
     with t1:
         _satellite(crop, province)
     with t2:
@@ -60,7 +62,15 @@ check against an official figure. The model is the year trend with and without t
 the window; skill is the cut in leave-one-out error. The implied national figure weights each
 province by its latest harvested area.
 
-**Not here** - weekly planting, harvest and condition reports (Bolsa de Cereales de Buenos Aires
+**National progress** - the agriculture ministry's weekly "Informe Semanal" PDF states the national
+sown (or harvested) share of each crop only as a sentence in the crop's paragraph, so that sentence
+is what is read, with last year's figure when the sentence gives one. The delegation grids in the
+PDF do not extract cleanly and are not used. The reports page lists only the current month and the
+site blocks bursts of requests, so the history starts in October 2026 and grows by the weekly
+`arprog` job (a few requests a week). Weeks where the report gives no national figure for a crop
+are simply absent.
+
+**Not here** - weekly condition reports (Bolsa de Cereales de Buenos Aires
 and Rosario publish them as PDFs or behind bot checks), and private estimates (BAGE, BCR), which
 are typed into the WASDE dashboard's Alt. Groups page.
 
@@ -68,6 +78,35 @@ The MAGyP file is hosted on datos.magyp.gob.ar, which the JSA droplet cannot rea
 a PC with `python build_data.py aryields` (it changes only a few times a year). The satellite series
 refreshes weekly with `arvh`.
 """)
+
+
+def _progress():
+    p = DATA.parent / "ar_progress.csv"
+    d = pd.read_csv(p) if p.exists() else pd.DataFrame()
+    d = d[d["kind"].isin(["seeding", "harvest"])] if len(d) else d
+    if d.empty:
+        st.info("No national progress yet. It is read from the ministry's weekly report: run "
+                "build_data.py arprog.")
+        return
+    d["date"] = pd.to_datetime(d["date"])
+    st.caption("Ministry (MAGyP) Informe Semanal, national share of the expected area sown or "
+               "harvested, as stated in the report text. History starts October 2026.")
+    latest = d.sort_values("date").groupby(["kind", "crop"]).tail(1).copy()
+    latest["vs last year"] = latest["value"] - latest["last_year"]
+    show = latest.rename(columns={"kind": "Activity", "crop": "Crop", "date": "As of",
+                                  "value": "% done", "last_year": "Last year %"})
+    show["As of"] = show["As of"].dt.strftime("%b %d, %Y")
+    st.dataframe(show[["Crop", "Activity", "As of", "% done", "Last year %", "vs last year"]]
+                 .sort_values(["Activity", "Crop"]).reset_index(drop=True), width="stretch",
+                 hide_index=True)
+    fig = go.Figure()
+    for (kind, c), g in d.sort_values("date").groupby(["kind", "crop"]):
+        fig.add_trace(go.Scatter(x=g["date"], y=g["value"], mode="lines+markers",
+                                 name=f"{c} ({kind})"))
+    fig.update_layout(title="National progress by report date", yaxis_title="% of expected area",
+                      height=360, template="plotly_white", margin=dict(t=50, b=30),
+                      legend=dict(orientation="h", y=-0.2))
+    st.plotly_chart(fig, width="stretch")
 
 
 def _satellite(crop, province):

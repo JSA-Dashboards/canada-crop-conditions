@@ -46,6 +46,7 @@ main() {
   "$PY" -u build_data.py brseries
   "$PY" -u build_data.py brprog
   "$PY" -u build_data.py arvh
+  "$PY" -u build_data.py arprog
   "$PY" -u build_data.py zavh
   "$PY" -u build_data.py zanat
   "$PY" -u build_data.py zacec
