@@ -1,5 +1,6 @@
 """'Areas and calendar' tab for every country: where the selected crop is grown (USDA-style map of
 3-year-average production by state/province) and its planting-growth-harvest timeline."""
+from datetime import datetime
 from pathlib import Path
 
 import pandas as pd
@@ -180,19 +181,35 @@ FLAT = {"Brazil": "Brazil", "Argentina": "Argentina", "Canada": "Canada", "Mexic
         "France": "France", "South Africa": "South Africa"}
 
 
-def calendar_html(country, crop):
-    """All of the country's crops, the selected crop's rows in bold and the rest dimmed."""
-    start = START_MONTH[country]
+def today_month():
+    """Current month (1-12) in Chicago time: Streamlit Cloud runs on UTC."""
+    try:
+        from zoneinfo import ZoneInfo
+        return datetime.now(ZoneInfo("America/Chicago")).month
+    except Exception:
+        return datetime.now().month
+
+
+def calendar_html(country, crop, from_current=False):
+    """All of the country's crops, the selected crop's rows in bold and the rest dimmed. The current
+    month's column is highlighted; from_current starts the 12 months at the current month."""
+    now = today_month()
+    start = now if from_current else START_MONTH[country]
     order = [(start - 1 + i) % 12 for i in range(12)]
-    head = "".join(f"<th style='font-weight:600;color:#5f7267;font-size:12px;padding:2px 0'>"
-                   f"{MONTHS[m]}</th>" for m in order)
+    cur = now - 1
+    edge = "border-left:2px solid #32373c;border-right:2px solid #32373c;"
+    head = "".join(
+        (f"<th style='font-weight:700;color:#fff;background:#32373c;font-size:12px;padding:2px 0;"
+         f"border-radius:4px 4px 0 0'>{MONTHS[m]}</th>") if m == cur else
+        (f"<th style='font-weight:600;color:#5f7267;font-size:12px;padding:2px 0'>{MONTHS[m]}</th>")
+        for m in order)
     rows = []
     for ckey, items in CAL[country].items():
         for label, pat in items:
             on = ckey == crop
             cells = "".join(
-                f"<td style='background:{COLORS[pat[m]]};height:20px;border:1px solid #d7e2dc'></td>"
-                for m in order)
+                f"<td style='background:{COLORS[pat[m]]};height:20px;border:1px solid #d7e2dc;"
+                f"{edge if m == cur else ''}'></td>" for m in order)
             style = "font-weight:700;color:#32373c" if on else "font-weight:400;color:#8a9a90"
             op = "1" if on else "0.45"
             rows.append(f"<tr style='opacity:{op}'><td style='{style};padding:2px 10px 2px 0;"
@@ -201,6 +218,8 @@ def calendar_html(country, crop):
         f"<span style='display:inline-block;width:14px;height:14px;background:{COLORS[k]};"
         f"border:1px solid #d7e2dc;vertical-align:middle;margin:0 4px 0 14px'></span>{t}"
         for k, t in (("P", "Planting"), ("G", "Growth"), ("H", "Harvest")))
+    legend += ("<span style='display:inline-block;width:14px;height:14px;background:#32373c;"
+               "vertical-align:middle;margin:0 4px 0 14px;border-radius:3px'></span>Current month")
     return (f"<table style='width:100%;border-collapse:collapse;table-layout:fixed'>"
             f"<colgroup><col style='width:190px'>{'<col>' * 12}</colgroup>"
             f"<tr><th></th>{head}</tr>{''.join(rows)}</table>"
@@ -266,7 +285,9 @@ def areas_tab(country, crop, crop_label=None):
 
 def _calendar(country, crop, label):
     st.subheader(f"{country} {label} Crop Calendar")
-    st.markdown(calendar_html(country, crop), unsafe_allow_html=True)
+    start = st.segmented_control("Start the 12 months at", ["Season start", "Current month"],
+                                 default="Season start", key=f"cal_start_{country}") or "Season start"
+    st.markdown(calendar_html(country, crop, start == "Current month"), unsafe_allow_html=True)
     st.caption(CAL_NOTE[country] + " A given year runs a few weeks early or late. The selected crop is "
                "highlighted.")
     _usda_calendars(country)
