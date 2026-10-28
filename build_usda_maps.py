@@ -50,13 +50,17 @@ EXT_UPPER = {("South Africa", "maiz"), ("South Africa", "soyb"), ("South Africa"
 CROPS = {
     "Canada": {"Canola": ["rape"], "Spring wheat": ["Spring_Whea", "whea"], "Durum": ["whea"],
                "Barley": ["barl"], "Corn": ["maiz"], "Soybeans": ["soyb"]},
-    "Mexico": {"Maíz grano": ["maiz", "State_maiz", "State_Summer_maiz", "State_Winter_maiz", "State_Fall_maiz",
-                              "State_Spring_maiz"],
-               "Sorgo grano": ["sorg", "State_sorg", "State_Summer_sorg", "State_Winter_sorg", "State_Fall_sorg",
-                               "State_Spring_sorg"],
-               "Trigo grano": ["whea", "State_whea", "State_Winter_whea", "State_Fall_whea", "State_Spring_whea"],
-               "Soya": ["soyb", "State_soyb", "State_Summer_soyb", "State_Fall_soyb"],
-               "Cebada grano": ["Total_barl", "State_Total_barl", "State_Winter_barl", "State_Spring_barl"]},
+    "Mexico": {
+        "Maíz grano": ["maiz", "State_maiz", "Summer_maiz", "State_Summer_maiz", "Winter_maiz", "State_Winter_maiz",
+                       "Fall_maiz", "State_Fall_maiz", "Spring_maiz", "State_Spring_maiz"],
+        "Sorgo grano": ["sorg", "State_sorg", "Summer_sorg", "State_Summer_sorg", "Winter_sorg", "State_Winter_sorg",
+                        "Fall_sorg", "State_Fall_sorg", "Spring_sorg", "State_Spring_sorg"],
+        "Trigo grano": ["whea", "State_whea", "Winter_whea", "State_Winter_whea", "Fall_whea", "State_Fall_whea",
+                        "Spring_whea", "State_Spring_whea"],
+        "Soya": ["soyb", "State_soyb", "Summer_soyb", "State_Summer_soyb", "Fall_soyb", "State_Fall_soyb",
+                 "Spring_soyb"],
+        "Cebada grano": ["Total_barl", "State_Total_barl", "Winter_barl", "State_Winter_barl", "Spring_barl",
+                         "State_Spring_barl"]},
     "France": {"Soft wheat": ["whea", "Winter_whea", "Spring_whea"], "Winter barley": ["Winter_barl", "barl"],
                "Grain maize": ["maiz"]},
     "Brazil": {"Soybeans": ["soyb"], "Corn 1st crop": ["FirstSeason_maiz", "Total_maiz"],
@@ -102,8 +106,7 @@ def main():
         out["maps"][country] = {}
         for crop, codes in CROPS[country].items():
             out["maps"][country][crop] = [
-                {"label": label(c) + (" (municipality level)" if country == "Mexico" and "_" not in c
-                                      and not c.startswith("Total") or c == "Total_barl" else ""),
+                {"label": label(c) + (" (municipality level)" if country == "Mexico" and not c.startswith("State_") else ""),
                  "path": files[c], "token": itok.get(files[c])} for c in codes if c in files]
     spec = json.loads(Path(__file__).parent.joinpath("data", "usda_calendars_spec.json").read_text(encoding="utf-8"))
     out["calendars"] = {c: [{**o, "token": itok.get(o["path"])} for o in v] for c, v in spec.items()}

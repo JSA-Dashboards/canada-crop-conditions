@@ -74,9 +74,19 @@
      "token": "BvNX9BS_"
     },
     {
+     "label": "Summer corn (municipality level)",
+     "path": "seasonal-maps/2026-09/MX/mx_MX_P_Summer_maiz.png",
+     "token": "VZ93mrWL"
+    },
+    {
      "label": "Summer corn (state level)",
      "path": "production-maps/2026-09/MX/mx_MX_P_State_Summer_maiz.PNG",
      "token": "m5OqXxnP"
+    },
+    {
+     "label": "Winter corn (municipality level)",
+     "path": "seasonal-maps/2026-09/MX/mx_MX_P_Winter_maiz.png",
+     "token": "TlxycNPp"
     },
     {
      "label": "Winter corn (state level)",
@@ -84,9 +94,19 @@
      "token": "SyRjDDs4"
     },
     {
+     "label": "Fall corn (municipality level)",
+     "path": "seasonal-maps/2026-09/MX/mx_MX_P_Fall_maiz.png",
+     "token": "8NhRy7E2"
+    },
+    {
      "label": "Fall corn (state level)",
      "path": "production-maps/2026-09/MX/mx_MX_P_State_Fall_maiz.png",
      "token": "-u_XxIRb"
+    },
+    {
+     "label": "Spring corn (municipality level)",
+     "path": "seasonal-maps/2026-09/MX/mx_MX_P_Spring_maiz.png",
+     "token": "vqJiAjwa"
     },
     {
      "label": "Spring corn (state level)",
@@ -106,9 +126,19 @@
      "token": "v-krKpjn"
     },
     {
+     "label": "Summer sorghum (municipality level)",
+     "path": "seasonal-maps/2026-09/MX/mx_MX_P_Summer_sorg.png",
+     "token": "yn1kU24u"
+    },
+    {
      "label": "Summer sorghum (state level)",
      "path": "production-maps/2026-09/MX/mx_MX_P_State_Summer_sorg.PNG",
      "token": "PU7AjY6U"
+    },
+    {
+     "label": "Winter sorghum (municipality level)",
+     "path": "seasonal-maps/2026-09/MX/mx_MX_P_Winter_sorg.png",
+     "token": "MbpOGvE7"
     },
     {
      "label": "Winter sorghum (state level)",
@@ -116,9 +146,19 @@
      "token": "kAQTpNDm"
     },
     {
+     "label": "Fall sorghum (municipality level)",
+     "path": "seasonal-maps/2026-09/MX/mx_MX_P_Fall_sorg.png",
+     "token": "1dNqxyc-"
+    },
+    {
      "label": "Fall sorghum (state level)",
      "path": "production-maps/2026-09/MX/mx_MX_P_State_Fall_sorg.png",
      "token": "9i_b9TVC"
+    },
+    {
+     "label": "Spring sorghum (municipality level)",
+     "path": "seasonal-maps/2026-09/MX/mx_MX_P_Spring_sorg.png",
+     "token": "08URpvcu"
     },
     {
      "label": "Spring sorghum (state level)",
@@ -138,14 +178,29 @@
      "token": "JGbIYNUC"
     },
     {
+     "label": "Winter wheat (municipality level)",
+     "path": "seasonal-maps/2026-09/MX/mx_MX_P_Winter_whea.png",
+     "token": "-4qClMvo"
+    },
+    {
      "label": "Winter wheat (state level)",
      "path": "production-maps/2026-09/MX/mx_MX_P_State_Winter_whea.PNG",
      "token": "V8t6KkPy"
     },
     {
+     "label": "Fall wheat (municipality level)",
+     "path": "seasonal-maps/2026-09/MX/mx_MX_P_Fall_whea.png",
+     "token": "st-xmCjl"
+    },
+    {
      "label": "Fall wheat (state level)",
      "path": "production-maps/2026-09/MX/mx_MX_P_State_Fall_whea.png",
      "token": "pe1z1_5E"
+    },
+    {
+     "label": "Spring wheat (municipality level)",
+     "path": "seasonal-maps/2026-09/MX/mx_MX_P_Spring_whea.png",
+     "token": "6IQQpC_s"
     },
     {
      "label": "Spring wheat (state level)",
@@ -165,14 +220,29 @@
      "token": "STP8ygeD"
     },
     {
+     "label": "Summer soybeans (municipality level)",
+     "path": "seasonal-maps/2026-09/MX/mx_MX_P_Summer_soyb.png",
+     "token": "JOFj4lim"
+    },
+    {
      "label": "Summer soybeans (state level)",
      "path": "production-maps/2026-09/MX/mx_MX_P_State_Summer_soyb.PNG",
      "token": "OwPfYzPi"
     },
     {
+     "label": "Fall soybeans (municipality level)",
+     "path": "seasonal-maps/2026-09/MX/mx_MX_P_Fall_soyb.png",
+     "token": "GT4gx6FC"
+    },
+    {
      "label": "Fall soybeans (state level)",
      "path": "production-maps/2026-09/MX/mx_MX_P_State_Fall_soyb.png",
      "token": "ZkwzzvqT"
+    },
+    {
+     "label": "Spring soybeans (municipality level)",
+     "path": "seasonal-maps/2026-09/MX/mx_MX_P_Spring_soyb.png",
+     "token": "0tNUEbXF"
     }
    ],
    "Cebada grano": [
@@ -187,9 +257,19 @@
      "token": "CBm7LPcJ"
     },
     {
+     "label": "Winter barley (municipality level)",
+     "path": "seasonal-maps/2026-09/MX/mx_MX_P_Winter_barl.png",
+     "token": "GEBgVHcE"
+    },
+    {
      "label": "Winter barley (state level)",
      "path": "production-maps/2026-09/MX/mx_MX_P_State_Winter_barl.png",
      "token": "-Lm1YJr6"
+    },
+    {
+     "label": "Spring barley (municipality level)",
+     "path": "seasonal-maps/2026-09/MX/mx_MX_P_Spring_barl.png",
+     "token": "2jmyN9eT"
     },
     {
      "label": "Spring barley (state level)",
