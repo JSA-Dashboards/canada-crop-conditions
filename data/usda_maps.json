@@ -1,0 +1,374 @@
+{
+ "thumb": "https://www.fas.usda.gov/sites/default/files/styles/max_scale_650x650/public/ipad/",
+ "month": "2026-09",
+ "retrieved": "2026-10-28",
+ "site": "https://www.fas.usda.gov/sites/default/files/ipad/",
+ "pages": {
+  "Canada": "https://www.fas.usda.gov/data/production/ca",
+  "Mexico": "https://www.fas.usda.gov/data/production/mx",
+  "Brazil": "https://www.fas.usda.gov/data/production/br",
+  "Argentina": "https://www.fas.usda.gov/data/production/ar",
+  "South Africa": "https://www.fas.usda.gov/data/production/sf",
+  "France": "https://www.fas.usda.gov/data/production/e4"
+ },
+ "maps": {
+  "Canada": {
+   "Canola": [
+    {
+     "label": "Rapeseed",
+     "path": "production-maps/2026-09/CA/can_CA_P_rape.png",
+     "token": "PRc1pd1w"
+    }
+   ],
+   "Spring wheat": [
+    {
+     "label": "Spring wheat",
+     "path": "seasonal-maps/2026-09/CA/can_CA_P_Spring_Whea.png",
+     "token": "GaHXRz35"
+    },
+    {
+     "label": "Wheat",
+     "path": "production-maps/2026-09/CA/can_CA_P_whea.png",
+     "token": "C1GjsR3q"
+    }
+   ],
+   "Durum": [
+    {
+     "label": "Wheat",
+     "path": "production-maps/2026-09/CA/can_CA_P_whea.png",
+     "token": "C1GjsR3q"
+    }
+   ],
+   "Barley": [
+    {
+     "label": "Barley",
+     "path": "production-maps/2026-09/CA/can_CA_P_barl.png",
+     "token": "oS-jX2Kw"
+    }
+   ],
+   "Corn": [
+    {
+     "label": "Corn",
+     "path": "production-maps/2026-09/CA/can_CA_P_maiz.png",
+     "token": "BEOVKq6P"
+    }
+   ],
+   "Soybeans": [
+    {
+     "label": "Soybeans",
+     "path": "production-maps/2026-09/CA/can_CA_P_soyb.png",
+     "token": "Aw-2OR3B"
+    }
+   ]
+  },
+  "Mexico": {
+   "Maíz grano": [
+    {
+     "label": "Corn (municipality level)",
+     "path": "production-maps/2026-09/MX/mx_MX_P_maiz.png",
+     "token": "hlx5AXLS"
+    },
+    {
+     "label": "Corn (state level)",
+     "path": "production-maps/2026-09/MX/mx_MX_P_State_maiz.png",
+     "token": "BvNX9BS_"
+    },
+    {
+     "label": "Summer corn (state level)",
+     "path": "production-maps/2026-09/MX/mx_MX_P_State_Summer_maiz.PNG",
+     "token": "m5OqXxnP"
+    },
+    {
+     "label": "Winter corn (state level)",
+     "path": "production-maps/2026-09/MX/mx_MX_P_State_Winter_maiz.PNG",
+     "token": "SyRjDDs4"
+    },
+    {
+     "label": "Fall corn (state level)",
+     "path": "production-maps/2026-09/MX/mx_MX_P_State_Fall_maiz.png",
+     "token": "-u_XxIRb"
+    },
+    {
+     "label": "Spring corn (state level)",
+     "path": "production-maps/2026-09/MX/mx_MX_P_State_Spring_maiz.png",
+     "token": "Evsf0ZJw"
+    }
+   ],
+   "Sorgo grano": [
+    {
+     "label": "Sorghum (municipality level)",
+     "path": "production-maps/2026-09/MX/mx_MX_P_sorg.png",
+     "token": "ppv3_yiT"
+    },
+    {
+     "label": "Sorghum (state level)",
+     "path": "production-maps/2026-09/MX/mx_MX_P_State_sorg.png",
+     "token": "v-krKpjn"
+    },
+    {
+     "label": "Summer sorghum (state level)",
+     "path": "production-maps/2026-09/MX/mx_MX_P_State_Summer_sorg.PNG",
+     "token": "PU7AjY6U"
+    },
+    {
+     "label": "Winter sorghum (state level)",
+     "path": "production-maps/2026-09/MX/mx_MX_P_State_Winter_sorg.PNG",
+     "token": "kAQTpNDm"
+    },
+    {
+     "label": "Fall sorghum (state level)",
+     "path": "production-maps/2026-09/MX/mx_MX_P_State_Fall_sorg.png",
+     "token": "9i_b9TVC"
+    },
+    {
+     "label": "Spring sorghum (state level)",
+     "path": "production-maps/2026-09/MX/mx_MX_P_State_Spring_sorg.png",
+     "token": "Bt24GBvE"
+    }
+   ],
+   "Trigo grano": [
+    {
+     "label": "Wheat (municipality level)",
+     "path": "production-maps/2026-09/MX/mx_MX_P_whea.png",
+     "token": "HFSDKXW-"
+    },
+    {
+     "label": "Wheat (state level)",
+     "path": "production-maps/2026-09/MX/mx_MX_P_State_whea.png",
+     "token": "JGbIYNUC"
+    },
+    {
+     "label": "Winter wheat (state level)",
+     "path": "production-maps/2026-09/MX/mx_MX_P_State_Winter_whea.PNG",
+     "token": "V8t6KkPy"
+    },
+    {
+     "label": "Fall wheat (state level)",
+     "path": "production-maps/2026-09/MX/mx_MX_P_State_Fall_whea.png",
+     "token": "pe1z1_5E"
+    },
+    {
+     "label": "Spring wheat (state level)",
+     "path": "production-maps/2026-09/MX/mx_MX_P_State_Spring_whea.png",
+     "token": "8I6B1s9K"
+    }
+   ],
+   "Soya": [
+    {
+     "label": "Soybeans (municipality level)",
+     "path": "production-maps/2026-09/MX/mx_MX_P_soyb.png",
+     "token": "9747d9Q_"
+    },
+    {
+     "label": "Soybeans (state level)",
+     "path": "production-maps/2026-09/MX/mx_MX_P_State_soyb.png",
+     "token": "STP8ygeD"
+    },
+    {
+     "label": "Summer soybeans (state level)",
+     "path": "production-maps/2026-09/MX/mx_MX_P_State_Summer_soyb.PNG",
+     "token": "OwPfYzPi"
+    },
+    {
+     "label": "Fall soybeans (state level)",
+     "path": "production-maps/2026-09/MX/mx_MX_P_State_Fall_soyb.png",
+     "token": "ZkwzzvqT"
+    }
+   ],
+   "Cebada grano": [
+    {
+     "label": "Barley (municipality level)",
+     "path": "production-maps/2026-09/MX/mx_MX_P_Total_barl.png",
+     "token": "6NJ2bEKO"
+    },
+    {
+     "label": "Barley (state level)",
+     "path": "production-maps/2026-09/MX/mx_MX_P_State_Total_barl.png",
+     "token": "CBm7LPcJ"
+    },
+    {
+     "label": "Winter barley (state level)",
+     "path": "production-maps/2026-09/MX/mx_MX_P_State_Winter_barl.png",
+     "token": "-Lm1YJr6"
+    },
+    {
+     "label": "Spring barley (state level)",
+     "path": "production-maps/2026-09/MX/mx_MX_P_State_Spring_barl.png",
+     "token": "FzPE7k1b"
+    }
+   ]
+  },
+  "Brazil": {
+   "Soybeans": [
+    {
+     "label": "Soybeans",
+     "path": "production-maps/2026-09/BR/br_BR_P_soyb.png",
+     "token": "8PkN8gnF"
+    }
+   ],
+   "Corn 1st crop": [
+    {
+     "label": "First season corn",
+     "path": "seasonal-maps/2026-09/BR/br_BR_P_FirstSeason_maiz.png",
+     "token": "6OFu24zp"
+    },
+    {
+     "label": "Corn",
+     "path": "production-maps/2026-09/BR/br_BR_P_Total_maiz.png",
+     "token": "Zeujl8rb"
+    }
+   ],
+   "Corn 2nd crop": [
+    {
+     "label": "Second season corn",
+     "path": "seasonal-maps/2026-09/BR/br_BR_P_SecondSeason_maiz.png",
+     "token": "jB03sy9X"
+    },
+    {
+     "label": "Corn",
+     "path": "production-maps/2026-09/BR/br_BR_P_Total_maiz.png",
+     "token": "Zeujl8rb"
+    }
+   ],
+   "Wheat": [
+    {
+     "label": "Wheat",
+     "path": "production-maps/2026-09/BR/br_BR_P_whea.png",
+     "token": "87dtV4n4"
+    }
+   ]
+  },
+  "Argentina": {
+   "Soybeans": [
+    {
+     "label": "Soybeans",
+     "path": "production-maps/2026-09/AR/ssa_AR_P_soyb.png",
+     "token": "24F0mDy8"
+    },
+    {
+     "label": "First season soybeans",
+     "path": "seasonal-maps/2026-09/AR/ssa_AR_P_FirstSeason_soyb.png",
+     "token": "jO-DgaVg"
+    },
+    {
+     "label": "Second season soybeans",
+     "path": "seasonal-maps/2026-09/AR/ssa_AR_P_SecondSeason_soyb.png",
+     "token": "1iMifBLn"
+    }
+   ],
+   "Corn": [
+    {
+     "label": "Corn",
+     "path": "production-maps/2026-09/AR/ssa_AR_P_maiz.png",
+     "token": "vcj9Zohr"
+    }
+   ],
+   "Sunflower": [
+    {
+     "label": "Sunflowerseed",
+     "path": "production-maps/2026-09/AR/ssa_AR_P_sunf.png",
+     "token": "y_ZIqVvp"
+    }
+   ],
+   "Sorghum": [
+    {
+     "label": "Sorghum",
+     "path": "production-maps/2026-09/AR/ssa_AR_P_sorg.png",
+     "token": "0PMm1RFj"
+    }
+   ],
+   "Wheat": [
+    {
+     "label": "Wheat",
+     "path": "production-maps/2026-09/AR/ssa_AR_P_whea.png",
+     "token": "glrstEle"
+    }
+   ]
+  },
+  "South Africa": {
+   "Maize": [
+    {
+     "label": "Corn",
+     "path": "production-maps/2026-09/SF/safrica_SF_P_maiz.PNG",
+     "token": "7q32fHBW"
+    }
+   ],
+   "Soybeans": [
+    {
+     "label": "Soybeans",
+     "path": "production-maps/2026-09/SF/safrica_SF_P_soyb.PNG",
+     "token": "9PMGDSY0"
+    }
+   ],
+   "Sunflower": [
+    {
+     "label": "Sunflowerseed",
+     "path": "production-maps/2026-09/SF/safrica_SF_P_sunf.PNG",
+     "token": "anKj0r4g"
+    }
+   ],
+   "Sorghum": [
+    {
+     "label": "Sorghum",
+     "path": "production-maps/2026-09/SF/safrica_SF_P_sorg.png",
+     "token": "gdtslMGa"
+    }
+   ],
+   "Wheat": [
+    {
+     "label": "Wheat",
+     "path": "production-maps/2026-09/SF/safrica_SF_P_whea.PNG",
+     "token": "0DC_qrv6"
+    },
+    {
+     "label": "Dryland wheat",
+     "path": "seasonal-maps/2026-09/SF/safrica_SF_P_Dryland_whea.png",
+     "token": "6pUwfy5B"
+    },
+    {
+     "label": "Irrigated wheat",
+     "path": "seasonal-maps/2026-09/SF/safrica_SF_P_irrigated_whea.png",
+     "token": "2dymBa5a"
+    }
+   ]
+  },
+  "France": {
+   "Soft wheat": [
+    {
+     "label": "Wheat",
+     "path": "production-maps/2026-09/E4/europe_E4_P_whea.png",
+     "token": "dDmVmuo1"
+    },
+    {
+     "label": "Winter wheat",
+     "path": "seasonal-maps/2026-09/E4/europe_E4_P_Winter_whea.png",
+     "token": "DGTxmO21"
+    },
+    {
+     "label": "Spring wheat",
+     "path": "seasonal-maps/2026-09/E4/europe_E4_P_Spring_whea.png",
+     "token": "c9cWYAjk"
+    }
+   ],
+   "Winter barley": [
+    {
+     "label": "Winter barley",
+     "path": "seasonal-maps/2026-09/E4/europe_E4_P_Winter_barl.png",
+     "token": "3M2Pzrwk"
+    },
+    {
+     "label": "Barley",
+     "path": "production-maps/2026-09/E4/europe_E4_P_barl.png",
+     "token": "Gdxh2d9S"
+    }
+   ],
+   "Grain maize": [
+    {
+     "label": "Corn",
+     "path": "production-maps/2026-09/E4/europe_E4_P_maiz.png",
+     "token": "-3ms91ZJ"
+    }
+   ]
+  }
+ }
+}

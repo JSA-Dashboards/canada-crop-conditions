@@ -6,6 +6,7 @@ import pandas as pd
 import streamlit as st
 
 import geo
+import json
 
 DATA = Path(__file__).parent / "data"
 BR_UF = {"AC": "Acre", "AL": "Alagoas", "AM": "Amazonas", "AP": "Amapá", "BA": "Bahia",
@@ -205,11 +206,46 @@ def calendar_html(country, crop):
             f"<div style='font-size:13px;color:#5f7267;margin-top:8px'>{legend}</div>")
 
 
+@st.cache_data(ttl=3600, show_spinner=False)
+def _usda_maps():
+    p = DATA / "usda_maps.json"
+    return json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
+
+
+def usda_map(country, crop, label):
+    """USDA FAS's own production map for the crop, shown as published (never redrawn), with credit.
+    Returns True when a map was shown."""
+    m = _usda_maps()
+    options = m.get("maps", {}).get(country, {}).get(crop, [])
+    if not options:
+        return False
+    pick = options[0]
+    if len(options) > 1:
+        names = [o["label"] for o in options]
+        choice = st.selectbox("USDA map", names, key=f"usda_map_{country}_{crop}")
+        pick = options[names.index(choice)]
+    shown = f'{m["thumb"]}{pick["path"]}?itok={pick["token"]}' if pick.get("token") else m["site"] + pick["path"]
+    st.image(shown, width=650)
+    page = m["pages"][country]
+    who = "the European Union (USDA publishes no France-only map)" if country == "France" else country
+    st.caption(f"Source: [USDA Foreign Agricultural Service, International Production Assessment Division]"
+               f"({page}), crop production maps for {who}, {m['month']} release. Maps are USDA's, shown "
+               "unaltered: production as a 3-year average, with each area's share of national production. "
+               f"[Full-size image]({m['site'] + pick['path']}).")
+    return True
+
+
+@st.fragment
 def areas_tab(country, crop, crop_label=None):
     """Render the map and the calendar for `crop` (the key the country's own selector uses)."""
     iso, provider = PROVIDERS[country]
     label = crop_label or crop
     st.subheader(f"{country} {label} Production Areas")
+    if usda_map(country, crop, label):
+        _calendar(country, crop, label)
+        return
+    st.caption("USDA publishes no map for this crop here, so this is JSA's own map of the same data "
+               "the models use.")
     got = provider(crop)
     if got is None or got[0].empty:
         st.info(f"No production-by-area data for {label}.")
@@ -224,6 +260,10 @@ def areas_tab(country, crop, crop_label=None):
         st.caption(f"Average annual production {years}, from the same series the yield model uses. "
                    "Shading shows tonnes; the table gives each area's share of the national total. "
                    "Boundaries: Natural Earth (public domain).")
+    _calendar(country, crop, label)
+
+
+def _calendar(country, crop, label):
     st.subheader(f"{country} {label} Crop Calendar")
     st.markdown(calendar_html(country, crop), unsafe_allow_html=True)
     st.caption(CAL_NOTE[country] + " Typical windows for the main producing zone; a given year runs a "
