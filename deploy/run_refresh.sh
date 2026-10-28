@@ -45,6 +45,8 @@ main() {
   "$PY" -u build_data.py brvh
   "$PY" -u build_data.py brseries
   "$PY" -u build_data.py brprog
+  "$PY" -u build_data.py arvh
+  # MAGyP province yields (aryields) are NOT refreshed here: datos.magyp.gob.ar is unreachable from the droplet
 
   git config user.email '275148418+koltenpostin93-blip@users.noreply.github.com'
   git config user.name 'JSA Droplet'

@@ -6,6 +6,7 @@
     python build_data.py sk [year ...]     # Saskatchewan weekly PDFs -> data/sk_reports.csv
     python build_data.py vh                # NOAA satellite crop condition -> data/vh.csv
     python build_data.py stocks            # StatCan farm stocks (32-10-0007-01) -> data/stocks.csv
+    python build_data.py aryields|arvh              # Argentina: MAGyP province yields (run from a PC), NOAA by province
     python build_data.py brseries|brprog|brvh      # Brazil: CONAB state series, CONAB weekly progress, NOAA by state
     python build_data.py frcereobs|fragreste|frvh|frmars|fryields   # France: Céré'Obs maize, Agreste estimates, NOAA by region
     python build_data.py mxprod|mxprog|mxstates|mxvh   # Mexico: SIAP production, SIAP monthly progress, state table, NOAA by state
@@ -882,6 +883,58 @@ def build_br_progress():
           f"{old['entry'].nunique()} weekly entries; {len(bad)} entries without a usable workbook")
 
 
+# ── Argentina (MAGyP agricultural estimates) ────────────────────────────────────
+MAGYP_PACKAGE = "https://datos.gob.ar/api/3/action/package_show?id=estimaciones-agricolas"
+# normalised MAGyP crop name -> app name
+AR_CROPS = {"soja total": "Soybeans", "maiz": "Corn", "trigo total": "Wheat", "girasol": "Sunflower",
+            "cebada total": "Barley", "sorgo": "Sorghum"}
+
+
+def _norm(s):
+    import unicodedata
+    return unicodedata.normalize("NFKD", str(s)).encode("ascii", "ignore").decode().strip().lower()
+
+
+def build_ar_yields():
+    """MAGyP 'Estimaciones agrícolas' (CC BY 4.0): crop x campaign x province x department since
+    1969, summed to province. NOTE: the file is hosted on datos.magyp.gob.ar, which the JSA droplet
+    cannot reach, so run this from a PC; the file is updated rarely (the 2026-03 file ends with
+    campaign 2024/25)."""
+    # datos.gob.ar answers about half of its requests with a 502 HTML page: retry with backoff
+    ua = {"User-Agent": "Mozilla/5.0 (JPSI-crop-conditions)"}
+
+    def get(url, tries=10, **kw):
+        for i in range(tries):
+            try:
+                r = requests.get(url, headers=ua, timeout=kw.get("timeout", 60))
+                if r.status_code == 200:
+                    return r
+            except requests.RequestException:
+                pass
+            time.sleep(2 * (i + 1))
+        raise RuntimeError(f"{url}: kept failing")
+
+    pkg = get(MAGYP_PACKAGE).json()["result"]
+    res = next(x for x in pkg["resources"]
+               if x.get("format") == "CSV" and "serie de tiempo" not in _norm(x.get("name", "")))
+    raw = get(res["url"], timeout=300)
+    df = pd.read_csv(io.BytesIO(raw.content), dtype=str)
+    df["crop"] = df["cultivo"].map(lambda s: AR_CROPS.get(_norm(s)))
+    df = df[df["crop"].notna()].copy()
+    for c, n in (("superficie_sembrada_ha", "planted_ha"), ("superficie_cosechada_ha", "harvested_ha"),
+                 ("produccion_tm", "prod_t")):
+        df[n] = pd.to_numeric(df[c], errors="coerce")
+    df["start_year"] = df["campania"].str[:4].astype(int)
+    out = (df.groupby(["crop", "start_year", "provincia"], as_index=False)
+             [["planted_ha", "harvested_ha", "prod_t"]].sum(min_count=1))
+    out["yield_kgha"] = out["prod_t"] * 1000 / out["harvested_ha"]
+    out = out[(out["harvested_ha"] > 0) & (out["prod_t"] > 0)]
+    DATA.mkdir(exist_ok=True)
+    out.to_csv(DATA / "ar_yields.csv", index=False)
+    print(f"ar_yields.csv: {len(out)} rows, campaigns {int(out['start_year'].min())}-"
+          f"{int(out['start_year'].max())}, file {res['url'].rsplit('/', 1)[-1]}")
+
+
 STOCK_GEOS = ["Alberta", "Saskatchewan", "Manitoba", "Ontario", "Canada"]
 STOCK_CROPS = {"Canola (rapeseed)": "Canola", "Wheat, all excluding durum wheat": "Wheat ex-durum",
                "Wheat, durum": "Durum", "Barley": "Barley", "Corn for grain": "Corn",
@@ -936,6 +989,11 @@ if __name__ == "__main__":
         build_yields()
     if what in ("ab", "all"):
         build_ab(yrs)
+    if what == "aryields":
+        build_ar_yields()
+    if what == "arvh":
+        import vh
+        vh.build_ar()
     if what == "brseries":
         build_br_series()
     if what == "brprog":

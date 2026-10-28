@@ -240,6 +240,57 @@ def load_br(uf):
     return df[df["uf"] == uf].drop(columns="uf").reset_index(drop=True)
 
 
+AR_DATA = Path(__file__).parent / "data" / "vh_ar.csv"
+# Argentine province -> NOAA STAR provinceID (getProvinceNames.php?country_code=ARG)
+AR_PROVINCES = {"Buenos Aires": 1, "Catamarca": 2, "Chaco": 3, "Chubut": 4, "Córdoba": 6,
+                "Corrientes": 7, "Entre Ríos": 8, "Formosa": 9, "Jujuy": 10, "La Pampa": 11,
+                "La Rioja": 12, "Mendoza": 13, "Misiones": 14, "Neuquén": 15, "Río Negro": 16,
+                "Salta": 17, "San Juan": 18, "San Luis": 19, "Santa Cruz": 20, "Santa Fe": 21,
+                "Santiago del Estero": 22, "Tierra del Fuego": 23, "Tucumán": 24}
+# Windows fixed in advance by crop stage: (first week, last week, years after the campaign's first
+# calendar year). Soybeans (sown Oct-Dec) fill pods Jan-Mar, corn (sown Sep-Dec) flowers and fills
+# grain Dec-Mar, sunflower (sown Sep-Oct) fills Jan-Feb, sorghum (sown Nov-Dec) Feb-Mar; wheat
+# (sown May-Jul, harvested Dec-Jan) flowers and fills grain in Sep-Oct of the first calendar year.
+AR_WINDOWS = {"Soybeans": (2, 10, 1), "Corn": (1, 12, 1), "Sunflower": (1, 8, 1),
+              "Sorghum": (4, 14, 1), "Wheat": (36, 44, 0)}
+
+
+def fetch_ar(province_id, timeout=30.0):
+    params = {"provinceID": province_id, "country": "ARG", "adminVHversion": "GC_current",
+              "yearlyTag": "weekly", "type": "Mean", "TagCropland": "crop", "year1": FIRST_YEAR,
+              "year2": datetime.date.today().year}
+    r = requests.get(URL, params=params, timeout=timeout,
+                     headers={"User-Agent": "jsa-canada-crop-conditions"})
+    r.raise_for_status()
+    df = parse(r.text)
+    if df.empty or f"{province_id}: " not in r.text[:400]:
+        raise RuntimeError(f"NOAA STAR returned no series for Argentine province {province_id}")
+    return df
+
+
+def build_ar():
+    """Refresh data/vh_ar.csv: weekly cropland NDVI/VCI/TCI/VHI for the Argentine provinces."""
+    frames, skipped = [], []
+    for name, pid in AR_PROVINCES.items():
+        try:
+            df = fetch_ar(pid)
+        except RuntimeError:  # a province with no cropland pixels returns an empty series
+            skipped.append(name)
+            continue
+        df.insert(0, "province", name)
+        frames.append(df)
+    out = pd.concat(frames).round(3)
+    AR_DATA.parent.mkdir(exist_ok=True)
+    out.to_csv(AR_DATA, index=False)
+    print(f"vh_ar.csv: {len(out)} rows, {out['year'].min()}-{out['year'].max()}, {len(frames)} "
+          f"provinces; no series for: {', '.join(skipped) or 'none'}")
+
+
+def load_ar(province):
+    df = pd.read_csv(AR_DATA)
+    return df[df["province"] == province].drop(columns="province").reset_index(drop=True)
+
+
 def load_mx(state):
     df = pd.read_csv(MX_DATA)
     return df[df["state"] == state].drop(columns="state").reset_index(drop=True)
