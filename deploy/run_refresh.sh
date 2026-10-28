@@ -38,6 +38,9 @@ main() {
   "$PY" -u build_data.py mxprod
   "$PY" -u build_data.py mxprog
   "$PY" -u build_data.py mxstates
+  "$PY" -u build_data.py frvh
+  "$PY" -u build_data.py frcereobs
+  "$PY" -u build_data.py frmars
 
   git config user.email '275148418+koltenpostin93-blip@users.noreply.github.com'
   git config user.name 'JSA Droplet'

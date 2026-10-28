@@ -6,6 +6,7 @@
     python build_data.py sk [year ...]     # Saskatchewan weekly PDFs -> data/sk_reports.csv
     python build_data.py vh                # NOAA satellite crop condition -> data/vh.csv
     python build_data.py stocks            # StatCan farm stocks (32-10-0007-01) -> data/stocks.csv
+    python build_data.py frcereobs|fragreste|frvh|frmars   # France: Céré'Obs maize, Agreste estimates, NOAA by region
     python build_data.py mxprod|mxprog|mxstates|mxvh   # Mexico: SIAP production, SIAP monthly progress, state table, NOAA by state
 
 Reports are parsed incrementally: report dates already in a CSV are skipped.
@@ -558,6 +559,134 @@ def build_mx_states():
     print("mx_progress_states.csv:", len(out), "rows", y, month)
 
 
+# ── France (FranceAgriMer Céré'Obs, Agreste) ────────────────────────────────────
+CEREOBS_MAIZE = ("https://visionet.franceagrimer.fr/Pages/OpenDocument.aspx?fileurl="
+                 "SeriesChronologiques%2fproductions%20vegetales%2fgrandes%20cultures%2f"
+                 "etats%20des%20cultures%2fSCR-GRC-CEREOBS_M_depuis_2015-A{yy}.xlsx"
+                 "&telechargersanscomptage=oui")
+CEREOBS_COLS = ["culture", "week", "sowing", "emergence", "leaves_6_8", "flowering",
+                "grain_moisture_50", "harvest", "very_poor", "poor", "fair", "good", "very_good"]
+# Agreste "Infos rapides - Grandes cultures" issues carry open xlsx workbooks of their tables.
+# Issue ids are not predictable (the July 2026 issue is IraGcu2688): add each new issue here,
+# from the "Données des figures" link on its agreste.agriculture.gouv.fr/agreste-web/disaron/<id>/detail/
+# page. The workbook name is <year>_<NN>figuresgrandescultures.xlsx for id IraGcu<yy><NN>.
+AGRESTE_ISSUES = {"2026-07": "IraGcu2688"}
+AGRESTE_URL = ("https://agreste.agriculture.gouv.fr/agreste-web/download/publication/publie/"
+               "{id}/20{yy}_{nn}figuresgrandescultures.xlsx")
+
+
+def build_fr_cereobs():
+    """Céré'Obs maize history 2015+: weekly stage progress and 5-class condition, as % of area,
+    for France, the regions and the agronomic zones (open data, licence ouverte 2.0)."""
+    got = None
+    for yy in (date.today().year % 100, date.today().year % 100 - 1):
+        r = requests.get(CEREOBS_MAIZE.format(yy=yy), headers=UA, timeout=180)
+        if r.status_code == 200 and r.content[:2] == b"PK":
+            got = r.content
+            break
+    if got is None:
+        raise RuntimeError("Céré'Obs maize workbook not found")
+    x = pd.ExcelFile(io.BytesIO(got))
+    frames = []
+    for sheet, level, namecol in (("Données France", "France", None),
+                                  ("Données régions", "Région", "Région"),
+                                  ("Données zones agronomiques", "Zone", "Zone agronomique")):
+        d = x.parse(sheet, header=5).dropna(axis=1, how="all")
+        d = d.rename(columns={"Culture": "culture", "Semaine": "week"})
+        d["name"] = "France" if namecol is None else d[namecol]
+        d["level"] = level
+        order = ["Semis", "Levée", "6/8 feuilles visibles", "Floraison femelle", "Humidité du grain 50%",
+                 "Récolte", "Très mauvaises", "Mauvaises", "Assez bonnes", "Bonnes", "Très bonnes"]
+        d = d.rename(columns=dict(zip(order, CEREOBS_COLS[2:])))
+        frames.append(d[["level", "name", "culture", "week"] + CEREOBS_COLS[2:]])
+    out = pd.concat(frames, ignore_index=True)
+    out["year"] = out["week"].str[:4].astype(int)
+    out["wk"] = out["week"].str[-2:].astype(int)
+    out = out.drop(columns="week")
+    DATA.mkdir(exist_ok=True)
+    out.to_csv(DATA / "fr_cereobs.csv", index=False)
+    print(f"fr_cereobs.csv: {len(out)} rows, {out['year'].min()}-{out['year'].max()}, "
+          f"{out['name'].nunique()} areas")
+
+
+def _agreste_table(x, sheet, first_col):
+    d = x.parse(sheet, header=None)
+    rows, parent = [], ""
+    for i in range(4, len(d)):
+        name = d.iloc[i, 0]
+        v = d.iloc[i, 1:7]
+        if isinstance(name, str) and pd.notna(v).all() and not name.startswith(("Source", "*")):
+            name = name.strip()
+            if name in ("hiver", "printemps"):  # sub-rows of the crop above
+                name = f"{parent} - {name}"
+            else:
+                parent = name
+            rows.append([name, *[float(a) for a in v], float(d.iloc[i, 7]), float(d.iloc[i, 8])])
+    return pd.DataFrame(rows, columns=[first_col, "area25_kha", "yield25_qha", "prod25_kt",
+                                       "area26_kha", "yield26_qha", "prod26_kt",
+                                       "chg_prod_pct", "chg_vs_5yr_pct"])
+
+
+def build_fr_agreste():
+    """Agreste early estimates (surface, yield, production, this year vs last) and the long
+    national series for soft wheat and barley, from the issue workbooks in AGRESTE_ISSUES."""
+    est, series = [], []
+    for issue, iid in sorted(AGRESTE_ISSUES.items()):
+        yy, nn = iid[6:8], iid[8:]
+        r = requests.get(AGRESTE_URL.format(id=iid, yy=yy, nn=nn), headers=UA, timeout=180)
+        r.raise_for_status()
+        x = pd.ExcelFile(io.BytesIO(r.content))
+        for sheet, grp in (("Figure 5", "Cereals"), ("Figure 6", "Oilseeds and pulses")):
+            t = _agreste_table(x, sheet, "crop")
+            t.insert(0, "group", grp)
+            t.insert(0, "issue", issue)
+            est.append(t)
+        for sheet, crop in (("Figure 1", "Soft wheat"), ("Figure 3", "Barley")):
+            d = x.parse(sheet, header=None)
+            years = d.iloc[1, 1:].dropna().astype(int).tolist()
+            yld = d.iloc[2, 1:1 + len(years)].astype(float).tolist()
+            prod = d.iloc[3, 1:1 + len(years)].astype(float).tolist()
+            for yr, a, b in zip(years, yld, prod):
+                series.append((issue, crop, yr, a, b))
+    DATA.mkdir(exist_ok=True)
+    pd.concat(est).to_csv(DATA / "fr_agreste_estimates.csv", index=False)
+    old = pd.DataFrame(series, columns=["issue", "crop", "year", "yield_qha", "prod_mt"])
+    # the newest issue wins for each year (earlier issues carry earlier estimates)
+    old = old.sort_values("issue").drop_duplicates(["crop", "year"], keep="last")
+    old.to_csv(DATA / "fr_agreste_series.csv", index=False)
+    print(f"fr_agreste: {sum(len(e) for e in est)} estimate rows, {len(old)} series rows, "
+          f"issues {', '.join(sorted(AGRESTE_ISSUES))}")
+
+
+MARS_LIST = "https://joint-research-centre.ec.europa.eu/jrc-mars-bulletins-crop-monitoring-europe_en"
+MARS_BASE = "https://joint-research-centre.ec.europa.eu"
+BROWSER_UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                            "(KHTML, like Gecko) Chrome/120 Safari/537.36"}
+
+
+def build_fr_mars():
+    """JRC MARS monthly crop-monitoring summaries: one row per bulletin news page with the
+    paragraphs that mention France. The bulletin PDFs and the Agri4Cast data portal reject scripted
+    requests (WAF), so yield-forecast tables are NOT available here; these summaries are."""
+    html = requests.get(MARS_LIST, headers=BROWSER_UA, timeout=90).text
+    links = sorted(set(re.findall(r'href="(/jrc-news-and-updates/[^"]*-(\d{4}-\d\d-\d\d)_en)"', html)),
+                   key=lambda x: x[1], reverse=True)
+    rows = []
+    for path, d in links:
+        page = requests.get(MARS_BASE + path, headers=BROWSER_UA, timeout=90).text
+        body = re.sub(r"<script.*?</script>|<style.*?</style>", "", page, flags=re.S)
+        title = re.search(r"<h1[^>]*>(.*?)</h1>", body, re.S)
+        title = re.sub(r"\s+", " ", re.sub(r"<[^>]+>", "", title.group(1))).strip() if title else path
+        paras = [re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", p)).strip()
+                 for p in re.findall(r"<p[^>]*>(.*?)</p>", body, re.S)]
+        fr = [p for p in paras if "France" in p]
+        rows.append((d, title, MARS_BASE + path, " ".join(fr)))
+    out = pd.DataFrame(rows, columns=["date", "title", "url", "france"])
+    DATA.mkdir(exist_ok=True)
+    out.to_csv(DATA / "mars_news.csv", index=False)
+    print(f"mars_news.csv: {len(out)} bulletins, {int((out['france'] != '').sum())} mention France")
+
+
 STOCK_GEOS = ["Alberta", "Saskatchewan", "Manitoba", "Ontario", "Canada"]
 STOCK_CROPS = {"Canola (rapeseed)": "Canola", "Wheat, all excluding durum wheat": "Wheat ex-durum",
                "Wheat, durum": "Durum", "Barley": "Barley", "Corn for grain": "Corn",
@@ -612,6 +741,15 @@ if __name__ == "__main__":
         build_yields()
     if what in ("ab", "all"):
         build_ab(yrs)
+    if what == "frcereobs":
+        build_fr_cereobs()
+    if what == "fragreste":
+        build_fr_agreste()
+    if what == "frmars":
+        build_fr_mars()
+    if what == "frvh":
+        import vh
+        vh.build_fr()
     if what == "mxprod":
         build_mx_production(yrs or None)
     if what == "mxprog":

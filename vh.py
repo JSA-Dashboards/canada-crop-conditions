@@ -108,6 +108,55 @@ def build_mx():
           f"{len(frames)} states; no series for: {', '.join(skipped) or 'none'}")
 
 
+FR_DATA = Path(__file__).parent / "data" / "vh_fr.csv"
+# NOAA STAR's French regions are the PRE-2016 ones (getProvinceNames.php?country_code=FRA)
+FR_REGIONS = {1: "Alsace", 2: "Aquitaine", 3: "Auvergne", 4: "Basse-Normandie", 5: "Bourgogne",
+              6: "Bretagne", 7: "Centre", 8: "Champagne-Ardenne", 9: "Corse",
+              10: "Franche-Comté", 11: "Haute-Normandie", 12: "Île-de-France",
+              13: "Languedoc-Roussillon", 14: "Limousin", 15: "Lorraine", 16: "Midi-Pyrénées",
+              17: "Nord-Pas-de-Calais", 18: "Pays de la Loire", 19: "Picardie",
+              20: "Poitou-Charentes", 21: "Provence-Alpes-Côte d'Azur", 22: "Rhône-Alpes"}
+# Windows fixed in advance on crop stage: winter wheat and barley stem extension to grain
+# fill (about Apr-Jun), grain maize flowering to grain fill (about Jul-Sep).
+FR_WINDOWS = {"Winter cereals": (14, 26), "Grain maize": (29, 37)}
+
+
+def fetch_fr(region_id, timeout=30.0):
+    params = {"provinceID": region_id, "country": "FRA", "adminVHversion": "GC_current",
+              "yearlyTag": "weekly", "type": "Mean", "TagCropland": "crop", "year1": FIRST_YEAR,
+              "year2": datetime.date.today().year}
+    r = requests.get(URL, params=params, timeout=timeout,
+                     headers={"User-Agent": "jsa-canada-crop-conditions"})
+    r.raise_for_status()
+    df = parse(r.text)
+    if df.empty or f"{region_id}: " not in r.text[:400]:
+        raise RuntimeError(f"NOAA STAR returned no series for French region {region_id}")
+    return df
+
+
+def build_fr():
+    """Refresh data/vh_fr.csv: weekly cropland NDVI/VCI/TCI/VHI for the 22 pre-2016 regions."""
+    frames, skipped = [], []
+    for rid, name in FR_REGIONS.items():
+        try:
+            df = fetch_fr(rid)
+        except RuntimeError:
+            skipped.append(name)
+            continue
+        df.insert(0, "region", name)
+        frames.append(df)
+    out = pd.concat(frames).round(3)
+    FR_DATA.parent.mkdir(exist_ok=True)
+    out.to_csv(FR_DATA, index=False)
+    print(f"vh_fr.csv: {len(out)} rows, {out['year'].min()}-{out['year'].max()}, {len(frames)} "
+          f"regions; no series for: {', '.join(skipped) or 'none'}")
+
+
+def load_fr(region):
+    df = pd.read_csv(FR_DATA)
+    return df[df["region"] == region].drop(columns="region").reset_index(drop=True)
+
+
 def load_mx(state):
     df = pd.read_csv(MX_DATA)
     return df[df["state"] == state].drop(columns="state").reset_index(drop=True)
