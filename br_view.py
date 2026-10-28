@@ -6,6 +6,7 @@ import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 
+import production
 import vh
 from charts import AMBER, BLUE, GREY, vh_chart
 
@@ -51,7 +52,10 @@ def render():
                              key="br_state")
         st.caption("Corn is split into first crop (summer, planted Sep-Nov) and second crop "
                    "(safrinha, planted after soybeans from Jan). Wheat is a southern winter crop.")
-    t1, t2, t3, t4 = st.tabs(["Weekly progress", "Satellite", "Yield model", "Sources"])
+    t1, t2, t3, t5, t4 = st.tabs(["Weekly progress", "Satellite", "Yield model",
+                                  "Areas and calendar", "Sources"])
+    with t5:
+        production.areas_tab("Brazil", crop)
     with t1:
         _progress(prog, crop, state)
     with t2:

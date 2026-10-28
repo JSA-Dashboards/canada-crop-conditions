@@ -6,6 +6,7 @@ import pandas as pd
 import plotly.graph_objects as go
 import streamlit as st
 
+import production
 import vh
 from charts import AMBER, BLUE, GREY, vh_chart
 
@@ -86,7 +87,10 @@ def render():
         st.caption("Summer crops (maize, soybeans, sunflower, sorghum) are sown Oct to Dec and "
                    "harvested Apr to Jul; the CEC labels a season by its harvest year (2025/26 = 2026). "
                    "Wheat is winter-sown and labelled by its calendar year.")
-    t1, t2, t3, t4 = st.tabs(["CEC forecasts", "Satellite", "Yield model", "Sources"])
+    t1, t2, t3, t5, t4 = st.tabs(["CEC forecasts", "Satellite", "Yield model",
+                                  "Areas and calendar", "Sources"])
+    with t5:
+        production.areas_tab("South Africa", crop)
     with t1:
         _forecasts(crop)
     with t2:

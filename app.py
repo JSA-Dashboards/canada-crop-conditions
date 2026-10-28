@@ -5,6 +5,7 @@ import plotly.graph_objects as go
 import streamlit as st
 
 import model as M
+import production
 import theme
 import tour
 import vh
@@ -40,23 +41,28 @@ with st.sidebar:
         default="Canada", key="country") or "Canada"
 if country == "Mexico":
     import mx_view
-    mx_view.render()
+    with st.container(key="view_mx"):  # own key: the tab bar redraws cleanly when the country changes
+        mx_view.render()
     st.stop()
 if country == "France":
     import fr_view
-    fr_view.render()
+    with st.container(key="view_fr"):  # own key: the tab bar redraws cleanly when the country changes
+        fr_view.render()
     st.stop()
 if country == "Brazil":
     import br_view
-    br_view.render()
+    with st.container(key="view_br"):  # own key: the tab bar redraws cleanly when the country changes
+        br_view.render()
     st.stop()
 if country == "Argentina":
     import ar_view
-    ar_view.render()
+    with st.container(key="view_ar"):  # own key: the tab bar redraws cleanly when the country changes
+        ar_view.render()
     st.stop()
 if country == "South Africa":
     import za_view
-    za_view.render()
+    with st.container(key="view_za"):  # own key: the tab bar redraws cleanly when the country changes
+        za_view.render()
     st.stop()
 
 st.title("Canada crop conditions and yield model")
@@ -473,17 +479,20 @@ Refresh data with `python build_data.py ab`, `sk`, `mb`, `vh`, `stocks` and `yie
 """)
 
 
-t1, t2, t3, t4, t6, t5 = st.tabs(["Conditions", "Progress", "Yield model", "Satellite",
-                                  "Estimates and stocks", "Sources"])
-with t1:
-    tab_conditions()
-with t2:
-    tab_progress()
-with t3:
-    tab_yield()
-with t4:
-    tab_satellite()
-with t6:
-    tab_estimates()
-with t5:
-    tab_sources()
+with st.container(key="view_ca"):
+    t1, t2, t3, t4, t6, t7, t5 = st.tabs(["Conditions", "Progress", "Yield model", "Satellite",
+                                          "Estimates and stocks", "Areas and calendar", "Sources"])
+    with t1:
+        tab_conditions()
+    with t2:
+        tab_progress()
+    with t3:
+        tab_yield()
+    with t4:
+        tab_satellite()
+    with t6:
+        tab_estimates()
+    with t7:
+        production.areas_tab("Canada", crop)
+    with t5:
+        tab_sources()
