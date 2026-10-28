@@ -5,14 +5,16 @@ import plotly.graph_objects as go
 import streamlit as st
 
 import model as M
+import theme
 import tour
 import vh
 from charts import vh_chart
 
 st.set_page_config(page_title="Canada crop conditions", page_icon=":material/grass:",
                    layout="wide")
+theme.apply("Crop conditions and yields", "Satellite, official reports and yield models")
 
-BLUE, GREY, AMBER, RED = "#0693e3", "#32373c", "#f59e0b", "#d64545"
+BLUE, GREY, AMBER, RED = "#6fa8c4", "#32373c", "#c4785a", "#dc2626"
 PROVINCES = {
     "Alberta": ["South", "Central", "N East", "N West", "Peace", "Alberta"],
     "Saskatchewan": ["Southeast", "Southwest", "East-central", "West-central", "Northeast",
@@ -92,7 +94,7 @@ def shade(lo, hi, rgb_lo, rgb_hi):
 
 
 RED_GREEN = ((240, 150, 140), (150, 215, 150))
-WHITE_BLUE = ((255, 255, 255), (110, 180, 235))
+WHITE_BLUE = ((255, 255, 255), (111, 168, 196))
 
 
 def year_lines(df, title, ylabel, yr):

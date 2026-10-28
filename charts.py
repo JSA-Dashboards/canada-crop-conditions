@@ -4,7 +4,7 @@ import plotly.graph_objects as go
 
 import vh
 
-BLUE, GREY, AMBER = "#0693e3", "#32373c", "#f59e0b"
+BLUE, GREY, AMBER = "#6fa8c4", "#32373c", "#c4785a"
 
 
 def vh_chart(df, col, year, span=(14, 44)):
